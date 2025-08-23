@@ -137,35 +137,35 @@
     },
     {
       "match": "Atletico Madrid vs Elche",
-      "prediction": "1",
+      "prediction": "Over 2.5",
       "stake": 35,
       "odd": 1.75,
       "llm": "GPT5"
     },
     {
       "match": "Levante vs Barcelona",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 40,
       "odd": 1.36,
       "llm": "GPT5"
     },
     {
       "match": "Arsenal vs Leeds United",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 45,
       "odd": 1.53,
       "llm": "GPT5"
     },
     {
       "match": "Bayern Munich vs Leipzig",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 50,
       "odd": 1.28,
       "llm": "GPT5"
     },
     {
       "match": "Milan vs Cremonese",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 40,
       "odd": 1.62,
       "llm": "GPT5"
@@ -179,7 +179,7 @@
     },
     {
       "match": "Manchester City vs Tottenham",
-      "prediction": "2",
+      "prediction": "GG",
       "stake": 40,
       "odd": 1.57,
       "llm": "GPT5"
@@ -200,7 +200,7 @@
     },
     {
       "match": "Bayern Munich vs Leipzig",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 30,
       "odd": 1.28,
       "llm": "Gemini 2.5 Pro"
@@ -242,51 +242,51 @@
     },
     {
       "match": "Inter vs Torino",
-      "prediction": "1",
+      "prediction": "GG",
       "stake": 40,
       "odd": 1.88,
       "llm": "Qwen 3"
     },
     {
       "match": "Bayern Munich vs Leipzig",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 30,
       "odd": 1.28,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Arsenal vs Leeds United",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 25,
       "odd": 1.53,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Atletico Madrid vs Elche",
-      "prediction": "X",
+      "prediction": "NG",
       "stake": 20,
-      "odd": 3.05,
+      "odd": 1.48,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Milan vs Cremonese",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 25,
-      "odd": 8.00,
+      "odd": 1.62,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Real Sociedad vs Espanyol",
-      "prediction": "1",
+      "prediction": "1X",
       "stake": 30,
-      "odd": 1.84,
+      "odd": 1.19,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Bayer Leverkusen vs Hoffenheim",
-      "prediction": "2",
+      "prediction": "Over 2.5",
       "stake": 20,
-      "odd": 5.40,
+      "odd": 1.47,
       "llm": "Claude Opus 4.1"
     }
   ],
