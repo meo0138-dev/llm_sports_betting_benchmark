@@ -2,34 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>LLM Sports Betting Benchmark</title>
+  <title>🎯 LLM Sports Betting Benchmark</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f4f4f4; }
-    h1 { text-align: center; color: #2c3e50; }
-    .leaderboard { margin-top: 30px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
-    th { background: #3498db; color: white; }
-    .prediction { background: #ecf0f1; padding: 10px; margin-bottom: 10px; border-radius: 4px; }
-    .win { color: green; font-weight: bold; }
-    .loss { color: red; font-weight: bold; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+      margin: 0;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .info {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .leaderboard {
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: #3498db;
+      color: white;
+      font-weight: 600;
+    }
+    .prediction {
+      background: #ecf0f1;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+    .pending {
+      color: #f39c12;
+      font-weight: bold;
+      font-style: italic;
+      margin-left: 5px;
+    }
+    .win {
+      color: green;
+      font-weight: bold;
+    }
+    .loss {
+      color: red;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #999;
+    }
   </style>
 </head>
 <body>
 
   <h1>🎯 LLM Sports Betting Benchmark</h1>
-  <p><strong>Last updated:</strong> <span id="last-update">Loading...</span></p>
+  <p class="info"><strong>Last updated:</strong> <span id="last-update">Loading...</span></p>
 
   <!-- Leaderboard -->
   <div class="leaderboard">
     <h2>🏆 Leaderboard (ROI)</h2>
     <table id="leaderboard-table">
-      <tr><th>LLM</th><th>ROI (%)</th><th>Profit (€)</th></tr>
+      <tr>
+        <th>LLM</th>
+        <th>ROI (%)</th>
+        <th>Profit (€)</th>
+      </tr>
     </table>
   </div>
 
   <!-- Predictions by Round -->
-  <h2>📋 Round 1 Predictions</h2>
+  <h2>📋 Round 3 Predictions (Bets Ongoing)</h2>
   <div id="predictions-list"></div>
 
   <script>
@@ -41,45 +103,51 @@
         const predictionsList = document.getElementById('predictions-list');
         const leaderboardTable = document.getElementById('leaderboard-table');
 
+        // Reset leaderboard
         while (leaderboardTable.rows.length > 1) leaderboardTable.deleteRow(1);
 
         const roi = {};
 
+        // Track total stake per model
         data.games.forEach(game => {
           const llm = game.llm;
-          if (!roi[llm]) roi[llm] = { totalStake: 0, totalReturn: 0 };
-
+          if (!roi[llm]) roi[llm] = { totalStake: 0 };
           roi[llm].totalStake += game.stake;
-
-          const result = data.results[game.match];
-          if (game.prediction === result) {
-            roi[llm].totalReturn += game.stake * game.odd;
-          }
-
-          const div = document.createElement('div');
-          div.className = 'prediction';
-          const status = game.prediction === result ? 'win' : 'loss';
-          div.innerHTML = `
-            <strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd} 
-            <span class="${status}">${game.prediction === result ? '✅ Win' : '❌ Loss'}</span>
-          `;
-          predictionsList.appendChild(div);
         });
 
+        // Add all models to leaderboard with 0% ROI and 0 profit
         Object.keys(roi).forEach(llm => {
           const stake = roi[llm].totalStake;
-          const returnAmount = roi[llm].totalReturn;
-          const profit = returnAmount - stake;
-          const roiPercent = ((profit / stake) * 100).toFixed(2);
+          const profit = 0; // No results yet → no profit/loss
+          const roiPercent = 0; // Still 0%
 
           const row = leaderboardTable.insertRow();
           row.insertCell(0).textContent = llm;
           row.insertCell(1).textContent = `${roiPercent}%`;
           row.insertCell(2).textContent = `${profit.toFixed(2)}€`;
         });
+
+        // Display predictions
+        data.games.forEach(game => {
+          const div = document.createElement('div');
+          div.className = 'prediction';
+          div.innerHTML = `
+            <strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd} 
+            <span class="pending">⏳ Bet Ongoing</span>
+          `;
+          predictionsList.appendChild(div);
+        });
       })
-      .catch(err => console.error("Error loading ", err));
+      .catch(err => {
+        console.error("Error loading predictions:", err);
+        document.getElementById('predictions-list').innerHTML = 
+          '<p style="color:red; font-weight:bold;">❌ Failed to load predictions. Check GitHub.</p>';
+      });
   </script>
+
+  <div class="footer">
+    &copy; 2025 LLM Sports Betting Benchmark | Bets are ongoing • ROI = 0% until results are known
+  </div>
 
 </body>
 </html>
