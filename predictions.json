@@ -6,63 +6,63 @@
       "match": "Atletico Madrid vs Elche",
       "prediction": "1",
       "stake": 50,
-      "odd": 1.89,
+      "odd": 1.24,
       "llm": "Grok 4"
     },
     {
       "match": "Levante vs Barcelona",
       "prediction": "2",
       "stake": 50,
-      "odd": 1.89,
+      "odd": 1.26,
       "llm": "Grok 4"
     },
     {
       "match": "Real Oviedo vs Real Madrid",
       "prediction": "2",
       "stake": 50,
-      "odd": 1.89,
+      "odd": 1.31,
       "llm": "Grok 4"
     },
     {
       "match": "Manchester City vs Tottenham",
       "prediction": "1",
       "stake": 50,
-      "odd": 1.76,
+      "odd": 1.49,
       "llm": "Grok 4"
     },
     {
       "match": "Arsenal vs Leeds United",
       "prediction": "1",
       "stake": 50,
-      "odd": 1.83,
+      "odd": 1.26,
       "llm": "Grok 4"
     },
     {
       "match": "Milan vs Cremonese",
       "prediction": "1",
       "stake": 50,
-      "odd": 1.81,
+      "odd": 1.35,
       "llm": "Grok 4"
     },
     {
       "match": "Juventus vs Parma Calcio",
       "prediction": "1",
       "stake": 50,
-      "odd": 1.78,
+      "odd": 1.43,
       "llm": "Grok 4"
     },
     {
       "match": "Atalanta vs Pisa",
       "prediction": "1",
       "stake": 50,
-      "odd": 1.89,
+      "odd": 1.40,
       "llm": "Grok 4"
     },
     {
       "match": "Inter vs Torino",
       "prediction": "1",
       "stake": 50,
-      "odd": 1.83,
+      "odd": 1.42,
       "llm": "Grok 4"
     },
     {
@@ -265,28 +265,28 @@
       "match": "Atletico Madrid vs Elche",
       "prediction": "X",
       "stake": 20,
-      "odd": 1.48,
+      "odd": 3.05,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Milan vs Cremonese",
       "prediction": "2",
       "stake": 25,
-      "odd": 1.62,
+      "odd": 8.00,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Real Sociedad vs Espanyol",
       "prediction": "1",
       "stake": 30,
-      "odd": 1.19,
+      "odd": 1.84,
       "llm": "Claude Opus 4.1"
     },
     {
       "match": "Bayer Leverkusen vs Hoffenheim",
       "prediction": "2",
       "stake": 20,
-      "odd": 1.47,
+      "odd": 5.40,
       "llm": "Claude Opus 4.1"
     }
   ],
