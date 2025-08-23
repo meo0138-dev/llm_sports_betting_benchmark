@@ -1,24 +1,306 @@
 {
-  "round": 1,
-  "date": "2025-08-10",
+  "round": 3,
+  "date": "2025-08-23",
   "games": [
     {
-      "match": "Napoli vs Inter",
+      "match": "Atletico Madrid vs Elche",
       "prediction": "1",
-      "stake": 60,
-      "odd": 2.3,
-      "llm": "Qwen"
+      "stake": 50,
+      "odd": 1.89,
+      "llm": "Grok 4"
     },
     {
-      "match": "Barcelona vs Real Madrid",
-      "prediction": "X",
+      "match": "Levante vs Barcelona",
+      "prediction": "2",
       "stake": 50,
-      "odd": 3.1,
-      "llm": "Gemini"
+      "odd": 1.89,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Real Oviedo vs Real Madrid",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 1.89,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Manchester City vs Tottenham",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.76,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.83,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.81,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Juventus vs Parma Calcio",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.78,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Atalanta vs Pisa",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.89,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Inter vs Torino",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.83,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.24,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Levante vs Barcelona",
+      "prediction": "2",
+      "stake": 10,
+      "odd": 1.26,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Real Oviedo vs Real Madrid",
+      "prediction": "2",
+      "stake": 10,
+      "odd": 1.31,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Manchester City vs Tottenham",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.49,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.26,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.24,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.35,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Juventus vs Parma Calcio",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.43,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Atalanta vs Pisa",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.40,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Inter vs Torino",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.42,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 35,
+      "odd": 1.75,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Levante vs Barcelona",
+      "prediction": "2",
+      "stake": 40,
+      "odd": 1.36,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "2",
+      "stake": 45,
+      "odd": 1.53,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 1.28,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "2",
+      "stake": 40,
+      "odd": 1.62,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Juventus vs Parma Calcio",
+      "prediction": "1",
+      "stake": 60,
+      "odd": 1.43,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Manchester City vs Tottenham",
+      "prediction": "2",
+      "stake": 40,
+      "odd": 1.57,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.24,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.26,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "2",
+      "stake": 30,
+      "odd": 1.28,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Sassuolo Calcio vs Napoli",
+      "prediction": "2",
+      "stake": 30,
+      "odd": 1.56,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 80,
+      "odd": 1.24,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Levante vs Barcelona",
+      "prediction": "2",
+      "stake": 70,
+      "odd": 1.26,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "1",
+      "stake": 60,
+      "odd": 1.24,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.35,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Inter vs Torino",
+      "prediction": "1",
+      "stake": 40,
+      "odd": 1.88,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "2",
+      "stake": 30,
+      "odd": 1.28,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "2",
+      "stake": 25,
+      "odd": 1.53,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "X",
+      "stake": 20,
+      "odd": 1.48,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "2",
+      "stake": 25,
+      "odd": 1.62,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Real Sociedad vs Espanyol",
+      "prediction": "1",
+      "stake": 30,
+      "odd": 1.19,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Bayer Leverkusen vs Hoffenheim",
+      "prediction": "2",
+      "stake": 20,
+      "odd": 1.47,
+      "llm": "Claude Opus 4.1"
     }
   ],
   "results": {
-    "Napoli vs Inter": "1",
-    "Barcelona vs Real Madrid": "X"
+    "Atletico Madrid vs Elche": "1",
+    "Levante vs Barcelona": "2",
+    "Real Oviedo vs Real Madrid": "2",
+    "Manchester City vs Tottenham": "1",
+    "Arsenal vs Leeds United": "1",
+    "Milan vs Cremonese": "1",
+    "Juventus vs Parma Calcio": "1",
+    "Atalanta vs Pisa": "1",
+    "Inter vs Torino": "1",
+    "Bayern Munich vs Leipzig": "2",
+    "Real Sociedad vs Espanyol": "1"
   }
 }
