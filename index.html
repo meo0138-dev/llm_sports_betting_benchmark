@@ -71,6 +71,19 @@
       font-size: 0.9em;
       color: #999;
     }
+    .stats-table {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .stats-table h3 {
+      margin-top: 0;
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
   </style>
 </head>
 <body>
@@ -78,21 +91,38 @@
   <h1>🎯 LLM Sports Betting Benchmark</h1>
   <p class="info"><strong>Last updated:</strong> <span id="last-update">Loading...</span></p>
 
-  <!-- Leaderboard -->
+  <!-- Leaderboard (Sorted by Bankroll) -->
   <div class="leaderboard">
-    <h2>🏆 Leaderboard (ROI)</h2>
+    <h2>🏆 Leaderboard (Bankroll)</h2>
     <table id="leaderboard-table">
       <tr>
         <th>LLM</th>
+        <th>Bankroll (€)</th>
         <th>ROI (%)</th>
-        <th>Profit (€)</th>
       </tr>
     </table>
   </div>
 
-  <!-- Predictions by Round -->
+  <!-- Predictions -->
   <h2>📋 Round 3 Predictions (Bets Ongoing)</h2>
   <div id="predictions-list"></div>
+
+  <!-- Stats Table -->
+  <div class="stats-table">
+    <h3>📊 Model Performance Summary</h3>
+    <table id="stats-table">
+      <tr>
+        <th>LLM</th>
+        <th>Avg Odd</th>
+        <th>Avg Stake (€)</th>
+        <th>Win Rate (%)</th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 LLM Sports Betting Benchmark | Bets are ongoing • ROI = 0% until results are known
+  </div>
 
   <script>
     fetch('predictions.json')
@@ -102,29 +132,68 @@
 
         const predictionsList = document.getElementById('predictions-list');
         const leaderboardTable = document.getElementById('leaderboard-table');
+        const statsTable = document.getElementById('stats-table');
 
-        // Reset leaderboard
+        // Reset tables
         while (leaderboardTable.rows.length > 1) leaderboardTable.deleteRow(1);
+        while (statsTable.rows.length > 1) statsTable.deleteRow(1);
 
         const roi = {};
+        const bankroll = {};
 
-        // Track total stake per model
+        // Initialize bankroll for all models
         data.games.forEach(game => {
           const llm = game.llm;
-          if (!roi[llm]) roi[llm] = { totalStake: 0 };
+          if (!bankroll[llm]) bankroll[llm] = 1000; // Start with €1000
+          if (!roi[llm]) roi[llm] = { totalStake: 0, totalReturn: 0 };
+          
           roi[llm].totalStake += game.stake;
         });
 
-        // Add all models to leaderboard with 0% ROI and 0 profit
-        Object.keys(roi).forEach(llm => {
-          const stake = roi[llm].totalStake;
-          const profit = 0; // No results yet → no profit/loss
-          const roiPercent = 0; // Still 0%
-
+        // Add to leaderboard: Bankroll = 1000, ROI = 0%
+        Object.keys(bankroll).forEach(llm => {
           const row = leaderboardTable.insertRow();
           row.insertCell(0).textContent = llm;
-          row.insertCell(1).textContent = `${roiPercent}%`;
-          row.insertCell(2).textContent = `${profit.toFixed(2)}€`;
+          row.insertCell(1).textContent = `${bankroll[llm]}€`;
+          row.insertCell(2).textContent = `0%`;
+        });
+
+        // Sort leaderboard by bankroll (descending)
+        const rows = Array.from(leaderboardTable.rows).slice(1); // Skip header
+        rows.sort((a, b) => parseInt(b.cells[1].textContent) - parseInt(a.cells[1].textContent));
+        rows.forEach(row => leaderboardTable.appendChild(row));
+
+        // Calculate stats: Avg Odd, Avg Stake, Win Rate
+        const stats = {};
+
+        data.games.forEach(game => {
+          const llm = game.llm;
+          if (!stats[llm]) {
+            stats[llm] = {
+              totalOdd: 0,
+              totalCount: 0,
+              totalStake: 0,
+              totalWin: 0
+            };
+          }
+
+          stats[llm].totalOdd += game.odd;
+          stats[llm].totalCount++;
+          stats[llm].totalStake += game.stake;
+        });
+
+        // Add to stats table
+        Object.keys(stats).forEach(llm => {
+          const item = stats[llm];
+          const avgOdd = (item.totalOdd / item.totalCount).toFixed(2);
+          const avgStake = (item.totalStake / item.totalCount).toFixed(2);
+          const winRate = 0; // No results yet → win rate = 0%
+
+          const row = statsTable.insertRow();
+          row.insertCell(0).textContent = llm;
+          row.insertCell(1).textContent = avgOdd;
+          row.insertCell(2).textContent = avgStake;
+          row.insertCell(3).textContent = `${winRate}%`;
         });
 
         // Display predictions
@@ -144,10 +213,6 @@
           '<p style="color:red; font-weight:bold;">❌ Failed to load predictions. Check GitHub.</p>';
       });
   </script>
-
-  <div class="footer">
-    &copy; 2025 LLM Sports Betting Benchmark | Bets are ongoing • ROI = 0% until results are known
-  </div>
 
 </body>
 </html>
