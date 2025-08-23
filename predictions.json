@@ -290,17 +290,5 @@
       "llm": "Claude Opus 4.1"
     }
   ],
-  "results": {
-    "Atletico Madrid vs Elche": "1",
-    "Levante vs Barcelona": "2",
-    "Real Oviedo vs Real Madrid": "2",
-    "Manchester City vs Tottenham": "1",
-    "Arsenal vs Leeds United": "1",
-    "Milan vs Cremonese": "1",
-    "Juventus vs Parma Calcio": "1",
-    "Atalanta vs Pisa": "1",
-    "Inter vs Torino": "1",
-    "Bayern Munich vs Leipzig": "2",
-    "Real Sociedad vs Espanyol": "1"
-  }
+  "results": {}
 }
