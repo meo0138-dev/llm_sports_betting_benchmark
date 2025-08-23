@@ -1,0 +1,24 @@
+{
+  "round": 1,
+  "date": "2025-08-10",
+  "games": [
+    {
+      "match": "Napoli vs Inter",
+      "prediction": "1",
+      "stake": 60,
+      "odd": 2.3,
+      "llm": "Qwen"
+    },
+    {
+      "match": "Barcelona vs Real Madrid",
+      "prediction": "X",
+      "stake": 50,
+      "odd": 3.1,
+      "llm": "Gemini"
+    }
+  ],
+  "results": {
+    "Napoli vs Inter": "1",
+    "Barcelona vs Real Madrid": "X"
+  }
+}
