@@ -11,18 +11,16 @@ games <- data$games
 results <- data$results
 
 # --- Helper Function to Determine Profit for a Single Bet ---
-# Renamed 'bet' to 'bet_row' to clarify it's a vector representing a row
 determine_profit <- function(bet_row, all_results) {
-  # Access elements using [] with names, as 'bet_row' is a named vector
   match_name <- bet_row["match"]
   
   if (!match_name %in% names(all_results)) {
-    return(-as.numeric(bet_row["stake"])) # Pending bet, return negative stake
+    return(-as.numeric(bet_row["stake"]))
   }
   
   prediction <- bet_row["prediction"]
-  stake <- as.numeric(bet_row["stake"]) # Explicit conversion to numeric
-  odd <- as.numeric(bet_row["odd"])     # Explicit conversion to numeric
+  stake <- as.numeric(bet_row["stake"])
+  odd <- as.numeric(bet_row["odd"])
   
   score_str <- all_results[[match_name]]$score
   scores <- as.numeric(strsplit(score_str, "-")[[1]])
@@ -32,7 +30,6 @@ determine_profit <- function(bet_row, all_results) {
   
   is_win <- FALSE
   
-  # Evaluate prediction against score
   if (prediction == "1") { if (home_goals > away_goals) is_win <- TRUE }
   else if (prediction == "X") { if (home_goals == away_goals) is_win <- TRUE }
   else if (prediction == "2") { if (away_goals > home_goals) is_win <- TRUE }
@@ -57,9 +54,8 @@ determine_profit <- function(bet_row, all_results) {
 }
 
 # Calculate profit for every single bet
-# The apply function passes each row as a vector (bet_row) to determine_profit
 games$profit <- apply(games, 1, determine_profit, all_results = results)
-games
+
 # --- Main Processing ---
 llms <- unique(games$llm)
 leaderboard_data <- lapply(llms, function(current_llm) {
@@ -67,7 +63,6 @@ leaderboard_data <- lapply(llms, function(current_llm) {
   llm_bets <- games[games$llm == current_llm, ]
   profit_vector <- llm_bets$profit
   
-  # Handle cases where there might be no bets for an LLM or only pending bets
   if (length(profit_vector) == 0) {
     current_bankroll <- INITIAL_BANKROLL
     roi <- 0
@@ -81,14 +76,19 @@ leaderboard_data <- lapply(llms, function(current_llm) {
     
     bootstrapped_bankrolls <- INITIAL_BANKROLL + bootstrapped_profits
     
-    # Use na.rm = TRUE in case of any NA values from empty profit_vector (though handled above)
     lower_bound <- quantile(bootstrapped_bankrolls, (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
     upper_bound <- quantile(bootstrapped_bankrolls, 1 - (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
     
-    total_staked_resolved <- sum(llm_bets$stake[llm_bets$profit != -llm_bets$stake]) # Sum stakes for bets that are NOT just pending stakes
-    total_profit_resolved <- sum(llm_bets$profit[llm_bets$profit != -llm_bets$stake]) # Sum profits for bets that are NOT just pending stakes
+    # --- START OF THE CORRECT ROI LOGIC ---
+    # Create a logical vector to identify bets that have a result
+    is_resolved <- llm_bets$match %in% names(results)
     
-    current_bankroll <- INITIAL_BANKROLL + sum(llm_bets$profit) # Total bankroll includes pending bet stakes
+    # Sum stakes and profits from ONLY the resolved bets
+    total_staked_resolved <- sum(llm_bets$stake[is_resolved])
+    total_profit_resolved <- sum(llm_bets$profit[is_resolved])
+    # --- END OF THE CORRECT ROI LOGIC ---
+    
+    current_bankroll <- INITIAL_BANKROLL + sum(llm_bets$profit)
     roi <- ifelse(total_staked_resolved > 0, (total_profit_resolved / total_staked_resolved) * 100, 0)
   }
   
@@ -104,4 +104,4 @@ leaderboard_data <- lapply(llms, function(current_llm) {
 json_output <- toJSON(leaderboard_data, pretty = TRUE, auto_unbox = TRUE)
 write(json_output, "leaderboard_data.json")
 
-cat("✅ Successfully generated leaderboard_data.json with detailed results logic.\n")
+cat("✅ Successfully generated leaderboard_data.json with CORRECT ROI logic.\n")
