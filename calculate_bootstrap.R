@@ -1,5 +1,3 @@
-# calculate_bootstrap.R
-
 library(jsonlite)
 
 # --- Configuration ---
@@ -13,16 +11,18 @@ games <- data$games
 results <- data$results
 
 # --- Helper Function to Determine Profit for a Single Bet ---
-determine_profit <- function(bet, all_results) {
-  match_name <- bet$match
+# Renamed 'bet' to 'bet_row' to clarify it's a vector representing a row
+determine_profit <- function(bet_row, all_results) {
+  # Access elements using [] with names, as 'bet_row' is a named vector
+  match_name <- bet_row["match"]
   
   if (!match_name %in% names(all_results)) {
-    return(-as.numeric(bet$stake)) # Pending bet
+    return(-as.numeric(bet_row["stake"])) # Pending bet, return negative stake
   }
   
-  prediction <- bet$prediction
-  stake <- as.numeric(bet$stake)
-  odd <- as.numeric(bet$odd)
+  prediction <- bet_row["prediction"]
+  stake <- as.numeric(bet_row["stake"]) # Explicit conversion to numeric
+  odd <- as.numeric(bet_row["odd"])     # Explicit conversion to numeric
   
   score_str <- all_results[[match_name]]$score
   scores <- as.numeric(strsplit(score_str, "-")[[1]])
@@ -57,8 +57,9 @@ determine_profit <- function(bet, all_results) {
 }
 
 # Calculate profit for every single bet
+# The apply function passes each row as a vector (bet_row) to determine_profit
 games$profit <- apply(games, 1, determine_profit, all_results = results)
-
+games
 # --- Main Processing ---
 llms <- unique(games$llm)
 leaderboard_data <- lapply(llms, function(current_llm) {
@@ -66,20 +67,30 @@ leaderboard_data <- lapply(llms, function(current_llm) {
   llm_bets <- games[games$llm == current_llm, ]
   profit_vector <- llm_bets$profit
   
-  bootstrapped_profits <- replicate(BOOTSTRAP_REPS, {
-    resampled_profits <- sample(profit_vector, length(profit_vector), replace = TRUE)
-    sum(resampled_profits)
-  })
-  
-  bootstrapped_bankrolls <- INITIAL_BANKROLL + bootstrapped_profits
-  
-  lower_bound <- quantile(bootstrapped_bankrolls, (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
-  upper_bound <- quantile(bootstrapped_bankrolls, 1 - (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
-  
-  total_staked <- sum(llm_bets$stake[llm_bets$profit != -llm_bets$stake]) # Only on resolved bets
-  total_profit <- sum(llm_bets$profit)
-  current_bankroll <- INITIAL_BANKROLL + total_profit
-  roi <- ifelse(total_staked > 0, (sum(llm_bets$profit[llm_bets$profit != -llm_bets$stake]) / total_staked) * 100, 0)
+  # Handle cases where there might be no bets for an LLM or only pending bets
+  if (length(profit_vector) == 0) {
+    current_bankroll <- INITIAL_BANKROLL
+    roi <- 0
+    lower_bound <- INITIAL_BANKROLL
+    upper_bound <- INITIAL_BANKROLL
+  } else {
+    bootstrapped_profits <- replicate(BOOTSTRAP_REPS, {
+      resampled_profits <- sample(profit_vector, length(profit_vector), replace = TRUE)
+      sum(resampled_profits)
+    })
+    
+    bootstrapped_bankrolls <- INITIAL_BANKROLL + bootstrapped_profits
+    
+    # Use na.rm = TRUE in case of any NA values from empty profit_vector (though handled above)
+    lower_bound <- quantile(bootstrapped_bankrolls, (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
+    upper_bound <- quantile(bootstrapped_bankrolls, 1 - (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
+    
+    total_staked_resolved <- sum(llm_bets$stake[llm_bets$profit != -llm_bets$stake]) # Sum stakes for bets that are NOT just pending stakes
+    total_profit_resolved <- sum(llm_bets$profit[llm_bets$profit != -llm_bets$stake]) # Sum profits for bets that are NOT just pending stakes
+    
+    current_bankroll <- INITIAL_BANKROLL + sum(llm_bets$profit) # Total bankroll includes pending bet stakes
+    roi <- ifelse(total_staked_resolved > 0, (total_profit_resolved / total_staked_resolved) * 100, 0)
+  }
   
   list(
     llm = current_llm,
