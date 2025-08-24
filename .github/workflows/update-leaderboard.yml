@@ -35,6 +35,9 @@ jobs:
         with:
           packages:
             jsonlite
+          # --- ADDED FOR SPEED ---
+          # This caches the installed packages to make subsequent runs much faster.
+          cache: true
 
       # 4. Runs the R script to generate the new leaderboard data
       - name: Run R script
@@ -48,3 +51,4 @@ jobs:
           commit_message: "📊 Automated Leaderboard Update"
           # The specific file to commit
           file_pattern: leaderboard_data.json
+
