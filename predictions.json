@@ -290,12 +290,14 @@
       "llm": "Claude Opus 4.1"
     }
   ],
-  "results": {
-    "Levante vs Barcelona": {
-      "score": "2-3"
-    },
-    "Atletico Madrid vs Elche": {
-      "score": "1-1"
-    }
+  "results":  {
+    "Levante vs Barcelona": { "score": "2-3" },
+    "Atletico Madrid vs Elche": { "score": "1-1" },
+    "Manchester City vs Tottenham": { "score": "0-2" },
+    "Arsenal vs Leeds United": { "score": "5-0" },
+    "Milan vs Cremonese": { "score": "1-2" },
+    "Bayern Munich vs Leipzig": { "score": "6-0" },
+    "Sassuolo Calcio vs Napoli": { "score": "0-2" },
+    "Bayer Leverkusen vs Hoffenheim": { "score": "1-2" }
   }
 }
