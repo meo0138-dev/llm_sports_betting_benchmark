@@ -290,5 +290,12 @@
       "llm": "Claude Opus 4.1"
     }
   ],
-  "results": {}
+  "results": {
+    "Levante vs Barcelona": {
+      "score": "2-3"
+    },
+    "Atletico Madrid vs Elche": {
+      "score": "1-1"
+    }
+  }
 }
