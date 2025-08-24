@@ -4,86 +4,20 @@
   <meta charset="UTF-8" />
   <title>🎯 LLM Sports Betting Benchmark</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      padding: 20px;
-      background: #f4f4f4;
-      margin: 0;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-    .info {
-      text-align: center;
-      font-size: 1.1em;
-      color: #555;
-      margin-bottom: 30px;
-    }
-    .leaderboard {
-      margin-top: 30px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-      background: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background: #3498db;
-      color: white;
-      font-weight: 600;
-    }
-    .prediction {
-      background: #ecf0f1;
-      padding: 12px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border-left: 4px solid #3498db;
-      font-size: 1em;
-      line-height: 1.4;
-    }
-    .pending {
-      color: #f39c12;
-      font-weight: bold;
-      font-style: italic;
-      margin-left: 5px;
-    }
-    .win {
-      color: green;
-      font-weight: bold;
-    }
-    .loss {
-      color: red;
-      font-weight: bold;
-    }
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #999;
-    }
-    .stats-table {
-      margin-top: 40px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .stats-table h3 {
-      margin-top: 0;
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 5px;
-    }
+    body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f4f4f4; margin: 0; color: #333; }
+    h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; }
+    .info { text-align: center; font-size: 1.1em; color: #555; margin-bottom: 30px; }
+    .leaderboard { margin-top: 30px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    th, td { border: 1px solid #ccc; padding: 12px; text-align: center; }
+    th { background: #3498db; color: white; font-weight: 600; }
+    .prediction { background: #ecf0f1; padding: 12px; margin-bottom: 10px; border-radius: 6px; border-left: 4px solid #3498db; font-size: 1em; line-height: 1.4; }
+    .pending { color: #f39c12; font-weight: bold; font-style: italic; margin-left: 5px; }
+    .win { color: #27ae60; font-weight: bold; margin-left: 5px;}
+    .loss { color: #c0392b; font-weight: bold; margin-left: 5px;}
+    .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #999; }
+    .stats-table { margin-top: 40px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .stats-table h3 { margin-top: 0; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
   </style>
 </head>
 <body>
@@ -91,56 +25,65 @@
   <h1>🎯 LLM Sports Betting Benchmark</h1>
   <p class="info"><strong>Last updated:</strong> <span id="last-update">Loading...</span></p>
 
-  <!-- Leaderboard (Sorted by Bankroll) -->
   <div class="leaderboard">
     <h2>🏆 Leaderboard (Bankroll)</h2>
     <table id="leaderboard-table">
       <thead>
-        <tr>
-          <th>LLM</th>
-          <th>Bankroll (€)</th>
-          <th>Bankroll CI (95%)</th>
-          <th>ROI (%)</th>
-        </tr>
+        <tr><th>LLM</th><th>Bankroll (€)</th><th>Bankroll CI (95%)</th><th>ROI (%)</th></tr>
       </thead>
-      <tbody>
-      </tbody>
+      <tbody></tbody>
     </table>
   </div>
 
-  <!-- Predictions -->
-  <h2>📋 Ongoing Predictions (Bets Ongoing)</h2>
+  <h2>📋 Predictions Log</h2>
   <div id="predictions-list"></div>
 
-  <!-- Stats Table -->
   <div class="stats-table">
     <h3>📊 Model Performance Summary</h3>
     <table id="stats-table">
       <thead>
-        <tr>
-          <th>LLM</th>
-          <th>Avg Odd</th>
-          <th>Avg Stake (€)</th>
-          <th>Win Rate (%)</th>
-        </tr>
+        <tr><th>LLM</th><th>Avg Odd</th><th>Avg Stake (€)</th><th>Win Rate (%)</th></tr>
       </thead>
-      <tbody>
-      </tbody>
+      <tbody></tbody>
     </table>
   </div>
 
-  <div class="footer">
-    &copy; 2025 LLM Sports Betting Benchmark | Bets are ongoing
-  </div>
+  <div class="footer">&copy; 2025 LLM Sports Betting Benchmark</div>
 
   <script>
-    // Fetch leaderboard data first
+    // --- Helper function to determine bet outcome from detailed results ---
+    function isBetWon(game, results) {
+        const result = results[game.match];
+        if (!result || !result.score) return null; // Bet is pending
+
+        const [homeGoals, awayGoals] = result.score.split('-').map(Number);
+        const totalGoals = homeGoals + awayGoals;
+        const prediction = game.prediction;
+
+        if (prediction === '1') return homeGoals > awayGoals;
+        if (prediction === 'X') return homeGoals === awayGoals;
+        if (prediction === '2') return awayGoals > homeGoals;
+        if (prediction === '1X') return homeGoals >= awayGoals;
+        if (prediction === 'X2') return awayGoals >= homeGoals;
+        if (prediction === '12') return homeGoals !== awayGoals;
+        if (prediction === 'GG') return homeGoals > 0 && awayGoals > 0;
+        if (prediction === 'NG') return homeGoals === 0 || awayGoals === 0;
+        if (prediction.startsWith('Over ')) {
+            const goalLine = parseFloat(prediction.split(' ')[1]);
+            return totalGoals > goalLine;
+        }
+        if (prediction.startsWith('Under ')) {
+            const goalLine = parseFloat(prediction.split(' ')[1]);
+            return totalGoals < goalLine;
+        }
+        return false; // Default for unknown prediction types
+    }
+
+    // --- Fetch Leaderboard Data ---
     fetch('leaderboard_data.json')
       .then(res => res.json())
       .then(leaderboardData => {
         const leaderboardBody = document.querySelector('#leaderboard-table tbody');
-        
-        // Sort by bankroll (descending)
         leaderboardData.sort((a, b) => b.bankroll - a.bankroll);
         
         leaderboardData.forEach(item => {
@@ -160,44 +103,31 @@
         cell.innerHTML = '<p style="color:red; font-weight:bold;">❌ Failed to load leaderboard. Run the R script.</p>';
       });
 
-    // Fetch predictions data for stats and predictions list
+    // --- Fetch Predictions Data for Stats and Logs ---
     fetch('predictions.json')
       .then(res => res.json())
       .then(data => {
         document.getElementById('last-update').textContent = data.date;
-
         const predictionsList = document.getElementById('predictions-list');
         const statsBody = document.querySelector('#stats-table tbody');
-
-        // Calculate stats: Avg Odd, Avg Stake, Win Rate
         const stats = {};
 
         data.games.forEach(game => {
           const llm = game.llm;
           if (!stats[llm]) {
-            stats[llm] = {
-              totalOdd: 0,
-              totalCount: 0,
-              totalStake: 0,
-              totalWin: 0,
-              resolvedCount: 0
-            };
+            stats[llm] = { totalOdd: 0, totalCount: 0, totalStake: 0, totalWin: 0, resolvedCount: 0 };
           }
-
           stats[llm].totalOdd += game.odd;
           stats[llm].totalCount++;
           stats[llm].totalStake += game.stake;
           
-          // Check for results to calculate win rate
-          if (data.results && data.results[game.match]) {
+          const winStatus = isBetWon(game, data.results);
+          if (winStatus !== null) {
             stats[llm].resolvedCount++;
-            if (data.results[game.match] === 'W') {
-              stats[llm].totalWin++;
-            }
+            if (winStatus === true) stats[llm].totalWin++;
           }
         });
 
-        // Add to stats table
         Object.keys(stats).forEach(llm => {
           const item = stats[llm];
           const avgOdd = (item.totalOdd / item.totalCount).toFixed(2);
@@ -211,22 +141,20 @@
           row.insertCell(3).textContent = `${winRate}%`;
         });
 
-        // Display predictions
         data.games.forEach(game => {
           const div = document.createElement('div');
           div.className = 'prediction';
-          div.innerHTML = `
-            <strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd} 
-            <span class="pending">⏳ Bet Ongoing</span>
-          `;
+          const winStatus = isBetWon(game, data.results);
+          let statusSpan;
+          if (winStatus === null) statusSpan = `<span class="pending">⏳ Bet Ongoing</span>`;
+          else if (winStatus === true) statusSpan = `<span class="win">✅ Won</span>`;
+          else statusSpan = `<span class="loss">❌ Lost</span>`;
+          
+          div.innerHTML = `<strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd} ${statusSpan}`;
           predictionsList.appendChild(div);
         });
       })
-      .catch(err => {
-        console.error("Error loading predictions:", err);
-        document.getElementById('predictions-list').innerHTML = 
-          '<p style="color:red; font-weight:bold;">❌ Failed to load predictions.</p>';
-      });
+      .catch(err => console.error("Error loading predictions:", err));
   </script>
 
 </body>
