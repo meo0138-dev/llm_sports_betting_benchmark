@@ -1,0 +1,50 @@
+# Name of the workflow
+name: Update Leaderboard Data
+
+# This workflow runs automatically on a push to the main branch,
+# but ONLY if the predictions.json file was changed.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'predictions.json'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This job is named "run-r-script"
+  run-r-script:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # 1. Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Sets up the R environment
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3' # You can specify an R version
+
+      # 3. Sets up dependencies, including installing the jsonlite package
+      - name: Install dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            jsonlite
+
+      # 4. Runs the R script to generate the new leaderboard data
+      - name: Run R script
+        run: Rscript calculate_bootstrap.R
+
+      # 5. Commits the newly generated leaderboard_data.json file back to the repository
+      - name: Commit and push updated leaderboard
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          # The commit message for the update
+          commit_message: "📊 Automated Leaderboard Update"
+          # The specific file to commit
+          file_pattern: leaderboard_data.json
