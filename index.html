@@ -95,11 +95,16 @@
   <div class="leaderboard">
     <h2>🏆 Leaderboard (Bankroll)</h2>
     <table id="leaderboard-table">
-      <tr>
-        <th>LLM</th>
-        <th>Bankroll (€)</th>
-        <th>ROI (%)</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>LLM</th>
+          <th>Bankroll (€)</th>
+          <th>Bankroll CI (95%)</th>
+          <th>ROI (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
     </table>
   </div>
 
@@ -111,57 +116,58 @@
   <div class="stats-table">
     <h3>📊 Model Performance Summary</h3>
     <table id="stats-table">
-      <tr>
-        <th>LLM</th>
-        <th>Avg Odd</th>
-        <th>Avg Stake (€)</th>
-        <th>Win Rate (%)</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>LLM</th>
+          <th>Avg Odd</th>
+          <th>Avg Stake (€)</th>
+          <th>Win Rate (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
     </table>
   </div>
 
   <div class="footer">
-    &copy; 2025 LLM Sports Betting Benchmark | Bets are ongoing • ROI = 0% until results are known
+    &copy; 2025 LLM Sports Betting Benchmark | Bets are ongoing
   </div>
 
   <script>
+    // Fetch leaderboard data first
+    fetch('leaderboard_data.json')
+      .then(res => res.json())
+      .then(leaderboardData => {
+        const leaderboardBody = document.querySelector('#leaderboard-table tbody');
+        
+        // Sort by bankroll (descending)
+        leaderboardData.sort((a, b) => b.bankroll - a.bankroll);
+        
+        leaderboardData.forEach(item => {
+          const row = leaderboardBody.insertRow();
+          row.insertCell(0).textContent = item.llm;
+          row.insertCell(1).textContent = `${item.bankroll.toFixed(2)}€`;
+          row.insertCell(2).textContent = item.bankroll_ci;
+          row.insertCell(3).textContent = `${item.roi.toFixed(2)}%`;
+        });
+      })
+      .catch(err => {
+        console.error("Error loading leaderboard data:", err);
+        const leaderboardBody = document.querySelector('#leaderboard-table tbody');
+        const row = leaderboardBody.insertRow();
+        const cell = row.insertCell(0);
+        cell.colSpan = 4;
+        cell.innerHTML = '<p style="color:red; font-weight:bold;">❌ Failed to load leaderboard. Run the R script.</p>';
+      });
+
+    // Fetch predictions data for stats and predictions list
     fetch('predictions.json')
       .then(res => res.json())
       .then(data => {
         document.getElementById('last-update').textContent = data.date;
 
         const predictionsList = document.getElementById('predictions-list');
-        const leaderboardTable = document.getElementById('leaderboard-table');
-        const statsTable = document.getElementById('stats-table');
-
-        // Reset tables
-        while (leaderboardTable.rows.length > 1) leaderboardTable.deleteRow(1);
-        while (statsTable.rows.length > 1) statsTable.deleteRow(1);
-
-        const roi = {};
-        const bankroll = {};
-
-        // Initialize bankroll for all models
-        data.games.forEach(game => {
-          const llm = game.llm;
-          if (!bankroll[llm]) bankroll[llm] = 1000; // Start with €1000
-          if (!roi[llm]) roi[llm] = { totalStake: 0, totalReturn: 0 };
-          
-          roi[llm].totalStake += game.stake;
-        });
-
-        // Add to leaderboard: Bankroll = 1000, ROI = 0%
-        Object.keys(bankroll).forEach(llm => {
-          const row = leaderboardTable.insertRow();
-          row.insertCell(0).textContent = llm;
-          row.insertCell(1).textContent = `${bankroll[llm]}€`;
-          row.insertCell(2).textContent = `0%`;
-        });
-
-        // Sort leaderboard by bankroll (descending)
-        const rows = Array.from(leaderboardTable.rows).slice(1); // Skip header
-        rows.sort((a, b) => parseInt(b.cells[1].textContent) - parseInt(a.cells[1].textContent));
-        rows.forEach(row => leaderboardTable.appendChild(row));
+        const statsBody = document.querySelector('#stats-table tbody');
 
         // Calculate stats: Avg Odd, Avg Stake, Win Rate
         const stats = {};
@@ -173,13 +179,22 @@
               totalOdd: 0,
               totalCount: 0,
               totalStake: 0,
-              totalWin: 0
+              totalWin: 0,
+              resolvedCount: 0
             };
           }
 
           stats[llm].totalOdd += game.odd;
           stats[llm].totalCount++;
           stats[llm].totalStake += game.stake;
+          
+          // Check for results to calculate win rate
+          if (data.results && data.results[game.match]) {
+            stats[llm].resolvedCount++;
+            if (data.results[game.match] === 'W') {
+              stats[llm].totalWin++;
+            }
+          }
         });
 
         // Add to stats table
@@ -187,9 +202,9 @@
           const item = stats[llm];
           const avgOdd = (item.totalOdd / item.totalCount).toFixed(2);
           const avgStake = (item.totalStake / item.totalCount).toFixed(2);
-          const winRate = 0; // No results yet → win rate = 0%
+          const winRate = item.resolvedCount > 0 ? ((item.totalWin / item.resolvedCount) * 100).toFixed(2) : 0;
 
-          const row = statsTable.insertRow();
+          const row = statsBody.insertRow();
           row.insertCell(0).textContent = llm;
           row.insertCell(1).textContent = avgOdd;
           row.insertCell(2).textContent = avgStake;
@@ -210,7 +225,7 @@
       .catch(err => {
         console.error("Error loading predictions:", err);
         document.getElementById('predictions-list').innerHTML = 
-          '<p style="color:red; font-weight:bold;">❌ Failed to load predictions. Check GitHub.</p>';
+          '<p style="color:red; font-weight:bold;">❌ Failed to load predictions.</p>';
       });
   </script>
 
