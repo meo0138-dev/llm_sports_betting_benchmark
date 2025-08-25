@@ -304,17 +304,92 @@
     "Atalanta vs Pisa" :{ "score":"1-1"},
     "Real Oviedo vs Real Madrid":{"score": "0-3"},
     "Sassuolo Calcio vs Napoli": { "score": "0-2" },
-    "Bayer Leverkusen vs Hoffenheim": { "score": "1-2" }
+    "Bayer Leverkusen vs Hoffenheim": { "score": "1-2" },
+    "Inter vs Torino" :{"score":"5-0"}
   }
     },
     {
       "round": 2,
       "date": "2025-08-23",
-      "games": [
-        { "match": " vs ", "prediction": "", "stake": 0, "odd": 1, "llm": "Grok 4" }
+      "games": [{
+    "match": "Benfica vs Fenerbahce",
+    "prediction": "1",
+    "stake": 45,
+    "odd": 1.60,
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "KRC Genk vs Lech Poznan",
+    "prediction": "1",
+    "stake": 50,
+    "odd": 1.31,
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Young Boys vs Slovan Bratislava",
+    "prediction": "1",
+    "stake": 30,
+    "odd": 1.60,
+    "llm": "Gemini 2.5 Pro"
+  },{
+    "match": "Young Boys vs Slovan Bratislava",
+    "prediction": "1",
+    "stake": 30,
+    "odd": 1.60,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Utrecht vs Zrinjski Mostar",
+    "prediction": "Over 2.5",
+    "stake": 25,
+    "odd": 1.71,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Benfica vs Fenerbahce",
+    "prediction": "Under 2.5",
+    "stake": 25,
+    "odd": 1.97,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Club Brugge vs Rangers",
+    "prediction": "1X",
+    "stake": 30,
+    "odd": 1.15,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "KRC Genk vs Lech Poznan",
+    "prediction": "Over 2.5",
+    "stake": 20,
+    "odd": 1.43,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Celta Vigo vs Real Betis",
+    "prediction": "Goal",
+    "stake": 20,
+    "odd": 1.71,
+    "llm": "Claude Opus 4.1"
+  },   {
+    "match": "AEK Larnaca vs Brann",
+    "prediction": "1X",
+    "stake": 60,
+    "odd": 1.28,
+    "llm": "GPT5"
+  },
+  {
+    "match": "Kuopion Palloseura vs Midtjylland",
+    "prediction": "2",
+    "stake": 40,
+    "odd": 1.75,
+    "llm": "GPT5"
+  }
+       
       ],
       "results": {
-        "A vs E": { "score": "" }
+        
       }
     }
   ]
