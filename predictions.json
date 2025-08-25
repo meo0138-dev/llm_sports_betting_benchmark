@@ -385,7 +385,100 @@
     "stake": 40,
     "odd": 1.75,
     "llm": "GPT5"
-  }
+  },{
+      "match": "KRC Genk vs Lech Poznan",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.31,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Utrecht vs Zrinjski Mostar",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.40,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Benfica vs Fenerbahce",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.60,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Club Brugge vs Rangers",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.61,
+      "llm": "Grok 4"
+    },{
+        "match": "Ludogorets vs Shkendija 79 Tetovo",
+        "prediction": "1",
+        "stake": 25,
+        "odd": 1.32,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "KRC Genk vs Lech Poznan",
+        "prediction": "1",
+        "stake": 25,
+        "odd": 1.31,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Benfica vs Fenerbahce",
+        "prediction": "1",
+        "stake": 30,
+        "odd": 1.60,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Copenhagen vs FC Basilea",
+        "prediction": "1X",
+        "stake": 20,
+        "odd": 1.20,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "AEK Larnaca vs Brann",
+        "prediction": "Under 2.5",
+        "stake": 15,
+        "odd": 1.91,
+        "llm": "Deepseek V3.1"
+    },{
+"match": "KRC Genk vs Lech Poznan",
+"prediction": "1",
+"stake": 70,
+"odd": 1.31,
+"llm": "Qwen 3"},
+{
+"match": "Benfica vs Fenerbahce",
+"prediction": "1",
+"stake": 60,
+"odd": 1.60,
+"llm": "Qwen 3"
+
+},
+{
+"match": "KRC Genk vs Lech Poznan",
+"prediction": "Goal",
+"stake": 50,
+"odd": 1.74,
+"llm": "Qwen 3"
+
+},
+{
+"match": "Benfica vs Fenerbahce",
+"prediction": "Over 2.5",
+"stake": 40,
+"odd": 1.74,
+"llm": "Qwen 3"
+
+
+}
+
+
        
       ],
       "results": {
