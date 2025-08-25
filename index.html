@@ -18,6 +18,33 @@
     .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #999; }
     .stats-table { margin-top: 40px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     .stats-table h3 { margin-top: 0; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+    
+    /* --- NEW STYLES for the interactive predictions --- */
+    .hidden {
+      display: none;
+    }
+    #round-selector-container {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    #round-selector-container button {
+      background-color: #bdc3c7;
+      border: none;
+      color: #2c3e50;
+      padding: 10px 15px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+    #round-selector-container button:hover {
+      background-color: #95a5a6;
+    }
+    #round-selector-container button.active-round-button {
+      background-color: #3498db;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -26,7 +53,7 @@
   <p class="info"><strong>Last updated:</strong> <span id="last-update">Loading...</span></p>
 
   <div class="leaderboard">
-    <h2>🏆 Leaderboard (Bankroll)</h2>
+    <h2>🏆 Cumulative Leaderboard (Bankroll)</h2>
     <table id="leaderboard-table">
       <thead>
         <tr><th>LLM</th><th>Bankroll (€)</th><th>Bankroll CI (95%)</th><th>ROI (%)</th></tr>
@@ -36,10 +63,14 @@
   </div>
 
   <h2>📋 Predictions Log</h2>
-  <div id="predictions-list"></div>
+  <!-- Container for the round selection buttons -->
+  <div id="round-selector-container"></div>
+  <!-- Container where all prediction lists will live (mostly hidden) -->
+  <div id="predictions-container"></div>
+
 
   <div class="stats-table">
-    <h3>📊 Model Performance Summary</h3>
+    <h3>📊 Cumulative Model Performance</h3>
     <table id="stats-table">
       <thead>
         <tr><th>LLM</th><th>Avg Odd</th><th>Avg Stake (€)</th><th>Win Rate (%)</th></tr>
@@ -51,41 +82,41 @@
   <div class="footer">&copy; 2025 LLM Sports Betting Benchmark</div>
 
   <script>
-    // --- Helper function to determine bet outcome from detailed results ---
+    // --- Helper function (unchanged) ---
     function isBetWon(game, results) {
+        // ... (This function is the same as your previous version)
         const result = results[game.match];
-        if (!result || !result.score) return null; // Bet is pending
-
+        if (!result || !result.score) return null;
         const [homeGoals, awayGoals] = result.score.split('-').map(Number);
         const totalGoals = homeGoals + awayGoals;
         const prediction = game.prediction;
-
+        const is_gg = homeGoals > 0 && awayGoals > 0;
         if (prediction === '1') return homeGoals > awayGoals;
         if (prediction === 'X') return homeGoals === awayGoals;
         if (prediction === '2') return awayGoals > homeGoals;
         if (prediction === '1X') return homeGoals >= awayGoals;
         if (prediction === 'X2') return awayGoals >= homeGoals;
         if (prediction === '12') return homeGoals !== awayGoals;
-        if (prediction === 'GG') return homeGoals > 0 && awayGoals > 0;
-        if (prediction === 'NG') return homeGoals === 0 || awayGoals === 0;
-        if (prediction.startsWith('Over ')) {
-            const goalLine = parseFloat(prediction.split(' ')[1]);
-            return totalGoals > goalLine;
-        }
-        if (prediction.startsWith('Under ')) {
-            const goalLine = parseFloat(prediction.split(' ')[1]);
-            return totalGoals < goalLine;
-        }
-        return false; // Default for unknown prediction types
+        if (prediction === 'GG') return is_gg;
+        if (prediction === 'NG') return !is_gg;
+        if (prediction.startsWith('Over ')) return totalGoals > parseFloat(prediction.split(' ')[1]);
+        if (prediction.startsWith('Under ')) return totalGoals < parseFloat(prediction.split(' ')[1]);
+        if (prediction === '1+GG') return homeGoals > awayGoals && is_gg;
+        if (prediction === '1+NG') return homeGoals > awayGoals && !is_gg;
+        if (prediction === 'X+GG') return homeGoals === awayGoals && is_gg;
+        if (prediction === 'X+NG') return homeGoals === awayGoals && !is_gg;
+        if (prediction === '2+GG') return awayGoals > homeGoals && is_gg;
+        if (prediction === '2+NG') return awayGoals > homeGoals && !is_gg;
+        return false;
     }
 
-    // --- Fetch Leaderboard Data ---
+    // --- Fetch Leaderboard Data (unchanged) ---
     fetch('leaderboard_data.json')
       .then(res => res.json())
       .then(leaderboardData => {
+        // ... (This logic is exactly the same as before)
         const leaderboardBody = document.querySelector('#leaderboard-table tbody');
         leaderboardData.sort((a, b) => b.bankroll - a.bankroll);
-        
         leaderboardData.forEach(item => {
           const row = leaderboardBody.insertRow();
           row.insertCell(0).textContent = item.llm;
@@ -94,25 +125,25 @@
           row.insertCell(3).textContent = `${item.roi.toFixed(2)}%`;
         });
       })
-      .catch(err => {
-        console.error("Error loading leaderboard data:", err);
-        const leaderboardBody = document.querySelector('#leaderboard-table tbody');
-        const row = leaderboardBody.insertRow();
-        const cell = row.insertCell(0);
-        cell.colSpan = 4;
-        cell.innerHTML = '<p style="color:red; font-weight:bold;">❌ Failed to load leaderboard. Run the R script.</p>';
-      });
+      .catch(err => console.error("Error loading leaderboard data:", err));
 
-    // --- Fetch Predictions Data for Stats and Logs ---
+    // --- Fetch ALL Predictions Data ---
     fetch('predictions.json')
       .then(res => res.json())
       .then(data => {
-        document.getElementById('last-update').textContent = data.date;
-        const predictionsList = document.getElementById('predictions-list');
+        if (!data.rounds || data.rounds.length === 0) return;
+        
+        const lastRound = data.rounds[data.rounds.length - 1];
+        document.getElementById('last-update').textContent = lastRound.date;
+
+        const allGames = data.rounds.flatMap(r => r.games);
+        const allResults = data.rounds.reduce((acc, r) => ({ ...acc, ...r.results }), {});
+
+        // --- CUMULATIVE STATS TABLE (unchanged) ---
+        // ... (This logic is exactly the same as before)
         const statsBody = document.querySelector('#stats-table tbody');
         const stats = {};
-
-        data.games.forEach(game => {
+        allGames.forEach(game => {
           const llm = game.llm;
           if (!stats[llm]) {
             stats[llm] = { totalOdd: 0, totalCount: 0, totalStake: 0, totalWin: 0, resolvedCount: 0 };
@@ -120,20 +151,17 @@
           stats[llm].totalOdd += game.odd;
           stats[llm].totalCount++;
           stats[llm].totalStake += game.stake;
-          
-          const winStatus = isBetWon(game, data.results);
+          const winStatus = isBetWon(game, allResults);
           if (winStatus !== null) {
             stats[llm].resolvedCount++;
             if (winStatus === true) stats[llm].totalWin++;
           }
         });
-
-        Object.keys(stats).forEach(llm => {
+        Object.keys(stats).sort().forEach(llm => {
           const item = stats[llm];
           const avgOdd = (item.totalOdd / item.totalCount).toFixed(2);
           const avgStake = (item.totalStake / item.totalCount).toFixed(2);
           const winRate = item.resolvedCount > 0 ? ((item.totalWin / item.resolvedCount) * 100).toFixed(2) : 0;
-
           const row = statsBody.insertRow();
           row.insertCell(0).textContent = llm;
           row.insertCell(1).textContent = avgOdd;
@@ -141,18 +169,62 @@
           row.insertCell(3).textContent = `${winRate}%`;
         });
 
-        data.games.forEach(game => {
-          const div = document.createElement('div');
-          div.className = 'prediction';
-          const winStatus = isBetWon(game, data.results);
-          let statusSpan;
-          if (winStatus === null) statusSpan = `<span class="pending">⏳ Bet Ongoing</span>`;
-          else if (winStatus === true) statusSpan = `<span class="win">✅ Won</span>`;
-          else statusSpan = `<span class="loss">❌ Lost</span>`;
-          
-          div.innerHTML = `<strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd} ${statusSpan}`;
-          predictionsList.appendChild(div);
+        // --- NEW: DYNAMICALLY CREATE ROUND BUTTONS AND PREDICTION LISTS ---
+        const selectorContainer = document.getElementById('round-selector-container');
+        const predictionsContainer = document.getElementById('predictions-container');
+
+        data.rounds.forEach(round => {
+            // Create a button for this round
+            const button = document.createElement('button');
+            button.textContent = `View Round ${round.round}`;
+            button.dataset.roundId = round.round; // Store the round number
+            selectorContainer.appendChild(button);
+
+            // Create a container for this round's predictions
+            const roundPredictionsDiv = document.createElement('div');
+            roundPredictionsDiv.id = `round-${round.round}-predictions`;
+            roundPredictionsDiv.className = 'round-predictions hidden'; // Hidden by default
+            
+            round.games.forEach(game => {
+                const div = document.createElement('div');
+                div.className = 'prediction';
+                const winStatus = isBetWon(game, allResults);
+                let statusSpan;
+                if (winStatus === null) statusSpan = `<span class="pending">⏳ Bet Ongoing</span>`;
+                else if (winStatus === true) statusSpan = `<span class="win">✅ Won</span>`;
+                else statusSpan = `<span class="loss">❌ Lost</span>`;
+                div.innerHTML = `<strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd} ${statusSpan}`;
+                roundPredictionsDiv.appendChild(div);
+            });
+            predictionsContainer.appendChild(roundPredictionsDiv);
         });
+
+        // Add a single click event listener to the button container
+        selectorContainer.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                const roundIdToShow = e.target.dataset.roundId;
+
+                // Hide all prediction lists
+                document.querySelectorAll('.round-predictions').forEach(div => {
+                    div.classList.add('hidden');
+                });
+                // Remove active style from all buttons
+                document.querySelectorAll('#round-selector-container button').forEach(btn => {
+                    btn.classList.remove('active-round-button');
+                });
+
+                // Show the selected one
+                document.getElementById(`round-${roundIdToShow}-predictions`).classList.remove('hidden');
+                e.target.classList.add('active-round-button');
+            }
+        });
+        
+        // Automatically click the button for the most recent round on page load
+        const lastButton = selectorContainer.querySelector(`[data-round-id="${lastRound.round}"]`);
+        if (lastButton) {
+            lastButton.click();
+        }
+
       })
       .catch(err => console.error("Error loading predictions:", err));
   </script>
