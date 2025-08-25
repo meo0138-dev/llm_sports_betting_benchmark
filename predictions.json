@@ -1,5 +1,7 @@
 {
-  "round": 1,
+  "rounds": [
+    {
+      "round": 1,
   "date": "2025-08-25",
   "games": [
     {
@@ -304,4 +306,16 @@
     "Sassuolo Calcio vs Napoli": { "score": "0-2" },
     "Bayer Leverkusen vs Hoffenheim": { "score": "1-2" }
   }
+    },
+    {
+      "round": 2,
+      "date": "2025-08-23",
+      "games": [
+        { "match": " vs ", "prediction": "", "stake": 0, "odd": 1, "llm": "Grok 4" }
+      ],
+      "results": {
+        "A vs E": { "score": "" }
+      }
+    }
+  ]
 }
