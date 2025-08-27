@@ -1,54 +1,59 @@
-# Name of the workflow
-name: Update Leaderboard Data
+name: Update Data and Deploy
 
-# This workflow runs automatically on a push to the main branch,
-# but ONLY if the predictions.json file was changed.
 on:
   push:
     branches:
-      - main
-    paths:
-      - 'predictions.json'
+      - main  # Or 'master'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This job is named "run-r-script"
-  run-r-script:
-    # The type of runner that the job will run on
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # 1. Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # 2. Sets up the R environment
+      # --- START OF NEW STEP ---
+      # This step installs the R language and any needed packages
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.3' # You can specify an R version
 
-      # 3. Sets up dependencies, including installing the jsonlite package
-      - name: Install dependencies
+      - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          packages:
-            jsonlite
-          # --- ADDED FOR SPEED ---
-          # This caches the installed packages to make subsequent runs much faster.
-          cache: true
+          packages: |
+            any::jsonlite
+            any::purrr
+      # --- END OF NEW STEP ---
 
-      # 4. Runs the R script to generate the new leaderboard data
-      - name: Run R script
+      # This is your existing step to run the R script
+      - name: Run R script to calculate leaderboard
         run: Rscript calculate_bootstrap.R
 
-      # 5. Commits the newly generated leaderboard_data.json file back to the repository
-      - name: Commit and push updated leaderboard
-        uses: stefanzweifel/git-auto-commit-action@v5
+      # This is your existing step to update the date
+      - name: Update date in index.html with last data update
+        run: |
+          COMMIT_DATE=$(git log -1 --format=%as -- predictions.json)
+          sed -i "s|LAST_UPDATED_PLACEHOLDER|$COMMIT_DATE|g" index.html
+        
+      # This is your existing step to deploy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # The commit message for the update
-          commit_message: "📊 Automated Leaderboard Update"
-          # The specific file to commit
-          file_pattern: leaderboard_data.json
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./```
 
+### Explanation of the New Steps
+
+1.  **`r-lib/actions/setup-r@v2`**: This is a standard action that ensures a specific version of R is installed on the virtual machine. It's good practice to include it.
+2.  **`r-lib/actions/setup-r-dependencies@v2`**: This is the magic part.
+    *   `with: packages:`: We are explicitly telling it which packages to install.
+    *   `any::jsonlite`: The `any::` prefix means "install `jsonlite` from any available source (like CRAN)".
+    *   `any::purrr`: This does the same for the `purrr` package that was causing the error.
+
+### What To Do Now
+
+1.  Replace the content of your workflow YAML file with the corrected code above.
+2.  Commit and push this change to your `main` branch on GitHub.
+3.  Go to the "Actions" tab on your GitHub repository and watch the workflow run.
+
+You will see a new step called "Install R dependencies" in the log. It will take a few moments to install `jsonlite` and `purrr`, and then the subsequent step, "Run R script...", will execute successfully because the libraries it needs now exist.
