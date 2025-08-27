@@ -12,48 +12,31 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # --- START OF NEW STEP ---
-      # This step installs the R language and any needed packages
+      # This step installs the R language
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
+      # This step installs the required R packages (jsonlite and purrr)
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
             any::jsonlite
             any::purrr
-      # --- END OF NEW STEP ---
 
-      # This is your existing step to run the R script
+      # This step runs your R script to generate the leaderboard data
       - name: Run R script to calculate leaderboard
         run: Rscript calculate_bootstrap.R
 
-      # This is your existing step to update the date
+      # This step updates the date placeholder in your HTML file
       - name: Update date in index.html with last data update
         run: |
           COMMIT_DATE=$(git log -1 --format=%as -- predictions.json)
           sed -i "s|LAST_UPDATED_PLACEHOLDER|$COMMIT_DATE|g" index.html
         
-      # This is your existing step to deploy
+      # This step deploys the updated files to your GitHub Pages site
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./```
-
-### Explanation of the New Steps
-
-1.  **`r-lib/actions/setup-r@v2`**: This is a standard action that ensures a specific version of R is installed on the virtual machine. It's good practice to include it.
-2.  **`r-lib/actions/setup-r-dependencies@v2`**: This is the magic part.
-    *   `with: packages:`: We are explicitly telling it which packages to install.
-    *   `any::jsonlite`: The `any::` prefix means "install `jsonlite` from any available source (like CRAN)".
-    *   `any::purrr`: This does the same for the `purrr` package that was causing the error.
-
-### What To Do Now
-
-1.  Replace the content of your workflow YAML file with the corrected code above.
-2.  Commit and push this change to your `main` branch on GitHub.
-3.  Go to the "Actions" tab on your GitHub repository and watch the workflow run.
-
-You will see a new step called "Install R dependencies" in the log. It will take a few moments to install `jsonlite` and `purrr`, and then the subsequent step, "Run R script...", will execute successfully because the libraries it needs now exist.
+          publish_dir: ./
