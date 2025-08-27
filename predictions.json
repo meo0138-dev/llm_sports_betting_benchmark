@@ -1,0 +1,534 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+  "date": "2025-08-25",
+  "games": [
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.24,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Levante vs Barcelona",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 1.26,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Real Oviedo vs Real Madrid",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 1.31,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Manchester City vs Tottenham",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.49,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.26,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.35,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Juventus vs Parma Calcio",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.43,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Atalanta vs Pisa",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.40,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Inter vs Torino",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.42,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.24,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Levante vs Barcelona",
+      "prediction": "2",
+      "stake": 10,
+      "odd": 1.26,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Real Oviedo vs Real Madrid",
+      "prediction": "2",
+      "stake": 10,
+      "odd": 1.31,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Manchester City vs Tottenham",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.49,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.26,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.24,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.35,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Juventus vs Parma Calcio",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.43,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Atalanta vs Pisa",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.40,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Inter vs Torino",
+      "prediction": "1",
+      "stake": 10,
+      "odd": 1.42,
+      "llm": "Deepseek V3.1"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "Over 2.5",
+      "stake": 35,
+      "odd": 1.75,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Levante vs Barcelona",
+      "prediction": "Over 2.5",
+      "stake": 40,
+      "odd": 1.36,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "Over 2.5",
+      "stake": 45,
+      "odd": 1.53,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "Over 2.5",
+      "stake": 50,
+      "odd": 1.28,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "Over 2.5",
+      "stake": 40,
+      "odd": 1.62,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Juventus vs Parma Calcio",
+      "prediction": "1",
+      "stake": 60,
+      "odd": 1.43,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Manchester City vs Tottenham",
+      "prediction": "GG",
+      "stake": 40,
+      "odd": 1.57,
+      "llm": "GPT5"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.24,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.26,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "Over 2.5",
+      "stake": 30,
+      "odd": 1.28,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Sassuolo Calcio vs Napoli",
+      "prediction": "2",
+      "stake": 30,
+      "odd": 1.56,
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "1",
+      "stake": 80,
+      "odd": 1.24,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Levante vs Barcelona",
+      "prediction": "2",
+      "stake": 70,
+      "odd": 1.26,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "1",
+      "stake": 60,
+      "odd": 1.24,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.35,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Inter vs Torino",
+      "prediction": "GG",
+      "stake": 40,
+      "odd": 1.88,
+      "llm": "Qwen 3"
+    },
+    {
+      "match": "Bayern Munich vs Leipzig",
+      "prediction": "Over 2.5",
+      "stake": 30,
+      "odd": 1.28,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Arsenal vs Leeds United",
+      "prediction": "Over 2.5",
+      "stake": 25,
+      "odd": 1.53,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Atletico Madrid vs Elche",
+      "prediction": "NG",
+      "stake": 20,
+      "odd": 1.48,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Milan vs Cremonese",
+      "prediction": "Over 2.5",
+      "stake": 25,
+      "odd": 1.62,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Real Sociedad vs Espanyol",
+      "prediction": "1X",
+      "stake": 30,
+      "odd": 1.19,
+      "llm": "Claude Opus 4.1"
+    },
+    {
+      "match": "Bayer Leverkusen vs Hoffenheim",
+      "prediction": "Over 2.5",
+      "stake": 20,
+      "odd": 1.47,
+      "llm": "Claude Opus 4.1"
+    }
+  ],
+  "results":  {
+    "Levante vs Barcelona": { "score": "2-3" },
+    "Atletico Madrid vs Elche": { "score": "1-1" },
+    "Manchester City vs Tottenham": { "score": "0-2" },
+    "Real Sociedad vs Espanyol":{"score": "2-2"},
+    "Arsenal vs Leeds United": { "score": "5-0" },
+    "Milan vs Cremonese": { "score": "1-2" },
+    "Bayern Munich vs Leipzig": { "score": "6-0" },
+    "Juventus vs Parma Calcio":{"score":"2-0"},
+    "Atalanta vs Pisa" :{ "score":"1-1"},
+    "Real Oviedo vs Real Madrid":{"score": "0-3"},
+    "Sassuolo Calcio vs Napoli": { "score": "0-2" },
+    "Bayer Leverkusen vs Hoffenheim": { "score": "1-2" },
+    "Inter vs Torino" :{"score":"5-0"}
+  }
+    },
+    {
+      "round": 2,
+      "date": "2025-08-23",
+      "games": [{
+    "match": "Benfica vs Fenerbahce",
+    "prediction": "1",
+    "stake": 45,
+    "odd": 1.60,
+    "reasoning":"Benfica holds a strong historical advantage in European home fixtures and has won all three of its previous competitive home matches against Fenerbahçe.[1] Following a 0-0 draw in the first leg in Turkey, Benfica is in a prime position to secure their place in the next stage in front of their home crowd at the Estádio da Luz.[2][3] Their flawless start to the domestic season, winning all five games, further solidifies their status as favorites",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "KRC Genk vs Lech Poznan",
+    "prediction": "1",
+    "stake": 50,
+    "odd": 1.31,
+    "reasoning":"Genk comes into this match with a commanding 5-1 lead from the first leg in Poland.[4] Historically, Genk has won all three of their previous encounters with Lech Poznan.[4][5] Given the significant aggregate advantage and their strong home record, another victory for the Belgian side is the most probable outcome.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Young Boys vs Slovan Bratislava",
+    "prediction": "1",
+    "stake": 30,
+    "odd": 1.60,
+    "reasoning":"Young Boys have a dominant head-to-head record against Slovan Bratislava, having won four out of five previous meetings and remaining unbeaten.[7] While Slovan Bratislava has a strong recent home record in European qualifiers[8], Young Boys' overall superior quality and historical dominance in this fixture make them the clear favorites. Their last encounter ended in a 3-2 victory for the Swiss team in 2021.",
+    "llm": "Gemini 2.5 Pro"
+  },{
+    "match": "Young Boys vs Slovan Bratislava",
+    "prediction": "1",
+    "stake": 30,
+    "odd": 1.60,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Utrecht vs Zrinjski Mostar",
+    "prediction": "Over 2.5",
+    "stake": 25,
+    "odd": 1.71,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Benfica vs Fenerbahce",
+    "prediction": "Under 2.5",
+    "stake": 25,
+    "odd": 1.97,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Club Brugge vs Rangers",
+    "prediction": "1X",
+    "stake": 30,
+    "odd": 1.15,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "KRC Genk vs Lech Poznan",
+    "prediction": "Over 2.5",
+    "stake": 20,
+    "odd": 1.43,
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Celta Vigo vs Real Betis",
+    "prediction": "Goal",
+    "stake": 20,
+    "odd": 1.71,
+    "llm": "Claude Opus 4.1"
+  },   {
+    "match": "AEK Larnaca vs Brann",
+    "prediction": "1X",
+    "stake": 60,
+    "odd": 1.28,
+    "llm": "GPT5"
+  },
+  {
+    "match": "Kuopion Palloseura vs Midtjylland",
+    "prediction": "2",
+    "stake": 40,
+    "odd": 1.75,
+    "llm": "GPT5"
+  },{
+      "match": "KRC Genk vs Lech Poznan",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.31,
+      "reasoning":"Betting on home win because the first leg ended in a 0-0 draw, giving Genk a strong advantage playing at home where they have shown solid defensive form recently, while Lech has been struggling in domestic league matches with inconsistent scoring and a crisis in confidence as highlighted in previews. Genk's overall squad depth and European experience make them likely to capitalize on this, justifying the low odds as value for a conservative bet.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Utrecht vs Zrinjski Mostar",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.40,
+      "reasoning":"Choosing home win since Utrecht secured a convincing 2-0 victory in the first leg away, demonstrating superior attacking play and defensive solidity against a Zrinjski side that has failed to score and looked outmatched in recent European outings. At home, Utrecht's form is even stronger, with good crowd support and a history of progressing in such ties, making this a low-risk opportunity despite the modest odds.",
+
+
+
+
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Benfica vs Fenerbahce",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.60,
+      "reasoning": "Opting for home win as Benfica managed a draw in the first leg despite playing with 10 men after a red card, showcasing resilience and tactical discipline under pressure.  Now back at home with a full squad potentially, their attacking options and strong record in European home games against Turkish sides give them the edge, with the odds reflecting fair value for their favored status."
+
+,
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Club Brugge vs Rangers",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.61,
+      "reasoning": "Selecting home win given Club Brugge's dominant 3-1 win in the first leg at Ibrox, where they exploited Rangers' early defensive errors and maintained control throughout. Rangers face an uphill battle needing to overturn a two-goal deficit away, while Brugge's current form and home invincibility in qualifiers make this a solid bet with balanced risk."
+
+,
+      "llm": "Grok 4"
+    },{
+        "match": "Ludogorets vs Shkendija 79 Tetovo",
+        "prediction": "1",
+        "stake": 25,
+        "odd": 1.32,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "KRC Genk vs Lech Poznan",
+        "prediction": "1",
+        "stake": 25,
+        "odd": 1.31,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Benfica vs Fenerbahce",
+        "prediction": "1",
+        "stake": 30,
+        "odd": 1.60,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Copenhagen vs FC Basilea",
+        "prediction": "1X",
+        "stake": 20,
+        "odd": 1.20,
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "AEK Larnaca vs Brann",
+        "prediction": "Under 2.5",
+        "stake": 15,
+        "odd": 1.91,
+        "llm": "Deepseek V3.1"
+    },{
+"match": "KRC Genk vs Lech Poznan",
+"prediction": "1",
+"stake": 70,
+"odd": 1.31,
+"llm": "Qwen 3"},
+{
+"match": "Benfica vs Fenerbahce",
+"prediction": "1",
+"stake": 60,
+"odd": 1.60,
+"llm": "Qwen 3"
+
+},
+{
+"match": "KRC Genk vs Lech Poznan",
+"prediction": "Goal",
+"stake": 50,
+"odd": 1.74,
+"llm": "Qwen 3"
+
+},
+{
+"match": "Benfica vs Fenerbahce",
+"prediction": "Over 2.5",
+"stake": 40,
+"odd": 1.74,
+"llm": "Qwen 3"
+
+
+}
+
+
+       
+      ],
+      "results":{
+  "Benfica vs Fenerbahce": {
+    "score": ""
+  },
+  "KRC Genk vs Lech Poznan": {
+    "score": ""
+  },
+  "Young Boys vs Slovan Bratislava": {
+    "score": ""
+  },
+  "Utrecht vs Zrinjski Mostar": {
+    "score": ""
+  },
+  "Club Brugge vs Rangers": {
+    "score": ""
+  },
+  "Celta Vigo vs Real Betis": {
+    "score": ""
+  },
+  "AEK Larnaca vs Brann": {
+    "score": ""
+  },
+  "Kuopion Palloseura vs Midtjylland": {
+    "score": ""
+  },
+  "Ludogorets vs Shkendija 79 Tetovo": {
+    "score": ""
+  },
+  "Copenhagen vs FC Basilea": {
+    "score": ""
+  }
+}
+
+    }
+  ]
+}
