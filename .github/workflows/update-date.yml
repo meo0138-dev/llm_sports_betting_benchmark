@@ -1,0 +1,32 @@
+name: Update Data Timestamp and Deploy
+
+# This action runs every time you push to your main branch
+on:
+  push:
+    branches:
+      - main  # Or 'master', depending on your default branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checks out your repository's code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Get the last commit date FOR PREDICTIONS.JSON and update the file
+      - name: Update date in index.html with last data update
+        run: |
+          # Get the date of the last commit that touched predictions.json
+          # The '--' is a safety measure to separate flags from file paths
+          COMMIT_DATE=$(git log -1 --format=%as -- predictions.json)
+          
+          # Use sed to find the placeholder and replace it with the commit date
+          sed -i "s|LAST_UPDATED_PLACEHOLDER|$COMMIT_DATE|g" index.html
+        
+      # Step 3: Deploy the modified files to your GitHub Pages site
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # Publish the root directory of your project
