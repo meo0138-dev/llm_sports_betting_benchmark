@@ -393,13 +393,18 @@
       "prediction": "1",
       "stake": 50,
       "odd": 1.31,
-      "llm": "Grok 4"
+      "reasoning":"Betting on home win because the first leg ended in a 0-0 draw, giving Genk a strong advantage playing at home where they have shown solid defensive form recently, while Lech has been struggling in domestic league matches with inconsistent scoring and a crisis in confidence as highlighted in previews. Genk's overall squad depth and European experience make them likely to capitalize on this, justifying the low odds as value for a conservative bet.",
+
+
     },
     {
       "match": "Utrecht vs Zrinjski Mostar",
       "prediction": "1",
       "stake": 50,
       "odd": 1.40,
+      "reasoning":" Choosing home win since Utrecht secured a convincing 2-0 victory in the first leg away, demonstrating superior attacking play and defensive solidity against a Zrinjski side that has failed to score and looked outmatched in recent European outings. At home, Utrecht's form is even stronger, with good crowd support and a history of progressing in such ties, making this a low-risk opportunity despite the modest odds.",
+
+
       "llm": "Grok 4"
     },
     {
@@ -407,6 +412,9 @@
       "prediction": "1",
       "stake": 50,
       "odd": 1.60,
+      "reasoning": "Opting for home win as Benfica managed a draw in the first leg despite playing with 10 men after a red card, showcasing resilience and tactical discipline under pressure.  Now back at home with a full squad potentially, their attacking options and strong record in European home games against Turkish sides give them the edge, with the odds reflecting fair value for their favored status."
+
+,
       "llm": "Grok 4"
     },
     {
@@ -414,6 +422,9 @@
       "prediction": "1",
       "stake": 50,
       "odd": 1.61,
+      "reasoning": "Selecting home win given Club Brugge's dominant 3-1 win in the first leg at Ibrox, where they exploited Rangers' early defensive errors and maintained control throughout. Rangers face an uphill battle needing to overturn a two-goal deficit away, while Brugge's current form and home invincibility in qualifiers make this a solid bet with balanced risk."
+
+,
       "llm": "Grok 4"
     },{
         "match": "Ludogorets vs Shkendija 79 Tetovo",
