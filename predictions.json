@@ -371,7 +371,7 @@
   },
   {
     "match": "Celta Vigo vs Real Betis",
-    "prediction": "Goal",
+    "prediction": "GG",
     "stake": 20,
     "odd": 1.71,
     "llm": "Claude Opus 4.1"
@@ -477,7 +477,7 @@
 },
 {
 "match": "KRC Genk vs Lech Poznan",
-"prediction": "Goal",
+"prediction": "GG",
 "stake": 50,
 "odd": 1.74,
 "llm": "Qwen 3"
@@ -539,6 +539,7 @@
 
 
  
+
 
 
 
