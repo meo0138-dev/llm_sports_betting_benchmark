@@ -310,7 +310,7 @@
     },
     {
       "round": 2,
-      "date": "2025-08-23",
+      "date": "2025-08-28",
       "games": [{
     "match": "Benfica vs Fenerbahce",
     "prediction": "1",
@@ -531,4 +531,5 @@
 
     }
   ]
+
 }
