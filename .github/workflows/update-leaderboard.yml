@@ -28,21 +28,20 @@ jobs:
       - name: Update date in index.html with last data update
         run: |
           COMMIT_DATE=$(git log -1 --format=%as -- predictions.json)
-          # Use a different delimiter for sed in case the placeholder contains special characters
           sed -i "s|LAST_UPDATED_PLACEHOLDER|$COMMIT_DATE|g" index.html
-        
-      # --- START OF THE CRUCIAL NEW STEP ---
-      # This step commits the newly generated leaderboard and updated index.html
+
+      # Commit updated files back to main
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add leaderboard_data.json index.html
-          # Commit only if there are changes
           git diff-index --quiet HEAD || git commit -m "Automated leaderboard and date update"
-      # --- END OF THE CRUCIAL NEW STEP ---
-        
-      # This step now deploys the branch containing the committed changes
+
+      - name: Push changes to main
+        run: git push origin main
+
+      # Deploy site to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
