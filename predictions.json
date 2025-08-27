@@ -316,6 +316,7 @@
     "prediction": "1",
     "stake": 45,
     "odd": 1.60,
+    "reasoning":"Benfica holds a strong historical advantage in European home fixtures and has won all three of its previous competitive home matches against Fenerbahçe.[1] Following a 0-0 draw in the first leg in Turkey, Benfica is in a prime position to secure their place in the next stage in front of their home crowd at the Estádio da Luz.[2][3] Their flawless start to the domestic season, winning all five games, further solidifies their status as favorites",
     "llm": "Gemini 2.5 Pro"
   },
   {
@@ -323,6 +324,7 @@
     "prediction": "1",
     "stake": 50,
     "odd": 1.31,
+    "reasoning":"Genk comes into this match with a commanding 5-1 lead from the first leg in Poland.[4] Historically, Genk has won all three of their previous encounters with Lech Poznan.[4][5] Given the significant aggregate advantage and their strong home record, another victory for the Belgian side is the most probable outcome.",
     "llm": "Gemini 2.5 Pro"
   },
   {
@@ -330,6 +332,7 @@
     "prediction": "1",
     "stake": 30,
     "odd": 1.60,
+    "reasoning":"Young Boys have a dominant head-to-head record against Slovan Bratislava, having won four out of five previous meetings and remaining unbeaten.[7] While Slovan Bratislava has a strong recent home record in European qualifiers[8], Young Boys' overall superior quality and historical dominance in this fixture make them the clear favorites. Their last encounter ended in a 3-2 victory for the Swiss team in 2021.",
     "llm": "Gemini 2.5 Pro"
   },{
     "match": "Young Boys vs Slovan Bratislava",
@@ -481,9 +484,39 @@
 
        
       ],
-      "results": {
-        
-      }
+      "results":{
+  "Benfica vs Fenerbahce": {
+    "score": ""
+  },
+  "KRC Genk vs Lech Poznan": {
+    "score": ""
+  },
+  "Young Boys vs Slovan Bratislava": {
+    "score": ""
+  },
+  "Utrecht vs Zrinjski Mostar": {
+    "score": ""
+  },
+  "Club Brugge vs Rangers": {
+    "score": ""
+  },
+  "Celta Vigo vs Real Betis": {
+    "score": ""
+  },
+  "AEK Larnaca vs Brann": {
+    "score": ""
+  },
+  "Kuopion Palloseura vs Midtjylland": {
+    "score": ""
+  },
+  "Ludogorets vs Shkendija 79 Tetovo": {
+    "score": ""
+  },
+  "Copenhagen vs FC Basilea": {
+    "score": ""
+  }
+}
+
     }
   ]
 }
