@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calm-rugelach-482af8.netlify.app/sitemap.xml
