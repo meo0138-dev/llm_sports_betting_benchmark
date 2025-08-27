@@ -4,36 +4,60 @@
   <meta charset="UTF-8" />
   <title>🎯 LLM Sports Betting Benchmark</title>
   <style>
-    /* ... (Most styles are unchanged) ... */
+    /* ... (Your existing styles are unchanged) ... */
     body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f4f4f4; margin: 0; color: #333; }
     h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; }
     .info { text-align: center; font-size: 1.1em; color: #555; margin-bottom: 30px; }
-    .leaderboard { margin-top: 30px; }
+    .leaderboard, .stats-table { margin-top: 30px; }
     table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     th, td { border: 1px solid #ccc; padding: 12px; text-align: center; }
     th { background: #3498db; color: white; font-weight: 600; }
-    .prediction { background: #ecf0f1; padding: 12px; margin-bottom: 10px; border-radius: 6px; border-left: 4px solid #3498db; font-size: 1em; line-height: 1.4; }
-    .pending { color: #f39c12; font-weight: bold; font-style: italic; margin-left: 5px; }
-    .win { color: #27ae60; font-weight: bold; margin-left: 5px;}
-    .loss { color: #c0392b; font-weight: bold; margin-left: 5px;}
     .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #999; }
-    .stats-table { margin-top: 40px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .stats-table h3 { margin-top: 0; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+    #round-selector-container { text-align: center; margin-bottom: 15px; }
+    #round-selector { padding: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; }
     
-    /* --- UPDATED STYLES for the dropdown selector --- */
-    .hidden {
-      display: none;
+    /* --- Styles for Predictions and Reasoning --- */
+    .prediction {
+      background: #ecf0f1;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
     }
-    #round-selector-container {
-      text-align: center;
-      margin-bottom: 15px;
+    .prediction-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    #round-selector {
+    .prediction-details {
+      font-size: 1em;
+      line-height: 1.4;
+    }
+    .status-badge { margin-left: 8px; font-weight: bold; font-style: italic; }
+    .pending { color: #f39c12; }
+    .win { color: #27ae60; }
+    .loss { color: #c0392b; }
+
+    .reasoning-toggle {
+      font-size: 0.85em;
+      color: #3498db;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+    .reasoning-toggle:hover {
+      text-decoration: underline;
+    }
+    .reasoning-text {
+      display: none; /* Hidden by default */
+      margin-top: 10px;
       padding: 10px;
-      font-size: 1.1em;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      background-color: white;
+      background-color: #ffffff;
+      border-left: 3px solid #95a5a6;
+      font-size: 0.9em;
+      color: #34495e;
+      white-space: pre-wrap;
     }
   </style>
 </head>
@@ -44,32 +68,26 @@
 
   <div class="leaderboard">
     <h2>🏆 Cumulative Leaderboard (Bankroll)</h2>
-    <!-- ... (table is unchanged) ... -->
     <table id="leaderboard-table"><thead><tr><th>LLM</th><th>Bankroll (€)</th><th>Bankroll CI (95%)</th><th>ROI (%)</th></tr></thead><tbody></tbody></table>
   </div>
 
   <h2>📋 Predictions Log</h2>
-  <!-- Container for the NEW round selector dropdown -->
   <div id="round-selector-container">
     <label for="round-selector">Select Round:</label>
     <select id="round-selector"></select>
   </div>
-  <!-- Container where all prediction lists will live (mostly hidden) -->
   <div id="predictions-container"></div>
 
 
   <div class="stats-table">
     <h3>📊 Cumulative Model Performance</h3>
-    <!-- ... (table is unchanged) ... -->
     <table id="stats-table"><thead><tr><th>LLM</th><th>Avg Odd</th><th>Avg Stake (€)</th><th>Win Rate (%)</th></tr></thead><tbody></tbody></table>
   </div>
 
   <div class="footer">&copy; 2025 LLM Sports Betting Benchmark</div>
 
   <script>
-    // --- Helper function (unchanged) ---
     function isBetWon(game, results) {
-        // ... (This function is the same as your previous version)
         const result = results[game.match];
         if (!result || !result.score) return null;
         const [homeGoals, awayGoals] = result.score.split('-').map(Number);
@@ -97,8 +115,8 @@
 
     // --- Fetch Leaderboard Data (unchanged) ---
     fetch('leaderboard_data.json')
-      // ... (This logic is exactly the same as before)
-      .then(res => res.json()).then(leaderboardData => {
+      .then(res => res.json())
+      .then(leaderboardData => {
         const leaderboardBody = document.querySelector('#leaderboard-table tbody');
         leaderboardData.sort((a, b) => b.bankroll - a.bankroll);
         leaderboardData.forEach(item => {
@@ -108,7 +126,15 @@
           row.insertCell(2).textContent = item.bankroll_ci;
           row.insertCell(3).textContent = `${item.roi.toFixed(2)}%`;
         });
-      }).catch(err => console.error("Error loading leaderboard data:", err));
+      })
+      .catch(err => {
+        console.error("Error loading leaderboard data:", err);
+        const leaderboardBody = document.querySelector('#leaderboard-table tbody');
+        const row = leaderboardBody.insertRow();
+        const cell = row.insertCell(0);
+        cell.colSpan = 4;
+        cell.innerHTML = '<p style="color:red; font-weight:bold;">❌ Failed to load leaderboard. Run the R script.</p>';
+      });
 
     // --- Fetch ALL Predictions Data ---
     fetch('predictions.json')
@@ -123,7 +149,6 @@
         const allResults = data.rounds.reduce((acc, r) => ({ ...acc, ...r.results }), {});
 
         // --- CUMULATIVE STATS TABLE (unchanged) ---
-        // ... (This logic is exactly the same as before)
         const statsBody = document.querySelector('#stats-table tbody');
         const stats = {};
         allGames.forEach(game => {
@@ -152,50 +177,67 @@
           row.insertCell(3).textContent = `${winRate}%`;
         });
 
-        // --- NEW: DYNAMICALLY CREATE DROPDOWN AND PREDICTION LISTS ---
+        // --- DYNAMICALLY CREATE DROPDOWN AND PREDICTION LISTS ---
         const selector = document.getElementById('round-selector');
         const predictionsContainer = document.getElementById('predictions-container');
 
-        // Populate the dropdown menu from last round to first
         data.rounds.slice().reverse().forEach(round => {
             const option = document.createElement('option');
             option.value = round.round;
             option.textContent = `Round ${round.round}`;
             selector.appendChild(option);
 
-            // Create a container for this round's predictions
             const roundPredictionsDiv = document.createElement('div');
             roundPredictionsDiv.id = `round-${round.round}-predictions`;
-            roundPredictionsDiv.className = 'round-predictions hidden'; // Hidden by default
+            roundPredictionsDiv.className = 'round-predictions';
             
             round.games.forEach(game => {
                 const div = document.createElement('div');
                 div.className = 'prediction';
                 const winStatus = isBetWon(game, allResults);
-                let statusSpan;
-                if (winStatus === null) statusSpan = `<span class="pending">⏳ Bet Ongoing</span>`;
-                else if (winStatus === true) statusSpan = `<span class="win">✅ Won</span>`;
-                else statusSpan = `<span class="loss">❌ Lost</span>`;
-                div.innerHTML = `<strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd} ${statusSpan}`;
+                let statusSpan, statusClass;
+                if (winStatus === null) { statusClass = 'pending'; statusSpan = `⏳ Bet Ongoing`; }
+                else if (winStatus === true) { statusClass = 'win'; statusSpan = `✅ Won`; }
+                else { statusClass = 'loss'; statusSpan = `❌ Lost`; }
+                
+                // --- THIS IS THE UPDATED PART ---
+                div.innerHTML = `
+                  <div class="prediction-main">
+                    <span class="prediction-details">
+                      <strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd}
+                      <span class="status-badge ${statusClass}">${statusSpan}</span>
+                    </span>
+                    ${game.reasoning ? `<a href="#" class="reasoning-toggle">show reasoning</a>` : ''}
+                  </div>
+                  ${game.reasoning ? `<div class="reasoning-text">${game.reasoning}</div>` : ''}
+                `;
                 roundPredictionsDiv.appendChild(div);
             });
             predictionsContainer.appendChild(roundPredictionsDiv);
         });
 
-        // Add a single 'change' event listener to the dropdown
+        // --- NEW: EVENT LISTENER FOR REASONING TOGGLE ---
+        predictionsContainer.addEventListener('click', (e) => {
+            if (e.target.classList.contains('reasoning-toggle')) {
+                e.preventDefault();
+                const mainDiv = e.target.closest('.prediction-main');
+                const reasoningText = mainDiv.nextElementSibling;
+
+                if (reasoningText && reasoningText.classList.contains('reasoning-text')) {
+                    const isHidden = reasoningText.style.display === 'none' || reasoningText.style.display === '';
+                    reasoningText.style.display = isHidden ? 'block' : 'none';
+                    e.target.textContent = isHidden ? 'hide reasoning' : 'show reasoning';
+                }
+            }
+        });
+
         selector.addEventListener('change', () => {
             const roundIdToShow = selector.value;
-
-            // Hide all prediction lists
             document.querySelectorAll('.round-predictions').forEach(div => {
-                div.classList.add('hidden');
+                div.style.display = (div.id === `round-${roundIdToShow}-predictions`) ? 'block' : 'none';
             });
-
-            // Show the selected one
-            document.getElementById(`round-${roundIdToShow}-predictions`).classList.remove('hidden');
         });
         
-        // Automatically trigger the 'change' event to show the most recent round on page load
         selector.dispatchEvent(new Event('change'));
 
       })
