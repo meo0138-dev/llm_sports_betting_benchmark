@@ -19,20 +19,16 @@ for (round_data in data$rounds) {
     for (game in round_data$games) {
       game_df <- as.data.frame(game, stringsAsFactors = FALSE)
       missing_cols <- setdiff(all_possible_cols, names(game_df))
-      if (length(missing_cols) > 0) {
-        game_df[, missing_cols] <- NA
-      }
+      if (length(missing_cols) > 0) { game_df[, missing_cols] <- NA }
       game_df <- game_df[, all_possible_cols]
       all_games <- rbind(all_games, game_df)
     }
   }
-  if (length(round_data$results) > 0) {
-    all_results <- c(all_results, round_data$results)
-  }
+  if (length(round_data$results) > 0) { all_results <- c(all_results, round_data$results) }
 }
 cat("Found", nrow(all_games), "total bets across", length(data$rounds), "rounds.\n")
 
-# --- Helper Function (Unchanged) ---
+# --- Helper Function ---
 determine_profit <- function(bet_row, results_list) {
   match_name <- bet_row$match
   if (!match_name %in% names(results_list)) return(-as.numeric(bet_row$stake))
@@ -65,6 +61,7 @@ determine_profit <- function(bet_row, results_list) {
   if (is_win) return(stake * (odd - 1)) else return(-stake)
 }
 
+# Calculate the profit column for the entire dataset once.
 all_games$profit <- sapply(1:nrow(all_games), function(i) determine_profit(all_games[i,], all_results))
 
 # --- Main Processing ---
@@ -82,23 +79,21 @@ leaderboard_data <- lapply(llms, function(current_llm) {
     lower_bound <- quantile(bootstrapped_bankrolls, (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
     upper_bound <- quantile(bootstrapped_bankrolls, 1 - (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
     
-    # --- START OF ROI FIX ---
-    # Create a logical vector to identify bets that have a result in the master list
+    # --- START OF DEFINITIVE ROI FIX ---
+    # Create a logical vector to identify bets that have a result
     is_resolved <- llm_bets$match %in% names(all_results)
     
     # Create a subset of the data frame containing ONLY the resolved bets
     resolved_bets <- llm_bets[is_resolved, ]
     
-    # Calculate total stake and profit ONLY from this resolved subset
+    # Calculate total stake from this resolved subset
     total_staked_resolved <- sum(resolved_bets$stake)
-    # For profit, we must re-calculate it for the subset to get the correct sum of wins/losses
-    total_profit_resolved <- sum(sapply(1:nrow(resolved_bets), function(i) determine_profit(resolved_bets[i,], all_results)))
-    # --- END OF ROI FIX ---
     
-    # Current bankroll is based on ALL bets (including stakes for pending ones)
+    # Calculate total profit by summing the pre-calculated 'profit' column from the resolved subset
+    total_profit_resolved <- sum(resolved_bets$profit)
+    # --- END OF DEFINITIVE ROI FIX ---
+    
     current_bankroll <- INITIAL_BANKROLL + sum(llm_bets$profit)
-    
-    # ROI is based ONLY on resolved bets
     roi <- ifelse(total_staked_resolved > 0, (total_profit_resolved / total_staked_resolved) * 100, 0)
   }
   
