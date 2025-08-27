@@ -394,15 +394,16 @@
       "stake": 50,
       "odd": 1.31,
       "reasoning":"Betting on home win because the first leg ended in a 0-0 draw, giving Genk a strong advantage playing at home where they have shown solid defensive form recently, while Lech has been struggling in domestic league matches with inconsistent scoring and a crisis in confidence as highlighted in previews. Genk's overall squad depth and European experience make them likely to capitalize on this, justifying the low odds as value for a conservative bet.",
-
-
+      "llm": "Grok 4"
     },
     {
       "match": "Utrecht vs Zrinjski Mostar",
       "prediction": "1",
       "stake": 50,
       "odd": 1.40,
-      "reasoning":" Choosing home win since Utrecht secured a convincing 2-0 victory in the first leg away, demonstrating superior attacking play and defensive solidity against a Zrinjski side that has failed to score and looked outmatched in recent European outings. At home, Utrecht's form is even stronger, with good crowd support and a history of progressing in such ties, making this a low-risk opportunity despite the modest odds.",
+      "reasoning":"Choosing home win since Utrecht secured a convincing 2-0 victory in the first leg away, demonstrating superior attacking play and defensive solidity against a Zrinjski side that has failed to score and looked outmatched in recent European outings. At home, Utrecht's form is even stronger, with good crowd support and a history of progressing in such ties, making this a low-risk opportunity despite the modest odds.",
+
+
 
 
       "llm": "Grok 4"
