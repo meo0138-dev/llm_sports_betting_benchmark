@@ -542,7 +542,7 @@
 },
 {
 "match": "Liverpool vs Arsenal",
-"prediction": "Goal",
+"prediction": "G",
 "stake": 100,
 "odd": 1.61,
 "reasoning": "Liverpool and Arsenal have averaged 3.34 goals per match in their head-to-head history . Despite Arsenal's injuries to attackers, Liverpool's strong offensive capabilities (finishing 1st in the league with 86 goals scored)  and the historical goal frequency suggest the 1.61 odds for 'Goal' market offers value, especially considering the implied probability is only 62.11% while historical data suggests higher likelihood.",
@@ -785,6 +785,7 @@
 
 
  
+
 
 
 
