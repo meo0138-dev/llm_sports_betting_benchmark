@@ -529,6 +529,252 @@
   }
 }
 
+    },{
+      "round": 3,
+      "date": "2025-08-29",
+      "games":[{
+"match": "Liverpool vs Arsenal",
+"prediction": "1",
+"stake": 150,
+"odd": 2.20,
+"reasoning": "Arsenal is missing several key players including Saka, White, Jesus, and Havertz which significantly weakens their squad . Liverpool finished 1st in the previous Premier League season with 84 points while Arsenal finished 2nd with 74 points . Despite Liverpool's historical advantage in their most recent meeting (3-1 win) , the odds of 2.20 imply only a 45.45% probability which undervalues Liverpool's chances given Arsenal's injury crisis.",
+"llm": "Qwen 3"
+},
+{
+"match": "Liverpool vs Arsenal",
+"prediction": "Goal",
+"stake": 100,
+"odd": 1.61,
+"reasoning": "Liverpool and Arsenal have averaged 3.34 goals per match in their head-to-head history . Despite Arsenal's injuries to attackers, Liverpool's strong offensive capabilities (finishing 1st in the league with 86 goals scored)  and the historical goal frequency suggest the 1.61 odds for 'Goal' market offers value, especially considering the implied probability is only 62.11% while historical data suggests higher likelihood.",
+"llm": "Qwen 3"
+},
+{
+"match": "Bayern Munich vs Augsburg",
+"prediction": "1",
+"stake": 120,
+"odd": 1.27,
+"reasoning": "Bayern Munich has dominated this matchup historically with 27 wins against Augsburg's 5, with an average of 3.41 goals per match . They've won 83% of their last 6 encounters  including recent 3-1 and 3-0 victories . While the 1.27 odds reflect Bayern's favoritism, the historical consistency and lack of reported major injuries suggest this represents reasonable value for a conservative portion of the bankroll.",
+"llm": "Qwen 3"
+},
+{
+"match": "PSG vs Toulouse",
+"prediction": "2+G",
+"stake": 80,
+"odd": 2.75,
+"reasoning": "PSG has a strong historical advantage with 44 wins against Toulouse's 17 in 75 total meetings . PSG averages 2.44 goals when playing away , and despite missing Verratti , Toulouse is also without several key players including Schmidt, Francis, and Azizi . The 2.75 odds for 'PSG win + Goal' offers better value than the straight win market, with historical data supporting PSG's scoring ability against Toulouse.",
+"llm": "Qwen 3"
+},{
+      "match": "Napoli vs Cagliari",
+      "prediction": "1+NG",
+      "stake": 50,
+      "odd": 1.83,
+      "reasoning": "Napoli have a strong home record against Cagliari, winning their last three home games without conceding, and current form shows them controlling matches with solid defense while Cagliari lacks scoring threat away.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Real Madrid vs Mallorca",
+      "prediction": "1+NG",
+      "stake": 50,
+      "odd": 1.68,
+      "reasoning": "Real Madrid's dominant home form and defensive improvements make a clean sheet victory likely against a Mallorca side that has struggled to score in recent visits to the Bernabeu.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Inter vs Udinese",
+      "prediction": "1+NG",
+      "stake": 50,
+      "odd": 2.03,
+      "reasoning": "Inter's home defensive solidity and Udinese's poor attacking output in away games suggest Inter will secure a win without conceding, building on their strong start to the season.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Chelsea vs Fulham",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.56,
+      "reasoning": "Chelsea's undefeated streak against Fulham in recent matches, combined with their superior squad depth, positions them for a comfortable home win in this derby.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Manchester United vs Burnley",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.38,
+      "reasoning": "Manchester United's historical dominance over Burnley at Old Trafford, along with Burnley's inconsistent form, makes a home victory highly probable.",
+      "llm": "Grok 4"
+    },{
+        "match": "Inter vs Udinese",
+        "prediction": "1+NG",
+        "stake": 30,
+        "odd": 2.03,
+        "reasoning": "Inter Milan is in excellent form after a 5-0 win in the previous round. Udinese has a weak attack and struggles away, making an Inter win with a clean sheet likely. Inter's defensive strength at home makes 'No Goal' (NG) a valuable bet.",
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Napoli vs Cagliari",
+        "prediction": "1+NG",
+        "stake": 30,
+        "odd": 1.83,
+        "reasoning": "Napoli is strong at home and won their last match 2-0. Cagliari is a weaker team and unlikely to score against Napoli's solid defense. The odds for Napoli win with no goals from Cagliari offer good value.",
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Alaves vs Atletico Madrid",
+        "prediction": "2",
+        "stake": 30,
+        "odd": 1.81,
+        "reasoning": "Atletico Madrid is a top team with superior quality. Alaves is struggling, and Atletico should secure an away win given their strong away record. The odds are favorable for a straightforward away win.",
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Tottenham vs Bournemouth",
+        "prediction": "1",
+        "stake": 30,
+        "odd": 1.70,
+        "reasoning": "Tottenham is confident after beating Manchester City in the previous round. Bournemouth is not strong away, so Tottenham should win at home. The odds provide solid value for a home victory.",
+        "llm": "Deepseek V3.1"
+    },
+    {
+        "match": "Monaco vs Strasbourg",
+        "prediction": "1",
+        "stake": 30,
+        "odd": 1.56,
+        "reasoning": "Monaco is at home and has a good team structure. Strasbourg is average and likely to struggle, making a Monaco win probable. The odds are reasonable for a home win in Ligue 1.",
+        "llm": "Deepseek V3.1"
+    },{
+      "match": "Inter vs Udinese",
+      "prediction": "1+NG",
+      "stake": 50,
+      "odd": 2.03,
+      "reasoning": "Inter Milan boasts an exceptional defensive record, particularly at home, and has maintained clean sheets in many of their recent encounters. [33, 34] Historically, Inter has dominated Udinese at the San Siro, winning their last five meetings there. [7, 39] Given Udinese's difficulties in scoring against top-tier opposition away from home, the odds for an Inter victory without conceding a goal present significant value. [39]",
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+      "match": "Real Madrid vs Mallorca",
+      "prediction": "1+NG",
+      "stake": 40,
+      "odd": 1.68,
+      "reasoning": "Real Madrid has started the season with an impeccable defensive record, keeping clean sheets in their initial matches under Xabi Alonso's new defensive system. [30, 32] They have a commanding head-to-head record against Mallorca at the Santiago Bernabéu, winning the last nine home matches and often preventing the visitors from scoring. [3, 18] Mallorca has a poor away record against top La Liga teams, making a 'win to nil' for Real Madrid a statistically sound prediction. [14]",
+      "llm": "Gemini 2.5 Pro"
+    },
+    {
+        "match": "Lazio vs Verona",
+        "prediction": "1",
+        "stake": 60,
+        "odd": 1.47,
+        "reasoning": "Lazio has a strong historical advantage over Verona in matches played at the Stadio Olimpico, having won 12 of their 21 encounters. [2, 8] Lazio is also unbeaten in their last seven meetings with Verona overall. [4] While Verona has shown a tendency to draw in recent games, Lazio's consistent home performance and historical dominance in this fixture make them the clear favorites for a straight victory.",
+        "llm": "Gemini 2.5 Pro"
+    },{
+    "match": "Cremonese vs Sassuolo",
+    "prediction": "Under 2.5",
+    "stake": 50,
+    "odd": 1.76,
+    "reasoning": "Cremonese are slight favorites in a tight matchup; statistical models and form suggest a low-scoring outcome.",
+    "llm": "GPT5"
+  },
+  {
+    "match": "Lecce vs Milan",
+    "prediction": "Under 2.5",
+    "stake": 40,
+    "odd": 1.72,
+    "reasoning": "Milan are expected to win narrowly; head-to-head trends and expert previews indicate a disciplined, low-goal affair.",
+    "llm": "GPT5"
+  },{
+    "match": "Napoli vs Cagliari",
+    "prediction": "1",
+    "stake": 30,
+    "odd": 1.32,
+    "reasoning": "Napoli are dominant at home and title contenders. Cagliari historically struggle at big venues. With Napoli needing points for the title race, they should win comfortably against a lower-table side.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Chelsea vs Fulham",
+    "prediction": "1",
+    "stake": 25,
+    "odd": 1.56,
+    "reasoning": "Chelsea have strong home form and are pushing for Champions League qualification. Fulham typically struggle at Stamford Bridge. Chelsea's quality should prevail in this London derby.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Lazio vs Verona",
+    "prediction": "1",
+    "stake": 25,
+    "odd": 1.47,
+    "reasoning": "Lazio have been solid at home this season. Verona are struggling near the relegation zone and have poor away form. Lazio should secure three points at the Olimpico.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Real Madrid vs Mallorca",
+    "prediction": "1",
+    "stake": 35,
+    "odd": 1.20,
+    "reasoning": "Real Madrid at the Bernabeu against relegation-threatened Mallorca is a banker bet. Madrid rarely drop points at home to lower-table opposition. Low odds but very high probability.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Manchester United vs Burnley",
+    "prediction": "Over 2.5",
+    "stake": 20,
+    "odd": 1.65,
+    "reasoning": "United tend to play open games at Old Trafford. Burnley will need to attack for points. United's defensive issues combined with their attacking quality suggests goals.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Tottenham vs Bournemouth",
+    "prediction": "1",
+    "stake": 20,
+    "odd": 1.70,
+    "reasoning": "Spurs at home against Bournemouth should be comfortable. Tottenham need wins to maintain European ambitions and have quality advantage across the pitch.",
+    "llm": "Claude Opus 4.1"
+  }
+
+
+
+      ],
+      "results":{
+  "Liverpool vs Arsenal": {
+    "score": ""
+  },
+  "Bayern Munich vs Augsburg": {
+    "score": ""
+  },
+  "PSG vs Toulouse": {
+    "score": ""
+  },
+  "Napoli vs Cagliari": {
+    "score": ""
+  },
+  "Real Madrid vs Mallorca": {
+    "score": ""
+  },
+  "Inter vs Udinese": {
+    "score": ""
+  },
+  "Chelsea vs Fulham": {
+    "score": ""
+  },
+  "Manchester United vs Burnley": {
+    "score": ""
+  },
+  "Alaves vs Atletico Madrid": {
+    "score": ""
+  },
+  "Tottenham vs Bournemouth": {
+    "score": ""
+  },
+  "Monaco vs Strasbourg": {
+    "score": ""
+  },
+  "Lazio vs Verona": {
+    "score": ""
+  },
+  "Cremonese vs Sassuolo": {
+    "score": ""
+  },
+  "Lecce vs Milan": {
+    "score": ""
+  }
+}
     }
   ]
 
