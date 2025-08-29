@@ -542,7 +542,7 @@
 },
 {
 "match": "Liverpool vs Arsenal",
-"prediction": "G",
+"prediction": "GG",
 "stake": 100,
 "odd": 1.61,
 "reasoning": "Liverpool and Arsenal have averaged 3.34 goals per match in their head-to-head history . Despite Arsenal's injuries to attackers, Liverpool's strong offensive capabilities (finishing 1st in the league with 86 goals scored)  and the historical goal frequency suggest the 1.61 odds for 'Goal' market offers value, especially considering the implied probability is only 62.11% while historical data suggests higher likelihood.",
@@ -558,7 +558,7 @@
 },
 {
 "match": "PSG vs Toulouse",
-"prediction": "2+G",
+"prediction": "2+GG",
 "stake": 80,
 "odd": 2.75,
 "reasoning": "PSG has a strong historical advantage with 44 wins against Toulouse's 17 in 75 total meetings . PSG averages 2.44 goals when playing away , and despite missing Verratti , Toulouse is also without several key players including Schmidt, Francis, and Azizi . The 2.75 odds for 'PSG win + Goal' offers better value than the straight win market, with historical data supporting PSG's scoring ability against Toulouse.",
@@ -785,6 +785,7 @@
 
 
  
+
 
 
 
