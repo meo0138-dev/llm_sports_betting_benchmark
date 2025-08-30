@@ -549,15 +549,15 @@
 "llm": "Qwen 3"
 },
 {
-"match": "Bayern Munich vs Augsburg",
-"prediction": "1",
+"match": "Augsburg vs Bayern Munich",
+"prediction": "2",
 "stake": 120,
 "odd": 1.27,
 "reasoning": "Bayern Munich has dominated this matchup historically with 27 wins against Augsburg's 5, with an average of 3.41 goals per match . They've won 83% of their last 6 encounters  including recent 3-1 and 3-0 victories . While the 1.27 odds reflect Bayern's favoritism, the historical consistency and lack of reported major injuries suggest this represents reasonable value for a conservative portion of the bankroll.",
 "llm": "Qwen 3"
 },
 {
-"match": "PSG vs Toulouse",
+"match": "Toulouse vs PSG",
 "prediction": "2+GG",
 "stake": 80,
 "odd": 2.75,
@@ -735,10 +735,10 @@
   "Liverpool vs Arsenal": {
     "score": ""
   },
-  "Bayern Munich vs Augsburg": {
+  "Augsburg vs Bayern Munich": {
     "score": ""
   },
-  "PSG vs Toulouse": {
+  "Toulouse vs PSG": {
     "score": ""
   },
   "Napoli vs Cagliari": {
@@ -785,6 +785,7 @@
 
 
  
+
 
 
 
