@@ -971,7 +971,7 @@
         },
         {
           "match": "Juventus vs Inter",
-          "prediction": "Uder 2.5",
+          "prediction": "Under 2.5",
           "stake": 25,
           "odd": 1.64,
           "reasoning": "Early season Derby d'Italia typically produces tight, tactical battles. Both teams still finding their rhythm at this stage of the season.",
@@ -1059,7 +1059,7 @@
     "score": "3-0"
   },
   "Newcastle United vs Wolverhampton": {
-    "score": ""
+    "score": "1-0"
   },
   "Roma vs Torino": {
     "score": ""
@@ -1071,16 +1071,16 @@
     "score": ""
   },
   "Newcastle vs Wolverhampton": {
-    "score": ""
+    "score": "1-0"
   },
   "PSG vs Lens": {
     "score": ""
   },
   "Crystal Palace vs Sunderland": {
-    "score": ""
+    "score": "0-0"
   },
   "Bournemouth vs Brighton": {
-    "score": ""
+    "score": "2-1"
   },
   "Juventus vs Inter": {
     "score": ""
@@ -1094,4 +1094,5 @@
 }
     }
   ]
+
 }
