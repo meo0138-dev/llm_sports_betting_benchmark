@@ -971,7 +971,7 @@
         },
         {
           "match": "Juventus vs Inter",
-          "prediction": "Under 2.5",
+          "prediction": "Uder 2.5",
           "stake": 25,
           "odd": 1.64,
           "reasoning": "Early season Derby d'Italia typically produces tight, tactical battles. Both teams still finding their rhythm at this stage of the season.",
@@ -1092,15 +1092,278 @@
     "score": "2-2"
   }
 }
-    }
+    },
+    {
+      "round": 5,
+      "date": "2025-09-15",
+      "games": [
+        {
+          "match": "Real Madrid vs Marseille",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.35,
+          "reasoning": "Real Madrid has an impeccable record at the Santiago Bernabéu in the Champions League, consistently defeating visiting teams. Their recent form is formidable, and they have historically dominated French opponents at home. Marseille, while a strong side, has struggled in away fixtures against top-tier European clubs. Considering Real Madrid's overwhelming home advantage and superior squad depth, a straightforward home win is the most probable outcome.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Benfica vs Qarabag",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.75,
+          "reasoning": "Benfica's defensive strength at the Estádio da Luz is a cornerstone of their European campaigns, where they frequently secure clean sheets against visiting teams. Qarabag has a poor record in away matches in the Champions League group stage, often failing to score against defensively solid opponents. Given Benfica’s disciplined defensive system and Qarabag's offensive struggles on the road, a 'win to nil' for the home side offers compelling value.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Sporting vs Kairat Almaty",
+          "prediction": "1+NG",
+          "stake": 40,
+          "odd": 1.50,
+          "reasoning": "Sporting Lisbon enters this match as the overwhelming favorite, boasting a perfect head-to-head record against Kairat Almaty, having won all four previous encounters without conceding a single goal. Sporting's defense has been particularly strong at home in European competitions, and they have kept clean sheets in their last three home games. Kairat Almaty has lost their last eight away matches in this competition, making a 'win to nil' for Sporting a statistically robust prediction.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Real Madrid vs Marseille",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.35,
+          "reasoning": "Real Madrid at home in Champions League opening match. Marseille historically struggle at the Bernabeu with no wins in their last 4 meetings. Low odds but very high confidence.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "PSG vs Atalanta",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.45,
+          "reasoning": "PSG defending champions starting their title defense at home. Despite Atalanta's attacking prowess, PSG's home record in Champions League is strong. Solid value for a home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Bayern Munich vs Chelsea",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.64,
+          "reasoning": "Bayern at home against Chelsea who have been inconsistent. Bayern's home fortress in Champions League is formidable, offering good value at these odds.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Liverpool vs Atletico Madrid",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.58,
+          "reasoning": "Liverpool as Premier League champions at Anfield. Liverpool (20.4%) are favourites to win this season's Champions League, according to the Opta supercomputer. The reigning Premier League champions were knocked out in the round of 16 by eventual winners PSG last season.<!--citation:1--> Good value for home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Benfica vs Qarabag",
+          "prediction": "1+NG",
+          "stake": 20,
+          "odd": 1.75,
+          "reasoning": "Benfica should dominate at home against Azerbaijani side Qarabag. Win to nil offers better value than just the home win at 1.20.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Sporting vs Kairat Almaty",
+          "prediction": "Over 2.5",
+          "stake": 20,
+          "odd": 1.34,
+          "reasoning": "Kairat, based in Almaty, became the easternmost team to ever qualify for the Champions League proper<!--citation:2-->, but massive quality gap suggests Sporting should score freely. Over 2.5 safer than tiny odds on home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Manchester City vs Napoli",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.67,
+          "reasoning": "Tutti i 4 precedenti tra City e Napoli in UEFA Champions League sono stati giocati nella fase a gironi. I Citizens sono rimasti senza vittoria nella stagione 2011-12 (1 pari, 1 ko) per poi vincere entrambi i confronti nell'edizione 2017-18. Il Napoli non ha mai vinto in trasferta contro un club inglese nelle maggiori competizioni europee (12 gare giocate, 0 vittorie, 3 pareggi, 9 sconfitte).<!--citation:3--> City's home record plus Napoli's poor away form in England makes this good value.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Ajax vs Inter",
+          "prediction": "2",
+          "stake": 15,
+          "odd": 1.87,
+          "reasoning": "Inter should have quality edge over Ajax. Away win offers decent value with Inter's European pedigree.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Olympiacos vs Pafos",
+          "prediction": "1",
+          "stake": 15,
+          "odd": 1.42,
+          "reasoning": "There are also three competition debutants in this season's UEFA Champions League, with Pafos, Bodø/Glimt and Kairat Almaty all reaching the league phase via the qualifying rounds.<!--citation:1--> Olympiacos at home against debutants Pafos should be routine.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Benfica vs Qarabag",
+          "prediction": "1+NG",
+          "stake": 200,
+          "odd": 1.75,
+          "reasoning": "Benfica is an overwhelming favorite with odds of 1.20 for a win, indicating high probability of victory \n. The '1+NG' market at 1.75 odds offers value as Benfica's strong home defense is likely to keep a clean sheet against Qarabag, who are underdogs with limited attacking prowess in European competitions.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Manchester City vs Napoli",
+          "prediction": "1+GG",
+          "stake": 180,
+          "odd": 3.20,
+          "reasoning": "Manchester City has a significant injury crisis with reports suggesting up to 13 players unavailable \n, which could compromise their defense. However, their offensive strength should be sufficient to defeat Napoli. The '1+G' market at 3.20 odds represents excellent value as Napoli, despite injuries to key players like Zambo Anguissa and Buongiorno \n, are likely to score against a potentially weakened City backline, while City should still win at home.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "PSG vs Atalanta",
+          "prediction": "1+NG",
+          "stake": 150,
+          "odd": 2.47,
+          "reasoning": "PSG has won the only direct meeting between these teams and possesses superior individual talent \n. Atalanta has several key players injured including David Neres and Juan Jesus \n, weakening their attack. PSG's defense, bolstered by home advantage, is likely to contain Atalanta's depleted offense. The '1+NG' market at 2.47 odds offers solid value for a PSG win to nil, as PSG has demonstrated the ability to dominate weaker opponents defensively.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Liverpool vs Atletico Madrid",
+          "prediction": "1+NG",
+          "stake": 98,
+          "odd": 2.80,
+          "reasoning": "Liverpool is a strong favorite at 1.58 odds and will benefit from playing at Anfield. Atletico Madrid faces multiple injury concerns, missing key players like Jose Gimenez, Alex Baena, and Thiago Almada \n. While Liverpool might have minor doubts over Mac Allister \n, their overall squad strength and Atletico's defensive absences make a clean sheet victory for Liverpool at 2.80 odds a valuable proposition, reflecting both the likelihood of a Liverpool win and Atletico's potential offensive struggles without key personnel.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Benfica vs Qarabag",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.75,
+          "reasoning": "Benfica have maintained a robust defensive record in recent home games, conceding minimally while dominating possession against lesser opponents, and Qarabag's away form shows difficulty in scoring against stronger sides.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Real Madrid vs Marsiglia",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.42,
+          "reasoning": "Real Madrid's home dominance is evident with consistent clean sheets in high-stakes matches, while Marseille has struggled offensively in European away fixtures against top teams.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Liverpool vs Atletico Madrid",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.58,
+          "reasoning": "Liverpool's attacking prowess at Anfield, coupled with recent high-scoring wins, gives them an edge over Atletico's defensive setup that has shown vulnerabilities this season.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "PSG vs Atalanta",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.45,
+          "reasoning": "PSG's star-studded lineup has been clinical in front of goal at home, whereas Atalanta's transitional play leaves them exposed against fast counter-attacks.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Bayern Monaco vs Chelsea",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.64,
+          "reasoning": "Bayern's midfield control and pressing intensity have overwhelmed opponents lately, and Chelsea's inconsistent away performances suggest a home win is probable.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Manchester City vs Napoli",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.67,
+          "reasoning": "Manchester City's possession-based style and depth in squad rotation provide superiority over Napoli, who have faltered in big away games recently.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Benfica vs Qarabag",
+          "prediction": "1+NG",
+          "stake": 30,
+          "odd": 1.75,
+          "reasoning": "Benfica is extremely strong at home in European competitions and has a solid defense. Qarabag, while decent in their domestic league, tends to struggle away against top-tier opponents. Benfica's defensive record at home makes a win with a clean sheet likely.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Real Madrid vs Marseille",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.35,
+          "reasoning": "Real Madrid is dominant at home in the Champions League. Marseille is inconsistent away against top teams. Madrid's superior squad depth and home advantage should secure a comfortable victory.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "PSG vs Atalanta",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.45,
+          "reasoning": "PSG is formidable at home and has a superior squad. Atalanta's attacking style may leave them vulnerable defensively against PSG's quality. Home advantage and individual brilliance should see PSG through.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Liverpool vs Atletico Madrid",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.58,
+          "reasoning": "Liverpool's strong home record in Europe and high-pressing style can disrupt Atletico's defensive organization. Anfield's atmosphere gives Liverpool a significant edge, making them favorites to win.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Atletico Bilbao vs Arsenal",
+          "prediction": "2",
+          "stake": 70,
+          "odd": 1.88,
+          "reasoning": "Arsenal are marginal favourites and have stronger European pedigree; Bilbao at home are solid but have recently dropped points. Value in backing Arsenal to win.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "PSV Eindhoven vs Union Saint-Gilloise",
+          "prediction": "Over 2.5",
+          "stake": 60,
+          "odd": 1.58,
+          "reasoning": "PSV tend to have high-scoring home games; Union SG also score regularly. Over 2.5 goals has strong probability based on form and past goal-totals.",
+          "llm": "GPT5"
+        }
+      ],
+      "results": {
+  "Real Madrid vs Marseille": {
+    "score": ""
+  },
+  "Benfica vs Qarabag": {
+    "score": ""
+  },
+  "Sporting vs Kairat Almaty": {
+    "score": ""
+  },
+  "PSG vs Atalanta": {
+    "score": ""
+  },
+  "Bayern Munich vs Chelsea": {
+    "score": ""
+  },
+  "Liverpool vs Atletico Madrid": {
+    "score": ""
+  },
+  "Manchester City vs Napoli": {
+    "score": ""
+  },
+  "Ajax vs Inter": {
+    "score": ""
+  },
+  "Olympiacos vs Pafos": {
+    "score": ""
+  },
+  "Real Madrid vs Marsiglia": {
+    "score": ""
+  },
+  "Bayern Monaco vs Chelsea": {
+    "score": ""
+  },
+  "Atletico Bilbao vs Arsenal": {
+    "score": ""
+  },
+  "PSV Eindhoven vs Union Saint-Gilloise": {
+    "score": ""
+  }
+} }
+    
   ]
-
-}
-
-
-
-
-
-
-
-
+} 
+  
