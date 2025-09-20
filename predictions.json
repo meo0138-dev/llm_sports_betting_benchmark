@@ -1362,11 +1362,307 @@
   "PSV Eindhoven vs Union Saint-Gilloise": {
     "score": "1-3"
   }
-} }
-    
+} }, 
+    {
+      "round": 6,
+      "date": "2025-09-20",
+      "games": [
+        {
+          "match": "Real Madrid vs Espanyol",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 1.9,
+          "reasoning": "Real Madrid's dominance at the Santiago Bernabéu is well-established, particularly against Espanyol, whom they have beaten in their last eight consecutive home encounters. In seven of those eight victories, Real Madrid kept a clean sheet. Given Espanyol's historical struggles to score at this venue and Real Madrid's strong defensive home record, a 'win to nil' presents a statistically sound and high-value opportunity.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Napoli vs Pisa",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 1.7,
+          "reasoning": "There is a significant disparity in quality between Napoli, a top-tier Serie A contender, and Pisa, a Serie B side. Napoli's formidable attack and solid defense, especially at the Stadio Diego Armando Maradona, make them overwhelming favorites. Pisa's chances of scoring against such a high-caliber opponent are minimal. This bet is based on the high probability of a straightforward Napoli victory combined with their ability to shut out a weaker team.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Liverpool vs Everton",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.45,
+          "reasoning": "The Merseyside derby at Anfield has been a one-sided affair for over a decade, with Liverpool being unbeaten in the last 23 home meetings against Everton in all competitions. Liverpool's powerful home form, coupled with Everton's consistent struggles at this ground, makes a Liverpool victory the most logical prediction. Despite the unpredictable nature of a derby, Liverpool's historical dominance and superior quality provide a strong basis for this bet.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Napoli vs Pisa",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.7,
+          "reasoning": "Napoli's unbeaten run at home this season, coupled with their defensive solidity allowing few goals, positions them to overpower a Pisa side that has struggled to find the net in away fixtures against top teams.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Inter vs Sassuolo",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.28,
+          "reasoning": "Inter's consistent scoring form and superior head-to-head record in recent years make them likely to secure a victory over Sassuolo, who have shown vulnerabilities in defense during their early season matches.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Liverpool vs Everton",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.45,
+          "reasoning": "Liverpool's dominance in the Merseyside derby, with a high win rate at Anfield, combined with Everton's inconsistent performances, suggests a comfortable home win despite the rivalry's intensity.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Barcellona vs Getafe",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.23,
+          "reasoning": "Barcelona's exceptional home record and ability to control games against lower-table sides like Getafe, who have failed to score in several recent encounters, point towards a straightforward victory.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Monaco vs Metz",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.28,
+          "reasoning": "Monaco's strong start to the season, sitting high in the Ligue 1 table with multiple wins, gives them the edge over Metz, whose poor form includes several losses without scoring.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Hoffenheim vs Bayern Monaco",
+          "prediction": "2+NG",
+          "stake": 50,
+          "odd": 2.3,
+          "reasoning": "Bayern's unbeaten streak and prolific scoring ability, especially away, align with Hoffenheim's defensive lapses, making a clean-sheet win for the visitors a probable outcome.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Verona vs Juventus",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 1.57,
+          "reasoning": "Juventus have been in excellent form to start Serie A. <cite index=\"1-14\">Napoli are the defending champions, having won their fourth Serie A title in the previous season.</cite> Juventus away at struggling Verona should win with reasonable confidence.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Udinese vs Milan",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.85,
+          "reasoning": "Milan need to respond after mixed results. Udinese at home can be tricky but Milan's quality should prevail. Good value at 1.85 for an away win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Inter vs Sassuolo",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.28,
+          "reasoning": "Sassuolo returned to Serie A after one year away, becoming the first team to secure promotion, following their 1–3 victory over Modena and Spezia's 2–2 draw with Mantova.</cite> Inter at home against newly-promoted Sassuolo should dominate. Low odds but high confidence.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Liverpool vs Everton",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.45,
+          "reasoning": ">Liverpool are the defending champions, having won their second Premier League title (and 20th English top-flight crown overall) in the previous season.</cite> Liverpool as defending champions at home in the Merseyside derby should win comfortably.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Arsenal vs Manchester City",
+          "prediction": "Under 2.5",
+          "stake": 25,
+          "odd": 1.98,
+          "reasoning": "Erling Haaland struck twice for Manchester City as they cruised to a 3-0 win over Manchester United in English football's Premier League, giving Pep Guardiola's side bragging rights in the latest edition of the derby.</cite> City in form but Arsenal vs City matches early in season tend to be tactical. Under 2.5 offers good value.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Real Madrid vs Espanyol",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.2,
+          "reasoning": "Real Madrid at home against Espanyol is as close to a banker as possible. Despite low odds, worth including for steady returns.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Barcelona vs Getafe",
+          "prediction": "Over 2.5",
+          "stake": 20,
+          "odd": 1.52,
+          "reasoning": "Barcelona at home should score freely against defensive Getafe. Over 2.5 offers better value than the tiny 1.23 odds on home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Monaco vs Metz",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.28,
+          "reasoning": "Monaco at home against Metz should be straightforward. Low odds but high confidence for a home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Hoffenheim vs Bayern Munich",
+          "prediction": "2",
+          "stake": 20,
+          "odd": 1.33,
+          "reasoning": "Bayern away at Hoffenheim should still win comfortably. Despite low odds, Bayern's quality difference makes this a reliable bet.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Borussia Dortmund vs Wolfsburg",
+          "prediction": "1",
+          "stake": 20,
+          "odd": 1.53,
+          "reasoning": "Dortmund at home have strong form. Wolfsburg inconsistent away. Good value for a home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Bologna vs Genoa",
+          "prediction": "Under 2.5",
+          "stake": 60,
+          "odd": 1.53,
+          "reasoning": "Both sides lack attacking firepower; recent H2H and current form point strongly to a low-scoring game. Odds are short but reliable.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Verona vs Juventus",
+          "prediction": "2",
+          "stake": 70,
+          "odd": 1.57,
+          "reasoning": "Juventus dominate this matchup historically; Verona weak in attack and poor at home. Juventus should edge this comfortably.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Hoffenheim vs Bayern Munich",
+          "prediction": "2+GG",
+          "stake": 60,
+          "odd": 2.1,
+          "reasoning": "Bayern is a heavy favorite (1.33 odds) but Hoffenheim has shown scoring ability against top teams. Bayern's recent rotation policy suggests they might rest key defenders, giving Hoffenheim a chance to score while Bayern still wins comfortably. The 2.10 odds for 'Bayern win + Goal' offers value as historical data shows Bayern wins most matches but often concedes against mid-table Bundesliga teams. ",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Barcelona vs Getafe",
+          "prediction": "1+GG",
+          "stake": 50,
+          "odd": 2.77,
+          "reasoning": "Barcelona is an extreme favorite (1.10 odds) but faces Getafe who have scored in 7 of their last 10 away matches. Barcelona's recent matches show they've conceded in 3 of their last 5 games despite dominant wins. The 2.77 odds for 'Barcelona win + Goal' represents strong value as Barcelona should win comfortably but Getafe's attacking quality makes them likely to find the net. ",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Udinese vs Milan",
+          "prediction": "2+GG",
+          "stake": 40,
+          "odd": 4,
+          "reasoning": "Milan is a clear favorite (1.28 odds) with superior quality but Udinese has been effective at scoring against top Serie A teams this season. Milan's defense has been solid but not impenetrable, having conceded in 4 of their last 8 matches. The 4.00 odds for 'Milan win + Goal' offers exceptional value as Milan should win while Udinese finds a way to score against a potentially rotated Milan defense. ",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Marseille vs PSG",
+          "prediction": "2+GG",
+          "stake": 30,
+          "odd": 3.05,
+          "reasoning": "PSG is a strong favorite (1.23 odds) but Marseille has a potent attack and home advantage. PSG has conceded in 3 of their last 5 matches despite their dominance. The 3.05 odds for 'PSG win + Goal' represents good value as PSG should win this Ligue 1 clash while Marseille finds the net at home. ",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Inter vs Sassuolo",
+          "prediction": "1+NG",
+          "stake": 30,
+          "odd": 1.97,
+          "reasoning": "Inter Milan is in excellent form, having won their last Champions League match 2-0 against Ajax. Sassuolo has been struggling defensively, and Inter's solid defense makes a win with a clean sheet likely.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Napoli vs Pisa",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.27,
+          "reasoning": "Napoli is strong at home and has a superior squad. Pisa is a weaker team and unlikely to pose a significant threat. The low odds reflect the high probability of a home win.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Barcelona vs Getafe",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.23,
+          "reasoning": "Barcelona is extremely strong at home and has a solid defense. Getafe has been inconsistent, and Barcelona's quality should secure a comfortable victory.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Monaco vs Metz",
+          "prediction": "1",
+          "stake": 20,
+          "odd": 1.28,
+          "reasoning": "Monaco is in good form and has a strong home record. Metz is a weaker team and unlikely to challenge Monaco's superiority at home.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Liverpool vs Everton",
+          "prediction": "1",
+          "stake": 20,
+          "odd": 1.45,
+          "reasoning": "Liverpool has a strong home record and Everton has been struggling. The Merseyside derby is always intense, but Liverpool's quality should prevail.",
+          "llm": "Deepseek V3.1"
+        }
+      ],
+      "results": {
+        "Real Madrid vs Espanyol": {
+          "score": ""
+        },
+        "Napoli vs Pisa": {
+          "score": ""
+        },
+        "Liverpool vs Everton": {
+          "score": ""
+        },
+        "Inter vs Sassuolo": {
+          "score": ""
+        },
+        "Barcellona vs Getafe": {
+          "score": ""
+        },
+        "Monaco vs Metz": {
+          "score": ""
+        },
+        "Hoffenheim vs Bayern Monaco": {
+          "score": ""
+        },
+        "Verona vs Juventus": {
+          "score": ""
+        },
+        "Udinese vs Milan": {
+          "score": ""
+        },
+        "Arsenal vs Manchester City": {
+          "score": ""
+        },
+        "Barcelona vs Getafe": {
+          "score": ""
+        },
+        "Hoffenheim vs Bayern Munich": {
+          "score": ""
+        },
+        "Borussia Dortmund vs Wolfsburg": {
+          "score": ""
+        },
+        "Bologna vs Genoa": {
+          "score": ""
+        },
+        "Marseille vs PSG": {
+          "score": ""
+        }
+      }
+    }
   ]
-} 
+}
+    
   
+
+  
+
 
 
 
