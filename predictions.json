@@ -1655,20 +1655,274 @@
           "score": "1-0"
         }
       }
+    },
+    {
+      "round": 7,
+      "date": "2025-09-25",
+      "games": [
+        {
+          "match": "Lille vs Brann",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.47,
+          "reasoning": "Lille has established a formidable home record, going unbeaten in their last 15 matches at the Stade Pierre-Mauroy. Their recent form is impressive, with a significant 4-0 victory in their last outing. Brann, on the other hand, has shown vulnerability in their recent away fixtures, suffering a heavy 4-0 defeat in their last European away game. Given Lille's defensive solidity at home and Brann's struggles on the road, a home victory is the most probable outcome.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Atletico Madrid vs Rayo Vallecano",
+          "prediction": "1+NG",
+          "stake": 40,
+          "odd": 2.27,
+          "reasoning": "Atletico Madrid has a dominant head-to-head record against Rayo Vallecano, having won the last five consecutive encounters without conceding a single goal. Their defensive prowess at the Wanda Metropolitano is well-documented, making it an incredibly difficult venue for visiting teams to score. Rayo Vallecano has struggled offensively in this fixture historically. This 'win to nil' bet is based on the high probability of Atletico continuing their defensive mastery and securing another clean sheet victory.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Freiburg vs FC Basel",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.5,
+          "reasoning": "Freiburg has demonstrated strong form at home in European competitions, creating a difficult environment for visiting teams. They have a solid recent record at the Europa-Park Stadion and have won their last two encounters against Swiss opponents. FC Basel has been inconsistent on their travels in Europe. Considering Freiburg's reliable home performances and Basel's struggles away from home, a victory for the German side is the most logical expectation.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Freiburg vs FC Basel",
+          "prediction": "1+NG",
+          "stake": 80,
+          "odd": 2.65,
+          "reasoning": "Friburgo has a strong home record and historical edge over Basel with 3 wins in their head-to-head matches [[22]]. Both teams have scored in most of their encounters (average 3.29 goals per match) [[25]], but Friburgo's solid defensive structure at home makes a clean sheet possible. The 2.65 odds for 'Friburgo win + No Goal' offers excellent value considering Basel's away struggles in European competitions.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Atletico Madrid vs Rayo Vallecano",
+          "prediction": "1+NG",
+          "stake": 70,
+          "odd": 2.27,
+          "reasoning": "Atletico Madrid has dominated this fixture historically, remaining unbeaten in their last 18 meetings (14 wins, 4 draws) [[49]]. Despite missing key defenders like Gimenez due to injury [[41]], Atletico's home advantage at the Wanda Metropolitano should be decisive. Rayo Vallecano has struggled to score against Atletico, making the 2.27 odds for 'Atletico win + No Goal' a solid value bet.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Lille vs Brann",
+          "prediction": "1+GG",
+          "stake": 60,
+          "odd": 2.82,
+          "reasoning": "Lille is a strong favorite with 1.47 odds for a win, indicating high probability of victory. Brann has shown attacking capability in European competitions, and Lille's recent matches have featured goals from both teams. The 2.82 odds for 'Lille win + Both Teams to Score' represents good value as Lille should win while Brann finds the net against a potentially rotated Lille defense.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "PAOK vs Maccabi Tel Aviv",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.93,
+          "reasoning": "PAOK has home advantage and is slightly favored in this Europa League clash. Both teams are coming off losses in their opening European fixtures, creating urgency for a win. PAOK's stronger squad depth and home crowd support should be decisive against Maccabi Tel Aviv, who have struggled in away European matches historically. The 1.93 odds offer solid value for a straightforward home win.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Freiburg vs FC Basel",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.5,
+          "reasoning": "Friburgo has been strong at home in the Bundesliga and faces a Basel team that has struggled away from home. The home advantage and Friburgo's superior form make this a solid bet.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Malmo vs Ludogorets",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.61,
+          "reasoning": "Malmo has a strong home record in European competitions, and Ludogorets has been inconsistent away. The Swedish team's home advantage should be decisive.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Lille vs Brann",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.47,
+          "reasoning": "Lille is a quality French side with strong home form, while Brann is a weaker Norwegian team. The home advantage and quality difference make Lille clear favorites.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Atletico Madrid vs Rayo Vallecano",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.51,
+          "reasoning": "Atletico Madrid is strong at home and has a superior squad. Rayo Vallecano has struggled away against top teams, making Atletico likely to win comfortably.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Real Oviedo vs Barcelona",
+          "prediction": "2",
+          "stake": 10,
+          "odd": 1.26,
+          "reasoning": "Barcelona is in excellent form and should easily defeat a weaker Real Oviedo side. The low odds reflect the high probability of an away win.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Atletico Madrid vs Rayo Vallecano",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.51,
+          "reasoning": "Atletico Madrid have a strong home record, recently securing a 2-0 win over Villarreal, and their defensive solidity under Diego Simeone makes them favorites. Rayo Vallecano’s inconsistent form, with only two points from their last four matches, suggests they’ll struggle in this local derby.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Real Sociedad vs Mallorca",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.77,
+          "reasoning": "Real Sociedad are desperate to end their three-game losing streak, and their home advantage at Reale Arena should help against a Mallorca side that drew 1-1 recently. Sociedad’s historical edge in this fixture, winning several recent encounters, supports a home win.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Real Oviedo vs Barcelona",
+          "prediction": "2+NG",
+          "stake": 50,
+          "odd": 2.07,
+          "reasoning": "Barcelona’s attacking prowess was evident in their 6-0 thrashing of Valencia, and they’re likely to dominate newly promoted Real Oviedo, who rely heavily on defense but struggle to score. Barcelona’s ability to keep clean sheets against weaker sides makes this a solid bet.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Freiburg vs FC Basel",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.5,
+          "reasoning": "Freiburg’s consistent home performances in European competitions, combined with Basel’s struggles in away games against stronger opponents, make the home side favorites. Freiburg’s recent form shows they can capitalize on Basel’s defensive weaknesses.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Malmo vs Ludogorets",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.43,
+          "reasoning": "Malmo’s strong home record in European fixtures, coupled with their ability to shut out opponents, aligns well against Ludogorets, who have failed to score in several away matches this season. Malmo’s recent form suggests a controlled, clean-sheet victory.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Freiburg vs FC Basel",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.5,
+          "reasoning": "Freiburg are the clear favorites at home: stronger league (Bundesliga), good recent form and home edge vs Basel. Previews and models favour the hosts and expect they can control the game — value at 1.50 for a home win. (Supports: match previews and bookmaker probability models).",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Dinamo Zagreb vs Fenerbahce",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 2.2,
+          "reasoning": "Fenerbahce look the likeliest winner on form and squad depth despite playing away; market still gives decent odds (2.20) — I see value on the away win while sizing smaller because European away fixtures can be swingy. (Supports: head-to-head, form and probability models favour Fenerbahce).",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Midtjylland vs Sturm Graz",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.64,
+          "reasoning": "Midtjylland have won 8 of their last 10 games according to recent form. Sturm Graz may have won 6 of their last 7 away games, but Midtjylland's strong home record in European competition and their previous 2-0 win over Sturm Graz makes them good value.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Nice vs Roma",
+          "prediction": "X",
+          "stake": 25,
+          "odd": 3.35,
+          "reasoning": "Nice had a disappointing 35th place finish in Europa League last season while Roma finished 15th. Nice are struggling domestically with a 4-1 loss to Brest recently. Roma won the derby against Lazio 1-0. This has draw written all over it as Nice struggle for form and Roma typically play cautiously away.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Aston Villa vs Bologna",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.75,
+          "reasoning": "Despite Villa's poor start domestically, they have an excellent home European record under Emery - unbeaten in 18 games at Villa Park before this season. Bologna have lost both away games this season without scoring. Villa beat Bologna 2-0 in the Champions League last year.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Lille vs Brann",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.47,
+          "reasoning": "Lille at home against Norwegian side Brann should be straightforward. Brann qualified through beating AEK Larnaca but the quality gap to Lille is significant. Low odds but high confidence.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Barcelona vs Real Oviedo",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.26,
+          "reasoning": "Barcelona as defending La Liga champions at home against Segunda Division Real Oviedo is as close to a banker as possible. Barcelona won their last meeting 3-0 against Getafe. Low odds but essential for steady bankroll growth.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Atletico Madrid vs Rayo Vallecano",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.51,
+          "reasoning": "Atletico Madrid at home should handle local rivals Rayo Vallecano. Atletico need to maintain their strong home form in La Liga and the odds offer decent value for a home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Freiburg vs FC Basel",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.5,
+          "reasoning": "Freiburg at home in Europa League against Swiss side Basel should win. German teams typically perform well at home in European competitions and Basel's away form in Europe is poor.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Red Bull Salzburg vs Porto",
+          "prediction": "2",
+          "stake": 20,
+          "odd": 2.02,
+          "reasoning": "Value bet on Porto away at Salzburg. Porto's European pedigree is strong and at 2.02 odds for an away win, this offers good risk/reward ratio.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Real Sociedad vs Mallorca",
+          "prediction": "1",
+          "stake": 20,
+          "odd": 1.77,
+          "reasoning": "Real Sociedad at home should beat Mallorca comfortably. Mallorca struggling near relegation zone and Real Sociedad have good home form.",
+          "llm": "Claude Opus 4.1"
+        }
+      ],
+      "results": {
+        "Lille vs Brann": {
+          "score": ""
+        },
+        "Atletico Madrid vs Rayo Vallecano": {
+          "score": ""
+        },
+        "Freiburg vs FC Basel": {
+          "score": ""
+        },
+        "PAOK vs Maccabi Tel Aviv": {
+          "score": ""
+        },
+        "Malmo vs Ludogorets": {
+          "score": ""
+        },
+        "Real Oviedo vs Barcelona": {
+          "score": ""
+        },
+        "Real Sociedad vs Mallorca": {
+          "score": ""
+        },
+        "Dinamo Zagreb vs Fenerbahce": {
+          "score": ""
+        },
+        "Midtjylland vs Sturm Graz": {
+          "score": ""
+        },
+        "Nice vs Roma": {
+          "score": ""
+        },
+        "Aston Villa vs Bologna": {
+          "score": ""
+        },
+        "Red Bull Salzburg vs Porto": {
+          "score": ""
+        }
+      }
     }
   ]
 }
-    
-  
-
-  
-
-
-
-
-
-
-
-
-
-
