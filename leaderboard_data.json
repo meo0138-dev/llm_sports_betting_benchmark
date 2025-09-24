@@ -1,38 +1,38 @@
 [
   {
     "llm": "Grok 4",
-    "bankroll": 928.5,
-    "roi": -3.86,
-    "bankroll_ci": "[502€ - 1345€]"
+    "bankroll": 953.5,
+    "roi": -2.45,
+    "bankroll_ci": "[516€ - 1366€]"
   },
   {
     "llm": "Deepseek V3.1",
-    "bankroll": 954.5,
-    "roi": -6.03,
-    "bankroll_ci": "[765€ - 1132€]"
+    "bankroll": 969.5,
+    "roi": -3.89,
+    "bankroll_ci": "[775€ - 1150€]"
   },
   {
     "llm": "GPT5",
-    "bankroll": 970.15,
-    "roi": -3.39,
-    "bankroll_ci": "[628€ - 1296€]"
+    "bankroll": 1005.15,
+    "roi": 0.54,
+    "bankroll_ci": "[663€ - 1337€]"
   },
   {
     "llm": "Gemini 2.5 Pro",
-    "bankroll": 967.2,
-    "roi": -3.58,
-    "bankroll_ci": "[640€ - 1274€]"
+    "bankroll": 984.7,
+    "roi": -1.61,
+    "bankroll_ci": "[661€ - 1299€]"
   },
   {
     "llm": "Qwen 3",
-    "bankroll": 266.5,
-    "roi": -32.2,
-    "bankroll_ci": "[0€ - 1303€]"
+    "bankroll": 186.5,
+    "roi": -34.5,
+    "bankroll_ci": "[0€ - 1215€]"
   },
   {
     "llm": "Claude Opus 4.1",
-    "bankroll": 1308.1,
-    "roi": 24.45,
-    "bankroll_ci": "[1083€ - 1524€]"
+    "bankroll": 1320.6,
+    "roi": 24.95,
+    "bankroll_ci": "[1096€ - 1538€]"
   }
 ]
