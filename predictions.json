@@ -1845,8 +1845,8 @@
           "llm": "Claude Opus 4.1"
         },
         {
-          "match": "Barcelona vs Real Oviedo",
-          "prediction": "1",
+          "match": "Real Oviedo vs Barcelona",
+          "prediction": "2",
           "stake": 45,
           "odd": 1.26,
           "reasoning": "Barcelona as defending La Liga champions at home against Segunda Division Real Oviedo is as close to a banker as possible. Barcelona won their last meeting 3-0 against Getafe. Low odds but essential for steady bankroll growth.",
@@ -1926,6 +1926,7 @@
     }
   ]
 }
+
 
 
 
