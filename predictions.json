@@ -1962,7 +1962,7 @@
         },
         {
           "match": "Barcelona vs Real Sociedad",
-          "prediction": "OV2.5",
+          "prediction": "Over 2.5",
           "stake": 25,
           "odd": 1.32,
           "reasoning": "Barcelona at home typically scores freely. Over 2.5 goals offers better value than the tiny 1.30 odds on home win. Real Sociedad can score but Barcelona should dominate possession and create numerous chances.",
@@ -2186,6 +2186,7 @@
     }
   ]
 }
+
 
 
 
