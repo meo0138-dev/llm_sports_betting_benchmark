@@ -2104,14 +2104,8 @@
           "reasoning": "Ajax, third in the Eredivisie, have dominated at home with clean sheets in multiple games, and NAC Breda, as a promoted side, lack the firepower to score against stronger defenses, pointing to a clean-sheet win for the hosts.",
           "llm": "Grok 4"
         },
-        {
-          "match": "Friburgo vs FC Basilea",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.5,
-          "reasoning": "Freiburg's strong start in the Bundesliga, with wins over tough opponents, gives them the edge in this European tie against Basel, who have inconsistent results and a weaker away record in international competitions.",
-          "llm": "Grok 4"
-        },
+        
+          
         {
           "match": "Barcelona vs Real Sociedad",
           "prediction": "1+NG",
@@ -2153,10 +2147,10 @@
           "score": ""
         },
         "Manchester City vs Burnley": {
-          "score": ""
+          "score": "5-1"
         },
         "Crystal Palace vs Liverpool": {
-          "score": ""
+          "score": "2-1"
         },
         "Barcelona vs Real Sociedad": {
           "score": ""
@@ -2174,11 +2168,9 @@
           "score": ""
         },
         "Mainz vs Borussia Dortmund": {
-          "score": ""
+          "score": "0-2"
         },
-        "Friburgo vs FC Basilea": {
-          "score": ""
-        },
+        
         "Juventus vs Atalanta": {
           "score": ""
         }
@@ -2186,6 +2178,7 @@
     }
   ]
 }
+
 
 
 
