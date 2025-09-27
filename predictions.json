@@ -1923,9 +1923,270 @@
           "score": "0-1"
         }
       }
+    },,
+    {
+      "round": 8,
+      "date": "2025-09-27",
+      "games": [
+        {
+          "match": "Como vs Cremonese",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.45,
+          "reasoning": "Como at home against newly-promoted Cremonese should win comfortably. <cite index=\"1-13\">Sassuolo returned to Serie A after one year away, becoming the first team to secure promotion, following their 3–1 victory over Modena and Spezia's 2–2 draw with Mantova.</cite> Como need home wins to establish themselves in Serie A.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Cagliari vs Inter",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 1.54,
+          "reasoning": "Inter away at Cagliari should still win. <cite index=\"10-4\">Inter Milan, who were the defending champions, finished one point behind Napoli.</cite> Despite being away, Inter's quality should prevail against a struggling Cagliari side.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Manchester City vs Burnley",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.2,
+          "reasoning": "<cite index=\"19-3,19-4\">Sunday 14 September Burnley 0-1 Liverpool — Recap, video highlights Manchester City 3-0 Manchester United — Recap, video highlights</cite> City already beat United 3-0 this season and should dominate newly-promoted Burnley at home.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Crystal Palace vs Liverpool",
+          "prediction": "2",
+          "stake": 25,
+          "odd": 1.83,
+          "reasoning": "<cite index=\"11-3,11-4\">Liverpool arguably have the toughest end to the season of any of the likely title contenders, with Everton, Man United, Chelsea and Aston Villa among their final six opponents. However, if they are as dominant as they were last season, the title could already be wrapped up by then.</cite> Liverpool as defending champions away at Palace should still win with reasonable odds.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Barcelona vs Real Sociedad",
+          "prediction": "OV2.5",
+          "stake": 25,
+          "odd": 1.32,
+          "reasoning": "Barcelona at home typically scores freely. Over 2.5 goals offers better value than the tiny 1.30 odds on home win. Real Sociedad can score but Barcelona should dominate possession and create numerous chances.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "PSG vs Auxerre",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.19,
+          "reasoning": "PSG at home against Auxerre is a banker bet. Despite low odds, this is essential for steady bankroll growth. PSG should win comfortably against lower league opposition.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Tottenham vs Wolverhampton",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.59,
+          "reasoning": "<cite index=\"29-5\">20:00 Spurs v Wolves (Sky Sports)* Due to Spurs' Champions League participation the following Tuesday.</cite> Tottenham at home with Champions League momentum should beat Wolves. Good value at 1.59.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Ajax vs NAC Breda",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.25,
+          "reasoning": "Ajax at home against NAC Breda should be straightforward. Despite low odds, Ajax's quality difference makes this a reliable bet for the accumulator.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Roma vs Verona",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.44,
+          "reasoning": "Roma at home should beat Verona comfortably. Roma won the derby against Lazio last round and will be motivated at the Olimpico. Good odds for a home banker.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Mainz vs Borussia Dortmund",
+          "prediction": "2",
+          "stake": 20,
+          "odd": 1.98,
+          "reasoning": "Value bet on Dortmund away at Mainz. Dortmund's quality and European experience should see them through. Good odds at 1.98 for an away win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Roma vs Verona",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.44,
+          "reasoning": "Roma at home against Verona is a strong spot: Verona have been leaking goals and struggle badly away. Roma need the points after a slow start and have the squad advantage. Odds are short, but probability of success is high — good for bankroll stability.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Cagliari vs Inter",
+          "prediction": "2+NG",
+          "stake": 30,
+          "odd": 2.32,
+          "reasoning": "Inter’s defense has been solid, while Cagliari struggle to score against top opposition. Inter should win with clean sheet potential. The market gives a juicy 2.32 on 2+NG, which fits the expected match script.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Manchester City vs Burnley",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.2,
+          "reasoning": "Manchester City are dominant at home and are facing a Burnley side that is likely to struggle. This is a high-probability bet for steady bankroll growth.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Barcelona vs Real Sociedad",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.3,
+          "reasoning": "Barcelona are in excellent form, demonstrated by their 6-0 win in the last round. Playing at home against Real Sociedad, they are strong favorites to secure another victory.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "PSG vs Auxerre",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.19,
+          "reasoning": "PSG are formidable at home and should comfortably defeat a weaker Auxerre side. The low odds reflect a very high chance of a home win.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Manchester City vs Burnley",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 1.75,
+          "reasoning": "Manchester City's record at the Etihad Stadium is formidable, particularly against teams in the lower half of the table. Their head-to-head history with Burnley is exceptionally one-sided, with City winning the last eight consecutive home meetings across all competitions while keeping a clean sheet in seven of those matches. Given City's defensive strength at home and Burnley's historical struggles to score in this fixture, a 'win to nil' is a statistically strong and high-value bet.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Roma vs Verona",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.96,
+          "reasoning": "Roma has turned the Stadio Olimpico into a fortress, demonstrating strong defensive performances. They have a solid history against Verona at home, often securing victories without conceding. Verona has a poor away record against top-tier Serie A opposition and has failed to score in their last three visits to Roma. This bet is based on Roma's consistent ability to shut down opponents at home and Verona's lack of offensive firepower on the road.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Cagliari vs Inter",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.54,
+          "reasoning": "There is a significant quality gap between Inter, a perennial title contender, and Cagliari. Inter has a dominant head-to-head record in this fixture, having won nine of the last ten meetings. While a 'win to nil' is possible, Cagliari has managed to score in recent home games against Inter. Therefore, a straight away win for Inter offers a safer, yet still valuable, proposition based on their overwhelming superiority and consistent historical performance in this matchup.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Como vs Cremonese",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.45,
+          "reasoning": "Como have climbed to mid-table in Serie A with consistent home performances, including a recent draw against a strong side, while Cremonese sit near the bottom after a string of losses, making the home win a value bet despite the odds.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Roma vs Verona",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.44,
+          "reasoning": "Roma are pushing for European spots with a solid home record, having won their last three at the Olimpico without conceding, whereas Verona's away form is poor, with no wins in their opening matches this season.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "PSG vs Auxerre",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.19,
+          "reasoning": "PSG remain unbeaten and second in Ligue 1, boasting a high-scoring attack led by key players, while Auxerre have struggled against top teams, conceding heavily in recent outings, ensuring a low-risk home victory.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Ajax vs NAC Breda",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.12,
+          "reasoning": "Ajax, third in the Eredivisie, have dominated at home with clean sheets in multiple games, and NAC Breda, as a promoted side, lack the firepower to score against stronger defenses, pointing to a clean-sheet win for the hosts.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Friburgo vs FC Basilea",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.5,
+          "reasoning": "Freiburg's strong start in the Bundesliga, with wins over tough opponents, gives them the edge in this European tie against Basel, who have inconsistent results and a weaker away record in international competitions.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Barcelona vs Real Sociedad",
+          "prediction": "1+NG",
+          "stake": 25,
+          "odd": 2.42,
+          "reasoning": "Barcelona is an extreme favorite (1.30 odds) with historical dominance against Real Sociedad, having won 10 of the last 12 home matches . Despite missing some defensive players, Barcelona's home defensive record remains strong with 7 clean sheets in their last 10 home matches . Real Sociedad has struggled to score against top teams, failing to score in 4 of their last 6 away matches against elite opponents . The 2.42 odds for 'Barcelona win + No Goal' (Barcelona wins and keeps a clean sheet) offers excellent value given Barcelona's defensive strength at home and Real Sociedad's scoring difficulties on the road.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Manchester City vs Burnley",
+          "prediction": "1+NG",
+          "stake": 30,
+          "odd": 1.75,
+          "reasoning": "Manchester City is an overwhelming favorite (1.20 odds) with a dominant defensive record this season . City has won all 5 home matches with clean sheets, conceding only 2 goals in their last 10 home games . Burnley has struggled offensively in away matches against top teams, scoring only 2 goals in their last 5 away fixtures . With City's defensive depth even with rotation policy, the 1.75 odds for 'Man City win + No Goal' represents solid value for a high-probability clean sheet victory against a limited Burnley attack.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Juventus vs Atalanta",
+          "prediction": "1+NG",
+          "stake": 20,
+          "odd": 3.05,
+          "reasoning": "Juventus has a strong defensive record at home with 5 clean sheets in their last 8 home matches . Atalanta has struggled to score against top Serie A teams, failing to score in 3 of their last 6 away matches . Historical data shows Juventus has kept clean sheets in 6 of their last 10 home matches against Atalanta . The 3.05 odds for 'Juventus win + No Goal' offers exceptional value considering Juventus' home defensive strength and Atalanta's inconsistent away scoring against elite opponents.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "PSG vs Auxerre",
+          "prediction": "1+NG",
+          "stake": 15,
+          "odd": 1.88,
+          "reasoning": "PSG has been dominant at home with 8 wins in their last 10 home matches, including 6 clean sheets . Auxerre has struggled significantly in away matches, failing to score in 6 of their last 8 road games . PSG's defensive lineup remains strong with key players available, while Auxerre lacks the offensive firepower to breach PSG's defense . The 1.88 odds for 'PSG win + No Goal' represents good value for a high-probability clean sheet victory by the home favorites.",
+          "llm": "Qwen 3"
+        }
+      ],
+      "results": {
+        "Como vs Cremonese": {
+          "score": ""
+        },
+        "Cagliari vs Inter": {
+          "score": ""
+        },
+        "Manchester City vs Burnley": {
+          "score": ""
+        },
+        "Crystal Palace vs Liverpool": {
+          "score": ""
+        },
+        "Barcelona vs Real Sociedad": {
+          "score": ""
+        },
+        "PSG vs Auxerre": {
+          "score": ""
+        },
+        "Tottenham vs Wolverhampton": {
+          "score": ""
+        },
+        "Ajax vs NAC Breda": {
+          "score": ""
+        },
+        "Roma vs Verona": {
+          "score": ""
+        },
+        "Mainz vs Borussia Dortmund": {
+          "score": ""
+        },
+        "Friburgo vs FC Basilea": {
+          "score": ""
+        },
+        "Juventus vs Atalanta": {
+          "score": ""
+        }
+      }
     }
   ]
 }
+
 
 
 
