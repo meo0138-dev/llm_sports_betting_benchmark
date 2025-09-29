@@ -2175,9 +2175,295 @@
           "score": "1-1"
         }
       }
+    } ,
+    {
+      "round": 9,
+      "date": "2025-10-01",
+      "games": [
+        {
+          "match": "Kairat Almaty vs Real Madrid",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 1.09,
+          "reasoning": "Real Madrid is a dominant European force facing a much weaker opponent. The low odds reflect an extremely high probability of an away win, making it a solid bet for steady bankroll growth.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Arsenal vs Olympiacos",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.19,
+          "reasoning": "Arsenal has a strong home record and superior squad depth. Facing Olympiacos at home, they are clear favorites to secure a victory, offering a high-probability return.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Inter vs Slavia Praga",
+          "prediction": "1+NG",
+          "stake": 25,
+          "odd": 2.15,
+          "reasoning": "Inter Milan is in excellent defensive form and plays at home. Slavia Prague is likely to be outmatched, making an Inter win with a clean sheet a valuable bet at good odds.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Atalanta vs Club Brugge",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.86,
+          "reasoning": "Atalanta has a strong attacking style at home. Club Brugge can be resilient, but the home advantage and offensive quality make Atalanta the likely winner.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Inter vs Slavia Prague",
+          "prediction": "1+NG",
+          "stake": 40,
+          "odd": 2.15,
+          "reasoning": "Inter Milan has dominated Slavia Prague historically, winning all 3 previous encounters with 2 clean sheets . Inter's home defense in Champions League is exceptional with 7 clean sheets in their last 10 home matches . Slavia Prague has failed to score in 6 of their last 8 away matches against top European clubs . The 2.15 odds for 'Inter win + No Goal' (Inter wins and keeps a clean sheet) offers excellent value given Inter's defensive strength at San Siro and Slavia's scoring difficulties against elite opponents.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Arsenal vs Olympiacos",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.75,
+          "reasoning": "Arsenal is an overwhelming favorite with 1.19 odds for a win, indicating high probability of victory . Olympiacos has failed to score in 5 of their last 7 away matches in European competitions . Arsenal has kept clean sheets in 6 of their last 8 home Champions League matches, including 3 consecutive clean sheets this season . With Olympiacos missing key attackers like El Kaabi due to injury , the 1.75 odds for 'Arsenal win + No Goal' represents solid value for a high-probability clean sheet victory.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Kairat Almaty vs Real Madrid",
+          "prediction": "2+NG",
+          "stake": 40,
+          "odd": 1.56,
+          "reasoning": "Real Madrid is an extreme favorite (1.09 odds) with historical dominance against Kazakh teams, having won all 5 previous encounters by an average margin of 4.2-0 . Kairat Almaty has scored only 3 goals in their last 10 European home matches against top-tier opposition . Real Madrid has kept clean sheets in 8 of their last 12 away European matches, including 4 consecutive clean sheets this season . Despite rotation concerns, Madrid's defensive depth ensures the 1.56 odds for 'Real Madrid win + No Goal' offers reliable value with minimal risk.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Monaco vs Manchester City",
+          "prediction": "2+NG",
+          "stake": 30,
+          "odd": 2.5,
+          "reasoning": "Manchester City has dominated this matchup historically, winning 4 of the last 5 meetings including a 3-1 victory in their most recent encounter . Monaco is missing key defenders like Disasi and Ballo-Touré due to injury , weakening their defensive structure. City has kept clean sheets in 6 of their last 10 away Champions League matches against Ligue 1 opponents . The 2.50 odds for 'Man City win + No Goal' represents exceptional value as City's superior squad depth should overcome Monaco's home advantage while maintaining defensive solidity.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Atletico Madrid vs Eintracht Francoforte",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.53,
+          "reasoning": "Atletico are dominant at home, with defensive solidity and strong form in Europe. Frankfurt inconsistent away. Safer anchor bet at 1.53.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Chelsea vs Benfica",
+          "prediction": "1+NG",
+          "stake": 20,
+          "odd": 2.95,
+          "reasoning": "Chelsea are favourites at Stamford Bridge, while Benfica can struggle to score against well-organized defenses. A home win to nil at 2.95 offers good value as a medium-risk add-on.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Arsenal vs Olympiacos",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.75,
+          "reasoning": "Arsenal has a formidable defensive record at the Emirates Stadium in European competitions, frequently securing clean sheets against visiting teams. Historically, Olympiacos has struggled to score when playing away against top-tier English opposition. Given Arsenal's strong home advantage and historical defensive performances in similar matchups, a 'win to nil' offers excellent value.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Atletico Madrid vs Eintracht Frankfurt",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.53,
+          "reasoning": "Under Diego Simeone, Atletico Madrid has turned the Wanda Metropolitano into one of the most difficult away venues in Europe. Their disciplined defensive system and ability to control the game's tempo at home are well-established. Eintracht Frankfurt, while a capable team, faces an immense challenge in breaking down Atletico's defense. A home victory for the Spanish side is the most probable result.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Inter vs Slavia Praga",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.33,
+          "reasoning": "Inter Milan possesses a significant advantage in squad quality and boasts a commanding home record at the San Siro. They are strong favorites against a Slavia Praga team that, despite being well-organized, has historically struggled in away fixtures against Europe's elite clubs. A straightforward home win for Inter is a high-probability outcome and serves as a solid anchor for this round's betting portfolio.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Kairat Almaty vs Real Madrid",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 1.09,
+          "reasoning": "<cite index=\"3-24\">Liverpool were drawn at home to Real Madrid, Atlético Madrid, PSV Eindhoven, Qarabağ, and away to Inter Milan, Eintracht Frankfurt, Marseille and Galatasaray.</cite> Real Madrid at Kazakhstani side Kairat is a massive mismatch. Despite tiny odds, this is essential for accumulator stability.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Galatasaray vs Liverpool",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.64,
+          "reasoning": "<cite index=\"5-7,5-8,5-9\">The Reds kick off their latest tilt at the European Cup by hosting Atletico Madrid at Anfield on Wednesday September 17. They will subsequently visit Galatasaray and Eintracht Frankfurt before meeting Real Madrid and PSV Eindhoven in L4. A December trip to Internazionale precedes their final two games of the phase in January: away at Marseille and home to Qarabag.</cite> Liverpool as defending Premier League champions should win away at Galatasaray. Good value at 1.64.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Pafos vs Bayern Munich",
+          "prediction": "2",
+          "stake": 35,
+          "odd": 1.1,
+          "reasoning": "<cite index=\"13-4,13-10\">The first away trip is to Cyprus to face Pafos on Tuesday, 30 September. Bayern – 30 September, 9pm CEST Matchday 3: Bayern vs. Club Brugge – 22 October 2025, 9pm CEST</cite> Bayern away in Cyprus is another massive mismatch. Essential for steady returns.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Inter vs Slavia Prague",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.33,
+          "reasoning": "Inter at home in Champions League against Czech side Slavia Prague should be routine. Good odds for a home banker.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Barcelona vs PSG",
+          "prediction": "X",
+          "stake": 20,
+          "odd": 4.1,
+          "reasoning": "<cite index=\"21-4,21-7,21-9\">The club confirmed on Friday that captain Marquinhos has sustained a left quadriceps injury that will keep him sidelined for several weeks, ruling him out of one of the most anticipated matches of the season. As a result, he will miss Saturday's league match against Auxerre and is officially ruled out of Tuesday's Champions League quarterfinal first leg against Barcelona. The club also reported that João Neves, Désiré Doué, and Ousmane Dembélé are still in recovery with no confirmed return date.</cite> PSG with major injuries. <cite index=\"25-29\">With little to choose between the teams in terms of head-to-head record, the first of our PSG vs Barcelona predictions is for this match to end in a draw.</cite> Value bet on draw.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Arsenal vs Olympiacos",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.19,
+          "reasoning": "Arsenal at home should dominate Greek side Olympiacos. Low odds but high confidence for accumulator.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Chelsea vs Benfica",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.65,
+          "reasoning": "Chelsea at home in Champions League should beat Benfica. Good value at 1.65 for a home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Monaco vs Manchester City",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.43,
+          "reasoning": "City away at Monaco should still have quality to win. Reasonable odds for an away banker.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Porto vs Stella Rossa",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.36,
+          "reasoning": "Porto at home in Europa League should beat Serbian side comfortably. Solid accumulator bet.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Nottingham Forest vs Midtjylland",
+          "prediction": "1",
+          "stake": 20,
+          "odd": 1.48,
+          "reasoning": "Forest at home should beat Danish side Midtjylland. Good value for a home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Atalanta vs Club Brugge",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.86,
+          "reasoning": "Atalanta are set to bounce back from a heavy 4-0 defeat to PSG in their opener, leveraging their strong home form in European competitions where they've won several recent matches. \n\n Club Brugge, despite past successes against them, have shown vulnerabilities away from home this season.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Atletico Madrid vs Eintracht Frankfurt",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.53,
+          "reasoning": "Atletico's impressive home record, with seven wins in their last eight at the Metropolitano including multiple high-scoring games, gives them a clear edge over Frankfurt, who struggle in big away fixtures. \n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Chelsea vs Benfica",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.65,
+          "reasoning": "Chelsea are poised for their first win after a solid domestic start, building on recent victories over Benfica including a 4-1 in the Club World Cup and 2-1 at Stamford Bridge. \n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Inter vs Slavia Praga",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.15,
+          "reasoning": "Inter's dominant home performances in the Champions League, combined with Slavia's limited scoring threat away against top defenses, suggest a comfortable clean-sheet victory for the hosts. \n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Barcelona vs PSG",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.88,
+          "reasoning": "Barcelona hold the advantage at Camp Nou against an injury-hit PSG side, with predictions favoring a 3-1 win due to their attacking depth and PSG's recent defensive frailties. \n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Bayer Leverkusen vs PSV Eindhoven",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.85,
+          "reasoning": "Leverkusen are expected to edge a tight contest at home, capitalizing on PSV's aggressive style while addressing their clean-sheet issues in a predicted 2-1 outcome. \n\n",
+          "llm": "Grok 4"
+        }
+      ],
+      "results": {
+        "Kairat Almaty vs Real Madrid": {
+          "score": ""
+        },
+        "Arsenal vs Olympiacos": {
+          "score": ""
+        },
+        "Inter vs Slavia Praga": {
+          "score": ""
+        },
+        "Atalanta vs Club Brugge": {
+          "score": ""
+        },
+        "Monaco vs Manchester City": {
+          "score": ""
+        },
+        "Atletico Madrid vs Eintracht Francoforte": {
+          "score": ""
+        },
+        "Chelsea vs Benfica": {
+          "score": ""
+        },
+        "Atletico Madrid vs Eintracht Frankfurt": {
+          "score": ""
+        },
+        "Galatasaray vs Liverpool": {
+          "score": ""
+        },
+        "Pafos vs Bayern Munich": {
+          "score": ""
+        },
+        "Inter vs Slavia Prague": {
+          "score": ""
+        },
+        "Barcelona vs PSG": {
+          "score": ""
+        },
+        "Porto vs Stella Rossa": {
+          "score": ""
+        },
+        "Nottingham Forest vs Midtjylland": {
+          "score": ""
+        },
+        "Bayer Leverkusen vs PSV Eindhoven": {
+          "score": ""
+        }
+      }
     }
   ]
 }
+
 
 
 
