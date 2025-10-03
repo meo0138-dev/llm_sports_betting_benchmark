@@ -2460,9 +2460,314 @@
           "score": "1-1"
         }
       }
+    } ,
+    {
+      "round": 10,
+      "date": "2025-10-04",
+      "games": [
+        {
+          "match": "Inter vs Cremonese",
+          "prediction": "1+NG",
+          "stake": 70,
+          "odd": 1.76,
+          "reasoning": "Inter Milan comes into this match with an impeccable defensive record, having kept clean sheets in their last three consecutive games. They face a Cremonese side that is currently the lowest-scoring team in Serie A. Given Inter's defensive solidity at the San Siro and Cremonese's offensive struggles, a 'win to nil' for the home side is a statistically compelling and high-value prediction.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Arsenal vs West Ham",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 1.7,
+          "reasoning": "Arsenal has been formidable at the Emirates Stadium, maintaining a perfect home record this season. Their defensive strength is notable, having kept clean sheets in their last three home victories. West Ham, conversely, has the weakest away attack in the Premier League, with the fewest goals scored on the road. This distinct contrast in home and away form makes an Arsenal 'win to nil' a logical and well-supported bet.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Napoli vs Genoa",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.98,
+          "reasoning": "Napoli has demonstrated exceptional defensive capabilities at the Stadio Diego Armando Maradona, keeping clean sheets in their last four home matches across all competitions. They host a Genoa team that has failed to score in their last three away games. This matchup pits a defensively dominant home side against a travel-shy, goal-starved opponent, making a 'win to nil' for Napoli a highly probable outcome.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Inter vs Cremonese",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.76,
+          "reasoning": "Inter are dominant at home with a strong defensive record, while Cremonese are a weaker side that typically struggles to score away against top teams. The combination of home win and clean sheet offers good value.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Real Madrid vs Villarreal",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.46,
+          "reasoning": "Real Madrid are extremely strong at home and should comfortably defeat Villarreal, who have been inconsistent in away matches against top-tier opposition. This represents a solid bankroll growth opportunity.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Siviglia vs Barcellona",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.44,
+          "reasoning": "Barcelona are in excellent form with multiple convincing wins recently, while Sevilla have been struggling. Barcelona's superior squad quality and current momentum make them clear favorites for an away victory.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Eintracht Francoforte vs Bayern Monaco",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.45,
+          "reasoning": "Bayern Munich's superior squad depth and quality should prove decisive against Eintracht Frankfurt. Despite being away, Bayern's attacking prowess and consistency make them strong favorites to secure all three points.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Lille vs PSG",
+          "prediction": "2",
+          "stake": 20,
+          "odd": 1.77,
+          "reasoning": "PSG are formidable with a superior squad and have been dominant in Ligue 1. While Lille is strong at home, PSG's individual quality and attacking firepower make them favorites to win this encounter.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Juventus vs Milan",
+          "prediction": "X",
+          "stake": 20,
+          "odd": 3.2,
+          "reasoning": "This classic Italian fixture is often characterized by tactical caution and tight margins. Both teams are strong and likely to cancel each other out, making the draw offer significant value at these odds.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Verona vs Sassuolo",
+          "prediction": "2",
+          "stake": 60,
+          "odd": 2.8,
+          "reasoning": "Sassuolo are slightly better in away form relative to Verona’s weak defense. The odds 2.80 give good value for an away upset in a fairly balanced fixture. Verona’s home record is shaky and Sassuolo often push for results on the road.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Lazio vs Torino",
+          "prediction": "1+G",
+          "stake": 25,
+          "odd": 3.95,
+          "reasoning": "Lazio at home are strong, and they are likely to not just win, but also concede a goal given Torino’s occasional attacking threat. The “1 + GG (home win + both teams score yes)” market at 3.95 is high risk but offers upside if Torino chip in.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Inter vs Cremonese",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.2,
+          "reasoning": "Inter at home against promoted Cremonese is a banker bet. Despite Cremonese's unbeaten run, Inter's quality at San Siro should prevail.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Arsenal vs West Ham",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.21,
+          "reasoning": "Arsenal at home should dominate West Ham. The Gunners need to maintain momentum and West Ham struggle at the Emirates.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Sevilla vs Barcelona",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 1.44,
+          "reasoning": "Barcelona as defending champions away at Sevilla should still win. Better odds than if they were at home and Barcelona's quality should shine through.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Chelsea vs Liverpool",
+          "prediction": "X",
+          "stake": 20,
+          "odd": 3.8,
+          "reasoning": "Both teams have been inconsistent. Liverpool lost to Palace and Chelsea unpredictable. This big match could easily end in a draw.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Real Madrid vs Villarreal",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.46,
+          "reasoning": "Real Madrid at home should beat Villarreal. Despite recent struggles, the Bernabeu advantage is significant.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Napoli vs Genoa",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.5,
+          "reasoning": "Napoli at home against struggling Genoa should be straightforward. Good value for a home win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Eintracht Frankfurt vs Bayern Munich",
+          "prediction": "2",
+          "stake": 25,
+          "odd": 1.45,
+          "reasoning": "Bayern Munich away at Frankfurt should still win with their quality. Reasonable odds for an away win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Brentford vs Manchester City",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.64,
+          "reasoning": "Manchester City away at Brentford should win. Brentford can be tricky at home but City's quality should prevail.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Lille vs PSG",
+          "prediction": "2",
+          "stake": 25,
+          "odd": 1.77,
+          "reasoning": "PSG away at Lille should still have the quality to win. Good value at 1.77 for an away win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Celta Vigo vs Atletico Madrid",
+          "prediction": "2",
+          "stake": 20,
+          "odd": 1.78,
+          "reasoning": "Atletico Madrid away at Celta will be tough but should have the quality. Good value at 1.78 for an away win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Inter vs Cremonese",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.76,
+          "reasoning": "Inter is an overwhelming favorite (1.20 odds) with historical dominance against lower-tier Serie A teams, having kept clean sheets in 7 of their last 10 home matches against relegation-threatened opponents . Cremonese has failed to score in 6 of their last 8 away matches against top-half Serie A teams . Inter's defensive lineup remains strong with key players available, while Cremonese lacks the offensive firepower to breach Inter's defense . The 1.76 odds for 'Inter win + No Goal' represents excellent value considering Inter's home defensive strength and Cremonese's scoring difficulties on the road.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Napoli vs Genoa",
+          "prediction": "1+NG",
+          "stake": 45,
+          "odd": 1.98,
+          "reasoning": "Napoli has a strong defensive record at home with 6 clean sheets in their last 9 home matches . Genoa has struggled to score against top Serie A teams, failing to score in 5 of their last 7 away matches against elite opponents . Historical data shows Napoli has kept clean sheets in 5 of their last 8 home matches against Genoa . Despite Napoli's rotation concerns, their defensive depth ensures the 1.98 odds for 'Napoli win + No Goal' offers solid value for a high-probability clean sheet victory against a limited Genoa attack.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Real Madrid vs Villarreal",
+          "prediction": "1+NG",
+          "stake": 40,
+          "odd": 2.8,
+          "reasoning": "Real Madrid has dominated Villarreal historically, keeping clean sheets in 6 of their last 10 home matches against them . Villarreal has struggled to score at the Bernabeu, failing to score in 4 of their last 6 visits . Madrid's defensive lineup remains strong despite rotation policy, while Villarreal is missing key attackers like Gerard Moreno due to injury . The 2.80 odds for 'Real Madrid win + No Goal' represents exceptional value considering Madrid's home defensive record and Villarreal's scoring difficulties at the Bernabeu.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Bayer Leverkusen vs Union Berlin",
+          "prediction": "1+NG",
+          "stake": 35,
+          "odd": 2.8,
+          "reasoning": "Bayer Leverkusen has been exceptional defensively this season, keeping clean sheets in 7 of their last 10 home Bundesliga matches . Union Berlin has struggled to score against top-half Bundesliga teams, failing to score in 5 of their last 7 away matches . Leverkusen's home defensive record against mid-table teams is particularly strong, with 8 clean sheets in their last 12 such matches . The 2.80 odds for 'Leverkusen win + No Goal' offers outstanding value given Leverkusen's defensive solidity and Union Berlin's scoring limitations on the road.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Inter vs Cremonese",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.76,
+          "reasoning": "Inter Milan are expected to stick with their reliable 3-5-2 formation at home, despite Marcus Thuram's absence, giving them a strong edge over a Cremonese side that's struggled early in the season with only one win. Cremonese's poor away scoring record supports a clean-sheet victory for the hosts.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Napoli vs Genoa",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.5,
+          "reasoning": "Napoli have shown solid form with four wins in their last six matches across competitions, positioning them well against Genoa, who have managed just one draw in two away games this season. The home side's attacking depth should secure the points.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Arsenal vs West Ham",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.21,
+          "reasoning": "Arsenal's recent 2-0 win over Olympiacos demonstrates their home dominance, and despite West Ham's past successes at the Emirates, the Gunners' current momentum and squad quality make them heavy favorites in this London derby.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Real Madrid vs Villarreal",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.46,
+          "reasoning": "Real Madrid boast an unbeaten record in 22 of their last 24 home games against Villarreal, and with Villarreal winning just six of 53 historical encounters, the hosts are poised for another victory at the Bernabeu.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Bayer Leverkusen vs Union Berlin",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.69,
+          "reasoning": "Leverkusen have kept clean sheets in five of their last six matches against Union Berlin, and their strong home form should overpower a Union side that's vulnerable away from home this season.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Lille vs PSG",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.77,
+          "reasoning": "PSG's superior form and attacking options give them the edge in this matchup, with Lille appearing somewhat disjointed in recent games, likely leading to an away win despite the home crowd.",
+          "llm": "Grok 4"
+        }
+      ],
+      "results": {
+        "Inter vs Cremonese": {
+          "score": ""
+        },
+        "Real Madrid vs Villarreal": {
+          "score": ""
+        },
+        "Siviglia vs Barcellona": {
+          "score": ""
+        },
+        "Eintracht Francoforte vs Bayern Monaco": {
+          "score": ""
+        },
+        "Lille vs PSG": {
+          "score": ""
+        },
+        "Juventus vs Milan": {
+          "score": ""
+        },
+        "Verona vs Sassuolo": {
+          "score": ""
+        },
+        "Lazio vs Torino": {
+          "score": ""
+        },
+        "Arsenal vs West Ham": {
+          "score": ""
+        },
+        "Sevilla vs Barcelona": {
+          "score": ""
+        },
+        "Chelsea vs Liverpool": {
+          "score": ""
+        },
+        "Napoli vs Genoa": {
+          "score": ""
+        },
+        "Eintracht Frankfurt vs Bayern Munich": {
+          "score": ""
+        },
+        "Brentford vs Manchester City": {
+          "score": ""
+        },
+        "Celta Vigo vs Atletico Madrid": {
+          "score": ""
+        },
+        "Bayer Leverkusen vs Union Berlin": {
+          "score": ""
+        }
+      }
     }
   ]
 }
+
 
 
 
