@@ -2764,9 +2764,295 @@
           "score": "2-0"
         }
       }
+    },
+    {
+      "round": 11,
+      "date": "2025-10-18",
+      "games": [
+        {
+          "match": "Roma vs Inter",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.25,
+          "reasoning": "Inter have a strong historical edge with 29 wins in 71 meetings against Roma's 19, and their current form shows consistency with minimal losses, while Roma's defensive issues could be exploited by Inter's attack.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Milan vs Fiorentina",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.55,
+          "reasoning": "Milan hold a favorable record with 22 wins over Fiorentina's 15 in 50 matches, and their home form remains solid despite some inconsistencies, facing a Fiorentina side with recent defeats.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Barcellona vs Girona",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.16,
+          "reasoning": "Barcelona dominate with 7 wins in 10 meetings against Girona's 1, and despite injuries like Lewandowski, their home defense is robust, likely leading to a clean-sheet win against a struggling Girona.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Bayern Monaco vs Borussia Dortmund",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.37,
+          "reasoning": "Bayern have won 37 of 67 clashes against Dortmund's 18, and their current unbeaten streak combined with Dortmund's inconsistent form makes a home victory probable in this Klassiker.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "PSV Eindhoven vs Go Ahead Eagles",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.23,
+          "reasoning": "PSV have an unbeaten home record and dominate with 15 wins in 20 meetings against Go Ahead Eagles' 2, facing a side with poor away results this season.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Manchester City vs Everton",
+          "prediction": "1+NG",
+          "stake": 40,
+          "odd": 2.26,
+          "reasoning": "Manchester City has kept clean sheets in 6 of their last 8 home Premier League matches. Everton has failed to score in 4 of their last 6 away games against top-six opponents and is missing key attackers. City's defensive solidity at home, even with rotation, makes the 2.26 odds for 'City win + No Goal' a strong value bet.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Getafe vs Real Madrid",
+          "prediction": "2+NG",
+          "stake": 35,
+          "odd": 2.04,
+          "reasoning": "Real Madrid has won 9 of their last 10 away matches against Getafe, keeping 7 clean sheets in that span. Getafe has scored only 3 goals in their last 8 home games against top-three La Liga sides. Madrid’s defensive organization under Ancelotti remains elite, and the 2.04 odds for 'Madrid win + No Goal' offer reliable value despite their rotation policy.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Atalanta vs Lazio",
+          "prediction": "1+NG",
+          "stake": 30,
+          "odd": 2.87,
+          "reasoning": "Atalanta has kept clean sheets in 5 of their last 7 home matches in Serie A. Lazio has struggled offensively in away games against top-half teams, failing to score in 3 of their last 5 such fixtures. Atalanta’s high-pressing style often disrupts Lazio’s buildup, and the 2.87 odds for 'Atalanta win + No Goal' represent excellent risk-reward given their home dominance.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "PSV Eindhoven vs Go Ahead Eagles",
+          "prediction": "1+NG",
+          "stake": 25,
+          "odd": 2.62,
+          "reasoning": "PSV has kept clean sheets in 7 of their last 9 home Eredivisie matches. Go Ahead Eagles has failed to score in 5 of their last 6 away games against top-three Dutch clubs. PSV’s attacking depth ensures goals, while their defensive line remains solid at Philips Stadion. The 2.62 odds for 'PSV win + No Goal' offer strong value in a mismatch.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Manchester City vs Everton",
+          "prediction": "1+NG",
+          "stake": 70,
+          "odd": 2.26,
+          "reasoning": "Manchester City's dominance at the Etihad Stadium is well-documented, and they have an exceptional record against Everton, having won the last seven consecutive home meetings. In five of those seven victories, City kept a clean sheet. Everton has struggled to find the net on their travels against top-tier opposition, making a 'win to nil' for the home side a statistically robust and high-value prediction.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Barcelona vs Girona",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 2.16,
+          "reasoning": "Barcelona has been defensively impeccable at the Camp Nou, consistently shutting out visiting teams. Their head-to-head record against Girona at home is flawless, having won all three previous encounters without conceding a single goal. Given Girona's limited offensive output in away fixtures against La Liga's elite, a 'win to nil' for Barcelona is a logical and well-supported bet.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Atletico Madrid vs Osasuna",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.02,
+          "reasoning": "Under Diego Simeone, Atletico Madrid has established the Wanda Metropolitano as a defensive fortress. They have a commanding head-to-head record against Osasuna, having won the last ten consecutive meetings, keeping clean sheets in nine of those victories. Osasuna has a poor scoring record away from home against top-tier opposition, making a 'win to nil' for Atletico a highly probable outcome.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Manchester City vs Everton",
+          "prediction": "1",
+          "stake": 80,
+          "odd": 1.45,
+          "reasoning": "Manchester City are dominant at home with a perfect record (4 wins). Everton have lost 3 of their last 5 away matches. City's home strength against Everton's poor away form makes this a high-probability bet.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Atletico Madrid vs Osasuna",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.37,
+          "reasoning": "Atletico Madrid are formidable at home and currently sit high in La Liga. Osasuna have struggled away from home. Atletico's consistent home performance against a struggling away team provides solid value.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Liverpool vs Manchester United",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.61,
+          "reasoning": "Liverpool's strong home record at Anfield is a decisive factor. Manchester United have shown vulnerability in away fixtures this season. The home advantage and current form favor Liverpool.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Milan vs Fiorentina",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.55,
+          "reasoning": "Milan are strong at home and need to maintain momentum after recent results. Fiorentina have been inconsistent on the road. Milan's home quality should secure three points.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Liverpool vs Manchester United",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.61,
+          "reasoning": "Liverpool have lost just one of their last 14 Premier League meetings with Manchester United, winning seven. Their solitary defeat in that sequence came at Old Trafford in August 2022. Despite Liverpool's recent 3-game away losing streak, they are 5-0 at home this season. United's last victory at Anfield occurred in January 2016 with Wayne Rooney's late goal. Manchester United are winless in their last 8 PL away games and have been outscored 7-2 in three away matches this season. Liverpool's home fortress against historically poor United away form makes this a strong banker.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Milan vs Fiorentina",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.55,
+          "reasoning": "Milan have kept four clean sheets in their first six Serie A fixtures for the first time since 2006. Fiorentina are winless after six Serie A matchdays, representing their worst winless run at the start of any top-flight season since 1977. Milan are unbeaten in last 6 games across all competitions and haven't lost to Fiorentina at home in the last 5 meetings (4W, 1D). Fiorentina have scored just 3 goals in 6 Serie A games. Milan's defensive solidity against Fiorentina's attacking crisis makes this excellent value.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Roma vs Inter",
+          "prediction": "X2",
+          "stake": 40,
+          "odd": 1.28,
+          "reasoning": "Roma are currently second in the league table with 15 points and have excellent defense with 4 clean sheets. However, Roma have lost seven of their last nine league meetings with the San Siro club. Inter are on a 5-match winning streak and Inter have won all of the last four contests in Italy's capital. While Roma are strong at home, Inter's quality and recent form justifies backing the double chance X2 for safety.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Real Madrid vs Getafe",
+          "prediction": "2+NG",
+          "stake": 35,
+          "odd": 2.04,
+          "reasoning": "Real Madrid have won their last 7 matches against Getafe in all competitions and Real Madrid have kept a clean sheet in 13 of their last 15 matches against Getafe in all competitions. Madrid are top of La Liga despite defensive injuries. Getafe are on a 4-game winless run and historically struggle to score against Real Madrid. The away win without conceding offers better value at 2.04 than the straight away win at 1.43.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Atalanta vs Lazio",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.74,
+          "reasoning": "Atalanta are at home and historically strong at their stadium. With odds of 1.74 for a home win, this represents solid value for a team that typically dominates home fixtures. Atalanta's attacking prowess and home advantage against Lazio should see them through.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Manchester City vs Everton",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.45,
+          "reasoning": "Manchester City at home against relegation-battling Everton should be straightforward. City have been in excellent form and Everton's away record is poor. Despite low odds, this is a reliable banker for steady returns. City's quality difference is substantial.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Arsenal vs West Ham",
+          "prediction": "1",
+          "stake": 25,
+          "odd": 1.21,
+          "reasoning": "Arsenal at home should dominate West Ham. The Gunners are pushing for the title and West Ham historically struggle at the Emirates. Despite very low odds, this is essential for accumulator stability and steady bankroll growth.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Barcelona vs Girona",
+          "prediction": "Over 2.5",
+          "stake": 25,
+          "odd": 1.29,
+          "reasoning": "Barcelona at home typically score freely. The Over 2.5 at 1.29 offers better value than backing Barcelona straight win at even lower odds. Barcelona have been scoring prolifically at home and Girona may contribute goals in what should be an open game.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Bayern Munich vs Borussia Dortmund",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.37,
+          "reasoning": "Bayern Munich at home in Der Klassiker should have too much quality for Dortmund. Bayern have been dominant this season and their home record is formidable. Despite low odds, this Bundesliga banker is reliable for steady returns in the title race.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Torino vs Napoli",
+          "prediction": "2",
+          "stake": 60,
+          "odd": 1.82,
+          "reasoning": "Napoli are unbeaten in their last six and created high xG in the win over Genoa. Torino still concede plenty of chances, and their pressing drops against top sides. With Napoli’s front three in rhythm, away win at 1.82 has clear value.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Atalanta vs Lazio",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.74,
+          "reasoning": "Atalanta at home are among Serie A’s most reliable: 7W 2D 1L in their last ten in Bergamo. Lazio just shipped three at Torino and struggle away. Atalanta’s pressing and chance creation tilt the matchup heavily in their favor.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Roma vs Inter",
+          "prediction": "2+GG",
+          "stake": 20,
+          "odd": 4.65,
+          "reasoning": "Inter are lethal on transitions but tend to concede when facing strong home sides like Roma. With both teams aggressive, away win with both to score offers a solid risk-reward profile.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Getafe vs Real Madrid",
+          "prediction": "2+NG",
+          "stake": 30,
+          "odd": 2.04,
+          "reasoning": "Real Madrid rarely concede to low-block teams like Getafe (only two goals allowed in last six). Madrid’s defense and goalkeeper form suggest a clean-sheet win, making 2 + NG a strong value bet.",
+          "llm": "GPT5"
+        }
+      ],
+      "results": {
+        "Roma vs Inter": {
+          "score": ""
+        },
+        "Milan vs Fiorentina": {
+          "score": ""
+        },
+        "Barcellona vs Girona": {
+          "score": ""
+        },
+        "Bayern Monaco vs Borussia Dortmund": {
+          "score": ""
+        },
+        "PSV Eindhoven vs Go Ahead Eagles": {
+          "score": ""
+        },
+        "Manchester City vs Everton": {
+          "score": ""
+        },
+        "Getafe vs Real Madrid": {
+          "score": ""
+        },
+        "Atalanta vs Lazio": {
+          "score": ""
+        },
+        "Barcelona vs Girona": {
+          "score": ""
+        },
+        "Atletico Madrid vs Osasuna": {
+          "score": ""
+        },
+        "Liverpool vs Manchester United": {
+          "score": ""
+        },
+        "Real Madrid vs Getafe": {
+          "score": ""
+        },
+        "Arsenal vs West Ham": {
+          "score": ""
+        },
+        "Bayern Munich vs Borussia Dortmund": {
+          "score": ""
+        },
+        "Torino vs Napoli": {
+          "score": ""
+        }
+      }
     }
   ]
 }
+
 
 
 
