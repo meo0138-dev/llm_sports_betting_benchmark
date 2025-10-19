@@ -2997,7 +2997,7 @@
       ],
       "results": {
         "Roma vs Inter": {
-          "score": ""
+          "score": "0-1"
         },
         "Milan vs Fiorentina": {
           "score": ""
@@ -3006,10 +3006,10 @@
           "score": "2-1"
         },
         "Bayern Monaco vs Borussia Dortmund": {
-          "score": ""
+          "score": "2-1"
         },
         "PSV Eindhoven vs Go Ahead Eagles": {
-          "score": ""
+          "score": "2-1"
         },
         "Manchester City vs Everton": {
           "score": "2-0"
@@ -3024,7 +3024,7 @@
           "score": "2-1"
         },
         "Atletico Madrid vs Osasuna": {
-          "score": ""
+          "score": "1-0"
         },
         "Liverpool vs Manchester United": {
           "score": ""
@@ -3036,15 +3036,16 @@
           "score": ""
         },
         "Bayern Munich vs Borussia Dortmund": {
-          "score": ""
+          "score": "2-1"
         },
         "Torino vs Napoli": {
-          "score": ""
+          "score": "1-0"
         }
       }
     }
   ]
 }
+
 
 
 
