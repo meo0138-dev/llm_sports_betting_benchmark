@@ -3000,7 +3000,7 @@
           "score": "0-1"
         },
         "Milan vs Fiorentina": {
-          "score": ""
+          "score": "2-1"
         },
         "Barcellona vs Girona": {
           "score": "2-1"
@@ -3015,10 +3015,10 @@
           "score": "2-0"
         },
         "Getafe vs Real Madrid": {
-          "score": ""
+          "score": "0-1"
         },
         "Atalanta vs Lazio": {
-          "score": ""
+          "score": "0-0"
         },
         "Barcelona vs Girona": {
           "score": "2-1"
@@ -3027,14 +3027,10 @@
           "score": "1-0"
         },
         "Liverpool vs Manchester United": {
-          "score": ""
+          "score": "1-2"
         },
-        "Real Madrid vs Getafe": {
-          "score": ""
-        },
-        "Arsenal vs West Ham": {
-          "score": ""
-        },
+        
+        
         "Bayern Munich vs Borussia Dortmund": {
           "score": "2-1"
         },
@@ -3045,6 +3041,7 @@
     }
   ]
 }
+
 
 
 
