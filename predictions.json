@@ -3081,7 +3081,7 @@
           "stake": 40,
           "odd": 2.3,
           "reasoning": "Inter are in phenomenal form with 7 consecutive wins across all competitions and just beat Roma 1-0 away. Napoli lost 6-2 to PSV midweek and are mentally fragile with key injuries to Lukaku, Hojlund, Lobotka, and Rrahmani. Last 3 H2H meetings ended 1-1, but Inter have won their last 4 away Serie A games and Napoli have won just 1 of last 8 home games against Inter. Inter's superior form and momentum make the away win at 2.30 excellent value.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Cremonese vs Atalanta",
@@ -3089,7 +3089,7 @@
           "stake": 35,
           "odd": 1.58,
           "reasoning": "Atalanta away against newly-promoted Cremonese should be straightforward. Cremonese are struggling in Serie A and Atalanta have the attacking quality to dominate this match. The away win at 1.58 offers solid value for a team of Atalanta's caliber against lower-table opposition.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Real Madrid vs Barcelona",
@@ -3097,7 +3097,7 @@
           "stake": 50,
           "odd": 1.29,
           "reasoning": "El Clasico with both teams having major defensive injuries. Madrid missing Rudiger, Alaba, possibly Mendy. Barcelona missing Lewandowski, Ter Stegen, Gavi. Last season these teams scored 23 goals in 4 meetings. Both are attacking but defensively vulnerable. Barcelona won last 4 meetings but this is at Bernabeu where Madrid are stronger. Over 2.5 at 1.29 is safer than picking a winner given both teams' attacking prowess and defensive issues.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Sassuolo vs Roma",
@@ -3105,7 +3105,7 @@
           "stake": 40,
           "odd": 1.86,
           "reasoning": "Roma away at newly-promoted Sassuolo represents good value. Roma are second in the table with 15 points and strong defensive record. Despite losing to Inter, Roma have quality throughout the squad. Sassuolo just returned to Serie A and will struggle against top sides. Roma away win at 1.86 offers excellent value for a quality team against promoted opposition.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Bayern Munich vs Borussia Monchengladbach",
@@ -3113,7 +3113,7 @@
           "stake": 45,
           "odd": 1.24,
           "reasoning": "Bayern have won all 7 Bundesliga matches with 27 goals scored - most prolific team. Gladbach are winless (0-3-4) and bottom of table with only 3 points and only 6 goals scored. Bayern won last 4 H2H meetings. Harry Kane has 20 goals in 12 matches this season. Despite low odds of 1.24, this is as close to a banker as possible for steady bankroll growth.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Manchester City vs Everton",
@@ -3121,7 +3121,7 @@
           "stake": 30,
           "odd": 2.26,
           "reasoning": "Manchester City at home against relegation-battling Everton. City have been in excellent form and Everton's away record is poor. Rather than taking the low 1.45 odds on straight home win, City to win without conceding at 2.26 offers much better value. City's quality should see them dominate and keep a clean sheet against struggling Everton.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Arsenal vs Crystal Palace",
@@ -3129,7 +3129,7 @@
           "stake": 35,
           "odd": 1.39,
           "reasoning": "Arsenal at home should dominate Crystal Palace. The Gunners are pushing for the title and Palace historically struggle at the Emirates. Despite low odds, this is essential for accumulator stability and Arsenal's home form makes this a reliable banker bet.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Lazio vs Juventus",
@@ -3137,7 +3137,7 @@
           "stake": 30,
           "odd": 1.3,
           "reasoning": "Juventus have been excellent to start Serie A with strong defensive record. While Lazio at home are tough, Juventus' quality justifies backing the double chance X2. This provides safety net if match ends in draw while still covering Juventus away win. Good value at 1.30 for minimizing risk.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Lille vs PSG",
@@ -3145,7 +3145,7 @@
           "stake": 25,
           "odd": 1.36,
           "reasoning": "PSG away at Lille should have the quality to win despite it being a tough fixture. PSG need to maintain pressure at top of Ligue 1. The away win at 1.36 offers decent value for steady returns with PSG's superior squad depth and attacking quality.",
-          "llm": "Claude Sonnet 4.5"
+          "llm": "Claude Opus 4.1"
         },
         {
           "match": "Parma vs Como",
@@ -3360,6 +3360,7 @@
     }
   ]
 }
+
 
 
 
