@@ -3108,21 +3108,21 @@
           "llm": "Claude Opus 4.1"
         },
         {
-          "match": "Bayern Munich vs Borussia Monchengladbach",
-          "prediction": "1",
+          "match": "Borussia Monchengladbach vs Bayern Monaco",
+          "prediction": "2",
           "stake": 45,
           "odd": 1.24,
           "reasoning": "Bayern have won all 7 Bundesliga matches with 27 goals scored - most prolific team. Gladbach are winless (0-3-4) and bottom of table with only 3 points and only 6 goals scored. Bayern won last 4 H2H meetings. Harry Kane has 20 goals in 12 matches this season. Despite low odds of 1.24, this is as close to a banker as possible for steady bankroll growth.",
           "llm": "Claude Opus 4.1"
         },
         {
-          "match": "Manchester City vs Everton",
-          "prediction": "1+NG",
-          "stake": 30,
-          "odd": 2.26,
-          "reasoning": "Manchester City at home against relegation-battling Everton. City have been in excellent form and Everton's away record is poor. Rather than taking the low 1.45 odds on straight home win, City to win without conceding at 2.26 offers much better value. City's quality should see them dominate and keep a clean sheet against struggling Everton.",
-          "llm": "Claude Opus 4.1"
-        },
+    "match": "Aston Villa vs Manchester City",
+    "prediction": "2",
+    "stake": 35,
+    "odd": 1.82,
+    "reasoning": "Manchester City away at Aston Villa should have the quality to win. City have been in excellent form and Villa, while strong at home, face a City side pushing for the title. City's superior squad depth and tactical flexibility make the away win at 1.82 good value.",
+    "llm": "Claude Opus 4.1"
+  },
         {
           "match": "Arsenal vs Crystal Palace",
           "prediction": "1",
@@ -3140,13 +3140,13 @@
           "llm": "Claude Opus 4.1"
         },
         {
-          "match": "Lille vs PSG",
-          "prediction": "2",
-          "stake": 25,
-          "odd": 1.36,
-          "reasoning": "PSG away at Lille should have the quality to win despite it being a tough fixture. PSG need to maintain pressure at top of Ligue 1. The away win at 1.36 offers decent value for steady returns with PSG's superior squad depth and attacking quality.",
-          "llm": "Claude Opus 4.1"
-        },
+    "match": "Brest vs PSG",
+    "prediction": "2",
+    "stake": 30,
+    "odd": 1.35,
+    "reasoning": "PSG away at Brest should have the quality to win. PSG need to maintain pressure at top of Ligue 1. Brest are a mid-table side and PSG's superior squad depth and attacking quality should prevail. The away win at 1.35 offers decent value for steady returns.",
+    "llm": "Claude Opus 4.1"
+  },
         {
           "match": "Parma vs Como",
           "prediction": "2",
@@ -3360,6 +3360,7 @@
     }
   ]
 }
+
 
 
 
