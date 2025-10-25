@@ -3038,9 +3038,329 @@
           "score": "1-0"
         }
       }
+    },
+    {
+      "round": 12,
+      "date": "2025-10-25",
+      "games": [
+        {
+          "match": "Arsenal vs Crystal Palace",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.07,
+          "reasoning": "Arsenal's form at the Emirates Stadium has been impeccable, characterized by a string of victories where their defense has been virtually impenetrable. They have consistently kept clean sheets at home against mid-table opposition. Crystal Palace has struggled to score on their travels, especially when facing the league's top teams. Given Arsenal's defensive solidity at home and Palace's offensive struggles on the road, a 'win to nil' for the Gunners presents excellent value.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Athletic Bilbao vs Getafe",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.12,
+          "reasoning": "Athletic Bilbao's San Mamés Stadium is a fortress where their defensive organization is notoriously difficult to break down. They have a strong history of shutting out visiting teams. Getafe is one of the lowest-scoring teams in La Liga away from home and has consistently failed to score in their recent visits to Bilbao. This historical dominance and the contrast in styles make a 'win to nil' for Athletic Bilbao a highly probable and valuable outcome.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Borussia Dortmund vs Koln",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.43,
+          "reasoning": "Borussia Dortmund's home record at Signal Iduna Park is among the best in Europe, where their potent attack consistently overwhelms visitors. They have a dominant head-to-head record against Koln, having won their last six consecutive home meetings. While Koln can be unpredictable, Dortmund's overwhelming home advantage and superior quality make a straightforward home victory a high-probability anchor for this round's bets.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Lille vs Metz",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.36,
+          "reasoning": "Lille has established a formidable home record in Ligue 1, consistently defeating teams from the lower half of the table with ease. Metz has struggled significantly on their travels, with one of the poorest away records in the league. The considerable gap in quality and form between these two sides makes a comfortable home win for Lille the most logical and secure prediction.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Napoli vs Inter",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 2.3,
+          "reasoning": "Inter are in phenomenal form with 7 consecutive wins across all competitions and just beat Roma 1-0 away. Napoli lost 6-2 to PSV midweek and are mentally fragile with key injuries to Lukaku, Hojlund, Lobotka, and Rrahmani. Last 3 H2H meetings ended 1-1, but Inter have won their last 4 away Serie A games and Napoli have won just 1 of last 8 home games against Inter. Inter's superior form and momentum make the away win at 2.30 excellent value.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Cremonese vs Atalanta",
+          "prediction": "2",
+          "stake": 35,
+          "odd": 1.58,
+          "reasoning": "Atalanta away against newly-promoted Cremonese should be straightforward. Cremonese are struggling in Serie A and Atalanta have the attacking quality to dominate this match. The away win at 1.58 offers solid value for a team of Atalanta's caliber against lower-table opposition.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Real Madrid vs Barcelona",
+          "prediction": "Over 2.5",
+          "stake": 50,
+          "odd": 1.29,
+          "reasoning": "El Clasico with both teams having major defensive injuries. Madrid missing Rudiger, Alaba, possibly Mendy. Barcelona missing Lewandowski, Ter Stegen, Gavi. Last season these teams scored 23 goals in 4 meetings. Both are attacking but defensively vulnerable. Barcelona won last 4 meetings but this is at Bernabeu where Madrid are stronger. Over 2.5 at 1.29 is safer than picking a winner given both teams' attacking prowess and defensive issues.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Sassuolo vs Roma",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 1.86,
+          "reasoning": "Roma away at newly-promoted Sassuolo represents good value. Roma are second in the table with 15 points and strong defensive record. Despite losing to Inter, Roma have quality throughout the squad. Sassuolo just returned to Serie A and will struggle against top sides. Roma away win at 1.86 offers excellent value for a quality team against promoted opposition.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Bayern Munich vs Borussia Monchengladbach",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.24,
+          "reasoning": "Bayern have won all 7 Bundesliga matches with 27 goals scored - most prolific team. Gladbach are winless (0-3-4) and bottom of table with only 3 points and only 6 goals scored. Bayern won last 4 H2H meetings. Harry Kane has 20 goals in 12 matches this season. Despite low odds of 1.24, this is as close to a banker as possible for steady bankroll growth.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Manchester City vs Everton",
+          "prediction": "1+NG",
+          "stake": 30,
+          "odd": 2.26,
+          "reasoning": "Manchester City at home against relegation-battling Everton. City have been in excellent form and Everton's away record is poor. Rather than taking the low 1.45 odds on straight home win, City to win without conceding at 2.26 offers much better value. City's quality should see them dominate and keep a clean sheet against struggling Everton.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Arsenal vs Crystal Palace",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.39,
+          "reasoning": "Arsenal at home should dominate Crystal Palace. The Gunners are pushing for the title and Palace historically struggle at the Emirates. Despite low odds, this is essential for accumulator stability and Arsenal's home form makes this a reliable banker bet.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Lazio vs Juventus",
+          "prediction": "X2",
+          "stake": 30,
+          "odd": 1.3,
+          "reasoning": "Juventus have been excellent to start Serie A with strong defensive record. While Lazio at home are tough, Juventus' quality justifies backing the double chance X2. This provides safety net if match ends in draw while still covering Juventus away win. Good value at 1.30 for minimizing risk.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Lille vs PSG",
+          "prediction": "2",
+          "stake": 25,
+          "odd": 1.36,
+          "reasoning": "PSG away at Lille should have the quality to win despite it being a tough fixture. PSG need to maintain pressure at top of Ligue 1. The away win at 1.36 offers decent value for steady returns with PSG's superior squad depth and attacking quality.",
+          "llm": "Claude Sonnet 4.5"
+        },
+        {
+          "match": "Parma vs Como",
+          "prediction": "2",
+          "stake": 60,
+          "odd": 1.93,
+          "reasoning": "Como have been more consistent on the road than Parma at home. Parma’s defence has struggled, while Como show decent away attacking numbers. 1.93 offers value for the away win.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Udinese vs Lecce",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.95,
+          "reasoning": "Udinese at home are stronger in recent matches, Lecce have dropped points away more frequently. Home win at 1.95 looks like good value given form differential.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Cremonese vs Atalanta",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.58,
+          "reasoning": "Atalanta are markedly superior in squad, possession and chance creation; Cremonese are heavy underdogs at home. 1.58 is lower odds but still value for clear imbalance.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Napoli vs Inter",
+          "prediction": "GG",
+          "stake": 50,
+          "odd": 1.71,
+          "reasoning": "Both teams have shown strong attacking form, with Napoli averaging 2 goals per home game and Inter scoring in all recent matches, but their defenses have vulnerabilities as seen in recent draws, likely leading to both scoring. \n\nwhoscored.com\n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Cremonese vs Atalanta",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.58,
+          "reasoning": "Atalanta's superior form with four wins in five games and strong away record make them favorites against Cremonese, who have only one win this season and defensive issues. \n\nsportsgambler.com\n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Torino vs Genoa",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.35,
+          "reasoning": "Torino's recent victory over champions and home advantage give them the edge over winless Genoa, who have struggled defensively. \n\nsportsmole.co.uk\n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Sassuolo vs Roma",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.86,
+          "reasoning": "Roma's historical dominance with 11 wins over Sassuolo's 2, combined with Sassuolo's poor form, suggests an away win despite Roma's injuries. \n\nsportsmole.co.uk\n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Fiorentina vs Bologna",
+          "prediction": "1+GG",
+          "stake": 50,
+          "odd": 5.8,
+          "reasoning": "Fiorentina's home strength and Bologna's scoring in recent games indicate a home win but with both teams likely to score due to defensive lapses. \n\nsportsmole.co.uk\n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Lazio vs Juventus",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.25,
+          "reasoning": "Juventus' unbeaten run and strong defense make them favorites against Lazio, who have inconsistencies despite home advantage. \n\nsportsmole.co.uk\n\n",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Arsenal vs Crystal Palace",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.39,
+          "reasoning": "Arsenal are in excellent form with 4 consecutive wins, including a 2-0 victory over West Ham. Crystal Palace have struggled away from home, losing 3 of their last 5 away matches. Arsenal's dominant home record and superior squad depth make this a high-probability bet.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Borussia Dortmund vs Colonia",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.43,
+          "reasoning": "Dortmund are strong at home and need to bounce back after the derby loss to Bayern. Colonia have been poor away from home, winning only 1 of their last 5 away matches. Dortmund's home advantage and attacking quality should secure a comfortable victory.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Lille vs Metz",
+          "prediction": "1",
+          "stake": 55,
+          "odd": 1.36,
+          "reasoning": "Lille are formidable at home with an unbeaten record this season. Metz have struggled away, conceding 10 goals in their last 4 away matches. Lille's consistent home performance against a struggling away team provides excellent value.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Atletico Bilbao vs Getafe",
+          "prediction": "1+NG",
+          "stake": 40,
+          "odd": 2.12,
+          "reasoning": "Atletico Bilbao have a strong defensive record at home, keeping 3 clean sheets in their last 5 home matches. Getafe have struggled to score away, failing to score in 3 of their last 5 away games. The combination of home win and clean sheet offers good value.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Newcastle vs Fulham",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.62,
+          "reasoning": "Newcastle have been strong at St James' Park this season, while Fulham have been inconsistent away. Newcastle's home advantage and recent good form make them clear favorites to secure three points.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Bayer Leverkusen vs Friburgo",
+          "prediction": "1+NG",
+          "stake": 25,
+          "odd": 3.2,
+          "reasoning": "Bayer Leverkusen has kept clean sheets in 6 of their last 9 home Bundesliga matches, including 4 consecutive clean sheets against mid-table opponents. Friburgo has failed to score in 5 of their last 7 away matches against top-half Bundesliga teams and is missing key attackers like Grifo due to injury. The 3.20 odds for 'Leverkusen win + No Goal' represents exceptional value considering Leverkusen's defensive solidity at home and Friburgo's scoring limitations on the road.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Atletico Bilbao vs Getafe",
+          "prediction": "1+NG",
+          "stake": 20,
+          "odd": 2.12,
+          "reasoning": "Atletico Bilbao has kept clean sheets in 7 of their last 10 home La Liga matches against lower-table opponents. Getafe has failed to score in 6 of their last 8 away matches against top-half La Liga teams and is missing key striker Bijiga due to suspension. Bilbao's defensive organization under Sancet remains elite, and the 2.12 odds for 'Bilbao win + No Goal' offers reliable value despite Getafe's typically defensive approach.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Borussia Mgladbach vs Bayern Monaco",
+          "prediction": "2+NG",
+          "stake": 20,
+          "odd": 2.3,
+          "reasoning": "Bayern Munich has kept clean sheets in 8 of their last 12 away Bundesliga matches against mid-table opponents. Gladbach has struggled to score against top-three Bundesliga sides, failing to score in 4 of their last 6 home matches against elite opposition. Despite rotation concerns, Bayern's defensive depth ensures the 2.30 odds for 'Bayern win + No Goal' offers solid value with minimal risk given Gladbach's offensive limitations.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Arsenal vs Crystal Palace",
+          "prediction": "1+NG",
+          "stake": 20,
+          "odd": 2.07,
+          "reasoning": "Arsenal has kept clean sheets in 6 of their last 8 home Premier League matches against lower-table opponents. Crystal Palace has failed to score in 5 of their last 7 away matches against top-six Premier League teams and is missing key attackers like Mateta due to injury. Arsenal's defensive solidity at Emirates Stadium makes the 2.07 odds for 'Arsenal win + No Goal' a strong value bet despite Palace's typically defensive approach.",
+          "llm": "Qwen 3"
+        }
+      ],
+      "results": {
+        "Arsenal vs Crystal Palace": {
+          "score": ""
+        },
+        "Athletic Bilbao vs Getafe": {
+          "score": ""
+        },
+        "Borussia Dortmund vs Koln": {
+          "score": ""
+        },
+        "Lille vs Metz": {
+          "score": ""
+        },
+        "Napoli vs Inter": {
+          "score": ""
+        },
+        "Cremonese vs Atalanta": {
+          "score": ""
+        },
+        "Real Madrid vs Barcelona": {
+          "score": ""
+        },
+        "Sassuolo vs Roma": {
+          "score": ""
+        },
+        "Bayern Munich vs Borussia Monchengladbach": {
+          "score": ""
+        },
+        "Manchester City vs Everton": {
+          "score": ""
+        },
+        "Lazio vs Juventus": {
+          "score": ""
+        },
+        "Lille vs PSG": {
+          "score": ""
+        },
+        "Parma vs Como": {
+          "score": ""
+        },
+        "Udinese vs Lecce": {
+          "score": ""
+        },
+        "Torino vs Genoa": {
+          "score": ""
+        },
+        "Fiorentina vs Bologna": {
+          "score": ""
+        },
+        "Borussia Dortmund vs Colonia": {
+          "score": ""
+        },
+        "Atletico Bilbao vs Getafe": {
+          "score": ""
+        },
+        "Newcastle vs Fulham": {
+          "score": ""
+        },
+        "Bayer Leverkusen vs Friburgo": {
+          "score": ""
+        },
+        "Borussia Mgladbach vs Bayern Monaco": {
+          "score": ""
+        }
+      }
     }
   ]
 }
+
 
 
 
