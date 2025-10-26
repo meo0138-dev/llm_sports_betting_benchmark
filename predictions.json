@@ -3108,7 +3108,7 @@
           "llm": "Claude Opus 4.1"
         },
         {
-          "match": "Borussia Monchengladbach vs Bayern Monaco",
+          "match": "Borussia Mgladbach vs Bayern Monaco",
           "prediction": "2",
           "stake": 45,
           "odd": 1.24,
@@ -3357,6 +3357,7 @@
     }
   ]
 }
+
 
 
 
