@@ -3580,7 +3580,7 @@
       ],
       "results": {
         "Juventus vs Torino": {
-          "score": ""
+          "score": "0-0"
         },
         "Atletico Madrid vs Levante": {
           "score": ""
@@ -3601,7 +3601,7 @@
           "score": ""
         },
         "Union Berlino vs Bayern Monaco": {
-          "score": ""
+          "score": "2-2"
         },
         "Celta Vigo vs Barcelona": {
           "score": ""
@@ -3616,7 +3616,7 @@
           "score": ""
         },
         "Bayer Leverkusen vs Heidenheim": {
-          "score": ""
+          "score": "6-0"
         },
         "Real Madrid vs Rayo Vallecano": {
           "score": ""
@@ -3634,6 +3634,7 @@
     }
   ]
 }
+
 
 
 
