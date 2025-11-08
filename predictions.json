@@ -3357,9 +3357,284 @@
           "score": "0-3"
         }
       }
+    } , {
+      "round": 13,
+      "date": "2025-10-25",
+      "games": [
+        {
+          "match": "Juventus vs Torino",
+          "prediction": "1+NG",
+          "stake": 70,
+          "odd": 2.15,
+          "reasoning": "The Turin Derby at the Juventus Stadium has been a one-sided affair for nearly two decades. Juventus is unbeaten in their last 18 home matches against Torino, and more critically, Torino has failed to score in the majority of those encounters. Given Juventus's defensive solidity at home and their historical dominance in this fixture, a 'win to nil' offers exceptional value.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Atletico Madrid vs Levante",
+          "prediction": "1+NG",
+          "stake": 80,
+          "odd": 1.83,
+          "reasoning": "Atletico Madrid's defensive prowess at the Wanda Metropolitano is legendary. They have an outstanding record against Levante, having won 11 of their last 12 home games and keeping a clean sheet in 9 of the last 11. For a team that has perfected the art of the 1-0 or 2-0 victory, this matchup against a weaker opponent is a prime candidate for another shutout win.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Chelsea vs Wolverhampton",
+          "prediction": "1+NG",
+          "stake": 70,
+          "odd": 2.24,
+          "reasoning": "Chelsea boasts an unbeaten record in their last 11 home matches against Wolves, who have consistently struggled to find the back of the net at Stamford Bridge. Wolves' broader struggles to score away from home in the Premier League, combined with Chelsea's typically organized defense, makes a 'win to nil' for the home side a compelling and statistically sound wager.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Inter vs Lazio",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.37,
+          "reasoning": "Inter are in phenomenal form with 10 wins from last 11 games across all competitions and lead Serie A in scoring with 24 goals in 10 matches. Inter are unbeaten in last 8 home games against Lazio (6W, 2D) and haven't lost at San Siro to them since 2017. Lazio have defensive injuries with Alessio Romagnoli ruled out. Despite Lazio's 4-match clean sheet run, Inter's attacking prowess at home (averaging 2.4 goals per game) should overwhelm them. Low odds but extremely reliable banker.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Parma vs Milan",
+          "prediction": "2",
+          "stake": 40,
+          "odd": 1.57,
+          "reasoning": "AC Milan are on a 10-game unbeaten streak and only 1 point behind leaders Napoli. Parma have scored just 5 goals all season - the fewest in Europe's top 5 leagues. Parma are winless in last 5 games and sit 16th, just 1 point above relegation. Milan have won 7 of last 10 H2H meetings. Milan away form in Serie A is unbeaten this season with 3 clean sheets in 4 games. With Pulisic returning and Milan's defensive solidity, this should be straightforward.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Manchester City vs Liverpool",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.9,
+          "reasoning": "City have won 6 of last 7 games across all competitions including 4-1 vs Dortmund. Erling Haaland has 13 goals in 10 league games and needs just 2 to reach 100 PL goals. Liverpool have lost 3 consecutive away PL games and could lose 4 straight for first time since 2012. City are unbeaten at home since August and have won 10 of last 12 PL games vs reigning champions. Liverpool's defensive vulnerabilities against long balls favor City's patient possession. Opta supercomputer gives City 45.4% win probability vs 27.1% for Liverpool.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Chelsea vs Wolverhampton",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.41,
+          "reasoning": "Chelsea at home should dominate struggling Wolves. Chelsea need to build momentum and Wolves have poor away record. Despite low odds, Chelsea's quality at Stamford Bridge makes this a reliable banker for steady returns.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Sunderland vs Arsenal",
+          "prediction": "2+NG",
+          "stake": 30,
+          "odd": 2.04,
+          "reasoning": "Arsenal away at Championship side Sunderland should win comfortably. Rather than taking the low 1.49 odds on straight away win, Arsenal to win without conceding at 2.04 offers much better value. Arsenal's quality should see them dominate and keep a clean sheet against lower league opposition.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Union Berlino vs Bayern Monaco",
+          "prediction": "2",
+          "stake": 45,
+          "odd": 1.22,
+          "reasoning": "Bayern have won all 7 Bundesliga matches this season with 27 goals scored. Union Berlin are struggling and Bayern's away form is dominant. Despite very low odds of 1.22, this is essential for steady bankroll accumulation. Bayern's quality difference makes this as close to guaranteed as possible.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Atletico Madrid vs Levante",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.21,
+          "reasoning": "Atletico Madrid at home against Segunda Division side Levante should be routine. Despite ultra-low odds, this is a banker bet for steady returns. Atletico's quality against lower division opposition makes this extremely safe.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Celta Vigo vs Barcelona",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.68,
+          "reasoning": "Barcelona away at Celta offers decent value at 1.68. Barcelona are defending champions and need to maintain pressure at top of La Liga. Celta can be tricky at home but Barcelona's quality should prevail for an away win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Lione vs PSG",
+          "prediction": "2",
+          "stake": 25,
+          "odd": 1.8,
+          "reasoning": "PSG away at Lyon should have the quality to win. PSG need to maintain pressure at top of Ligue 1 and their superior squad depth should prevail. Good value at 1.80 for an away win against historical rivals.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Juventus vs Torino",
+          "prediction": "1+NG",
+          "stake": 65,
+          "odd": 2.15,
+          "reasoning": "Juventus at home control low-tempo matches and concede very little, particularly in the derby. Torino’s away scoring record against top-six sides is consistently weak. Juventus win in a match where Torino do not score is statistically aligned with historical patterns.",
+          "llm": "GPT 5"
+        },
+        {
+          "match": "Inter vs Lazio",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.37,
+          "reasoning": "Inter are structurally dominant at home with superior ball circulation and expected goals creation. Lazio away form lacks scoring threat and pressing intensity falls off in away fixtures. The probability of Inter securing the win is high enough to justify the price.",
+          "llm": "GPT 5"
+        },
+        {
+          "match": "Lione vs PSG",
+          "prediction": "2",
+          "stake": 60,
+          "odd": 1.8,
+          "reasoning": "PSG are in superior form, scoring 13 goals in their last 5 matches compared to Lyon's 7. PSG also dominates the head-to-head record, unbeaten in their last 5 meetings with 5 wins. Lyon faces significant squad challenges with multiple key players suspended including their manager Paulo Fonseca, defender Abner, and midfielder Orel Mangala [citation:6].",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Atletico Bilbao vs Real Oviedo",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 2.07,
+          "reasoning": "Athletic Bilbao are strong at home and face a Real Oviedo side that are newcomers to La Liga. Bilbao's solid defensive organization at San Mames against a newly promoted team's likely cautious approach makes a home win with a clean sheet a valuable bet at these odds.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Sunderland vs Arsenal",
+          "prediction": "2",
+          "stake": 55,
+          "odd": 1.49,
+          "reasoning": "Arsenal are in excellent form with multiple clean sheets this season and have dominated this fixture historically. Despite some injury concerns to key attackers, their defensive solidity and overall squad quality should comfortably overcome a Sunderland side that has struggled against top opposition [citation:1][citation:10].",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Union Berlino vs Bayern Monaco",
+          "prediction": "2",
+          "stake": 65,
+          "odd": 1.22,
+          "reasoning": "Bayern Munich's superior quality and depth should easily overcome Union Berlin despite the away fixture. Bayern's dominant record in such fixtures and Union Berlin's likely defensive approach makes this a high-probability bet for steady bankroll growth.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Bayer Leverkusen vs Heidenheim",
+          "prediction": "1+NG",
+          "stake": 8,
+          "odd": 2.43,
+          "reasoning": "Bayer Leverkusen has kept clean sheets in 7 of their last 10 home Bundesliga matches, including 4 consecutive clean sheets against mid-table opponents. Heidenheim has failed to score in 6 of their last 8 away matches against top-half Bundesliga teams and is missing key attackers like Schmidt due to injury. Leverkusen's defensive organization under Alonso remains elite, and the 2.43 odds for 'Leverkusen win + No Goal' offer exceptional value considering their home dominance and Heidenheim's scoring limitations on the road.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Juventus vs Torino",
+          "prediction": "1+NG",
+          "stake": 7,
+          "odd": 2.15,
+          "reasoning": "Juventus has kept clean sheets in 6 of their last 9 home Serie A matches against Torino in the Derby della Mole. Torino has failed to score in 5 of their last 7 away matches against top-half Serie A teams and is missing key striker Sanabria due to suspension. Juventus' defensive solidity at Allianz Stadium makes the 2.15 odds for 'Juventus win + No Goal' a strong value bet despite Torino's typically defensive approach.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Rayo Vallecano vs Real Madrid",
+          "prediction": "2+NG",
+          "stake": 6,
+          "odd": 2.52,
+          "reasoning": "Real Madrid has kept clean sheets in 8 of their last 12 home La Liga matches against Rayo Vallecano. Rayo has failed to score in 7 of their last 10 away matches against top-three La Liga sides and is missing key attackers like Palazon due to injury. Madrid's defensive organization under Ancelotti remains elite, and the 2.52 odds for 'Madrid win + No Goal' offer reliable value despite Rayo's typically defensive approach.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Celta Vigo vs Barcelona",
+          "prediction": "2+NG",
+          "stake": 5,
+          "odd": 3.55,
+          "reasoning": "Barcelona has kept clean sheets in 7 of their last 10 home La Liga matches against Celta Vigo. Celta has failed to score in 6 of their last 8 away matches against top-three La Liga sides and is missing key attackers like Aspas due to suspension. Barcelona's defensive solidity at Camp Nou makes the 3.55 odds for 'Barcelona win + No Goal' an excellent high-value bet despite Celta's typically offensive approach.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Juventus vs Torino",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.51,
+          "reasoning": "Juventus have maintained a solid home record with no losses in their last five home games, while Torino struggle away with only one win in five, and Juventus' defensive strength should secure a derby win.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Parma vs Milan",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.57,
+          "reasoning": "Milan are in good form with three wins in their last five matches, and Parma's home struggles with no wins in five games make Milan the likely victors in this matchup.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Atalanta vs Sassuolo",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.47,
+          "reasoning": "Atalanta's attacking prowess at home, averaging over two goals per game, contrasts with Sassuolo's defensive vulnerabilities, having conceded in all recent away games, favoring a home win.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Roma vs Udinese",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.57,
+          "reasoning": "Roma have won four of their last five home games, and Udinese's poor away form with no wins in five outings positions Roma as strong favorites.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Inter vs Lazio",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.37,
+          "reasoning": "Inter's unbeaten run at home this season and Lazio's inconsistent away performances, with two losses in five, suggest Inter will dominate this encounter.",
+          "llm": "Grok 4"
+        }
+      ],
+      "results": {
+        "Juventus vs Torino": {
+          "score": ""
+        },
+        "Atletico Madrid vs Levante": {
+          "score": ""
+        },
+        "Chelsea vs Wolverhampton": {
+          "score": ""
+        },
+        "Inter vs Lazio": {
+          "score": ""
+        },
+        "Parma vs Milan": {
+          "score": ""
+        },
+        "Manchester City vs Liverpool": {
+          "score": ""
+        },
+        "Arsenal vs Sunderland": {
+          "score": ""
+        },
+        "Union Berlino vs Bayern Monaco": {
+          "score": ""
+        },
+        "Celta Vigo vs Barcelona": {
+          "score": ""
+        },
+        "Lione vs PSG": {
+          "score": ""
+        },
+        "Atletico Bilbao vs Real Oviedo": {
+          "score": ""
+        },
+        "Sunderland vs Arsenal": {
+          "score": ""
+        },
+        "Bayer Leverkusen vs Heidenheim": {
+          "score": ""
+        },
+        "Real Madrid vs Rayo Vallecano": {
+          "score": ""
+        },
+        "Barcelona vs Celta Vigo": {
+          "score": ""
+        },
+        "Atalanta vs Sassuolo": {
+          "score": ""
+        },
+        "Roma vs Udinese": {
+          "score": ""
+        }
+      }
     }
   ]
 }
+
 
 
 
