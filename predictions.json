@@ -3463,7 +3463,7 @@
           "stake": 65,
           "odd": 2.15,
           "reasoning": "Juventus at home control low-tempo matches and concede very little, particularly in the derby. Torino’s away scoring record against top-six sides is consistently weak. Juventus win in a match where Torino do not score is statistically aligned with historical patterns.",
-          "llm": "GPT 5"
+          "llm": "GPT5"
         },
         {
           "match": "Inter vs Lazio",
@@ -3471,7 +3471,7 @@
           "stake": 40,
           "odd": 1.37,
           "reasoning": "Inter are structurally dominant at home with superior ball circulation and expected goals creation. Lazio away form lacks scoring threat and pressing intensity falls off in away fixtures. The probability of Inter securing the win is high enough to justify the price.",
-          "llm": "GPT 5"
+          "llm": "GPT5"
         },
         {
           "match": "Lione vs PSG",
@@ -3634,6 +3634,7 @@
     }
   ]
 }
+
 
 
 
