@@ -3583,23 +3583,21 @@
           "score": "0-0"
         },
         "Atletico Madrid vs Levante": {
-          "score": ""
+          "score": "3-1"
         },
         "Chelsea vs Wolverhampton": {
-          "score": ""
+          "score": "3-0"
         },
         "Inter vs Lazio": {
           "score": ""
         },
         "Parma vs Milan": {
-          "score": ""
+          "score": "2-2"
         },
         "Manchester City vs Liverpool": {
           "score": ""
         },
-        "Arsenal vs Sunderland": {
-          "score": ""
-        },
+        
         "Union Berlino vs Bayern Monaco": {
           "score": "2-2"
         },
@@ -3613,17 +3611,15 @@
           "score": ""
         },
         "Sunderland vs Arsenal": {
-          "score": ""
+          "score": "2-2"
         },
         "Bayer Leverkusen vs Heidenheim": {
           "score": "6-0"
         },
-        "Real Madrid vs Rayo Vallecano": {
+        "Rayo Vallecano vs Real Madrid": {
           "score": ""
         },
-        "Barcelona vs Celta Vigo": {
-          "score": ""
-        },
+        
         "Atalanta vs Sassuolo": {
           "score": ""
         },
@@ -3634,6 +3630,7 @@
     }
   ]
 }
+
 
 
 
