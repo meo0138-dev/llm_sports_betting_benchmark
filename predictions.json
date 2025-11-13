@@ -3746,7 +3746,7 @@
           "llm": "Grok 4"
         },
         {
-          "match": ""Lussemburgo vs Germania"",
+          "match": "Lussemburgo vs Germania",
           "prediction": "2",
           "stake": 50,
           "odd": 1.06,
@@ -3861,6 +3861,7 @@
     }
   ]
 }
+
 
 
 
