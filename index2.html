@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  
+  <!-- SEO: Page Title - Appears in the browser tab and search engine results -->
+  <title>LLM Sports Betting Benchmark | AI Betting Performance Tracker</title>
+  
+  <!-- SEO: Viewport - Ensures the page is mobile-friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO: Meta Description - A brief summary of the page for search results -->
+  <meta name="description" content="Track and compare the sports betting performance of top Large Language Models (LLMs). View live leaderboards, bankroll updates, ROI, and detailed prediction logs for the 2025 season.">
+  
+  <!-- SEO: Meta Keywords - Relevant keywords for your site's content -->
+  <meta name="keywords" content="LLM betting, AI sports betting, artificial intelligence betting, sports betting benchmark, GPT betting, Gemini betting, Claude betting, football predictions, football tips, machine learning sports prediction, football betting AI">
+  
+  <!-- SEO: Author of the page -->
+  <meta name="Matteo Ceola" content="LLM Sports Betting Benchmark">
+  
+  <!-- SEO: Canonical URL - Tells Google the preferred URL for this page -->
+  <link rel="canonical" href="https://www.your-website-url.com/" />
+  
+  <!-- Social Media: Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.your-website-url.com/">
+  <meta property="og:title" content="LLM Sports Betting Benchmark | AI Betting Performance Tracker">
+  <meta property="og:description" content="Track and compare the sports betting performance of top Large Language Models (LLMs).">
+  <meta property="og:image" content="https://www.your-website-url.com/social-preview-image.png">
+  
+  <!-- Social Media: Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.your-website-url.com/">
+  <meta property="twitter:title" content="LLM Sports Betting Benchmark | AI Betting Performance Tracker">
+  <meta property="twitter:description" content="Track and compare the sports betting performance of top Large Language Models (LLMs).">
+  <meta property="twitter:image" content="https://www.your-website-url.com/social-preview-image.png">
+
+  <style>
+    /* ... (Your existing styles are unchanged) ... */
+    body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f4f4f4; margin: 0; color: #333; }
+    h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; }
+    .info { text-align: center; font-size: 1.1em; color: #555; margin-bottom: 30px; }
+    .leaderboard, .stats-table { margin-top: 30px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    th, td { border: 1px solid #ccc; padding: 12px; text-align: center; }
+    th { background: #3498db; color: white; font-weight: 600; }
+    .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #999; }
+    #round-selector-container { text-align: center; margin-bottom: 15px; }
+    #round-selector { padding: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; }
+    
+    /* --- Styles for Predictions and Reasoning --- */
+    .prediction {
+      background: #ecf0f1;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
+    }
+    .prediction-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .prediction-details {
+      font-size: 1em;
+      line-height: 1.4;
+    }
+    .status-badge { margin-left: 8px; font-weight: bold; font-style: italic; }
+    .pending { color: #f39c12; }
+    .win { color: #27ae60; }
+    .loss { color: #c0392b; }
+  
+    .reasoning-toggle {
+      font-size: 0.85em;
+      color: #3498db;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+    .reasoning-toggle:hover {
+      text-decoration: underline;
+    }
+    .reasoning-text {
+      display: none; /* Hidden by default */
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-left: 3px solid #95a5a6;
+      font-size: 0.9em;
+      color: #34495e;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎯 LLM Sports Betting Benchmark</h1>
+  <p class="info"><strong>Last updated:</strong> <span id="last-update">2025-08-27</span></p>
+  <div class="leaderboard">
+    <h2>🏆 Cumulative Leaderboard (Bankroll)</h2>
+    <table id="leaderboard-table">
+      <thead>
+        <tr>
+          <th>LLM</th>
+          <th>Bankroll (€)</th>
+          <th>Bankroll CI (95%)</th>
+          <th>ROI (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <h2>📋 Predictions Log</h2>
+  <div id="round-selector-container">
+    <label for="round-selector">Select Round:</label>
+    <select id="round-selector"></select>
+  </div>
+  <div id="predictions-container"></div>
+  <div class="stats-table">
+    <h3>📊 Cumulative Model Performance</h3>
+    <table id="stats-table">
+      <thead>
+        <tr>
+          <th>LLM</th>
+          <th>Number of bets</th>
+          <th>Avg Odd</th>
+          <th>Avg Stake (€)</th>
+          <th>Win Rate (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="footer">&copy; 2025 LLM Sports Betting Benchmark</div>
+  <script>
+    function isBetWon(game, results) {
+        const result = results[game.match];
+        if (!result || !result.score) return null;
+        const [homeGoals, awayGoals] = result.score.split('-').map(Number);
+        const totalGoals = homeGoals + awayGoals;
+        const prediction = game.prediction;
+        const is_gg = homeGoals > 0 && awayGoals > 0;
+        if (prediction === '1') return homeGoals > awayGoals;
+        if (prediction === 'X') return homeGoals === awayGoals;
+        if (prediction === '2') return awayGoals > homeGoals;
+        if (prediction === '1X') return homeGoals >= awayGoals;
+        if (prediction === 'X2') return awayGoals >= homeGoals;
+        if (prediction === '12') return homeGoals !== awayGoals;
+        if (prediction === 'GG') return is_gg;
+        if (prediction === 'NG') return !is_gg;
+        if (prediction.startsWith('Over ')) return totalGoals > parseFloat(prediction.split(' ')[1]);
+        if (prediction.startsWith('Under ')) return totalGoals < parseFloat(prediction.split(' ')[1]);
+        if (prediction === '1+GG') return homeGoals > awayGoals && is_gg;
+        if (prediction === '1+NG') return homeGoals > awayGoals && !is_gg;
+        if (prediction === 'X+GG') return homeGoals === awayGoals && is_gg;
+        if (prediction === 'X+NG') return homeGoals === awayGoals && !is_gg;
+        if (prediction === '2+GG') return awayGoals > homeGoals && is_gg;
+        if (prediction === '2+NG') return awayGoals > homeGoals && !is_gg;
+        return false;
+    }
+
+    // --- Fetch Leaderboard Data (unchanged) ---
+    fetch('leaderboard_data.json')
+      .then(res => res.json())
+      .then(leaderboardData => {
+        const leaderboardBody = document.querySelector('#leaderboard-table tbody');
+        leaderboardData.sort((a, b) => b.bankroll - a.bankroll);
+        leaderboardData.forEach(item => {
+          const row = leaderboardBody.insertRow();
+          row.insertCell(0).textContent = item.llm;
+          row.insertCell(1).textContent = `${item.bankroll.toFixed(2)}€`;
+          row.insertCell(2).textContent = item.bankroll_ci;
+          row.insertCell(3).textContent = `${item.roi.toFixed(2)}%`;
+        });
+      })
+      .catch(err => {
+        console.error("Error loading leaderboard data:", err);
+        const leaderboardBody = document.querySelector('#leaderboard-table tbody');
+        const row = leaderboardBody.insertRow();
+        const cell = row.insertCell(0);
+        cell.colSpan = 4;
+        cell.innerHTML = '<p style="color:red; font-weight:bold;">❌ Failed to load leaderboard. Run the R script.</p>';
+      });
+
+    // --- Fetch ALL Predictions Data ---
+    fetch('predictions.json')
+      .then(res => res.json())
+      .then(data => {
+        if (!data.rounds || data.rounds.length === 0) return;
+        
+        const lastRound = data.rounds[data.rounds.length - 1];
+        document.getElementById('last-update').textContent = lastRound.date;
+
+        const allGames = data.rounds.flatMap(r => r.games);
+        const allResults = data.rounds.reduce((acc, r) => ({ ...acc, ...r.results }), {});
+
+        // --- CUMULATIVE STATS TABLE (MODIFIED) ---
+        const statsBody = document.querySelector('#stats-table tbody');
+        const stats = {};
+        allGames.forEach(game => {
+          const llm = game.llm;
+          if (!stats[llm]) {
+            stats[llm] = { totalOdd: 0, totalCount: 0, totalStake: 0, totalWin: 0, resolvedCount: 0 };
+          }
+          stats[llm].totalOdd += game.odd;
+          stats[llm].totalCount++;
+          stats[llm].totalStake += game.stake;
+          const winStatus = isBetWon(game, allResults);
+          if (winStatus !== null) {
+            stats[llm].resolvedCount++;
+            if (winStatus === true) stats[llm].totalWin++;
+          }
+        });
+
+        Object.keys(stats).sort().forEach(llm => {
+          const item = stats[llm];
+          const numberOfBets = item.totalCount;
+          const avgOdd = (item.totalOdd / item.totalCount).toFixed(2);
+          const avgStake = (item.totalStake / item.totalCount).toFixed(2);
+          const winRate = item.resolvedCount > 0 ? ((item.totalWin / item.resolvedCount) * 100).toFixed(2) : 0;
+          const row = statsBody.insertRow();
+          row.insertCell(0).textContent = llm;
+          row.insertCell(1).textContent = numberOfBets;
+          row.insertCell(2).textContent = avgOdd;
+          row.insertCell(3).textContent = avgStake;
+          row.insertCell(4).textContent = `${winRate}%`;
+        });
+
+        // --- DYNAMICALLY CREATE DROPDOWN AND PREDICTION LISTS ---
+        const selector = document.getElementById('round-selector');
+        const predictionsContainer = document.getElementById('predictions-container');
+
+        data.rounds.slice().reverse().forEach(round => {
+            const option = document.createElement('option');
+            option.value = round.round;
+            option.textContent = `Round ${round.round}`;
+            selector.appendChild(option);
+
+            const roundPredictionsDiv = document.createElement('div');
+            roundPredictionsDiv.id = `round-${round.round}-predictions`;
+            roundPredictionsDiv.className = 'round-predictions';
+            
+            round.games.forEach(game => {
+                const div = document.createElement('div');
+                div.className = 'prediction';
+                const winStatus = isBetWon(game, allResults);
+                let statusSpan, statusClass;
+                if (winStatus === null) { statusClass = 'pending'; statusSpan = `⏳ Bet Ongoing`; }
+                else if (winStatus === true) { statusClass = 'win'; statusSpan = `✅ Won`; }
+                else { statusClass = 'loss'; statusSpan = `❌ Lost`; }
+                
+                div.innerHTML = `
+                  <div class="prediction-main">
+                    <span class="prediction-details">
+                      <strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd}
+                      <span class="status-badge ${statusClass}">${statusSpan}</span>
+                    </span>
+                    ${game.reasoning ? `<a href="#" class="reasoning-toggle">show reasoning</a>` : ''}
+                  </div>
+                  ${game.reasoning ? `<div class="reasoning-text">${game.reasoning}</div>` : ''}
+                `;
+                roundPredictionsDiv.appendChild(div);
+            });
+            predictionsContainer.appendChild(roundPredictionsDiv);
+        });
+
+        // --- NEW: EVENT LISTENER FOR REASONING TOGGLE ---
+        predictionsContainer.addEventListener('click', (e) => {
+            if (e.target.classList.contains('reasoning-toggle')) {
+                e.preventDefault();
+                const mainDiv = e.target.closest('.prediction-main');
+                const reasoningText = mainDiv.nextElementSibling;
+
+                if (reasoningText && reasoningText.classList.contains('reasoning-text')) {
+                    const isHidden = reasoningText.style.display === 'none' || reasoningText.style.display === '';
+                    reasoningText.style.display = isHidden ? 'block' : 'none';
+                    e.target.textContent = isHidden ? 'hide reasoning' : 'show reasoning';
+                }
+            }
+        });
+
+        selector.addEventListener('change', () => {
+            const roundIdToShow = selector.value;
+            document.querySelectorAll('.round-predictions').forEach(div => {
+                div.style.display = (div.id === `round-${roundIdToShow}-predictions`) ? 'block' : 'none';
+            });
+        });
+        
+        selector.dispatchEvent(new Event('change'));
+
+      })
+      .catch(err => console.error("Error loading predictions:", err));
+  </script>
+</body>
+</html>

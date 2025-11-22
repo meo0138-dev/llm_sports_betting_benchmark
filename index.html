@@ -95,7 +95,7 @@
 </head>
 <body>
   <h1>🎯 LLM Sports Betting Benchmark</h1>
-  <p class="info"><strong>Last updated:</strong> <span id="last-update">2025-08-27</span></p>
+  <p class="info"><strong>Last updated:</strong> <span id="last-update">...</span></p>
   <div class="leaderboard">
     <h2>🏆 Cumulative Leaderboard (Bankroll)</h2>
     <table id="leaderboard-table">
@@ -133,6 +133,22 @@
   </div>
   <div class="footer">&copy; 2025 LLM Sports Betting Benchmark</div>
   <script>
+    // --- AI Name Mapping Configuration ---
+    const llmNameMapping = {
+        "Claude Opus 4.1": "Claude Sonnet 4.5",
+        "Claude Sonnet 4.5": "Claude Sonnet 4.5", // Handle case if already correct
+        "Gemini 2.5 Pro": "Gemini 3.0 Pro",
+        "Deepseek V3.1": "Deepseek V3.2",
+        "GPT5": "GPT 5.1",
+        "Grok 4": "Grok 4.1",
+        "Grok 4.1": "Grok 4.1",
+        "Qwen 3": "Qwen 3"
+    };
+
+    function getDisplayName(rawName) {
+        return llmNameMapping[rawName] || rawName;
+    }
+
     function isBetWon(game, results) {
         const result = results[game.match];
         if (!result || !result.score) return null;
@@ -167,7 +183,8 @@
         leaderboardData.sort((a, b) => b.bankroll - a.bankroll);
         leaderboardData.forEach(item => {
           const row = leaderboardBody.insertRow();
-          row.insertCell(0).textContent = item.llm;
+          // Apply display name mapping
+          row.insertCell(0).textContent = getDisplayName(item.llm);
           row.insertCell(1).textContent = `${item.bankroll.toFixed(2)}€`;
           row.insertCell(2).textContent = item.bankroll_ci;
           row.insertCell(3).textContent = `${item.roi.toFixed(2)}%`;
@@ -198,7 +215,9 @@
         const statsBody = document.querySelector('#stats-table tbody');
         const stats = {};
         allGames.forEach(game => {
-          const llm = game.llm;
+          // Apply display name mapping for stats aggregation
+          const llm = getDisplayName(game.llm);
+          
           if (!stats[llm]) {
             stats[llm] = { totalOdd: 0, totalCount: 0, totalStake: 0, totalWin: 0, resolvedCount: 0 };
           }
@@ -249,10 +268,11 @@
                 else if (winStatus === true) { statusClass = 'win'; statusSpan = `✅ Won`; }
                 else { statusClass = 'loss'; statusSpan = `❌ Lost`; }
                 
+                // Apply display name mapping in prediction list
                 div.innerHTML = `
                   <div class="prediction-main">
                     <span class="prediction-details">
-                      <strong>${game.llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd}
+                      <strong>${getDisplayName(game.llm)}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd}
                       <span class="status-badge ${statusClass}">${statusSpan}</span>
                     </span>
                     ${game.reasoning ? `<a href="#" class="reasoning-toggle">show reasoning</a>` : ''}
