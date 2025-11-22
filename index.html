@@ -182,6 +182,7 @@
         const STARTING_BANKROLL = 1000;
         const modelStats = {}; 
         const chartDataMap = {};
+        const modelCumulativeProfit = {}; // Track cumulative unrounded profit
         const roundsList = ["Start"];
 
         // Unique Models (using Display Name)
@@ -190,15 +191,14 @@
         
         uniqueModels.forEach(model => {
             chartDataMap[model] = [STARTING_BANKROLL];
+            modelCumulativeProfit[model] = 0; // Initialize exact profit tracker
             modelStats[model] = { totalOdd: 0, totalCount: 0, totalStake: 0, totalWin: 0, resolvedCount: 0 };
         });
 
         // Process Rounds for Chart
         data.rounds.forEach(round => {
             roundsList.push(`Round ${round.round}`);
-            const roundProfit = {}; 
-            uniqueModels.forEach(m => roundProfit[m] = 0);
-
+            
             round.games.forEach(game => {
                 const llm = getDisplayName(game.llm);
                 const winStatus = isBetWon(game, allResults);
@@ -211,16 +211,18 @@
                     modelStats[llm].resolvedCount++;
                     if (winStatus === true) {
                         modelStats[llm].totalWin++;
-                        roundProfit[llm] += (game.stake * game.odd) - game.stake;
+                        // Add profit to cumulative tracker (NO ROUNDING YET)
+                        modelCumulativeProfit[llm] += (game.stake * game.odd) - game.stake;
                     } else {
-                        roundProfit[llm] -= game.stake;
+                        modelCumulativeProfit[llm] -= game.stake;
                     }
                 }
             });
 
             uniqueModels.forEach(model => {
-                const currentBankroll = chartDataMap[model][chartDataMap[model].length - 1];
-                chartDataMap[model].push(parseFloat((currentBankroll + roundProfit[model]).toFixed(2)));
+                // Calculate current bankroll from start + cumulative profit, THEN round for display
+                const exactBankroll = STARTING_BANKROLL + modelCumulativeProfit[model];
+                chartDataMap[model].push(parseFloat(exactBankroll.toFixed(2)));
             });
         });
 
@@ -357,4 +359,5 @@
       .catch(err => console.error("Error loading predictions:", err));
   </script>
 </body>
-  </html>
+</html>
+
