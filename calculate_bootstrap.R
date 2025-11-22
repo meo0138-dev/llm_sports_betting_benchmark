@@ -6,6 +6,27 @@ INITIAL_BANKROLL <- 1000
 BOOTSTRAP_REPS <- 10000
 CONFIDENCE_LEVEL <- 0.95
 
+# --- AI Name Mapping ---
+# Must match the mapping in index.html
+apply_llm_mapping <- function(raw_name) {
+  mapping <- list(
+    "Claude Opus 4.1" = "Claude Sonnet 4.5",
+    "Claude Sonnet 4.5" = "Claude Sonnet 4.5",
+    "Gemini 2.5 Pro" = "Gemini 3.0 Pro",
+    "Deepseek V3.1" = "Deepseek V3.2",
+    "GPT5" = "GPT 5.1",
+    "Grok 4" = "Grok 4.1",
+    "Grok 4.1" = "Grok 4.1",
+    "Qwen 3" = "Qwen 3"
+  )
+  
+  if (raw_name %in% names(mapping)) {
+    return(mapping[[raw_name]])
+  } else {
+    return(raw_name)
+  }
+}
+
 # --- Data Loading ---
 data <- fromJSON("predictions.json", simplifyDataFrame = FALSE)
 
@@ -18,9 +39,15 @@ for (round_data in data$rounds) {
   if (length(round_data$games) > 0) {
     for (game in round_data$games) {
       game_df <- as.data.frame(game, stringsAsFactors = FALSE)
+      
+      # Normalize columns
       missing_cols <- setdiff(all_possible_cols, names(game_df))
       if (length(missing_cols) > 0) { game_df[, missing_cols] <- NA }
       game_df <- game_df[, all_possible_cols]
+      
+      # Apply Name Mapping Here
+      game_df$llm <- apply_llm_mapping(game_df$llm)
+      
       all_games <- rbind(all_games, game_df)
     }
   }
@@ -30,19 +57,26 @@ for (round_data in data$rounds) {
 }
 cat("Found", nrow(all_games), "total bets across", length(data$rounds), "rounds.\n")
 
-# --- Helper Function ---
+# --- Helper Function (Profit Calculation) ---
 determine_profit <- function(bet_row, results_list) {
   match_name <- bet_row$match
-  if (!match_name %in% names(results_list)) return(NA)  # unresolved bet → NA profit
+  if (!match_name %in% names(results_list)) return(NA)  # unresolved bet
+  
   prediction <- bet_row$prediction
   stake <- as.numeric(bet_row$stake)
   odd <- as.numeric(bet_row$odd)
+  
   score_str <- results_list[[match_name]]$score
-  if (is.null(score_str) || !grepl("-", score_str)) return(NA)
+  if (is.null(score_str) || score_str == "" || !grepl("-", score_str)) return(NA)
+  
   scores <- as.numeric(strsplit(score_str, "-")[[1]])
   home_goals <- scores[1]; away_goals <- scores[2]; total_goals <- home_goals + away_goals
-  home_win <- home_goals > away_goals; draw <- home_goals == away_goals; away_win <- away_goals > home_goals
+  
+  home_win <- home_goals > away_goals
+  draw <- home_goals == away_goals
+  away_win <- away_goals > home_goals
   is_gg <- home_goals > 0 && away_goals > 0
+  
   is_win <- FALSE
   
   if (prediction == "1") { if (home_win) is_win <- TRUE }
@@ -71,7 +105,7 @@ determine_profit <- function(bet_row, results_list) {
   if (is_win) return(stake * (odd - 1)) else return(-stake)
 }
 
-# Calculate the profit column for the entire dataset once.
+# Calculate profit for all games
 all_games$profit <- sapply(1:nrow(all_games), function(i) determine_profit(all_games[i,], all_results))
 
 # --- Main Processing ---
@@ -87,19 +121,19 @@ leaderboard_data <- lapply(llms, function(current_llm) {
     lower_bound <- INITIAL_BANKROLL
     upper_bound <- INITIAL_BANKROLL
   } else {
-    # bootstrap only on resolved bets
+    # Bootstrap
     bootstrapped_profits <- replicate(BOOTSTRAP_REPS, { sum(sample(profit_vector, length(profit_vector), replace = TRUE)) })
     bootstrapped_bankrolls <- INITIAL_BANKROLL + bootstrapped_profits
     lower_bound <- quantile(bootstrapped_bankrolls, (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
     upper_bound <- quantile(bootstrapped_bankrolls, 1 - (1 - CONFIDENCE_LEVEL) / 2, na.rm = TRUE)
     
-    # --- ROI FIX: only completed bets ---
+    # ROI
     resolved_bets <- llm_bets[!is.na(llm_bets$profit), ]
     total_staked_resolved <- sum(as.numeric(resolved_bets$stake))
     total_profit_resolved <- sum(as.numeric(resolved_bets$profit))
     roi <- ifelse(total_staked_resolved > 0, (total_profit_resolved / total_staked_resolved) * 100, 0)
     
-    # bankroll includes resolved bets only
+    # Bankroll
     current_bankroll <- INITIAL_BANKROLL + sum(resolved_bets$profit)
   }
   
@@ -111,8 +145,8 @@ leaderboard_data <- lapply(llms, function(current_llm) {
   )
 })
 
-# --- Write Output JSON ---
+# --- Write Output ---
 json_output <- toJSON(leaderboard_data, pretty = TRUE, auto_unbox = TRUE)
 write(json_output, "leaderboard_data.json")
 
-cat("✅ Successfully generated cumulative leaderboard_data.json.\n")
+cat("✅ Successfully generated cumulative leaderboard_data.json with name mapping.\n")
