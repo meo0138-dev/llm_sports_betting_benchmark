@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add leaderboard_data.json index.html
+          git add leaderboard_data.json chart_data.json index.html 
           git diff-index --quiet HEAD || git commit -m "Automated leaderboard and date update"
 
       - name: Push changes to main
