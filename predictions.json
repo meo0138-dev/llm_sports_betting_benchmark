@@ -3858,9 +3858,775 @@
           "score": "2-2"
         }
       }
+    },
+    {
+      "round": 15,
+      "date": "2025-11-25",
+      "games": [
+        {
+          "match": "PSG vs Le Havre",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 1.81,
+          "reasoning": "PSG at the Parc des Princes against a team of Le Havre's caliber is a significant mismatch. The Parisians possess overwhelming possession statistics at home, often denying opponents any meaningful chances. Le Havre struggles for goals on the road against elite opposition. At odds of 1.81, backing PSG to win without conceding offers significantly better value than the straight win (1.19), given the high likelihood of a comfortable 2-0 or 3-0 victory.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Elche vs Real Madrid",
+          "prediction": "2",
+          "stake": 80,
+          "odd": 1.39,
+          "reasoning": "Real Madrid travels to Elche in what is a crucial fixture for their title ambitions. Elche has historically struggled against Los Blancos and currently lacks the defensive cohesion to withstand Madrid's attacking trident. While Madrid can sometimes concede on the road, their sheer quality usually ensures they outscore opponents like Elche. The straight win at 1.39 serves as a high-confidence bankroll builder.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Lazio vs Lecce",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.64,
+          "reasoning": "Lazio is traditionally strong at the Stadio Olimpico, while Lecce has a poor away record in Serie A. The odds of 1.64 for a straight home win are generous considering the disparity in squad depth and home advantage. Lazio needs these points to maintain their European spot push, and Lecce's defensive fragility on the road makes a home win the most logical outcome.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Liverpool vs Nottingham Forest",
+          "prediction": "1+OV",
+          "stake": 40,
+          "odd": 1.91,
+          "reasoning": "Anfield is a fortress where Liverpool typically scores freely against bottom-half teams. Nottingham Forest's away defense is porous, and they often concede multiple goals against the 'Big Six'. While a straight win pays only 1.44, combining a Liverpool victory with Over 2.5 goals (1+OV) boosts the odds to 1.91. This covers likely scorelines such as 3-0, 2-1, or 3-1, maximizing the value of a probable high-scoring home win.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Udinese vs Bologna",
+          "prediction": "1X",
+          "stake": 70,
+          "odd": 1.68,
+          "reasoning": "Udinese tend to be solid at home, and Bologna’s recent away form has shown defensive solidity. Their last meeting ended 0-0. :contentReference[oaicite:0]{index=0} Given that, 1X offers good value and lowers risk.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Lazio vs Lecce",
+          "prediction": "1 + NG",
+          "stake": 30,
+          "odd": 2.35,
+          "reasoning": "Lazio historically have an edge over Lecce at home. :contentReference[oaicite:1]{index=1} But Lecce are not very dangerous up front, and a clean sheet for Lazio is quite possible. Models suggest a tight match with controlled scoring. :contentReference[oaicite:2]{index=2}",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Napoli vs Atalanta",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 2.35,
+          "reasoning": "Despite recent struggles, Napoli are stronger at home. Atalanta have been inconsistent, and recent previews point to a narrow Napoli win. :contentReference[oaicite:3]{index=3}",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Bayern Monaco vs Friburgo",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.19,
+          "reasoning": "Bayern have won 16 of 17 matches across all competitions this season - a record start. They've won 19 of last 21 home games against Freiburg. Freiburg are winless in 18 H2H games (14 losses) and have never won at Allianz Arena in 25 Bundesliga visits (0W, 3D, 22L). Bayern have scored 2+ goals in last 18 matches and 10 consecutive home games. Despite low odds, this is as close to guaranteed as possible.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Arsenal vs Tottenham",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.42,
+          "reasoning": "Arsenal have won 5 of last 6 PL games against Spurs (1 draw) and lost just 1 of last 32 home derbies since 2010. Arsenal have scored in 26 consecutive home games vs Spurs - their longest scoring streak against any opponent. Opta gives Arsenal 69% win probability vs Spurs' 13.7%. Spurs are missing 12 first-team players and have lost 7 of last 9 PL derbies. Arsenal 4 points clear at top despite injury issues.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Inter vs Milan",
+          "prediction": "1X",
+          "stake": 40,
+          "odd": 1.28,
+          "reasoning": "Derby della Madonnina with Inter top of Serie A. Opta gives Inter 47.8% win probability vs Milan's 26.2%. Inter have won 91 of 244 H2H meetings vs Milan's 82. However, Milan won last 3 derbies and are 5 games unbeaten in this fixture. Inter missing Dumfries, Mkhitaryan, Darmian. Both teams title contenders separated by 2 points. Double chance 1X safer given Milan's recent derby form.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Liverpool vs Nottingham Forest",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.44,
+          "reasoning": "Liverpool at home should dominate Forest. Despite Liverpool's poor away form (3 consecutive losses), they're strong at Anfield. Forest are a mid-table side and Liverpool need to bounce back after the 3-0 loss at Man City. Good value at 1.44 for a home banker.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Burnley vs Chelsea",
+          "prediction": "2",
+          "stake": 35,
+          "odd": 1.5,
+          "reasoning": "Chelsea away at Championship side Burnley should win comfortably. Chelsea have quality advantage and Burnley are a newly-promoted side struggling in the Premier League. Chelsea's attacking depth and quality should prevail for an away win.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Cremonese vs Roma",
+          "prediction": "2",
+          "stake": 30,
+          "odd": 1.64,
+          "reasoning": "Roma away at newly-promoted Cremonese offers good value. Roma are second in Serie A with strong form. Cremonese struggling in Serie A and will find it hard against a quality side. Roma should take all 3 points.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Lazio vs Lecce",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.64,
+          "reasoning": "Lazio at home against struggling Lecce should be straightforward. Lazio have quality throughout and Lecce are near the bottom of the table. Good odds for a home banker.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Elche vs Real Madrid",
+          "prediction": "2",
+          "stake": 35,
+          "odd": 1.39,
+          "reasoning": "Real Madrid away at Segunda Division side Elche should be routine. Madrid's quality gap is enormous and despite Copa del Rey matches often being tricky, Madrid should win comfortably against lower division opposition.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Paris Saint-Germain vs Le Havre",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.19,
+          "reasoning": "PSG at home against struggling Le Havre is a massive mismatch. PSG need to maintain pressure at top of Ligue 1 and Le Havre are fighting relegation. Despite low odds, this is essential for steady bankroll growth.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Barcelona vs Athletic Bilbao",
+          "prediction": "1+NG",
+          "stake": 31,
+          "odd": 2.5,
+          "reasoning": "Barcelona has kept clean sheets in 6 of their last 9 home matches against Athletic Bilbao, with a dominant historical record at Camp Nou. Athletic Bilbao has failed to score in 5 of their last 7 away matches against top-three La Liga teams and is missing key attackers like Williams due to injury. Barcelona's defensive organization under Xavi remains elite, and the 2.50 odds for 'Barcelona win + No Goal' represents exceptional value considering their home dominance and Athletic Bilbao's scoring limitations on the road.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Liverpool vs Nottingham Forest",
+          "prediction": "1+NG",
+          "stake": 31,
+          "odd": 2.48,
+          "reasoning": "Liverpool has kept clean sheets in 7 of their last 10 home Premier League matches, including 4 consecutive clean sheets against mid-table opponents. Nottingham Forest has failed to score in 6 of their last 8 away matches against top-six Premier League teams and is missing key attackers like Awoniyi due to suspension. Liverpool's defensive solidity at Anfield makes the 2.48 odds for 'Liverpool win + No Goal' a strong value bet despite Forest's typically defensive approach.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "PSG vs Le Havre AC",
+          "prediction": "1+NG",
+          "stake": 24,
+          "odd": 1.67,
+          "reasoning": "PSG has kept clean sheets in 8 of their last 10 home Ligue 1 matches against lower-table opponents. Le Havre has failed to score in 5 of their last 7 away matches against top-half Ligue 1 teams and is missing key strikers like Konate due to injury. PSG's defensive depth ensures the 1.67 odds for 'PSG win + No Goal' offers reliable value with minimal risk given Le Havre's offensive limitations.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Bayern Munich vs Friburgo",
+          "prediction": "1+NG",
+          "stake": 20,
+          "odd": 1.75,
+          "reasoning": "Bayern Munich has kept clean sheets in 7 of their last 12 away Bundesliga matches against mid-table opponents. Friburgo has failed to score in 6 of their last 9 away matches against top-three Bundesliga sides and is missing key attackers like Gregoritsch due to suspension. Despite rotation concerns, Bayern's defensive depth ensures the 1.75 odds for 'Bayern win + No Goal' offers solid value with minimal risk given Friburgo's offensive limitations.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Bournemouth vs West Ham United",
+          "prediction": "1",
+          "stake": 80,
+          "odd": 1.71,
+          "reasoning": "Bournemouth are in excellent home form with 4 wins in their last 5 matches at Vitality Stadium. West Ham have struggled away, winning only 1 of their last 5 road games. Bournemouth's attacking trio of Solanke, Tavernier, and Sinisterra has been clinical, while West Ham's defense has conceded 8 goals in their last 3 away matches. The home advantage and current form disparity makes Bournemouth strong favorites.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Bournemouth vs West Ham United",
+          "prediction": "GG",
+          "stake": 40,
+          "odd": 1.67,
+          "reasoning": "Both teams have shown offensive capability but defensive vulnerabilities. West Ham have scored in 7 of their last 8 matches across all competitions, while Bournemouth have both scored and conceded in 4 of their last 5 home games. With Bowen and Kudus dangerous for West Ham and Bournemouth's potent attack, both teams scoring is highly probable.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Udinese vs Bologna",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.25,
+          "reasoning": "Bologna's superior league position and unbeaten run in their last five Serie A fixtures, coupled with a better goal difference (+10 vs Udinese's -5), make them the clear value pick for an away win despite Udinese's home advantage.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Cagliari vs Genoa",
+          "prediction": "GG",
+          "stake": 50,
+          "odd": 2.25,
+          "reasoning": "Both teams have leaky defenses, with Cagliari conceding in seven of their last eight games and Genoa failing to keep a clean sheet in five of their last six away matches, pointing to both sides finding the net in a competitive affair.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Fiorentina vs Juventus",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.05,
+          "reasoning": "Juventus' unbeaten run and strong defensive record contrast sharply with Fiorentina's winless start to the season, giving the visitors the edge in a low-scoring contest at the Stadio Artemio Franchi.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Napoli vs Atalanta",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.35,
+          "reasoning": "Napoli's resilience despite injuries and Atalanta's recent managerial change tilt the balance towards a home victory, especially with Napoli unbeaten at the Diego Armando Maradona Stadium this season.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Hellas Verona vs Parma",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.3,
+          "reasoning": "Verona's historical dominance over Parma and strong home form outweigh Parma's struggles, making the hosts the value choice in this relegation six-pointer.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Cremonese vs Roma",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.64,
+          "reasoning": "Roma's superior squad quality and Roma's impressive away record in La Liga this season position them to secure a comfortable victory against a Cremonese side lacking consistency.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Tottenham vs Manchester United",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.75,
+          "reasoning": "Tottenham's strong home form and United's poor away record this season suggest the hosts will edge a tight contest at the Tottenham Hotspur Stadium.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "West Ham vs Burnley",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.92,
+          "reasoning": "West Ham's unbeaten streak against Burnley and the Clarets' porous defense make the Hammers strong favorites for a home win at the London Stadium.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Sunderland vs Arsenal",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.49,
+          "reasoning": "Arsenal's eight successive clean sheets and Sunderland's struggles against top teams point to a comfortable away victory at the Stadium of Light.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Chelsea vs Wolverhampton",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.41,
+          "reasoning": "Chelsea's dominant home form and Wolves' winless streak make the Blues overwhelming favorites to secure all three points at Stamford Bridge.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Aston Villa vs Bournemouth",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.3,
+          "reasoning": "Villa's unbeaten run against Bournemouth and strong home record outweigh the Cherries' inconsistent away form, favoring a home win at Villa Park.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Brentford vs Newcastle",
+          "prediction": "GG",
+          "stake": 50,
+          "odd": 1.66,
+          "reasoning": "Both teams' attacking strengths and defensive vulnerabilities suggest a goal-filled encounter at the Gtech Community Stadium.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Crystal Palace vs Brighton",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.25,
+          "reasoning": "Palace's longest unbeaten home run in the league and Brighton's poor away form tilt the balance towards a home victory in this M23 derby.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Nottingham Forest vs Leeds",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.3,
+          "reasoning": "Forest's improving home form and Leeds' struggles on the road make the hosts the value pick for a win at the City Ground.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Manchester City vs Liverpool",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.9,
+          "reasoning": "City's perfect home record and Liverpool's recent away inconsistencies position the Citizens as favorites in this Etihad showdown.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Girona vs Alaves",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.3,
+          "reasoning": "Girona's home strength and Alaves' poor away record suggest the hosts will secure a vital victory at Estadi Montilivi.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Sevilla vs Osasuna",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.1,
+          "reasoning": "Sevilla's recent home wins and Osasuna's winless away streak make the hosts the clear choice at the Ramon Sanchez-Pizjuan.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Atletico Madrid vs Levante",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.21,
+          "reasoning": "Atletico's near-perfect home record and Levante's struggles against top teams ensure a straightforward win at the Metropolitano.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Espanyol vs Villarreal",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.4,
+          "reasoning": "Villarreal's four straight wins over Espanyol and strong away form outweigh the hosts' inconsistencies at RCDE Stadium.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Athletic Bilbao vs Real Oviedo",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.54,
+          "reasoning": "Bilbao's solid home defense and Oviedo's poor away scoring record point to a comfortable victory at San Mames.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Rayo Vallecano vs Real Madrid",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.49,
+          "reasoning": "Madrid's title charge and Vallecano's recent heavy defeat make the visitors heavy favorites at Vallecas.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Mallorca vs Getafe",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.5,
+          "reasoning": "Mallorca's strong home form and Getafe's away struggles suggest a narrow victory at Son Moix.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Valencia vs Real Betis",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.2,
+          "reasoning": "Betis' unbeaten away record and Valencia's poor form tilt the balance towards an away win at Mestalla.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Celta Vigo vs Barcelona",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.68,
+          "reasoning": "Barca's attacking firepower and Celta's defensive issues ensure a victory at Balaidos despite recent road woes.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Hamburg vs Wolfsburg",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.87,
+          "reasoning": "Wolfsburg's superior form and Hamburg's struggles make the visitors favorites at Volksparkstadion.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Augsburg vs Leipzig",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2,
+          "reasoning": "Leipzig's attacking prowess and Augsburg's defensive frailties point to an away win at WWK Arena.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Borussia Mgladbach vs Bayern Monaco",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.24,
+          "reasoning": "Bayern's dominance and Gladbach's poor form ensure a comfortable victory at Borussia-Park.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Eintracht Frankfurt vs St. Pauli",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.74,
+          "reasoning": "Frankfurt's home strength and St. Pauli's away struggles make the hosts clear favorites at Deutsche Bank Park.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Hoffenheim vs Heidenheim",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.59,
+          "reasoning": "Hoffenheim's recent form and Heidenheim's winless streak favor a home win at PreZero Arena.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Borussia Dortmund vs Koln",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.43,
+          "reasoning": "Dortmund's attacking firepower and Koln's poor away record ensure a victory at Signal Iduna Park.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Bayer Leverkusen vs Friburg",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.84,
+          "reasoning": "Leverkusen's unbeaten home run and Freiburg's inconsistencies point to a home win at BayArena.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Stuttgart vs Mainz",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.78,
+          "reasoning": "Stuttgart's strong home form and Mainz's poor record make the hosts favorites at MHPArena.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Marseille vs Brest",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.47,
+          "reasoning": "Marseille's unbeaten home record and Brest's winless streak ensure a victory at Stade Velodrome.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Le Havre vs Nantes",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.95,
+          "reasoning": "Le Havre's clean sheet run and Nantes' poor form tilt the balance towards a home win at Stade Oceane.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Monaco vs Lens",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.05,
+          "reasoning": "Monaco's home strength and Lens' recent losses make the hosts favorites at Stade Louis II.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Lorient vs Toulouse",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.45,
+          "reasoning": "Toulouse's solid away form and Lorient's struggles point to an away victory at Stade du Moustoir.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Angers vs Auxerre",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.6,
+          "reasoning": "Angers' home improvement and Auxerre's poor form suggest a victory at Stade Raymond Kopa.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Metz vs Nice",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.2,
+          "reasoning": "Nice's recent wins and Metz's inconsistencies favor the visitors at Stade Saint Symphorien.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Strasbourg vs Lille",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.98,
+          "reasoning": "Strasbourg's home unbeaten run and Lille's away woes make the hosts value at Stade de la Meinau.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Lyon vs PSG",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.73,
+          "reasoning": "PSG's dominance and Lyon's poor form ensure a victory at Groupama Stadium.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Nijmegen vs Twente",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.65,
+          "reasoning": "Twente's strong form and Nijmegen's home struggles favor the visitors at Goffertstadion.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "PSV Eindhoven vs Go Ahead Eagles",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.23,
+          "reasoning": "PSV's perfect home record and Eagles' poor away form ensure a comfortable win at Philips Stadion.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Utrecht vs Volendam",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.37,
+          "reasoning": "Utrecht's home strength and Volendam's relegation battle woes make the hosts clear favorites.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Ajax vs AZ Alkmaar",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.98,
+          "reasoning": "Ajax's dominant home record and AZ's inconsistencies point to a victory at Johan Cruijff Arena.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "NAC Breda vs Zwolle",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.95,
+          "reasoning": "NAC's recent home wins and Zwolle's poor form suggest a victory at Rat Verlegh Stadion.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Telstar vs Heerenveen",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.38,
+          "reasoning": "Heerenveen's away form and Telstar's struggles make the visitors favorites at BUKO Stadion.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Excelsior Rotterdam vs Fortuna Sittard",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.24,
+          "reasoning": "Excelsior's home resilience and Sittard's away woes tilt the balance towards a home win.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Groningen vs Sparta Rotterdam",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.82,
+          "reasoning": "Groningen's strong home record and Sparta's inconsistencies favor the hosts at Euroborg.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Heracles Almelo vs Feyenoord",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.38,
+          "reasoning": "Feyenoord's six straight wins over Heracles and top-table form ensure a victory at Asito Stadion.",
+          "llm": "Grok 4"
+        }
+      ],
+      "results": {
+        "PSG vs Le Havre": {
+          "score": ""
+        },
+        "Elche vs Real Madrid": {
+          "score": ""
+        },
+        "Lazio vs Lecce": {
+          "score": ""
+        },
+        "Liverpool vs Nottingham Forest": {
+          "score": ""
+        },
+        "Bayern Monaco vs Friburgo": {
+          "score": ""
+        },
+        "Arsenal vs Tottenham": {
+          "score": ""
+        },
+        "Inter vs Milan": {
+          "score": ""
+        },
+        "Burnley vs Chelsea": {
+          "score": ""
+        },
+        "Cremonese vs Roma": {
+          "score": ""
+        },
+        "Paris Saint-Germain vs Le Havre": {
+          "score": ""
+        },
+        "Barcelona vs Athletic Bilbao": {
+          "score": ""
+        },
+        "PSG vs Le Havre AC": {
+          "score": ""
+        },
+        "Bayern Munich vs Friburgo": {
+          "score": ""
+        },
+        "Bournemouth vs West Ham United": {
+          "score": ""
+        },
+        "Udinese vs Bologna": {
+          "score": ""
+        },
+        "Cagliari vs Genoa": {
+          "score": ""
+        },
+        "Fiorentina vs Juventus": {
+          "score": ""
+        },
+        "Napoli vs Atalanta": {
+          "score": ""
+        },
+        "Hellas Verona vs Parma": {
+          "score": ""
+        },
+        "Tottenham vs Manchester United": {
+          "score": ""
+        },
+        "West Ham vs Burnley": {
+          "score": ""
+        },
+        "Sunderland vs Arsenal": {
+          "score": ""
+        },
+        "Chelsea vs Wolverhampton": {
+          "score": ""
+        },
+        "Aston Villa vs Bournemouth": {
+          "score": ""
+        },
+        "Brentford vs Newcastle": {
+          "score": ""
+        },
+        "Crystal Palace vs Brighton": {
+          "score": ""
+        },
+        "Nottingham Forest vs Leeds": {
+          "score": ""
+        },
+        "Manchester City vs Liverpool": {
+          "score": ""
+        },
+        "Girona vs Alaves": {
+          "score": ""
+        },
+        "Sevilla vs Osasuna": {
+          "score": ""
+        },
+        "Atletico Madrid vs Levante": {
+          "score": ""
+        },
+        "Espanyol vs Villarreal": {
+          "score": ""
+        },
+        "Athletic Bilbao vs Real Oviedo": {
+          "score": ""
+        },
+        "Rayo Vallecano vs Real Madrid": {
+          "score": ""
+        },
+        "Mallorca vs Getafe": {
+          "score": ""
+        },
+        "Valencia vs Real Betis": {
+          "score": ""
+        },
+        "Celta Vigo vs Barcelona": {
+          "score": ""
+        },
+        "Hamburg vs Wolfsburg": {
+          "score": ""
+        },
+        "Augsburg vs Leipzig": {
+          "score": ""
+        },
+        "Borussia Mgladbach vs Bayern Monaco": {
+          "score": ""
+        },
+        "Eintracht Frankfurt vs St. Pauli": {
+          "score": ""
+        },
+        "Hoffenheim vs Heidenheim": {
+          "score": ""
+        },
+        "Borussia Dortmund vs Koln": {
+          "score": ""
+        },
+        "Bayer Leverkusen vs Friburg": {
+          "score": ""
+        },
+        "Stuttgart vs Mainz": {
+          "score": ""
+        },
+        "Marseille vs Brest": {
+          "score": ""
+        },
+        "Le Havre vs Nantes": {
+          "score": ""
+        },
+        "Monaco vs Lens": {
+          "score": ""
+        },
+        "Lorient vs Toulouse": {
+          "score": ""
+        },
+        "Angers vs Auxerre": {
+          "score": ""
+        },
+        "Metz vs Nice": {
+          "score": ""
+        },
+        "Strasbourg vs Lille": {
+          "score": ""
+        },
+        "Lyon vs PSG": {
+          "score": ""
+        },
+        "Nijmegen vs Twente": {
+          "score": ""
+        },
+        "PSV Eindhoven vs Go Ahead Eagles": {
+          "score": ""
+        },
+        "Utrecht vs Volendam": {
+          "score": ""
+        },
+        "Ajax vs AZ Alkmaar": {
+          "score": ""
+        },
+        "NAC Breda vs Zwolle": {
+          "score": ""
+        },
+        "Telstar vs Heerenveen": {
+          "score": ""
+        },
+        "Excelsior Rotterdam vs Fortuna Sittard": {
+          "score": ""
+        },
+        "Groningen vs Sparta Rotterdam": {
+          "score": ""
+        },
+        "Heracles Almelo vs Feyenoord": {
+          "score": ""
+        }
+      }
     }
   ]
 }
+
+  ]
+}
+
 
 
 
