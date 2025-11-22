@@ -3889,7 +3889,7 @@
         },
         {
           "match": "Liverpool vs Nottingham Forest",
-          "prediction": "1+OV",
+          "prediction": "1+Over 2.5",
           "stake": 40,
           "odd": 1.91,
           "reasoning": "Anfield is a fortress where Liverpool typically scores freely against bottom-half teams. Nottingham Forest's away defense is porous, and they often concede multiple goals against the 'Big Six'. While a straight win pays only 1.44, combining a Liverpool victory with Over 2.5 goals (1+OV) boosts the odds to 1.91. This covers likely scorelines such as 3-0, 2-1, or 3-1, maximizing the value of a probable high-scoring home win.",
@@ -4286,6 +4286,7 @@
 }
 
   
+
 
 
 
