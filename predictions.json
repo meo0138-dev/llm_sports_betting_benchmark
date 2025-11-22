@@ -4039,398 +4039,58 @@
           "reasoning": "Both teams have shown offensive capability but defensive vulnerabilities. West Ham have scored in 7 of their last 8 matches across all competitions, while Bournemouth have both scored and conceded in 4 of their last 5 home games. With Bowen and Kudus dangerous for West Ham and Bournemouth's potent attack, both teams scoring is highly probable.",
           "llm": "Deepseek V3.1"
         },
-        {
-          "match": "Udinese vs Bologna",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.25,
-          "reasoning": "Bologna's superior league position and unbeaten run in their last five Serie A fixtures, coupled with a better goal difference (+10 vs Udinese's -5), make them the clear value pick for an away win despite Udinese's home advantage.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Cagliari vs Genoa",
-          "prediction": "GG",
-          "stake": 50,
-          "odd": 2.25,
-          "reasoning": "Both teams have leaky defenses, with Cagliari conceding in seven of their last eight games and Genoa failing to keep a clean sheet in five of their last six away matches, pointing to both sides finding the net in a competitive affair.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Fiorentina vs Juventus",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.05,
-          "reasoning": "Juventus' unbeaten run and strong defensive record contrast sharply with Fiorentina's winless start to the season, giving the visitors the edge in a low-scoring contest at the Stadio Artemio Franchi.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Napoli vs Atalanta",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.35,
-          "reasoning": "Napoli's resilience despite injuries and Atalanta's recent managerial change tilt the balance towards a home victory, especially with Napoli unbeaten at the Diego Armando Maradona Stadium this season.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Hellas Verona vs Parma",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.3,
-          "reasoning": "Verona's historical dominance over Parma and strong home form outweigh Parma's struggles, making the hosts the value choice in this relegation six-pointer.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Cremonese vs Roma",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.64,
-          "reasoning": "Roma's superior squad quality and Roma's impressive away record in La Liga this season position them to secure a comfortable victory against a Cremonese side lacking consistency.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Tottenham vs Manchester United",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.75,
-          "reasoning": "Tottenham's strong home form and United's poor away record this season suggest the hosts will edge a tight contest at the Tottenham Hotspur Stadium.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "West Ham vs Burnley",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.92,
-          "reasoning": "West Ham's unbeaten streak against Burnley and the Clarets' porous defense make the Hammers strong favorites for a home win at the London Stadium.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Sunderland vs Arsenal",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.49,
-          "reasoning": "Arsenal's eight successive clean sheets and Sunderland's struggles against top teams point to a comfortable away victory at the Stadium of Light.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Chelsea vs Wolverhampton",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.41,
-          "reasoning": "Chelsea's dominant home form and Wolves' winless streak make the Blues overwhelming favorites to secure all three points at Stamford Bridge.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Aston Villa vs Bournemouth",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.3,
-          "reasoning": "Villa's unbeaten run against Bournemouth and strong home record outweigh the Cherries' inconsistent away form, favoring a home win at Villa Park.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Brentford vs Newcastle",
-          "prediction": "GG",
-          "stake": 50,
-          "odd": 1.66,
-          "reasoning": "Both teams' attacking strengths and defensive vulnerabilities suggest a goal-filled encounter at the Gtech Community Stadium.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Crystal Palace vs Brighton",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.25,
-          "reasoning": "Palace's longest unbeaten home run in the league and Brighton's poor away form tilt the balance towards a home victory in this M23 derby.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Nottingham Forest vs Leeds",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.3,
-          "reasoning": "Forest's improving home form and Leeds' struggles on the road make the hosts the value pick for a win at the City Ground.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Manchester City vs Liverpool",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.9,
-          "reasoning": "City's perfect home record and Liverpool's recent away inconsistencies position the Citizens as favorites in this Etihad showdown.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Girona vs Alaves",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.3,
-          "reasoning": "Girona's home strength and Alaves' poor away record suggest the hosts will secure a vital victory at Estadi Montilivi.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Sevilla vs Osasuna",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.1,
-          "reasoning": "Sevilla's recent home wins and Osasuna's winless away streak make the hosts the clear choice at the Ramon Sanchez-Pizjuan.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Atletico Madrid vs Levante",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.21,
-          "reasoning": "Atletico's near-perfect home record and Levante's struggles against top teams ensure a straightforward win at the Metropolitano.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Espanyol vs Villarreal",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.4,
-          "reasoning": "Villarreal's four straight wins over Espanyol and strong away form outweigh the hosts' inconsistencies at RCDE Stadium.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Athletic Bilbao vs Real Oviedo",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.54,
-          "reasoning": "Bilbao's solid home defense and Oviedo's poor away scoring record point to a comfortable victory at San Mames.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Rayo Vallecano vs Real Madrid",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.49,
-          "reasoning": "Madrid's title charge and Vallecano's recent heavy defeat make the visitors heavy favorites at Vallecas.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Mallorca vs Getafe",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.5,
-          "reasoning": "Mallorca's strong home form and Getafe's away struggles suggest a narrow victory at Son Moix.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Valencia vs Real Betis",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.2,
-          "reasoning": "Betis' unbeaten away record and Valencia's poor form tilt the balance towards an away win at Mestalla.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Celta Vigo vs Barcelona",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.68,
-          "reasoning": "Barca's attacking firepower and Celta's defensive issues ensure a victory at Balaidos despite recent road woes.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Hamburg vs Wolfsburg",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.87,
-          "reasoning": "Wolfsburg's superior form and Hamburg's struggles make the visitors favorites at Volksparkstadion.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Augsburg vs Leipzig",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2,
-          "reasoning": "Leipzig's attacking prowess and Augsburg's defensive frailties point to an away win at WWK Arena.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Borussia Mgladbach vs Bayern Monaco",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.24,
-          "reasoning": "Bayern's dominance and Gladbach's poor form ensure a comfortable victory at Borussia-Park.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Eintracht Frankfurt vs St. Pauli",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.74,
-          "reasoning": "Frankfurt's home strength and St. Pauli's away struggles make the hosts clear favorites at Deutsche Bank Park.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Hoffenheim vs Heidenheim",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.59,
-          "reasoning": "Hoffenheim's recent form and Heidenheim's winless streak favor a home win at PreZero Arena.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Borussia Dortmund vs Koln",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.43,
-          "reasoning": "Dortmund's attacking firepower and Koln's poor away record ensure a victory at Signal Iduna Park.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Bayer Leverkusen vs Friburg",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.84,
-          "reasoning": "Leverkusen's unbeaten home run and Freiburg's inconsistencies point to a home win at BayArena.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Stuttgart vs Mainz",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.78,
-          "reasoning": "Stuttgart's strong home form and Mainz's poor record make the hosts favorites at MHPArena.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Marseille vs Brest",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.47,
-          "reasoning": "Marseille's unbeaten home record and Brest's winless streak ensure a victory at Stade Velodrome.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Le Havre vs Nantes",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.95,
-          "reasoning": "Le Havre's clean sheet run and Nantes' poor form tilt the balance towards a home win at Stade Oceane.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Monaco vs Lens",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.05,
-          "reasoning": "Monaco's home strength and Lens' recent losses make the hosts favorites at Stade Louis II.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Lorient vs Toulouse",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.45,
-          "reasoning": "Toulouse's solid away form and Lorient's struggles point to an away victory at Stade du Moustoir.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Angers vs Auxerre",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.6,
-          "reasoning": "Angers' home improvement and Auxerre's poor form suggest a victory at Stade Raymond Kopa.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Metz vs Nice",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.2,
-          "reasoning": "Nice's recent wins and Metz's inconsistencies favor the visitors at Stade Saint Symphorien.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Strasbourg vs Lille",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.98,
-          "reasoning": "Strasbourg's home unbeaten run and Lille's away woes make the hosts value at Stade de la Meinau.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Lyon vs PSG",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.73,
-          "reasoning": "PSG's dominance and Lyon's poor form ensure a victory at Groupama Stadium.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Nijmegen vs Twente",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.65,
-          "reasoning": "Twente's strong form and Nijmegen's home struggles favor the visitors at Goffertstadion.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "PSV Eindhoven vs Go Ahead Eagles",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.23,
-          "reasoning": "PSV's perfect home record and Eagles' poor away form ensure a comfortable win at Philips Stadion.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Utrecht vs Volendam",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.37,
-          "reasoning": "Utrecht's home strength and Volendam's relegation battle woes make the hosts clear favorites.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Ajax vs AZ Alkmaar",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.98,
-          "reasoning": "Ajax's dominant home record and AZ's inconsistencies point to a victory at Johan Cruijff Arena.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "NAC Breda vs Zwolle",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.95,
-          "reasoning": "NAC's recent home wins and Zwolle's poor form suggest a victory at Rat Verlegh Stadion.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Telstar vs Heerenveen",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 2.38,
-          "reasoning": "Heerenveen's away form and Telstar's struggles make the visitors favorites at BUKO Stadion.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Excelsior Rotterdam vs Fortuna Sittard",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 2.24,
-          "reasoning": "Excelsior's home resilience and Sittard's away woes tilt the balance towards a home win.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Groningen vs Sparta Rotterdam",
-          "prediction": "1",
-          "stake": 50,
-          "odd": 1.82,
-          "reasoning": "Groningen's strong home record and Sparta's inconsistencies favor the hosts at Euroborg.",
-          "llm": "Grok 4"
-        },
-        {
-          "match": "Heracles Almelo vs Feyenoord",
-          "prediction": "2",
-          "stake": 50,
-          "odd": 1.38,
-          "reasoning": "Feyenoord's six straight wins over Heracles and top-table form ensure a victory at Asito Stadion.",
-          "llm": "Grok 4"
-        }
+       
+    {
+      "match": "Inter vs Lazio",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.37,
+      "reasoning": "Inter are unbeaten at home this season (6 wins, 1 draw) and have won the last 4 H2H meetings with Lazio. Lazio have lost 3 of their last 5 away games and are missing several key players. Very safe low-odd anchor.",
+      "llm": "Grok 4.1"
+    },
+    {
+      "match": "Juventus vs Torino",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.51,
+      "reasoning": "Juventus have won 7 of the last 8 derby matches at home and kept clean sheets in the last 3. Torino have only 1 win in their last 8 away games. Another high-confidence home win.",
+      "llm": "Grok 4.1"
+    },
+    {
+      "match": "Roma vs Udinese",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.57,
+      "reasoning": "Roma have won 5 straight home games and are facing an Udinese side that has lost 4 of their last 5 away matches. Clear value at this price.",
+      "llm": "Grok 4.1"
+    },
+    {
+      "match": "Cremonese vs Atalanta",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 1.58,
+      "reasoning": "Atalanta have won 5 of their last 6 against Cremonese and are in excellent form. Cremonese are bottom-half and have only 1 win all season. Strong value away win.",
+      "llm": "Grok 4.1"
+    },
+    {
+      "match": "Milan vs Parma",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 1.57,
+      "reasoning": "Milan have won the last 6 home meetings with Parma and are in good scoring form. Parma remain winless away this season.",
+      "llm": "Grok 4.1"
+    },
+    {
+      "match": "Napoli vs Inter (big match)",
+      "prediction": "GG",
+      "stake": 50,
+      "odd": 1.71,
+      "reasoning": "Both teams are the highest-scoring sides in Serie A this season and have conceded in 70 %+ of their matches. Last 5 H2H produced 4 GG results. Best value play of the weekend.",
+      "llm": "Grok 4.1"
+    }
+
+
+
       ],
       "results": {
         "PSG vs Le Havre": {
@@ -4625,6 +4285,7 @@
 }
 
   
+
 
 
 
