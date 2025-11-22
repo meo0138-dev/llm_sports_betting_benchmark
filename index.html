@@ -4,23 +4,11 @@
   <meta charset="UTF-8" />
   <title>LLM Sports Betting Benchmark | AI Betting Performance Tracker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Track and compare the sports betting performance of top Large Language Models (LLMs).">
-  <meta name="keywords" content="LLM betting, AI sports betting, artificial intelligence betting">
-  <meta name="Matteo Ceola" content="LLM Sports Betting Benchmark">
-  <link rel="canonical" href="https://www.your-website-url.com/" />
-  
-  <!-- Social Media Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.your-website-url.com/">
-  <meta property="og:title" content="LLM Sports Betting Benchmark">
-  <meta property="og:description" content="Track and compare the sports betting performance of top Large Language Models (LLMs).">
-  <meta property="og:image" content="https://www.your-website-url.com/social-preview-image.png">
   
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
-    /* Styles */
     body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f4f4f4; margin: 0; color: #333; }
     h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; }
     .info { text-align: center; font-size: 1.1em; color: #555; margin-bottom: 30px; }
@@ -152,7 +140,7 @@
         return false;
     }
 
-    // --- Load Leaderboard ---
+    // --- 1. Load Leaderboard ---
     fetch('leaderboard_data.json')
       .then(res => res.json())
       .then(leaderboardData => {
@@ -160,8 +148,7 @@
         leaderboardData.sort((a, b) => b.bankroll - a.bankroll);
         leaderboardData.forEach(item => {
           const row = leaderboardBody.insertRow();
-          // Note: Item.llm is ALREADY mapped by the R script now
-          row.insertCell(0).textContent = item.llm; 
+          row.insertCell(0).textContent = item.llm; // Already mapped by R
           row.insertCell(1).textContent = `${item.bankroll.toFixed(2)}€`;
           row.insertCell(2).textContent = item.bankroll_ci;
           row.insertCell(3).textContent = `${item.roi.toFixed(2)}%`;
@@ -169,83 +156,16 @@
       })
       .catch(err => console.error("Error loading leaderboard:", err));
 
-    // --- Main Logic ---
-    fetch('predictions.json')
+    // --- 2. Load Chart Data (Pre-calculated in R) ---
+    fetch('chart_data.json')
       .then(res => res.json())
-      .then(data => {
-        if (!data.rounds || data.rounds.length === 0) return;
-        
-        const lastRound = data.rounds[data.rounds.length - 1];
-        document.getElementById('last-update').textContent = lastRound.date;
-
-        const allResults = data.rounds.reduce((acc, r) => ({ ...acc, ...r.results }), {});
-        const STARTING_BANKROLL = 1000;
-        const modelStats = {}; 
-        const chartDataMap = {};
-        const modelCumulativeProfit = {}; // Track cumulative unrounded profit
-        const roundsList = ["Start"];
-
-        // Unique Models (using Display Name)
-        const uniqueModels = new Set();
-        data.rounds.forEach(r => r.games.forEach(g => uniqueModels.add(getDisplayName(g.llm))));
-        
-        uniqueModels.forEach(model => {
-            chartDataMap[model] = [STARTING_BANKROLL];
-            modelCumulativeProfit[model] = 0; // Initialize exact profit tracker
-            modelStats[model] = { totalOdd: 0, totalCount: 0, totalStake: 0, totalWin: 0, resolvedCount: 0 };
-        });
-
-        // Process Rounds for Chart
-        data.rounds.forEach(round => {
-            roundsList.push(`Round ${round.round}`);
-            
-            round.games.forEach(game => {
-                const llm = getDisplayName(game.llm);
-                const winStatus = isBetWon(game, allResults);
-
-                modelStats[llm].totalOdd += game.odd;
-                modelStats[llm].totalCount++;
-                modelStats[llm].totalStake += game.stake;
-                
-                if (winStatus !== null) {
-                    modelStats[llm].resolvedCount++;
-                    if (winStatus === true) {
-                        modelStats[llm].totalWin++;
-                        // Add profit to cumulative tracker (NO ROUNDING YET)
-                        modelCumulativeProfit[llm] += (game.stake * game.odd) - game.stake;
-                    } else {
-                        modelCumulativeProfit[llm] -= game.stake;
-                    }
-                }
-            });
-
-            uniqueModels.forEach(model => {
-                // Calculate current bankroll from start + cumulative profit, THEN round for display
-                const exactBankroll = STARTING_BANKROLL + modelCumulativeProfit[model];
-                chartDataMap[model].push(parseFloat(exactBankroll.toFixed(2)));
-            });
-        });
-
-        // Render Stats Table
-        const statsBody = document.querySelector('#stats-table tbody');
-        Object.keys(modelStats).sort().forEach(llm => {
-          const item = modelStats[llm];
-          const avgOdd = (item.totalOdd / item.totalCount).toFixed(2);
-          const avgStake = (item.totalStake / item.totalCount).toFixed(2);
-          const winRate = item.resolvedCount > 0 ? ((item.totalWin / item.resolvedCount) * 100).toFixed(2) : 0;
-          const row = statsBody.insertRow();
-          row.insertCell(0).textContent = llm;
-          row.insertCell(1).textContent = item.totalCount;
-          row.insertCell(2).textContent = avgOdd;
-          row.insertCell(3).textContent = avgStake;
-          row.insertCell(4).textContent = `${winRate}%`;
-        });
-
-        // Render Chart
+      .then(chartData => {
         const ctx = document.getElementById('bankrollChart').getContext('2d');
-        const allDatasets = Object.keys(chartDataMap).map((model, index) => ({
+        
+        // Create datasets
+        const allDatasets = Object.keys(chartData.series).map((model, index) => ({
             label: model,
-            data: chartDataMap[model],
+            data: chartData.series[model],
             borderColor: chartColors[index % chartColors.length],
             backgroundColor: 'rgba(0,0,0,0)',
             borderWidth: 2,
@@ -255,7 +175,7 @@
 
         const bankrollChart = new Chart(ctx, {
             type: 'line',
-            data: { labels: roundsList, datasets: allDatasets },
+            data: { labels: chartData.labels, datasets: allDatasets },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
@@ -276,9 +196,9 @@
             }
         });
 
-        // Chart Filter
+        // Populate Dropdown
         const chartSelector = document.getElementById('model-chart-selector');
-        Object.keys(chartDataMap).sort().forEach(model => {
+        Object.keys(chartData.series).sort().forEach(model => {
             const opt = document.createElement('option');
             opt.value = model;
             opt.textContent = model;
@@ -294,70 +214,16 @@
             }
             bankrollChart.update();
         });
-
-        // Render Predictions List
-        const selector = document.getElementById('round-selector');
-        const predictionsContainer = document.getElementById('predictions-container');
-
-        data.rounds.slice().reverse().forEach(round => {
-            const option = document.createElement('option');
-            option.value = round.round;
-            option.textContent = `Round ${round.round}`;
-            selector.appendChild(option);
-
-            const roundPredictionsDiv = document.createElement('div');
-            roundPredictionsDiv.id = `round-${round.round}-predictions`;
-            roundPredictionsDiv.className = 'round-predictions';
-            
-            round.games.forEach(game => {
-                const div = document.createElement('div');
-                div.className = 'prediction';
-                const winStatus = isBetWon(game, allResults);
-                let statusSpan, statusClass;
-                if (winStatus === null) { statusClass = 'pending'; statusSpan = `⏳ Bet Ongoing`; }
-                else if (winStatus === true) { statusClass = 'win'; statusSpan = `✅ Won`; }
-                else { statusClass = 'loss'; statusSpan = `❌ Lost`; }
-                
-                div.innerHTML = `
-                  <div class="prediction-main">
-                    <span class="prediction-details">
-                      <strong>${getDisplayName(game.llm)}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd}
-                      <span class="status-badge ${statusClass}">${statusSpan}</span>
-                    </span>
-                    ${game.reasoning ? `<a href="#" class="reasoning-toggle">show reasoning</a>` : ''}
-                  </div>
-                  ${game.reasoning ? `<div class="reasoning-text">${game.reasoning}</div>` : ''}
-                `;
-                roundPredictionsDiv.appendChild(div);
-            });
-            predictionsContainer.appendChild(roundPredictionsDiv);
-        });
-
-        predictionsContainer.addEventListener('click', (e) => {
-            if (e.target.classList.contains('reasoning-toggle')) {
-                e.preventDefault();
-                const mainDiv = e.target.closest('.prediction-main');
-                const reasoningText = mainDiv.nextElementSibling;
-                if (reasoningText && reasoningText.classList.contains('reasoning-text')) {
-                    const isHidden = reasoningText.style.display === 'none' || reasoningText.style.display === '';
-                    reasoningText.style.display = isHidden ? 'block' : 'none';
-                    e.target.textContent = isHidden ? 'hide reasoning' : 'show reasoning';
-                }
-            }
-        });
-
-        selector.addEventListener('change', () => {
-            const roundIdToShow = selector.value;
-            document.querySelectorAll('.round-predictions').forEach(div => {
-                div.style.display = (div.id === `round-${roundIdToShow}-predictions`) ? 'block' : 'none';
-            });
-        });
-        
-        selector.dispatchEvent(new Event('change'));
-
       })
-      .catch(err => console.error("Error loading predictions:", err));
-  </script>
-</body>
-</html>
+      .catch(err => console.error("Error loading chart data:", err));
+
+    // --- 3. Load Predictions & Stats (JS Logic kept for detailed stats) ---
+    fetch('predictions.json')
+      .then(res => res.json())
+      .then(data => {
+        if (!data.rounds || data.rounds.length === 0) return;
+        
+        const lastRound = data.rounds[data.rounds.length - 1];
+        document.getElementById('last-update').textContent = lastRound.date;
+
 
