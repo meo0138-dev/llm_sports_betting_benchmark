@@ -4039,55 +4039,56 @@
           "reasoning": "Both teams have shown offensive capability but defensive vulnerabilities. West Ham have scored in 7 of their last 8 matches across all competitions, while Bournemouth have both scored and conceded in 4 of their last 5 home games. With Bowen and Kudus dangerous for West Ham and Bournemouth's potent attack, both teams scoring is highly probable.",
           "llm": "Deepseek V3.1"
         },
-       
-    {
-      "match": "Inter vs Lazio",
-      "prediction": "1",
-      "stake": 50,
-      "odd": 1.37,
-      "reasoning": "Inter are unbeaten at home this season (6 wins, 1 draw) and have won the last 4 H2H meetings with Lazio. Lazio have lost 3 of their last 5 away games and are missing several key players. Very safe low-odd anchor.",
-      "llm": "Grok 4.1"
-    },
-    {
-      "match": "Juventus vs Torino",
-      "prediction": "1",
-      "stake": 50,
-      "odd": 1.51,
-      "reasoning": "Juventus have won 7 of the last 8 derby matches at home and kept clean sheets in the last 3. Torino have only 1 win in their last 8 away games. Another high-confidence home win.",
-      "llm": "Grok 4.1"
-    },
-    {
-      "match": "Roma vs Udinese",
-      "prediction": "1",
-      "stake": 50,
-      "odd": 1.57,
-      "reasoning": "Roma have won 5 straight home games and are facing an Udinese side that has lost 4 of their last 5 away matches. Clear value at this price.",
-      "llm": "Grok 4.1"
-    },
-    {
-      "match": "Cremonese vs Atalanta",
+      {
+      "match": "Udinese vs Bologna Fc",
       "prediction": "2",
       "stake": 50,
-      "odd": 1.58,
-      "reasoning": "Atalanta have won 5 of their last 6 against Cremonese and are in excellent form. Cremonese are bottom-half and have only 1 win all season. Strong value away win.",
-      "llm": "Grok 4.1"
+      "odd": 2.25,
+      "reasoning": "Bologna are in excellent form with 4 wins in their last 5, sitting 4th in Serie A, while Udinese have lost 3 of their last 5 home games. Bologna's away record is strong (unbeaten in 4), and odds of 2.25 offer value against Udinese's injury-hit defense (Lovric and Ehizibue out).",
+      "llm": "Grok 4"
     },
     {
-      "match": "Milan vs Parma",
-      "prediction": "2",
-      "stake": 50,
-      "odd": 1.57,
-      "reasoning": "Milan have won the last 6 home meetings with Parma and are in good scoring form. Parma remain winless away this season.",
-      "llm": "Grok 4.1"
-    },
-    {
-      "match": "Napoli vs Inter (big match)",
+      "match": "Cagliari vs Genoa",
       "prediction": "GG",
       "stake": 50,
-      "odd": 1.71,
-      "reasoning": "Both teams are the highest-scoring sides in Serie A this season and have conceded in 70 %+ of their matches. Last 5 H2H produced 4 GG results. Best value play of the weekend.",
-      "llm": "Grok 4.1"
+      "odd": 2.25,
+      "reasoning": "Both teams have scored in 7 of Cagliari's last 8 and 6 of Genoa's last 7, with both defenses conceding 1.5+ goals per game on average. Recent H2H shows 4/5 GG results, and with no major injuries, expect goals from both sides.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Fiorentina vs Juventus",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 2.05,
+      "reasoning": "Juventus have won 3 of the last 5 H2H, unbeaten in 6 away games, while Fiorentina have lost 4 of their last 5 home matches. Juventus' defense is solid (clean sheets in 4/5), and Fiorentina missing Gosens and Kouame reduces their threat.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Napoli vs Atalanta",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 2.35,
+      "reasoning": "Napoli are unbeaten at home (5 wins in 6), averaging 2.3 goals, against Atalanta's poor away form (1 win in 5). Napoli's Lukaku is back from injury, while Atalanta missing Meret and De Bruyne weakens their lineup; 2.35 is undervalued for home win.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Cremonese vs Roma",
+      "prediction": "2",
+      "stake": 50,
+      "odd": 1.64,
+      "reasoning": "Roma have won 6/9 away under De Rossi, scoring 2+ in 7, while Cremonese lost 5/7 home games. Cremonese missing Grassi, Moumbagna, and Collocolo; Roma rested stars midweek. Solid value at 1.64.",
+      "llm": "Grok 4"
+    },
+    {
+      "match": "Lazio vs Lecce",
+      "prediction": "1",
+      "stake": 50,
+      "odd": 1.64,
+      "reasoning": "Lazio's home form (W4 D1 L0 in last 5) and Lecce's away woes (0 wins in 8) make this a lock. Lecce missing Krstović (top scorer) and Baschirotto (suspended); Lazio full strength. Odds reflect 61.9% probability, but true edge is higher.",
+      "llm": "Grok 4"
     }
+
+
 
 
 
@@ -4285,6 +4286,7 @@
 }
 
   
+
 
 
 
