@@ -226,4 +226,108 @@
         const lastRound = data.rounds[data.rounds.length - 1];
         document.getElementById('last-update').textContent = lastRound.date;
 
+        const allResults = data.rounds.reduce((acc, r) => ({ ...acc, ...r.results }), {});
+        const modelStats = {}; 
 
+        // Initialize stats container
+        const uniqueModels = new Set();
+        data.rounds.forEach(r => r.games.forEach(g => uniqueModels.add(getDisplayName(g.llm))));
+        uniqueModels.forEach(model => {
+            modelStats[model] = { totalOdd: 0, totalCount: 0, totalStake: 0, totalWin: 0, resolvedCount: 0 };
+        });
+
+        // Process Rounds for Stats & Predictions HTML
+        const selector = document.getElementById('round-selector');
+        const predictionsContainer = document.getElementById('predictions-container');
+
+        // Render Predictions in reverse order
+        data.rounds.slice().reverse().forEach(round => {
+            const option = document.createElement('option');
+            option.value = round.round;
+            option.textContent = `Round ${round.round}`;
+            selector.appendChild(option);
+
+            const roundPredictionsDiv = document.createElement('div');
+            roundPredictionsDiv.id = `round-${round.round}-predictions`;
+            roundPredictionsDiv.className = 'round-predictions';
+            
+            round.games.forEach(game => {
+                const llm = getDisplayName(game.llm);
+                const winStatus = isBetWon(game, allResults);
+
+                // Stats Aggregation
+                modelStats[llm].totalOdd += game.odd;
+                modelStats[llm].totalCount++;
+                modelStats[llm].totalStake += game.stake;
+                if (winStatus !== null) {
+                    modelStats[llm].resolvedCount++;
+                    if (winStatus === true) modelStats[llm].totalWin++;
+                }
+
+                // HTML Rendering
+                const div = document.createElement('div');
+                div.className = 'prediction';
+                let statusSpan, statusClass;
+                if (winStatus === null) { statusClass = 'pending'; statusSpan = `⏳ Bet Ongoing`; }
+                else if (winStatus === true) { statusClass = 'win'; statusSpan = `✅ Won`; }
+                else { statusClass = 'loss'; statusSpan = `❌ Lost`; }
+                
+                div.innerHTML = `
+                  <div class="prediction-main">
+                    <span class="prediction-details">
+                      <strong>${llm}</strong>: ${game.match} → ${game.prediction} @ ${game.stake}€, odd ${game.odd}
+                      <span class="status-badge ${statusClass}">${statusSpan}</span>
+                    </span>
+                    ${game.reasoning ? `<a href="#" class="reasoning-toggle">show reasoning</a>` : ''}
+                  </div>
+                  ${game.reasoning ? `<div class="reasoning-text">${game.reasoning}</div>` : ''}
+                `;
+                roundPredictionsDiv.appendChild(div);
+            });
+            predictionsContainer.appendChild(roundPredictionsDiv);
+        });
+
+        // Render Stats Table
+        const statsBody = document.querySelector('#stats-table tbody');
+        Object.keys(modelStats).sort().forEach(llm => {
+          const item = modelStats[llm];
+          const avgOdd = item.totalCount ? (item.totalOdd / item.totalCount).toFixed(2) : 0;
+          const avgStake = item.totalCount ? (item.totalStake / item.totalCount).toFixed(2) : 0;
+          const winRate = item.resolvedCount > 0 ? ((item.totalWin / item.resolvedCount) * 100).toFixed(2) : 0;
+          const row = statsBody.insertRow();
+          row.insertCell(0).textContent = llm;
+          row.insertCell(1).textContent = item.totalCount;
+          row.insertCell(2).textContent = avgOdd;
+          row.insertCell(3).textContent = avgStake;
+          row.insertCell(4).textContent = `${winRate}%`;
+        });
+
+        // Reasoning Toggles
+        predictionsContainer.addEventListener('click', (e) => {
+            if (e.target.classList.contains('reasoning-toggle')) {
+                e.preventDefault();
+                const mainDiv = e.target.closest('.prediction-main');
+                const reasoningText = mainDiv.nextElementSibling;
+                if (reasoningText && reasoningText.classList.contains('reasoning-text')) {
+                    const isHidden = reasoningText.style.display === 'none' || reasoningText.style.display === '';
+                    reasoningText.style.display = isHidden ? 'block' : 'none';
+                    e.target.textContent = isHidden ? 'hide reasoning' : 'show reasoning';
+                }
+            }
+        });
+
+        // Round Selector Logic
+        selector.addEventListener('change', () => {
+            const roundIdToShow = selector.value;
+            document.querySelectorAll('.round-predictions').forEach(div => {
+                div.style.display = (div.id === `round-${roundIdToShow}-predictions`) ? 'block' : 'none';
+            });
+        });
+        
+        selector.dispatchEvent(new Event('change'));
+
+      })
+      .catch(err => console.error("Error loading predictions:", err));
+  </script>
+</body>
+</html>
