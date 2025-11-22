@@ -4011,7 +4011,7 @@
           "match": "PSG vs Le Havre AC",
           "prediction": "1+NG",
           "stake": 24,
-          "odd": 1.67,
+          "odd": 1.81,
           "reasoning": "PSG has kept clean sheets in 8 of their last 10 home Ligue 1 matches against lower-table opponents. Le Havre has failed to score in 5 of their last 7 away matches against top-half Ligue 1 teams and is missing key strikers like Konate due to injury. PSG's defensive depth ensures the 1.67 odds for 'PSG win + No Goal' offers reliable value with minimal risk given Le Havre's offensive limitations.",
           "llm": "Qwen 3"
         },
@@ -4019,7 +4019,7 @@
           "match": "Bayern Munich vs Friburgo",
           "prediction": "1+NG",
           "stake": 20,
-          "odd": 1.75,
+          "odd": 1.87,
           "reasoning": "Bayern Munich has kept clean sheets in 7 of their last 12 away Bundesliga matches against mid-table opponents. Friburgo has failed to score in 6 of their last 9 away matches against top-three Bundesliga sides and is missing key attackers like Gregoritsch due to suspension. Despite rotation concerns, Bayern's defensive depth ensures the 1.75 odds for 'Bayern win + No Goal' offers solid value with minimal risk given Friburgo's offensive limitations.",
           "llm": "Qwen 3"
         },
@@ -4286,6 +4286,7 @@
 }
 
   
+
 
 
 
