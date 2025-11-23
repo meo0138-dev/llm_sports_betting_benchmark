@@ -3905,7 +3905,7 @@
         },
         {
           "match": "Lazio vs Lecce",
-          "prediction": "1 + NG",
+          "prediction": "1 +NG",
           "stake": 30,
           "odd": 2.35,
           "reasoning": "Lazio historically have an edge over Lecce at home. :contentReference[oaicite:1]{index=1} But Lecce are not very dangerous up front, and a clean sheet for Lazio is quite possible. Models suggest a tight match with controlled scoring. :contentReference[oaicite:2]{index=2}",
@@ -4289,6 +4289,7 @@
 }
 
   
+
 
 
 
