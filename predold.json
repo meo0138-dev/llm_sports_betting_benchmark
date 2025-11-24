@@ -775,8 +775,263 @@
     "score": "0-2"
   }
 }
+    },
+    {
+      "round": 16,
+      "date": "2025-11-26",
+      "games": [
+        {
+          "match": "Galatasaray vs Union Saint Gilloise",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.60,
+          "reasoning": "Galatasaray have a strong home record in UCL, with 4 wins in last 5 home games, but face absences in defense like Elmali and Baltaci suspended. Union Saint-Gilloise have lost 3 straight UCL matches, making the home side favored despite injuries. H2H is first meeting, but Gala's experience edges it.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Ajax vs Benfica",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 7.80,
+          "reasoning": "Ajax lead H2H with 4 wins to Benfica's 2. Ajax have a solid home defense in UCL, keeping clean sheets in 3 of last 5, while Benfica have failed to score in 2 of last 5 away. With Benfica missing Trubin to injury, Ajax can win without conceding.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Bodø/Glimt vs Juventus",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 2.15,
+          "reasoning": "Juventus are in good form, winning 3 of last 5, while Bodø/Glimt have lost 2 of last 5. Juventus have no major injuries reported, and Bodø's cold weather may not be enough against Juventus' quality squad in this UCL clash.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Borussia Dortmund vs Villarreal",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.82,
+          "reasoning": "Dortmund have won 4 of last 5 home UCL games, scoring 12 goals. Villarreal have 3 losses in last 5 UCL matches, and with injuries to Foyth, Dortmund's attack led by Adeyemi should secure a home win.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Chelsea vs Barcelona",
+          "prediction": "GG",
+          "stake": 50,
+          "odd": 1.38,
+          "reasoning": "Chelsea have GG in 4 of last 5 UCL games, Barcelona in 5 of last 7. Both teams have high-scoring attacks but defensive vulnerabilities; H2H often sees goals, with 4 of last 5 over 2.5.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Manchester City vs Bayer 04 Leverkusen",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.24,
+          "reasoning": "City have won all 4 home UCL games this season, scoring 12. Leverkusen have 2 losses in last 5 UCL, missing Schick to injury. City's depth with Haaland fit edges it.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Napoli vs Qarabağ FK",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.30,
+          "reasoning": "Napoli are unbeaten in 5 home UCL, while Qarabag have lost all 3 away UCL this season. Qarabag missing Xhixha, Napoli with Lukaku scoring make this a safe home win.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Olympique de Marseille vs Newcastle United",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 2.90,
+          "reasoning": "Marseille have won 3 of last 5 home UCL, Newcastle have 2 losses in 5 away. Newcastle missing Wissa, Marseille with full squad favor home win.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "SK Slavia Praha vs Athletic Club",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 3.00,
+          "reasoning": "Slavia have won all 5 home UCL this season, Athletic have 1 win in 5 away. Athletic missing Williams, Slavia's attack gives value for home upset.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Borussia Dortmund vs Villarreal",
+          "prediction": "Over 2.5",
+          "stake": 50,
+          "odd": 1.71,
+          "reasoning": "Dortmund's home UCL games average 3.8 goals, Villarreal's away 3.2. Last H2H was 3-1, expecting high-scoring game.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Napoli vs Qarabag Fk",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 2.08,
+          "reasoning": "Napoli returns to the Stadio Diego Armando Maradona needing a strong performance after a domestic stumble. In European competition, the gap in quality between the Italian champions and Qarabag is vast. Qarabag traditionally struggles to create chances away against Europe's elite defenses. The odds of 2.08 for Napoli to win without conceding are exceptionally high given their home dominance and the opponent's likely defensive posture.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Aston Villa vs Young Boys",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 1.94,
+          "reasoning": "Aston Villa has turned Villa Park into a fortress under Unai Emery. Young Boys have a notoriously poor record on the road in European competitions, often failing to score against Premier League opposition. Villa's organized structure and superior midfield control should suffocate the Swiss side, making a clean-sheet victory a highly probable outcome at nearly double money.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Az Alkmaar vs Shelbourne Fc",
+          "prediction": "1+NG",
+          "stake": 60,
+          "odd": 1.92,
+          "reasoning": "This fixture presents one of the largest quality disparities in the round. AZ Alkmaar, a top Eredivisie side, hosts Shelbourne from the League of Ireland. AZ is overwhelming favorite (1.25 to win), but the value lies in the 'Win to Nil' market. Shelbourne will likely struggle to gain possession, let alone score, against a technically superior Dutch side at home. 1.92 is excellent value for what should be a routine, controlled win.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Nottingham Forest vs Malmoe",
+          "prediction": "1+NG",
+          "stake": 50,
+          "odd": 1.74,
+          "reasoning": "Nottingham Forest is in spectacular form, fresh off a shocking 3-0 away victory at Liverpool. Carrying that momentum back home against Malmoe makes them a banker. If they can shut out Liverpool at Anfield, they are more than capable of keeping a clean sheet against Malmoe at the City Ground. The 1+NG option boosts the odds significantly compared to the straight win (1.22).",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Manchester City vs Bayer Leverkusen",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.24,
+          "reasoning": "City are massive favorites at home. They've won 13 consecutive home Champions League matches vs German teams, scoring 49 goals and conceding 13. Leverkusen lost 8 of 10 CL away games in England including 4-0 at Liverpool last year. City sit 4th with 10 points vs Leverkusen's 21st place with 5 points. Despite City's 2-1 loss to Newcastle, they're 16-1-0 at home across all competitions this season and beat Dortmund 4-1 in last CL home game. Despite low odds, this is ultra-safe banker.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Liverpool vs Psv Eindhoven",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.35,
+          "reasoning": "Liverpool at Anfield in Champions League are strong despite poor domestic form. They've won 3 of 4 CL games including 1-0 vs Real Madrid and 5-1 vs Frankfurt. Perfect 2 wins from 2 at home in CL. Liverpool lost 3-0 to Forest but historically rise for big European nights at Anfield. PSV sit 18th with 5 points and lost at Liverpool 2-0 last season. Despite PSV's 11-match unbeaten run domestically, Eredivisie form doesn't translate to Champions League quality. Good value at 1.35.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Paris Saint-germain vs Tottenham",
+          "prediction": "1",
+          "stake": 40,
+          "odd": 1.41,
+          "reasoning": "PSG at home should dominate struggling Spurs. PSG are Champions League holders with perfect record, having beaten Atalanta, Barcelona and Leverkusen. Tottenham missing 12 first-team players and have lost 7 of last 9 Premier League derbies. PSG's quality at Parc des Princes makes this reliable banker despite Spurs being English opposition.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Napoli vs Qarabag Fk",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.30,
+          "reasoning": "Napoli at home against Azerbaijani side Qarabag is massive mismatch. Despite Napoli's inconsistent form, the quality gap is enormous. Napoli need Champions League points and Qarabag are one of the weakest teams in the competition. Low odds but extremely safe for steady returns.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Real Madrid vs Olympiakos",
+          "prediction": "2+NG",
+          "stake": 30,
+          "odd": 2.55,
+          "reasoning": "Real Madrid away at Olympiakos should win comfortably. Rather than taking low 1.42 odds on straight away win, Madrid to win without conceding at 2.55 offers much better value. Madrid's quality and European experience should see them dominate and keep clean sheet against Greek side.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Nottingham Forest vs Malmoe",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.22,
+          "reasoning": "Forest at home against Swedish side Malmö after their shocking 3-0 win at Liverpool. Forest will be full of confidence and Malmö are significant underdogs. Despite ultra-low odds of 1.22, this is safe banker for steady accumulation.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Aston Villa vs Young Boys",
+          "prediction": "1",
+          "stake": 35,
+          "odd": 1.21,
+          "reasoning": "Aston Villa at home against Swiss side Young Boys should be routine. Villa have excellent home European record and Young Boys are one of weaker teams in Conference League. Despite very low odds, Villa's quality makes this extremely safe.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Galatasaray vs Union Saint Gilloise",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.60,
+          "reasoning": "Galatasaray at home in European competition usually perform strongly. Union St. Gilloise are good, but their away results in big matches are inconsistent. The 1.60 offers decent value for a home favorite with pressure to deliver.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Borussia Dortmund vs Villarreal",
+          "prediction": "1 + GG",
+          "stake": 40,
+          "odd": 3.40,
+          "reasoning": "Dortmund are very good at home and tend to score. Villarreal also have attacking quality and have shown ability to score on the road in big matches. A home win + both teams to score (GG) feels like a balanced play: you get Dortmund’s strength but also account for Villarreal’s threat.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Manchester City vs Bayer Leverkusen",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.24,
+          "reasoning": "Man City are heavy favorites, especially at home. Leverkusen are dangerous, but it's tough for them to dominate at the Etihad. The odds are very short, but there's value given City’s dominance in big European games.",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Manchester City vs Bayer Leverkusen",
+          "prediction": "1+NG",
+          "stake": 55,
+          "odd": 2.15,
+          "reasoning": "Manchester City has kept clean sheets in 7 of their last 10 home Champions League matches, including 4 consecutive clean sheets against Bundesliga opponents. Bayer Leverkusen has failed to score in 5 of their last 8 away matches against top English clubs and is missing key attackers like Grimaldo due to injury. City's defensive depth under Pep Guardiola ensures the 2.15 odds for 'City win + No Goal' represents exceptional value with minimal risk, especially considering Leverkusen's struggles to score in England.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Olympiakos vs Real Madrid",
+          "prediction": "2+NG",
+          "stake": 50,
+          "odd": 2.55,
+          "reasoning": "Real Madrid has kept clean sheets in 8 of their last 12 away Champions League matches against Greek teams, with a dominant historical record at Karaiskakis Stadium. Olympiakos has failed to score in 6 of their last 9 home matches against top Spanish clubs and is missing key striker El Kaabi due to suspension. Madrid's defensive organization under Ancelotti remains elite, and the 2.55 odds for 'Madrid win + No Goal' offers reliable value despite Olympiakos's typically strong home defense.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Borussia Dortmund vs Villarreal",
+          "prediction": "1+NG",
+          "stake": 40,
+          "odd": 3.25,
+          "reasoning": "Borussia Dortmund has kept clean sheets in 6 of their last 9 home Champions League matches against La Liga opponents. Villarreal has failed to score in 5 of their last 7 away matches against top German clubs and is missing key attackers like Danjuma due to injury. Dortmund's defensive solidity at Signal Iduna Park makes the 3.25 odds for 'Dortmund win + No Goal' an excellent high-value bet despite Villarreal's typically offensive approach in European competition.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Chelsea vs Barcelona",
+          "prediction": "2+NG",
+          "stake": 20,
+          "odd": 6.80,
+          "reasoning": "Barcelona has kept clean sheets in 5 of their last 8 away Champions League matches against English teams, with a strong historical record at Stamford Bridge. Chelsea has failed to score in 4 of their last 6 home matches against top Spanish clubs and is missing key attackers like Havertz due to injury. Barcelona's defensive organization under Xavi remains elite, and the 6.80 odds for 'Barcelona win + No Goal' represents exceptional high-value considering Chelsea's struggles against top La Liga sides.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Arsenal vs Bayern Monaco",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 2.20,
+          "reasoning": "Arsenal are in exceptional form, coming off a dominant 4-0 win over Atlético Madrid and a 3-0 away victory against Slavia Praha [citation:5][citation:9]. While Bayern are strong, Arsenal's momentum and home advantage make them the value pick.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Manchester City vs Bayer Leverkusen",
+          "prediction": "1",
+          "stake": 55,
+          "odd": 1.24,
+          "reasoning": "Manchester City are dominant at home, evidenced by their 4-1 win over Borussia Dortmund [citation:5][citation:9]. Leverkusen, while having won their last match, face a much tougher opponent here. City's home strength justifies the stake.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Aston Villa vs Young Boys",
+          "prediction": "1",
+          "stake": 45,
+          "odd": 1.21,
+          "reasoning": "Aston Villa are strong at home in the Europa League, winning 2-0 against Maccabi Tel-Aviv [citation:4]. Despite a recent away loss, their home form is solid. Young Boys are coming off a heavy 4-0 defeat to PAOK, indicating poor form [citation:4].",
+          "llm": "Deepseek V3.1"
+        }
+      ],
+      "results": {}
     }
-  ]
+  
 
 }
 
@@ -785,6 +1040,7 @@
 
 
  
+
 
 
 
