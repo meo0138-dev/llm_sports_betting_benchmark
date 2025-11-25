@@ -4302,7 +4302,7 @@
           "llm": "Claude Opus 4.1"
         },
         {
-          "match": "Real Madrid vs Olympiakos",
+          "match": "Olympiakos vs Real Madrid",
           "prediction": "2+NG",
           "stake": 30,
           "odd": 2.55,
@@ -4455,9 +4455,7 @@
 "Paris Saint-germain vs Tottenham": {
 "score": ""
 },
-"Real Madrid vs Olympiakos": {
-"score": ""
-},
+
 "Olympiakos vs Real Madrid": {
 "score": ""
 },
@@ -4470,6 +4468,7 @@
 }
 
   
+
 
 
 
