@@ -3,36 +3,36 @@
     "llm": "Grok 4.1",
     "bankroll": 1044.5,
     "roi": 0.94,
-    "bankroll_ci": "[259€ - 1833€]"
+    "bankroll_ci": "[275€ - 1856€]"
   },
   {
     "llm": "Deepseek V3.2",
-    "bankroll": 1046.4,
-    "roi": 1.93,
-    "bankroll_ci": "[547€ - 1520€]"
+    "bankroll": 1055.85,
+    "roi": 2.27,
+    "bankroll_ci": "[574€ - 1531€]"
   },
   {
     "llm": "GPT 5.1",
     "bankroll": 970.15,
     "roi": -1.51,
-    "bankroll_ci": "[412€ - 1539€]"
+    "bankroll_ci": "[414€ - 1534€]"
   },
   {
     "llm": "Gemini 3.0 Pro",
-    "bankroll": 1242.4,
-    "roi": 9.15,
-    "bankroll_ci": "[600€ - 1894€]"
+    "bankroll": 1237.6,
+    "roi": 8.58,
+    "bankroll_ci": "[555€ - 1893€]"
   },
   {
     "llm": "Qwen 3",
     "bankroll": 372.18,
     "roi": -17.12,
-    "bankroll_ci": "[0€ - 1657€]"
+    "bankroll_ci": "[0€ - 1675€]"
   },
   {
     "llm": "Claude Sonnet 4.5",
-    "bankroll": 1169.5,
-    "roi": 4.13,
-    "bankroll_ci": "[680€ - 1645€]"
+    "bankroll": 1176.85,
+    "roi": 4.27,
+    "bankroll_ci": "[686€ - 1656€]"
   }
 ]
