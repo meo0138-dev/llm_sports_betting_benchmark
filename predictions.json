@@ -4463,11 +4463,280 @@
 "score": "3-1"
 }
 }
-    }
+    }, {
+      "round": 17,
+      "date": "2025-11-29",
+      "games":[
+  {
+    "match": "Manchester City vs Leeds United",
+    "prediction": "1+NG",
+    "stake": 80,
+    "odd": 2.08,
+    "reasoning": "The market prices Manchester City as a prohibitive favorite (1.28), implying a 78% win probability. However, the 'Win to Nil' market at 2.08 implies only a 48% chance. Given City's dominance in possession at the Etihad and Leeds' struggle to create high-xG chances away from home, the true probability of a clean-sheet victory is significantly higher (estimated ~60%). This discrepancy offers massive value.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Atletico Madrid vs Real Oviedo",
+    "prediction": "1+NG",
+    "stake": 75,
+    "odd": 1.79,
+    "reasoning": "Atletico Madrid facing a lower-tier side like Real Oviedo at the Metropolitano is a classic scenario for a controlled, low-scoring win. Simeone's tactical setup prioritizes defensive solidity. While the straight win is unbackable at 1.23, the jump to 1.79 for the clean sheet is mathematically advantageous, capitalizing on the opponent's lack of offensive quality.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Barcellona vs Alavés",
+    "prediction": "1+NG",
+    "stake": 65,
+    "odd": 2.02,
+    "reasoning": "Barcelona's home form against bottom-half La Liga teams often results in dominant, shutout performances. Alavés has historically struggled to score at Camp Nou/Montjuïc. The gap between the straight win (1.22) and the Win+NoGoal (2.02) is too wide; the defensive risk does not justify an 80-point spread, making the 1+NG the superior value play.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Juventus vs Cagliari Calcio",
+    "prediction": "1+NG",
+    "stake": 60,
+    "odd": 1.89,
+    "reasoning": "Juventus (1.28 to win) relies heavily on defensive organization. Cagliari is among the lowest-scoring away teams in Serie A. The scenario heavily points to a 1-0 or 2-0 outcome. Backing the clean sheet win boosts the return significantly (from ~28% ROI to ~89% ROI per unit) without taking on proportionate risk.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Bayern Monaco vs St. Pauli",
+    "prediction": "1+NG",
+    "stake": 60,
+    "odd": 1.61,
+    "reasoning": "Bayern is priced at a minuscule 1.10 to win, which is unplayable. However, St. Pauli is massively outclassed and unlikely to threaten Bayern's goal at the Allianz Arena. The 1+NG option at 1.61 provides a respectable return for what is statistically the most likely outcome of a Bayern rout.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Bologna Fc vs Cremonese",
+    "prediction": "1",
+    "stake": 55,
+    "odd": 1.49,
+    "reasoning": "Bologna's home record is formidable, while Cremonese consistently struggles on the road. At 1.49, the implied probability is 67%, but Bologna's home advantage and squad depth suggest a win probability closer to 75%. This is a solid, lower-variance value bet to balance the portfolio.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Lione vs Nantes",
+    "prediction": "1",
+    "stake": 50,
+    "odd": 1.43,
+    "reasoning": "Lyon plays at home against a Nantes side that often performs poorly away. The odds of 1.43 are fair and reflect a clear tier difference between the two squads. This serves as a bankroll stabilizer.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Brentford vs Burnley",
+    "prediction": "1",
+    "stake": 45,
+    "odd": 1.45,
+    "reasoning": "Brentford is a strong home team, and Burnley often finds points hard to come by in London. The price of 1.45 offers a slight edge over the true probability of a home win in this fixture.",
+    "llm": "Gemini 2.5 Pro"
+  },
+  {
+    "match": "Bayern Monaco vs St. Pauli",
+    "prediction": "1",
+    "stake": 80,
+    "odd": 1.10,
+    "reasoning": "Implied prob 90.9%, my calc 95%+. Bayern lost first match vs Arsenal but St Pauli lost 8 straight Bundesliga games, scored 1 goal in last 6. Bayern won 10 of 11 Bundesliga games with 41 goals. Quality gap massive. Bayern will be angry and motivated to bounce back at home.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Pisa vs Inter",
+    "prediction": "2",
+    "stake": 60,
+    "odd": 1.34,
+    "reasoning": "Implied prob 74.6%, my calc 79%. Inter won last 5 H2H vs Pisa. Pisa promoted, only 1 win in 12 games. Despite Inter losing last 2 (Milan, Atletico), quality gap enormous. Pisa unbeaten in 6 but all draws vs top teams. Inter away should still dominate newly promoted side.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Barcellona vs Alavés",
+    "prediction": "1",
+    "stake": 70,
+    "odd": 1.22,
+    "reasoning": "Implied prob 82%, my calc 88%. Barca won 35 of 49 H2H, Alaves haven't won since 2016. Barca scored in last 33 Liga games, won last 3. Despite Chelsea loss, home at Camp Nou anniversary vs 14th place team. Lewandowski has 7 goals in 4 games vs Alaves. Alaves scored twice in last month.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Juventus vs Cagliari Calcio",
+    "prediction": "1",
+    "stake": 65,
+    "odd": 1.28,
+    "reasoning": "Implied prob 78.1%, my calc 83%. Juventus home vs 18th place Cagliari. Juventus have strong defensive record this season. Cagliari struggling near bottom. Home advantage plus quality gap justifies value.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Atletico Madrid vs Real Oviedo",
+    "prediction": "1",
+    "stake": 60,
+    "odd": 1.23,
+    "reasoning": "Implied prob 81.3%, my calc 86%. Atletico home vs Segunda Division side Real Oviedo. Cup tie but quality gap is massive. Atletico need to maintain form and Copa competition. Home at Wanda should be routine.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Manchester City vs Leeds United",
+    "prediction": "1",
+    "stake": 55,
+    "odd": 1.28,
+    "reasoning": "Implied prob 78.1%, my calc 82%. City home vs Leeds. Despite City's defensive issues shown recently, they're still dominant at home. Leeds are inconsistent and City need to bounce back. Etihad advantage plus Kane's form make this value.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Bologna Fc vs Cremonese",
+    "prediction": "1",
+    "stake": 50,
+    "odd": 1.49,
+    "reasoning": "Implied prob 67.1%, my calc 72%. Bologna home vs newly promoted Cremonese who are struggling. Bologna have quality and home advantage. Cremonese only won 1 game all season. Good value at 1.49.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Brentford vs Burnley",
+    "prediction": "1",
+    "stake": 45,
+    "odd": 1.45,
+    "reasoning": "Implied prob 69%, my calc 74%. Brentford home vs newly promoted Burnley. Brentford have good home record, Burnley struggling in Premier League. Quality gap and home advantage provide value.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "West Ham United vs Liverpool",
+    "prediction": "2",
+    "stake": 50,
+    "odd": 1.74,
+    "reasoning": "Implied prob 57.5%, my calc 63%. Liverpool away at West Ham. Despite Liverpool's 3 consecutive away PL losses, they are defending champions with superior quality. West Ham inconsistent. At 1.74 this offers value for Liverpool to bounce back.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Aston Villa vs Wolverhampton",
+    "prediction": "1",
+    "stake": 40,
+    "odd": 1.51,
+    "reasoning": "Implied prob 66.2%, my calc 70%. Villa home vs struggling Wolves. Villa have home advantage and better form. Wolves poor away record. Solid value at 1.51.",
+    "llm": "Claude Opus 4.1"
+  },
+  {
+    "match": "Genoa vs Hellas Verona",
+    "prediction": "1",
+    "stake": 75,
+    "odd": 2.10,
+    "reasoning": "Implied odds 48%. My calc prob 58% due to strong home advantage and Verona's poor away form. 10% edge warrants medium stake.",
+    "llm": "Deepseek V3.1"
+  },
+  {
+    "match": "Bologna Fc vs Cremonese",
+    "prediction": "1",
+    "stake": 60,
+    "odd": 1.49,
+    "reasoning": "Implied odds 67%. My calc prob 75% due to Bologna's stronger squad and home field advantage. 8% edge warrants medium stake.",
+    "llm": "Deepseek V3.1"
+  },
+  {
+    "match": "Lecce vs Torino",
+    "prediction": "Under 2.5",
+    "stake": 55,
+    "odd": 1.45,
+    "reasoning": "Implied odds 69%. My calc prob 77% based on both teams' low-scoring trends and Torino's stronger defense. 8% edge warrants medium stake.",
+    "llm": "Deepseek V3.1"
+  },
+  {
+    "match": "Monaco vs Paris Saint-germain",
+    "prediction": "2",
+    "stake": 50,
+    "odd": 1.58,
+    "reasoning": "PSG are still the league leaders despite injuries to Hakimi and Pogba as per recent reports, with a strong squad depth including Mbappe and Dembele returning. Monaco have lost their last 2 home games and are missing Zakaria to suspension, making PSG the value pick at 1.58 for an away win.",
+    "llm": "Grok 4"
+  },
+  {
+    "match": "Olympique Marsiglia vs Tolosa Fc",
+    "prediction": "1",
+    "stake": 50,
+    "odd": 1.61,
+    "reasoning": "Marseille have won 4 of their last 5 home games, scoring 12 goals, while Toulouse have no wins in 5 away matches and are missing several defenders like Costa and Nicolaisen due to injury. Marseille's form makes this a solid home win.",
+    "llm": "Grok 4"
+  },
+  {
+    "match": "Lione vs Nantes",
+    "prediction": "1",
+    "stake": 50,
+    "odd": 1.43,
+    "reasoning": "Lyon have a strong home record, winning 4 of 5, and Nantes are bottom of the league with 0 wins in 5 away, missing key players like Simon to injury. Low risk home win at 1.43.",
+    "llm": "Grok 4"
+  },
+  {
+    "match": "Strasburgo vs Brest",
+    "prediction": "1",
+    "stake": 50,
+    "odd": 1.82,
+    "reasoning": "Strasbourg have won 3 of last 5 home, Brest have 1 win in 5 away and missing Lala and Magnetti to injury. Strasbourg's form at home offers value at 1.82.",
+    "llm": "Grok 4"
+  },
+  {
+    "match": "Angers vs Lens",
+    "prediction": "2",
+    "stake": 50,
+    "odd": 1.75,
+    "reasoning": "Lens have won 4 of 5 away, Angers are bottom with 0 home wins and missing El Melali to injury. Lens' strong form makes 1.75 value for away win.",
+    "llm": "Grok 4"
+  },
+  {
+    "match": "Le Havre Ac vs Lille",
+    "prediction": "2",
+    "stake": 50,
+    "odd": 1.86,
+    "reasoning": "Lille are in top 4, winning 3 of 5 away, Le Havre have lost 4 of 5 home and missing Sabbi to injury. Lille's consistency offers value at 1.86.",
+    "llm": "Grok 4"
+  },
+  {
+    "match": "Lorient vs Nizza",
+    "prediction": "2",
+    "stake": 50,
+    "odd": 2.90,
+    "reasoning": "Nice have won 3 of 5 away, Lorient have 1 win in 5 home and missing Katseris to injury. Nice's better form gives value at 2.90 for away win.",
+    "llm": "Grok 4"
+  },
+  {
+    "match": "Milan vs Lazio",
+    "prediction": "1",
+    "stake": 220,
+    "odd": 1.69,
+    "reasoning": "Milan at home vs a Lazio side missing key players and showing inconsistency away. Recent previews highlight Milan’s improved defence and attacking threats — implied win-probability (~59%) vs my estimate ~68%. Value edge justifies strong stake.",
+    "llm": "GPT5"
+  },
+  {
+    "match": "Manchester City vs Leeds United",
+    "prediction": "1",
+    "stake": 98,
+    "odd": 1.28,
+    "reasoning": "Manchester City has won 9 of their last 10 home matches with a goal difference of +25. Leeds United has failed to score in 4 of their last 6 away matches and is missing key attackers like Rodrigo due to injury. City's defensive record at Etihad is exceptional with 7 clean sheets in their last 10 home games. True probability calculated at 88% vs implied odds probability of 78.13% (1/1.28), giving a 9.87% edge. This represents significant value warranting a high stake.",
+    "llm": "Qwen 3"
+  },
+  {
+    "match": "Juventus vs Cagliari Calcio",
+    "prediction": "1",
+    "stake": 85,
+    "odd": 1.28,
+    "reasoning": "Juventus has won 8 of their last 10 home matches against mid-table Serie A teams, including 6 consecutive home wins. Cagliari has failed to score in 5 of their last 7 away matches and is missing key striker Pavoletti due to suspension. Juventus' home defensive record is outstanding with 7 clean sheets in their last 10 home games. True probability calculated at 85% vs implied odds probability of 78.13% (1/1.28), giving a 6.87% edge. This represents strong value warranting a high stake.",
+    "llm": "Qwen 3"
+  },
+  {
+    "match": "Brentford vs Burnley",
+    "prediction": "1",
+    "stake": 68,
+    "odd": 1.45,
+    "reasoning": "Brentford has won 7 of their last 9 home matches with a goal difference of +15. Burnley has failed to score in 6 of their last 8 away matches and is missing key attackers like Cornet due to injury. Brentford's home form against lower-table teams is exceptional with 8 wins in their last 10 such matches. True probability calculated at 75% vs implied odds probability of 68.97% (1/1.45), giving a 6.03% edge. This represents solid value warranting a significant stake.",
+    "llm": "Qwen 3"
+  },
+  {
+    "match": "Genoa vs Hellas Verona",
+    "prediction": "1",
+    "stake": 45,
+    "odd": 2.10,
+    "reasoning": "Genoa has won 6 of their last 8 home matches against lower-table Serie A teams. Hellas Verona has failed to score in 5 of their last 7 away matches and is missing key attackers like Caprari due to injury. Genoa's home defensive record against mid-table opponents is particularly strong, with 6 clean sheets in their last 10 such matches. True probability calculated at 55% vs implied odds probability of 47.62% (1/2.10), giving a 7.38% edge. This represents excellent value considering the higher odds.",
+    "llm": "Qwen 3"
+  }
+]
   ]
 }
 
   
+
 
 
 
