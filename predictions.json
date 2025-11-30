@@ -4732,13 +4732,75 @@
           "llm": "Qwen 3"
         }
       ],
-      "results": {}
+      "results": {
+  "Manchester City vs Leeds United": {
+    "score": "3-2"
+  },
+  "Atletico Madrid vs Real Oviedo": {
+    "score": "2-0"
+  },
+  "Barcellona vs Alavés": {
+    "score": "3-1"
+  },
+  "Juventus vs Cagliari Calcio": {
+    "score": "2-1"
+  },
+  "Bayern Monaco vs St. Pauli": {
+    "score": "3-1"
+  },
+  "Bologna Fc vs Cremonese": {
+    "score": ""
+  },
+  "Lione vs Nantes": {
+    "score": ""
+  },
+  "Brentford vs Burnley": {
+    "score": "3-1"
+  },
+  "Pisa vs Inter": {
+    "score": ""
+  },
+  "West Ham United vs Liverpool": {
+    "score": ""
+  },
+  "Aston Villa vs Wolverhampton": {
+    "score": ""
+  },
+  "Genoa vs Hellas Verona": {
+    "score": "2-1"
+  },
+  "Lecce vs Torino": {
+    "score": ""
+  },
+  "Monaco vs Paris Saint-germain": {
+    "score": "1-0"
+  },
+  "Olympique Marsiglia vs Tolosa Fc": {
+    "score": "2-2"
+  },
+  "Strasburgo vs Brest": {
+    "score": ""
+  },
+  "Angers vs Lens": {
+    "score": ""
+  },
+  "Le Havre Ac vs Lille": {
+    "score": ""
+  },
+  "Lorient vs Nizza": {
+    "score": ""
+  },
+  "Milan vs Lazio": {
+    "score": "1-0"
+  }
+      }
     }
   ]
 }
  
 
   
+
 
 
 
