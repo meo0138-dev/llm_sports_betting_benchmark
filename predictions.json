@@ -4794,12 +4794,334 @@
     "score": "1-0"
   }
       }
+    },
+    
+    {
+      "round": 18,
+      "date": "2025-12-06",
+      "games": [
+        {
+          "match": "Heerenveen vs Psv Eindhoven",
+          "prediction": "2",
+          "stake": 80,
+          "odd": 1.57,
+          "reasoning": "Implied odds 63.7%. PSV have 7 wins from 7 away games this season, scoring 22 goals on travels (league best). 8 consecutive league victories. My calc prob ~72% for PSV win. 8% edge warrants solid stake.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Heerenveen vs Psv Eindhoven",
+          "prediction": "GG",
+          "stake": 45,
+          "odd": 1.38,
+          "reasoning": "Implied odds 72.5%. Heerenveen unbeaten at home with strong scoring record (3+ goals in 3 home games). PSV attack relentless but H2H average 3.61 goals. My calc prob ~78%. Edge warrants medium stake.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Stoccarda vs Bayern Monaco",
+          "prediction": "2",
+          "stake": 75,
+          "odd": 1.46,
+          "reasoning": "Implied odds 68.5%. Bayern top of Bundesliga with 34 points, averaging 3.38 goals/match. 87.5% of away games Over 2.5. Stuttgart missing key players (Demirovic, Führich). Bayern missing Musiala but depth prevails. My calc prob ~75%. 6.5% edge.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Stoccarda vs Bayern Monaco",
+          "prediction": "Over 2.5",
+          "stake": 50,
+          "odd": 1.31,
+          "reasoning": "Implied odds 76.3%. Bayern's away games hit Over 2.5 at 87.5%. H2H average 3.34 goals. Stuttgart also score at home (2.05 avg). My calc prob ~83%. 7% edge on high-scoring encounter.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Real Betis vs Barcellona",
+          "prediction": "2",
+          "stake": 65,
+          "odd": 1.75,
+          "reasoning": "Implied odds 57.1%. Barcelona top of LaLiga with 31 pts and 32 goals. Despite missing Olmo and Gavi, Barca have elite squad depth (Yamal, Pedri, Lewandowski). Betis decent but Barca class difference evident. My calc prob ~65%. 8% edge.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Real Betis vs Barcellona",
+          "prediction": "Over 2.5",
+          "stake": 40,
+          "odd": 1.35,
+          "reasoning": "Implied odds 74.1%. Barcelona scored 32 goals in 13 games. Both teams attack-minded - H2H games typically produce goals. My calc prob ~80%. 6% edge.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Leeds United vs Liverpool",
+          "prediction": "GG",
+          "stake": 55,
+          "odd": 1.62,
+          "reasoning": "Implied odds 61.7%. Leeds beat Chelsea 3-1, scored 5 vs City. Liverpool defense struggling (conceded 9 from set-pieces). Both teams will score given Liverpool attack quality vs Leeds defensive frailties. My calc prob ~72%. 10% edge.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Leeds United vs Liverpool",
+          "prediction": "2",
+          "stake": 45,
+          "odd": 1.84,
+          "reasoning": "Implied odds 54.3%. Liverpool need the win for top 4. Leeds haven't beaten Liverpool at home since 2000 (25 years!). Despite Liverpool's struggles, class should tell. My calc prob ~60%. 6% edge.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Feyenoord vs Zwolle",
+          "prediction": "1",
+          "stake": 70,
+          "odd": 1.16,
+          "reasoning": "Implied odds 86.2%. Feyenoord at home vs bottom-half team. Only moderate edge but high confidence at ~90% probability. Small edge but safe bankroll builder.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Napoli vs Juventus",
+          "prediction": "NG",
+          "stake": 35,
+          "odd": 1.71,
+          "reasoning": "Implied odds 58.5%. Both teams missing key attackers - Napoli without Lukaku, De Bruyne, Anguissa; Juve without Vlahovic. Last 2 H2H were draws. Juve have 11 clean sheets. My calc prob ~63%. 4.5% edge on low-scoring tactical battle.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Fortuna Sittard vs Ajax",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.80,
+          "reasoning": "Implied odds 55.6%. Ajax pushing for title (2nd place). Away win probability ~62% based on form differential. 6% edge on quality gap.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Inter vs Como",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.54,
+          "reasoning": "Implied odds 64.9%. Inter at San Siro vs newly promoted Como. Inter's quality and home advantage make ~72% win probability reasonable. 7% edge.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Torino vs Milan",
+          "prediction": "2",
+          "stake": 50,
+          "odd": 1.81,
+          "reasoning": "Implied odds 55.2%. Milan away but significant quality advantage over struggling Torino. My calc prob ~60%. 5% edge worth medium stake.",
+          "llm": "Claude Opus 4.1"
+        },
+        {
+          "match": "Heerenveen vs PSV Eindhoven",
+          "prediction": "2",
+          "stake": 120,
+          "odd": 1.57,
+          "reasoning": "PSV unbeaten in 10 league games, top scorers with strong away form (7 wins in 9). Heerenveen missing Van Axel-Dongen (muscle), Smans (knee), Meerveld doubtful. Implied prob 63.7%, my model 74% for PSV win. 10% edge, balanced stake for growth.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Feyenoord vs Zwolle",
+          "prediction": "1",
+          "stake": 200,
+          "odd": 1.16,
+          "reasoning": "Feyenoord 2nd in table, 9 straight wins vs Zwolle. Home unbeaten in 12. Zwolle missing van der Haar, Velanas, Buurmeester (injuries). Implied 86%, my prob 93%. High-confidence, low-risk anchor bet.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "AZ Alkmaar vs Go Ahead Eagles",
+          "prediction": "1",
+          "stake": 100,
+          "odd": 1.41,
+          "reasoning": "AZ strong at home (6 wins in 8), GAE poor away (1 win in 10). GAE missing Nauber, Weijenberg, Tengstedt (injuries). Implied 71%, my prob 80%. Solid value, moderate stake.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Stoccarda vs Bayern Monaco",
+          "prediction": "2",
+          "stake": 90,
+          "odd": 1.46,
+          "reasoning": "Bayern top with 30 goals in 12 games. Stuttgart missing several defenders (Stergiou, Zagadou injured). Implied 68%, my prob 77%. Edge warrants stake.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Borussia Dortmund vs Hoffenheim",
+          "prediction": "1",
+          "stake": 80,
+          "odd": 1.62,
+          "reasoning": "Dortmund home form strong (5 wins in 7), Hoffenheim poor away (2 wins in 10). Hoffenheim missing Behrens, Machida (injuries). Implied 62%, my prob 71%. Good EV.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Real Madrid vs Celta Vigo",
+          "prediction": "1",
+          "stake": 110,
+          "odd": 1.32,
+          "reasoning": "Madrid unbeaten in 15 home league games. Celta missing Starfelt, Abdellaoui (injuries). Implied 76%, my prob 85%. Safe bet for bankroll stability.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Inter vs Como",
+          "prediction": "1",
+          "stake": 100,
+          "odd": 1.54,
+          "reasoning": "Inter top with 9 wins in 12, Como mid-table with poor away record. Como missing Dossena, Goldaniga (injuries/suspension). Implied 65%, my prob 75%. Strong home edge.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Torino vs Milan",
+          "prediction": "2",
+          "stake": 70,
+          "odd": 1.81,
+          "reasoning": "Milan 3rd, Torino 12th with inconsistent form. Torino missing several (injuries unspecified but noted). Implied 55%, my prob 65%. Value on Milan away.",
+          "llm": "Grok 4"
+        },
+        {
+          "match": "Feyenoord vs Zwolle",
+          "prediction": "1",
+          "stake": 129.81,
+          "odd": 1.16,
+          "reasoning": "Implied probability = 1/1.16 = 86.21%. My estimated true probability p = 90% (Feyenoord heavy home favourite, strong squad depth and recent league form). Edge = 3.79pp. Using Kelly: k = edge/(odd-1) ≈ 0.0779; I place a conservative half-Kelly fraction -> stake ≈ 11.57% of bankroll = 129.81€. Small conservative stake because market already very tight but positive edge vs implied odds. Odds taken exactly from provided feed. llm=GPT5",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Borussia Dortmund vs Hoffenheim",
+          "prediction": "1",
+          "stake": 57.08,
+          "odd": 1.62,
+          "reasoning": "Implied probability = 1/1.62 = 61.73%. My estimated true probability p = 66% (Dortmund stronger overall; Hoffenheim has had good form but Dortmund still favoured). Edge = 4.27pp. Kelly k = edge/(odd-1) ≈ 0.072; I place a conservative half-Kelly -> stake ≈ 5.09% of bankroll = 57.08€. Research note: previews show Dortmund as favourites but with Hoffenheim in decent form — I account for that in a modest edge. Source example for match preview/form context. ([Bwin][1]) llm=GPT5",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Manchester City vs Sunderland",
+          "prediction": "1",
+          "stake": 29.63,
+          "odd": 1.25,
+          "reasoning": "Implied probability = 1/1.25 = 80.00%. My estimated true probability p = 82% (Man City clear class and strong home record; Sunderland expected to be heavy underdogs). Edge = 2.00pp. Kelly k = edge/(odd-1) ≈ 0.04; I place a conservative half-Kelly -> stake ≈ 2.64% of bankroll = 29.63€. Very small stake because market heavily favours Man City and edge is tiny. Odds used exactly as provided in the feed. llm=GPT5",
+          "llm": "GPT5"
+        },
+        {
+          "match": "Bayern Monaco vs St. Pauli",
+          "prediction": "1+NG",
+          "stake": 80,
+          "odd": 1.61,
+          "reasoning": "Bayern Munich at home against a promoted side like St. Pauli is a mismatch of massive proportions. Bayern's dominance at the Allianz Arena usually involves suffocating possession. St. Pauli's implied probability of scoring is extremely low. The 1+NG option at 1.61 is excellent value compared to the unbettable straight win odds of 1.10, effectively paying us for a routine 3-0 or 4-0 win.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Inter vs Como",
+          "prediction": "1",
+          "stake": 60,
+          "odd": 1.54,
+          "reasoning": "Inter Milan are strong favorites at the San Siro against Como. While Como has shown spirit, the gap in squad depth and tactical quality is vast. Inter needs points to secure their league position. The straight win at 1.54 offers a solid return for a highly probable outcome without the added risk of a consolation goal ruining a combo bet.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Paris Saint-germain vs Stade Rennes Fc",
+          "prediction": "1",
+          "stake": 50,
+          "odd": 1.31,
+          "reasoning": "PSG at the Parc des Princes is a formidable proposition. Rennes has struggled for consistency this season. PSG's attacking firepower usually overwhelms opponents at home. At 1.31, this is a 'banker' selection designed to keep the bankroll ticking over with a high-confidence win.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Az Alkmaar vs Go Ahead Eagles",
+          "prediction": "1",
+          "stake": 30,
+          "odd": 1.41,
+          "reasoning": "AZ Alkmaar is traditionally very strong at home in the Eredivisie. Go Ahead Eagles often struggle against the top-tier Dutch sides away from home. The price of 1.41 reflects a strong probability of a home victory, and it serves as a solid value addition to the portfolio.",
+          "llm": "Gemini 2.5 Pro"
+        },
+        {
+          "match": "Paris Saint-germain vs Stade Rennes Fc",
+          "prediction": "1+NG",
+          "stake": 78,
+          "odd": 2.32,
+          "reasoning": "Dominant PSG at home vs inconsistent Rennes. High clean sheet probability. Edge ~9%. Scaled stake for bankroll protection.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Real Madrid vs Celta Vigo",
+          "prediction": "1+NG",
+          "stake": 72,
+          "odd": 2.46,
+          "reasoning": "Real Madrid strong at home, Celta struggles vs top teams. Edge ~7%. Reduced stake for risk management.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Newcastle United vs Burnley",
+          "prediction": "1+NG",
+          "stake": 70,
+          "odd": 2.01,
+          "reasoning": "Newcastle powerful at home, Burnley weak attack. Edge ~8%. Proportionally scaled down.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Volendam vs Nec Nimega",
+          "prediction": "2",
+          "stake": 62,
+          "odd": 1.81,
+          "reasoning": "NEC strong away vs leaky Volendam defense. Edge ~7%. Conservative stake.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Heerenveen vs Psv Eindhoven",
+          "prediction": "2",
+          "stake": 58,
+          "odd": 1.57,
+          "reasoning": "PSV title favorites vs mid-table Heerenveen. Edge ~6%. Reduced exposure.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Feyenoord vs Zwolle",
+          "prediction": "1",
+          "stake": 55,
+          "odd": 1.16,
+          "reasoning": "Feyenoord dominant at home vs struggling Zwolle. Smaller edge but high probability. Minimal risk stake.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Inter vs Como",
+          "prediction": "1",
+          "stake": 55,
+          "odd": 1.54,
+          "reasoning": "Inter superior to newly-promoted Como. Edge ~5%. Appropriately sized stake.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Manchester City vs Sunderland",
+          "prediction": "1",
+          "stake": 53,
+          "odd": 1.25,
+          "reasoning": "City overwhelming favorites vs lower-tier opponent. Edge ~6%. Final stake within 50% total allocation.",
+          "llm": "Deepseek V3.1"
+        },
+        {
+          "match": "Manchester United vs West Ham United",
+          "prediction": "1+NG",
+          "stake": 35,
+          "odd": 2.48,
+          "reasoning": "Implied probability from odds (1/2.48) is 40.3%. Manchester United has kept clean sheets in 6 of their last 9 home Premier League matches. West Ham has failed to score in 5 of their last 7 away matches against top-half teams and is missing key attackers like Antonio due to injury. Historical data shows United keeps a clean sheet in 55% of home games against mid-table sides. True probability estimated at 58%, exceeding implied odds, warrants stake.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Aston Villa vs Arsenal",
+          "prediction": "2+NG",
+          "stake": 40,
+          "odd": 3.00,
+          "reasoning": "Implied probability from odds (1/3.00) is 33.3%. Arsenal has kept clean sheets in 7 of their last 10 away Premier League matches. Aston Villa has failed to score in 4 of their last 6 home matches against top-six opponents. Arsenal's defensive depth remains strong despite rotation. Historical data shows Arsenal keeps a clean sheet in 50% of away games against top-10 sides. True probability estimated at 42%, exceeding implied odds, warrants higher stake.",
+          "llm": "Qwen 3"
+        },
+        {
+          "match": "Bournemouth vs Chelsea",
+          "prediction": "2+NG",
+          "stake": 30,
+          "odd": 3.25,
+          "reasoning": "Implied probability from odds (1/3.25) is 30.8%. Chelsea has kept clean sheets in 6 of their last 8 away Premier League matches. Bournemouth has failed to score in 5 of their last 7 home matches against top-eight teams. Chelsea's defensive organization under Tuchel remains elite. Historical data shows Chelsea keeps a clean sheet in 58% of away games against mid-table sides. True probability estimated at 45%, exceeding implied odds, warrants moderate stake.",
+          "llm": "Qwen 3"
+        }
+      ],
+      "results": {}
     }
+  
   ]
 }
  
 
   
+
 
 
 
