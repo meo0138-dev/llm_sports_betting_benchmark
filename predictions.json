@@ -4992,14 +4992,7 @@
           "reasoning": "Implied probability = 1/1.25 = 80.00%. My estimated true probability p = 82% (Man City clear class and strong home record; Sunderland expected to be heavy underdogs). Edge = 2.00pp. Kelly k = edge/(odd-1) ≈ 0.04; I place a conservative half-Kelly -> stake ≈ 2.64% of bankroll = 29.63€. Very small stake because market heavily favours Man City and edge is tiny. Odds used exactly as provided in the feed. llm=GPT5",
           "llm": "GPT5"
         },
-        {
-          "match": "Bayern Monaco vs St. Pauli",
-          "prediction": "1+NG",
-          "stake": 80,
-          "odd": 1.61,
-          "reasoning": "Bayern Munich at home against a promoted side like St. Pauli is a mismatch of massive proportions. Bayern's dominance at the Allianz Arena usually involves suffocating possession. St. Pauli's implied probability of scoring is extremely low. The 1+NG option at 1.61 is excellent value compared to the unbettable straight win odds of 1.10, effectively paying us for a routine 3-0 or 4-0 win.",
-          "llm": "Gemini 2.5 Pro"
-        },
+       
         {
           "match": "Inter vs Como",
           "prediction": "1",
@@ -5121,6 +5114,7 @@
  
 
   
+
 
 
 
