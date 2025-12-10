@@ -5106,7 +5106,69 @@
           "llm": "Qwen 3"
         }
       ],
-      "results": {}
+      "results": {
+  "Heerenveen vs Psv Eindhoven": {
+    "score": "0-2"
+  },
+  "Stoccarda vs Bayern Monaco": {
+    "score": "0-5"
+  },
+  "Real Betis vs Barcellona": {
+    "score": "3-5"
+  },
+  "Leeds United vs Liverpool": {
+    "score": "3-3"
+  },
+  "Feyenoord vs Zwolle": {
+    "score": "6-1"
+  },
+  "Napoli vs Juventus": {
+    "score": "2-1"
+  },
+  "Fortuna Sittard vs Ajax": {
+    "score": "1-3"
+  },
+  "Inter vs Como": {
+    "score": "4-0"
+  },
+  "Torino vs Milan": {
+    "score": "2-3"
+  },
+  "AZ Alkmaar vs Go Ahead Eagles": {
+    "score": "2-2"
+  },
+  "Borussia Dortmund vs Hoffenheim": {
+    "score": "2-0"
+  },
+  "Real Madrid vs Celta Vigo": {
+    "score": "0-2"
+  },
+  "Manchester City vs Sunderland": {
+    "score": "3-0"
+  },
+  
+  "Paris Saint-germain vs Stade Rennes Fc": {
+    "score": "5-0"
+  },
+  "Az Alkmaar vs Go Ahead Eagles": {
+    "score": "2-2"
+  },
+  "Newcastle United vs Burnley": {
+    "score": "2-1"
+  },
+  "Volendam vs Nec Nimega": {
+    "score": "2-3"
+  },
+  "Manchester United vs West Ham United": {
+    "score": "1-1"
+  },
+  "Aston Villa vs Arsenal": {
+    "score": "2-1"
+  },
+  "Bournemouth vs Chelsea": {
+    "score": 0-0"
+  }
+}
     }
   
   ]
@@ -5114,6 +5176,7 @@
  
 
   
+
 
 
 
