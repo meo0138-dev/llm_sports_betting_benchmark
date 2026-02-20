@@ -10,8 +10,8 @@ CONFIDENCE_LEVEL <- 0.95
 apply_llm_mapping <- function(raw_name) {
   mapping <- list(
     "Claude"="Claude",
-    "Claude Opus 4.1" = "Claude Sonnet 4.5",
-    "Claude Sonnet 4.5" = "Claude Sonnet 4.5",
+    "Claude Opus 4.1" = "Claude",
+    "Claude Sonnet 4.5" = "Claude",
     "Gemini 2.5 Pro" = "Gemini 3.0 Pro",
     "Deepseek V3.1" = "Deepseek V3.2",
     "GPT5" = "GPT 5.1",
@@ -206,4 +206,5 @@ chart_json <- list(
 write(toJSON(chart_json, pretty = TRUE, auto_unbox = TRUE), "chart_data.json")
 
 cat("✅ Successfully generated leaderboard_data.json and chart_data.json.\n")
+
 
