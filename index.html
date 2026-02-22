@@ -114,32 +114,84 @@
     }
 
     function isBetWon(game, results) {
-        const result = results[game.match];
-        if (!result || !result.score || result.score === "") return null;
-        
-        const [homeGoals, awayGoals] = result.score.split('-').map(Number);
-        const totalGoals = homeGoals + awayGoals;
-        const prediction = game.prediction;
-        const is_gg = homeGoals > 0 && awayGoals > 0;
+    const result = results[game.match];
+    if (!result || !result.score || result.score === "") return null;
 
-        if (prediction === '1') return homeGoals > awayGoals;
-        if (prediction === 'X') return homeGoals === awayGoals;
-        if (prediction === '2') return awayGoals > homeGoals;
-        if (prediction === '1X') return homeGoals >= awayGoals;
-        if (prediction === 'X2') return awayGoals >= homeGoals;
-        if (prediction === '12') return homeGoals !== awayGoals;
-        if (prediction === 'GG') return is_gg;
-        if (prediction === 'NG') return !is_gg;
-        if (prediction.startsWith('Over ')) return totalGoals > parseFloat(prediction.split(' ')[1]);
-        if (prediction.startsWith('Under ')) return totalGoals < parseFloat(prediction.split(' ')[1]);
-        if (prediction === '1+GG') return homeGoals > awayGoals && is_gg;
-        if (prediction === '1+NG') return homeGoals > awayGoals && !is_gg;
-        if (prediction === 'X+GG') return homeGoals === awayGoals && is_gg;
-        if (prediction === 'X+NG') return homeGoals === awayGoals && !is_gg;
-        if (prediction === '2+GG') return awayGoals > homeGoals && is_gg;
-        if (prediction === '2+NG') return awayGoals > homeGoals && !is_gg;
-        return false;
-    }
+    const [homeGoals, awayGoals] = result.score.split('-').map(Number);
+    const totalGoals = homeGoals + awayGoals;
+
+    // Normalize prediction: trim spaces around '+'
+    const prediction = game.prediction.trim().replace(/\s*\+\s*/g, '+');
+
+    const home_win = homeGoals > awayGoals;
+    const draw     = homeGoals === awayGoals;
+    const away_win = awayGoals > homeGoals;
+    const is_gg    = homeGoals > 0 && awayGoals > 0;
+    const over     = totalGoals > 2.5;
+    const under    = totalGoals < 2.5;
+
+    // --- 1X2 ---
+    if (prediction === '1')  return home_win;
+    if (prediction === 'X')  return draw;
+    if (prediction === '2')  return away_win;
+
+    // --- Double Chance ---
+    if (prediction === '1X') return home_win || draw;
+    if (prediction === 'X2') return away_win || draw;
+    if (prediction === '12') return home_win || away_win;
+
+    // --- GG / NG ---
+    if (prediction === 'GG') return is_gg;
+    if (prediction === 'NG') return !is_gg;
+
+    // --- Over / Under (default 2.5, both OV/UN and Over/Under aliases) ---
+    if (prediction === 'OV' || prediction === 'Over') return over;
+    if (prediction === 'UN' || prediction === 'Under') return under;
+
+    // --- Over X.X / Under X.X (explicit line) ---
+    if (prediction.startsWith('Over '))  return totalGoals > parseFloat(prediction.split(' ')[1]);
+    if (prediction.startsWith('Under ')) return totalGoals < parseFloat(prediction.split(' ')[1]);
+
+    // --- 1X2 + GG/NG combos ---
+    if (prediction === '1+GG')  return home_win && is_gg;
+    if (prediction === '1+NG')  return home_win && !is_gg;
+    if (prediction === 'X+GG')  return draw && is_gg;
+    if (prediction === 'X+NG')  return draw && !is_gg;
+    if (prediction === '2+GG')  return away_win && is_gg;
+    if (prediction === '2+NG')  return away_win && !is_gg;
+
+    // --- 1X2 + Over/Under combos ---
+    if (prediction === '1+OV')  return home_win && over;
+    if (prediction === 'X+OV')  return draw && over;
+    if (prediction === '2+OV')  return away_win && over;
+    if (prediction === '1+UN')  return home_win && under;
+    if (prediction === 'X+UN')  return draw && under;
+    if (prediction === '2+UN')  return away_win && under;
+
+    // --- Double Chance + Over/Under combos ---
+    if (prediction === '1X+OV') return (home_win || draw) && over;
+    if (prediction === '1X+UN') return (home_win || draw) && under;
+    if (prediction === 'X2+OV') return (away_win || draw) && over;
+    if (prediction === 'X2+UN') return (away_win || draw) && under;
+    if (prediction === '12+OV') return (home_win || away_win) && over;
+    if (prediction === '12+UN') return (home_win || away_win) && under;
+
+    // --- Double Chance + GG/NG combos ---
+    if (prediction === '1X+GG') return (home_win || draw) && is_gg;
+    if (prediction === '1X+NG') return (home_win || draw) && !is_gg;
+    if (prediction === 'X2+GG') return (away_win || draw) && is_gg;
+    if (prediction === 'X2+NG') return (away_win || draw) && !is_gg;
+    if (prediction === '12+GG') return (home_win || away_win) && is_gg;
+    if (prediction === '12+NG') return (home_win || away_win) && !is_gg;
+
+    // --- GG/NG + Over/Under combos ---
+    if (prediction === 'GG+OV') return is_gg && over;
+    if (prediction === 'GG+UN') return is_gg && under;
+    if (prediction === 'NG+OV') return !is_gg && over;
+    if (prediction === 'NG+UN') return !is_gg && under;
+
+    return false;
+}
 
     // --- 1. Load Leaderboard ---
     fetch('leaderboard_data.json')
@@ -332,4 +384,5 @@
   </script>
 </body>
 </html>
+
 
