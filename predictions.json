@@ -5236,10 +5236,88 @@
   },
   "Fiorentina vs Pisa": {
     "score": "1-0"
-  }
+  } 
 }
-    }
-  ]
+    },  {
+      "round": 20,
+      "date": "2026-02-24",
+      "games":[ { "match": "Newcastle United vs Qarabag Fk", "prediction": "1 + OV", "stake": 65, "odd": 1.34, "reasoning": "Implied prob 75%. Newcastle won first leg 6-1 away. Tie is dead, but Newcastle will still play strong at home. Anthony Gordon scored 4 in first leg. Newcastle have firepower to score 3+ even with rotated squad vs Qarabag's leaky defense. I estimate ~82% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Atletico Madrid vs Club Bruges", "prediction": "1", "stake": 55, "odd": 1.41, "reasoning": "Implied prob 71%. First leg was 3-3, so Atletico MUST win at home to advance. Simeone's side at the Metropolitano in a do-or-die game. Brugge without key player Onyedika who was major in first leg. Atletico's desperation and home advantage make them very strong favorites. I estimate ~78% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Bayer Leverkusen vs Olympiakos", "prediction": "1X", "stake": 55, "odd": 1.25, "reasoning": "Implied prob 80%. Leverkusen won first leg 2-0 away via Schick brace. Olympiacos haven't won a 2-legged UCL tie since 1983-84. Leverkusen at home are very strong and have nothing to fear. I estimate ~88% true prob. Edge ~8%.", "llm": "Claude" }, { "match": "Inter vs Bodø Glimt", "prediction": "1", "stake": 50, "odd": 1.24, "reasoning": "Implied prob 81%. Inter lost 1-3 away and MUST overturn a 2-goal deficit. They'll throw everything forward at San Siro. Inter are a far stronger side at home vs Bodo's artificial pitch advantage in Norway. Desperation drives aggression. I estimate ~86% true prob for a home win (though they may not advance). Edge ~5%.", "llm": "Claude" }, { "match": "Real Madrid vs Benfica", "prediction": "1", "stake": 50, "odd": 1.46, "reasoning": "Implied prob 68%. Real Madrid lead 1-0 from Vinicius Jr's golazo. At the Bernabeu, Madrid are imperious. Won 7 straight league games before this. Benfica lost 4-2 to Real Madrid on MD8 and were already beaten away. I estimate ~76% true prob. Edge ~8%.", "llm": "Claude" }, { "match": "Paris Saint-germain vs Monaco", "prediction": "1", "stake": 45, "odd": 1.26, "reasoning": "Implied prob 79%. PSG won 3-2 away with Doué starring, Monaco's Golovin got red card. At Parc des Princes, PSG will dominate. Monaco already down a goal and a key player. PSG have won 6 of 8 UCL league phase games at home. I estimate ~85% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Juventus vs Galatasaray", "prediction": "1", "stake": 40, "odd": 1.49, "reasoning": "Implied prob 67%. Juve trail 2-5 from first leg - they need to win by 4+ which is near impossible for advancing, BUT Juve at home in Turin will fight for pride and UCL coefficient. Galatasaray may rest players thinking tie is won. First leg Juve had Cabal red card. I estimate ~72% true prob for match win. Edge ~5%.", "llm": "Claude" }, { "match": "Stoccarda vs Celtic", "prediction": "1", "stake": 50, "odd": 1.39, "reasoning": "Implied prob 72%. Stuttgart demolished Celtic 4-1 away in the first leg. Celtic are heavily punished and have almost zero chance of advancing. Stuttgart at home will comfortably manage this. I estimate ~79% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Nottingham Forest vs Fenerbahçe", "prediction": "1X", "stake": 50, "odd": 1.15, "reasoning": "Implied prob 87%. Forest won 3-0 away at Fenerbahce under new coach Vitor Pereira. Tie is essentially over. Forest at home with massive lead will be very comfortable. I estimate ~94% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Bologna vs Brann", "prediction": "1", "stake": 40, "odd": 1.43, "reasoning": "Implied prob 70%. Bologna won 1-0 away at Brann. At home they should control the tie comfortably. Brann need to score at least once, opening themselves up to counter-attacks. I estimate ~76% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Fiorentina vs Jagiellonia Bialystok", "prediction": "1", "stake": 45, "odd": 1.54, "reasoning": "Implied prob 65%. Fiorentina won first leg 3-0 away. Jagiellonia had 0 shots on target. At home, Fiorentina should dominate. Even if they rotate, the quality gap is enormous. I estimate ~73% true prob. Edge ~8%.", "llm": "Claude" }, { "match": "Crystal Palace vs Hsk Zrinjski Mostar", "prediction": "1", "stake": 45, "odd": 1.14, "reasoning": "Implied prob 88%. First leg was 1-1. Palace at Selhurst Park should have no issue vs 23rd-placed Zrinjski who have scored all 9 European goals at home. Despite Palace's poor form (1 win in 14), the quality gap is too large. I estimate ~92% true prob. Edge ~4%.", "llm": "Claude" }, { "match": "Lech Poznan vs Kuopion Palloseura", "prediction": "1", "stake": 40, "odd": 1.23, "reasoning": "Implied prob 81%. Lech won 2-0 away with KuPS down to 10 men after 12 minutes. KuPS failed to score in 8 matches this campaign. At home, Lech should cruise. I estimate ~88% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Nk Celje vs Kf Drita", "prediction": "1X", "stake": 35, "odd": 1.06, "reasoning": "Implied prob 94%. Celje won 3-2 away. At home they just need to not lose. Drita conceded a 94th-minute winner last leg and have conceded 24 goals this season. I estimate ~97% true prob. Edge ~3%. Small stake due to low odds.", "llm": "Claude" }, { "match": "Samsunspor vs Shkendija Tetovo", "prediction": "1", "stake": 40, "odd": 1.33, "reasoning": "Implied prob 75%. Samsunspor won 1-0 away and are 2-1-1 at home with 3 clean sheets. Shkendija are a much weaker side from North Macedonia. Samsunspor's home record is strong. I estimate ~82% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Az Alkmaar vs Noah Yerevan", "prediction": "1", "stake": 40, "odd": 1.33, "reasoning": "Implied prob 75%. AZ trail 0-1 from away leg but are at home and vastly superior in quality. Noah are an Armenian side who had a great first leg but AZ's Troy Parrott hit the woodwork. AZ's home quality should prevail. I estimate ~80% true prob. Edge ~5%.", "llm": "Claude" }, { "match": "Genk vs Dinamo Zagabria", "prediction": "12", "stake": 35, "odd": 1.33, "reasoning": "Implied prob 75%. Genk won 3-1 away at Dinamo Zagreb. At home, either side could win the match but Genk advancing is near certain. With a 2-goal aggregate lead, Genk are strong favorites for at least match result. I estimate ~82% home or away win. Edge ~7%.", "llm": "Claude" }, { "match": "Atalanta vs Borussia Dortmund", "prediction": "1", "stake": 35, "odd": 2.10, "reasoning": "Implied prob 48%. Atalanta trail 0-2 but are at home in Bergamo. They MUST attack and will throw everything forward. Atalanta are a quality side - unbeaten in 7 Serie A games before this. Desperation + home crowd could spark a win even if they don't advance on aggregate. I estimate ~53% true prob for match win. Edge ~5%.", "llm": "Claude" }, { "match": "Celta Vigo vs Paok Salonicco", "prediction": "1X", "stake": 35, "odd": 1.19, "reasoning": "Implied prob 84%. Celta won 2-1 away at PAOK. At home with a lead, Celta should manage comfortably. PAOK need to score at least twice. I estimate ~89% true prob. Edge ~5%.", "llm": "Claude" }, { "match": "Ferencváros vs Ludgorets", "prediction": "1", "stake": 35, "odd": 1.63, "reasoning": "Implied prob 61%. Ferencvaros trail 1-2 from away leg. At home in Budapest they must win. Ferencvaros have strong home support and quality to overturn a 1-goal deficit. I estimate ~67% true prob for match win. Edge ~6%.", "llm": "Claude" } ],
+      "results": {
+        
+        
+        "Newcastle United vs Qarabag Fk": {
+          "score": ""
+        },
+        "Atletico Madrid vs Club Bruges": {
+          "score": ""
+        },
+        "Bayer Leverkusen vs Olympiakos": {
+          "score": ""
+        },
+        "Inter vs Bodø Glimt": {
+          "score": ""
+        },
+        "Real Madrid vs Benfica": {
+          "score": ""
+        },
+        "Paris Saint-germain vs Monaco": {
+          "score": ""
+        },
+        "Juventus vs Galatasaray": {
+          "score": ""
+        },
+        "Stoccarda vs Celtic": {
+          "score": ""
+        },
+        "Nottingham Forest vs Fenerbahçe": {
+          "score": ""
+        },
+        "Bologna vs Brann": {
+          "score": ""
+        },
+        "Fiorentina vs Jagiellonia Bialystok": {
+          "score": ""
+        },
+        "Crystal Palace vs Hsk Zrinjski Mostar": {
+          "score": ""
+        },
+        "Lech Poznan vs Kuopion Palloseura": {
+          "score": ""
+        },
+        "Nk Celje vs Kf Drita": {
+          "score": ""
+        },
+        "Samsunspor vs Shkendija Tetovo": {
+          "score": ""
+        },
+        "Az Alkmaar vs Noah Yerevan": {
+          "score": ""
+        },
+        "Genk vs Dinamo Zagabria": {
+          "score": ""
+        },
+        "Atalanta vs Borussia Dortmund": {
+          "score": ""
+        },
+        "Celta Vigo vs Paok Salonicco": {
+          "score": ""
+        },
+        "Ferencváros vs Ludgorets": {
+          "score": ""
+        }
+      }
+ } 
+
+
+
+
+
+
+
+
+
+
+]
 }
  
 
