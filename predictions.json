@@ -5312,7 +5312,7 @@
       "games":[ { "match": "Inter vs Genoa", "prediction": "1", "stake": 60, "odd": 1.32, "reasoning": "Implied prob 76%. Inter lead Serie A with 64 points, +10 over Milan. At San Siro, Inter are dominant. Genoa are mid-table. I estimate ~83% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Cremonese vs Milan", "prediction": "2", "stake": 55, "odd": 1.49, "reasoning": "Implied prob 67%. Milan 2nd with 54 points. Cremonese lost 5 of 7, average 0.81 goals scored vs Milan's 0.77 conceded. Milan unbeaten in 5 and fired up after losing to Cremonese in matchday 1. I estimate ~75% true prob. Edge ~8%.", "llm": "Claude" }, { "match": "Verona vs Napoli", "prediction": "2", "stake": 50, "odd": 1.58, "reasoning": "Implied prob 63%. Napoli 4th with 50 points, defending champions with strong away form. Verona are struggling in lower half. I estimate ~70% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Liverpool vs West Ham United", "prediction": "1", "stake": 55, "odd": 1.44, "reasoning": "Implied prob 69%. Liverpool are defending champions and at Anfield are formidable. West Ham sacked Potter earlier this season and have been inconsistent. I estimate ~77% true prob. Edge ~8%.", "llm": "Claude" }, { "match": "Arsenal vs Chelsea", "prediction": "1", "stake": 45, "odd": 1.62, "reasoning": "Implied prob 62%. Arsenal just beat Spurs 4-1 away and are title contenders. Chelsea lost to Arsenal recently in Carabao Cup semi. At the Emirates, Arsenal should dominate. I estimate ~68% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Leeds United vs Manchester City", "prediction": "2", "stake": 45, "odd": 1.69, "reasoning": "Implied prob 59%. Man City are title contenders, Leeds promoted this season. Despite City's occasional away wobbles, their quality gap over newly promoted Leeds is significant. I estimate ~66% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Newcastle United vs Everton", "prediction": "1", "stake": 45, "odd": 1.80, "reasoning": "Implied prob 56%. Newcastle at home are strong, Everton lost 0-1 to Man Utd and have been poor. I estimate ~63% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Borussia Dortmund vs Bayern Monaco", "prediction": "2", "stake": 40, "odd": 1.68, "reasoning": "Implied prob 60%. Bayern lead by 8 points, scored 85 goals (36 more than BVB). Kane has 28 goals. Musiala could return. BVB just lost 4-1 to Atalanta in CL - morale hit. BVB missing Mané, Ryerson (suspended), Süle. I estimate ~66% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Borussia Dortmund vs Bayern Monaco", "prediction": "GG", "stake": 40, "odd": 1.44, "reasoning": "Implied prob 69%. Both are the top 2 scoring and defensive teams. BVB have Guirassy/Adeyemi/Brandt, Bayern have Kane/Olise/Diaz. In Der Klassiker both teams typically score. I estimate ~77% true prob. Edge ~8%.", "llm": "Claude" }, { "match": "Barcellona vs Villarreal", "prediction": "1 + OV", "stake": 45, "odd": 1.58, "reasoning": "Implied prob 63%. Barcelona are defending La Liga champions, 2nd with ~58 points. At Camp Nou they are deadly. Villarreal are decent but concede. Average La Liga game has 2.66 goals. I estimate ~70% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Real Madrid vs Getafe", "prediction": "1", "stake": 55, "odd": 1.34, "reasoning": "Implied prob 75%. Real Madrid at the Bernabeu vs defensively-minded Getafe. Madrid have been on incredible form this season with Mbappé. I estimate ~82% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Real Oviedo vs Atletico Madrid", "prediction": "2", "stake": 40, "odd": 1.83, "reasoning": "Implied prob 55%. Atletico are 4th in La Liga, newly promoted Oviedo should struggle. Simeone's side need points for top 4. I estimate ~61% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Sassuolo vs Atalanta", "prediction": "2", "stake": 35, "odd": 1.97, "reasoning": "Implied prob 51%. Atalanta just beat Dortmund 4-1 in CL and are flying. Sassuolo promoted this season. Atalanta's quality and confidence are high. I estimate ~57% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Bayer Leverkusen vs Mainz", "prediction": "1", "stake": 40, "odd": 1.73, "reasoning": "Implied prob 58%. Leverkusen at home, despite some injuries (Flekken, Badé out), remain a top-quality side. Mainz have significant injury problems. I estimate ~64% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Le Havre Ac vs Paris Saint-germain", "prediction": "2", "stake": 50, "odd": 1.31, "reasoning": "Implied prob 76%. PSG just advanced in CL beating Monaco 3-2 away. At Le Havre (bottom half), PSG's quality is overwhelming even with rotation. I estimate ~83% true prob. Edge ~7%.", "llm": "Claude" }, { "match": "Stoccarda vs Wolfsburg", "prediction": "1", "stake": 35, "odd": 1.50, "reasoning": "Implied prob 67%. Stuttgart at home are strong. Wolfsburg missing 7+ players (Cleiton, Dárdai, Fischer, Mæhle, Rogério, Seelt, Wimmer). Quality gap + injuries = edge. I estimate ~73% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Como vs Lecce", "prediction": "1", "stake": 35, "odd": 1.37, "reasoning": "Implied prob 73%. Como at home should handle Lecce who are lower-table. I estimate ~78% true prob. Edge ~5%.", "llm": "Claude" }, { "match": "Burnley vs Brentford", "prediction": "2", "stake": 35, "odd": 1.81, "reasoning": "Implied prob 55%. Brentford are established PL side, Burnley promoted and struggling. Brentford's away quality should prevail. I estimate ~61% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Pisa vs Bologna", "prediction": "2", "stake": 30, "odd": 2.05, "reasoning": "Implied prob 49%. Bologna advanced in Europa League and are an established top-half Serie A side. Pisa newly promoted. I estimate ~55% true prob. Edge ~6%.", "llm": "Claude" }, { "match": "Real Betis vs Siviglia", "prediction": "1", "stake": 30, "odd": 1.82, "reasoning": "Implied prob 55%. Betis at home in the Seville derby. Betis have been consistent, Sevilla struggling. Home advantage in derby should be decisive. I estimate ~61% true prob. Edge ~6%.", "llm": "Claude" } ],
       "results":{
   "Inter vs Genoa": {
-    "score": ""
+    "score": "2-0"
   },
   "Cremonese vs Milan": {
     "score": ""
@@ -5342,7 +5342,7 @@
     "score": ""
   },
   "Real Oviedo vs Atletico Madrid": {
-    "score": ""
+    "score": "0-1"
   },
   "Sassuolo vs Atalanta": {
     "score": ""
@@ -5351,7 +5351,7 @@
     "score": "1-1"
   },
   "Le Havre Ac vs Paris Saint-germain": {
-    "score": ""
+    "score": "0-1"
   },
   "Stoccarda vs Wolfsburg": {
     "score": ""
@@ -5385,6 +5385,7 @@
  
 
   
+
 
 
 
