@@ -5369,7 +5369,163 @@
     "score": "2-2"
   }
 }
-    }
+    }, {
+      "round": 22,
+      "date": "2026-03-04",
+      "games":[
+  {
+    "match": "Atletico Madrid vs Real Sociedad",
+    "prediction": "1",
+    "stake": 60,
+    "odd": 1.67,
+    "reasoning": "Implied prob 60%. Atletico 3rd with 51pts, won 11 of 13 home games. Won last 3 home H2Hs. Real Sociedad haven't beaten Atletico since Jan 2022, no wins in 9 consecutive H2Hs. RS only 14 pts in 13 away games. Simeone's side motivated for CL preparation. I estimate ~70% true prob. Edge ~10%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Juventus vs Pisa",
+    "prediction": "1",
+    "stake": 65,
+    "odd": 1.21,
+    "reasoning": "Implied prob 83%. Juventus unbeaten in 55 of 65 most recent Serie A matches. Pisa are promoted and a much weaker side. At Juve's home, this should be very comfortable. I estimate ~89% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Athletic Bilbao vs Barcellona",
+    "prediction": "2",
+    "stake": 55,
+    "odd": 1.68,
+    "reasoning": "Implied prob 60%. Barca lead La Liga with 64pts, unbeaten in 12 La Liga games vs Bilbao, won 10. Beat Athletic 5-0 and 4-0 this season. Athletic haven't scored in 4 consecutive H2Hs. Despite Barca rotation and missing Kounde/Balde, quality gap is enormous. Athletic missing Nico Williams too. I estimate ~66% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Milan vs Inter",
+    "prediction": "1X",
+    "stake": 55,
+    "odd": 1.59,
+    "reasoning": "Implied prob 63%. Inter have NOT beaten Milan in 6 consecutive meetings (4 defeats, 2 draws). Lautaro Martinez injured, Bastoni suspended. Milan have 2nd best defense (20 goals conceded). Milan need win to stay in title race. Home advantage + H2H dominance. I estimate ~71% true prob. Edge ~8%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Atalanta vs Udinese",
+    "prediction": "1",
+    "stake": 45,
+    "odd": 1.70,
+    "reasoning": "Implied prob 59%. Atalanta 7th with 45pts, want to bounce back after loss to Sassuolo. Dominant at home - 7W 1L 2D, conceding max 1 goal in 8 consecutive home games. CL R16 vs Bayern motivation. Scalvini out but squad depth good. I estimate ~65% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Bologna vs Verona",
+    "prediction": "1",
+    "stake": 40,
+    "odd": 1.57,
+    "reasoning": "Implied prob 64%. Bologna are an established top-half side. Verona struggling in lower half. Bologna at home should be comfortable. I estimate ~70% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Genoa vs Roma",
+    "prediction": "2",
+    "stake": 40,
+    "odd": 1.91,
+    "reasoning": "Implied prob 52%. Roma are 3rd-4th with strong form. Genoa are mid-table. Roma have best defense in Serie A (19 goals conceded). Roma away should still be favorites. I estimate ~58% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Fiorentina vs Parma",
+    "prediction": "1",
+    "stake": 35,
+    "odd": 1.74,
+    "reasoning": "Implied prob 57%. Fiorentina at home vs lower-table Parma. Fiorentina have quality advantage despite Udinese 3-0 loss last round. Home bounce back expected. I estimate ~63% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Villarreal vs Elche",
+    "prediction": "1",
+    "stake": 40,
+    "odd": 1.52,
+    "reasoning": "Implied prob 66%. Villarreal 4th in La Liga with strong quality. Elche are newly promoted and struggling. Villarreal at home should dominate. I estimate ~72% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Atletico Madrid vs Real Sociedad",
+    "prediction": "Over",
+    "stake": 30,
+    "odd": 1.62,
+    "reasoning": "Implied prob 62%. 6 of Atletico's last 7 matches had over 2.5 goals. Last 3 home wins all had 4+ goals. In 5 most recent home H2H vs Sociedad, over 2.5 goals in all. I estimate ~68% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Lazio vs Sassuolo",
+    "prediction": "1X",
+    "stake": 35,
+    "odd": 1.28,
+    "reasoning": "Implied prob 78%. Lazio at home are strong. Sassuolo just beat Atalanta 2-1 showing good form, but Lazio have quality to not lose at home. I estimate ~83% true prob. Edge ~5%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Lecce vs Cremonese",
+    "prediction": "Under",
+    "stake": 30,
+    "odd": 1.46,
+    "reasoning": "Implied prob 68%. Two lower-table sides = low-scoring affair. Cremonese averaged 0.81 goals per game. Both are defensively-minded teams. I estimate ~75% true prob. Edge ~7%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Sion vs Winterthur",
+    "prediction": "1",
+    "stake": 35,
+    "odd": 1.28,
+    "reasoning": "Implied prob 78%. Sion at home are strong favorites vs Winterthur who are one of the weaker Swiss sides. I estimate ~84% true prob. Edge ~6%.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Espanyol vs Real Oviedo",
+    "prediction": "1",
+    "stake": 30,
+    "odd": 1.91,
+    "reasoning": "Implied prob 52%. Espanyol at home against Real Oviedo who are struggling. Mid-table vs lower-half clash. Home advantage decisive. I estimate ~58% true prob. Edge ~6%.",
+    "llm": "Claude"
+  }
+], "results": {
+        "Atletico Madrid vs Real Sociedad": {
+          "score": "3-2"
+        },
+        "Juventus vs Pisa": {
+          "score": "4-0"
+        },
+        "Athletic Bilbao vs Barcellona": {
+          "score": "0-1"
+        },
+        "Milan vs Inter": {
+          "score": ""
+        },
+        "Atalanta vs Udinese": {
+          "score": "2-2"
+        },
+        "Bologna vs Verona": {
+          "score": "1-2"
+        },
+        "Genoa vs Roma": {
+          "score": ""
+        },
+        "Fiorentina vs Parma": {
+          "score": "0-0"
+        },
+        "Villarreal vs Elche": {
+          "score": "2-1"
+        },
+        "Lazio vs Sassuolo": {
+          "score": ""
+        },
+        "Lecce vs Cremonese": {
+          "score": "2-1"
+        },
+        "Sion vs Winterthur": {
+          "score": "1-1"
+        },
+        "Espanyol vs Real Oviedo": {
+          "score": ""
+        }
+      }}
 
 
 
