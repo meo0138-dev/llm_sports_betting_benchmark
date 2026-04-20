@@ -5587,7 +5587,44 @@
       "round": 25,
       "date": "2026-04-19",
       "games":[ { "match": "PSG vs Lyon", "prediction": "1", "stake": 120, "odd": 1.30, "reasoning": "Implied prob 76.9%. My calc prob ~85%. PSG on a 6-match win streak across all comps (beat Liverpool 2-0 twice, Chelsea 5-2, 3-0, Nice 4-0, Toulouse 3-1). Won last 6 H2H vs Lyon. Lyon winless in 4 of last 5 Ligue 1 away, missing Nuamah (ACL), Tagliafico (suspended), Fofana (ankle). PSG at Parc des Princes chasing title with 2 games in hand over Lens. ~8% edge on strong favorite warrants significant stake.", "llm": "Claude" }, { "match": "Nottingham Forest vs Burnley FC", "prediction": "1", "stake": 100, "odd": 1.48, "reasoning": "Implied prob 67.6%. My calc prob ~76%. Forest unbeaten in 6 under Pereira, just beat Porto in Europa League. 3-point cushion in relegation fight, massively motivated. Burnley 19th, worst defense in league (63 goals), only 1 win since November, winless in 10 away, won just 2 of last 21 visits to Forest. Burnley also missing Laurent (suspended), Roberts and Mejbri (injured). Huge relegation 6-pointer where Forest have clear motivation and quality edge.", "llm": "Claude" }, { "match": "Verona vs Ac Milan", "prediction": "2", "stake": 90, "odd": 1.54, "reasoning": "Implied prob 64.9%. My calc prob ~74%. Verona 19th, lost 7 of 8, won just 1 of 17 Serie A games. Milan 3rd with 63 pts, beaten Verona in last 10 H2H. Milan lost 2 in a row but quality gap is massive. Verona's dire form and Milan's need to secure CL place make this a clear value bet despite Milan's recent blip.", "llm": "Claude" }, { "match": "Juventus Turin vs Bologna FC", "prediction": "1", "stake": 95, "odd": 1.45, "reasoning": "Implied prob 68.9%. My calc prob ~77%. Juve 4th with 60 pts, chasing CL spot at Allianz Stadium. Bologna looked 'broken' in their last match according to previews. Multiple sources predict comfortable Juve win (2-0). Juve at home with 64% win probability per bookmaker consensus. Bologna with slim Conference League hopes offer little resistance. ~8% edge.", "llm": "Claude" }, { "match": "FC Porto vs CD Tondela", "prediction": "1", "stake": 70, "odd": 1.17, "reasoning": "Implied prob 85.5%. My calc prob ~92%. Porto top of Liga Portugal at home vs Tondela who are struggling. Massive quality gulf. Porto dominated recent H2H. Odds are low but edge is clear (~6.5%). Moderate stake due to low odds but high confidence.", "llm": "Claude" }, { "match": "Everton FC vs Liverpool FC", "prediction": "GG", "stake": 65, "odd": 1.65, "reasoning": "Implied prob 60.6%. My calc prob ~68%. First ever derby at new 52k Hill Dickinson Stadium. Both teams NEED to win - Everton chasing European spots (8th, 47pts), Liverpool clinging to CL spot (5th, 52pts). Liverpool in crisis but still have Salah. Everton strong at home recently (beat Chelsea 3-0, Burnley 2-0). Liverpool defense vulnerable without key players but they've scored in last 11 PL games. Both scored in last H2H (2-1). Derby intensity ensures both attack. ~7% edge.", "llm": "Claude" }, { "match": "PSG vs Lyon", "prediction": "Over 2.5", "stake": 55, "odd": 1.40, "reasoning": "Implied prob 71.4%. My calc prob ~80%. PSG outscored last 3 home opponents 10-3. They scored 3+ in 5 of last 6 all-comp matches. Won last year's fixture 3-1. PSG's Dembele in red-hot form (brace vs Liverpool, brace vs Toulouse). Even a tight game likely has 3+ goals given PSG's attack. ~9% edge.", "llm": "Claude" }, { "match": "Aston Villa vs Sunderland AFC", "prediction": "1", "stake": 60, "odd": 1.74, "reasoning": "Implied prob 57.5%. My calc prob ~64%. Villa chasing CL spots at home. Sunderland struggling offensively (33 goals all season). Multiple prediction models give Villa 55-65% win probability but I lean higher given home advantage and Sunderland's poor attack. Forebet predicts 2-0 Villa. Decent value at 1.74.", "llm": "Claude" }, { "match": "Strasbourg vs Rennes", "prediction": "GG", "stake": 50, "odd": 1.54, "reasoning": "Implied prob 64.9%. My calc prob ~72%. Multiple expert predictions forecast 2-2 or 2-1 scorelines. Both teams in open, attacking form. Strasbourg coming off European triumph with momentum. Rennes need points. LeagueLane tips over 2.5 and BTTS as best bet. Historical H2H shows goals. ~7% edge.", "llm": "Claude" }, { "match": "US Lecce vs ACF Fiorentina", "prediction": "2", "stake": 50, "odd": 2.22, "reasoning": "Implied prob 45%. My calc prob ~52%. Lecce 18th with 27 pts in relegation zone. Fiorentina in fine form. Multiple sources predict 0-2 Fiorentina. Away win at 2.22 offers ~7% edge. Fiorentina's quality advantage over struggling Lecce makes this attractive value despite being an away bet.", "llm": "Claude" }, { "match": "Pisa SC vs Genoa CFC", "prediction": "2", "stake": 45, "odd": 2.44, "reasoning": "Implied prob 41%. My calc prob ~48%. Pisa have a dreadful record (2W-12D-18L). Genoa unbeaten in last 3 H2H, won 3 of last 5 Serie A matches. Pisa looking set for quick return to Serie B. Genoa have better attack and defense stats. ~7% edge at decent odds.", "llm": "Claude" }, { "match": "Manchester City vs Arsenal FC", "prediction": "Under 2.5", "stake": 45, "odd": 1.86, "reasoning": "Implied prob 53.8%. My calc prob ~60%. Both teams missing key players - City without Dias, Gvardiol; Arsenal without Saka, Odegaard, Timber, Calafiori. Title implications make both teams cautious. Arsenal typically set up defensively at Etihad under Arteta. Last season's fixtures were tight. With so many injuries to creative players on both sides, expect a cagey affair. ~6% edge.", "llm": "Claude" }, { "match": "Sporting CP vs SL Benfica", "prediction": "GG", "stake": 40, "odd": 1.65, "reasoning": "Implied prob 60.6%. My calc prob ~68%. Derby de Lisboa with massive title implications - Sporting 2nd (71pts), Benfica 3rd (69pts), both chasing Porto. 67% of last 6 H2H were draws, suggesting competitive matches. Forebet predicts 2-2. Both teams in strong form and desperate for points. Derby intensity and high stakes mean both will attack. ~7% edge.", "llm": "Claude" } ]
-
+, "results": {
+  "PSG vs Lyon": {
+    "score": "1-2"
+  },
+  "Nottingham Forest vs Burnley FC": {
+    "score": "4-1"
+  },
+  "Verona vs Ac Milan": {
+    "score": "0-1"
+  },
+  "Juventus Turin vs Bologna FC": {
+    "score": "2-0"
+  },
+  "FC Porto vs CD Tondela": {
+    "score": "2-0"
+  },
+  "Everton FC vs Liverpool FC": {
+    "score": "1-2"
+  },
+  "Aston Villa vs Sunderland AFC": {
+    "score": "4-3"
+  },
+  "Strasbourg vs Rennes": {
+    "score": "0-3"
+  },
+  "US Lecce vs ACF Fiorentina": {
+    "score": ""
+  },
+  "Pisa SC vs Genoa CFC": {
+    "score": "1-2"
+  },
+  "Manchester City vs Arsenal FC": {
+    "score": "2-1"
+  },
+  "Sporting CP vs SL Benfica": {
+    "score": "1-2"
+  }
+}
 
 
 
