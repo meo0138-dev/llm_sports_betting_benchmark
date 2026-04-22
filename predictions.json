@@ -5635,19 +5635,19 @@
       "games":[ { "match": "Brighton & Hove Albion vs Chelsea FC", "prediction": "1", "stake": 65, "odd": 2.50, "reasoning": "Implied prob 40%. Brighton excellent form (W-L-W-W-W-D), Chelsea in freefall (L-W-L-L-L-L in PL, 5 of 6 losses overall). Chelsea missing Estevao, James, Colwill, Bynoe-Gittens, Mudryk. Brighton won last 3 vs Chelsea. Dunk returns. Calc prob ~48%. 8% edge at good odds warrants solid stake.", "llm": "Claude" }, { "match": "Burnley FC vs Manchester City", "prediction": "2", "stake": 80, "odd": 1.14, "reasoning": "Implied prob 87.7%. Man City 2nd in PL (67pts), title contenders. Burnley promoted, struggling. City won 5-1 at home vs Burnley earlier. Even with Gvardiol out, massive quality gap. Calc prob ~90%. Small edge but safe enough for decent stake.", "llm": "Claude" }, { "match": "Real Madrid vs Deportivo Alaves", "prediction": "1", "stake": 100, "odd": 1.24, "reasoning": "Implied prob 80.6%. Madrid home record 13-1-2 this season. 70 pts, 2nd in La Liga. Alaves lower table with 1W 3D in last 4. Home dominance (19 wins in 22 home H2H). Calc prob ~87%. 6.4% edge justifies strong stake on heavy favorite.", "llm": "Claude" }, { "match": "FC Barcelona vs RC Celta de Vigo", "prediction": "1", "stake": 100, "odd": 1.24, "reasoning": "Implied prob 80.6%. Barca 1st in La Liga (79pts). Dominant at Camp Nou. Won last 2 vs Celta (4-3, 4-2). Celta mid-table. Calc prob ~86%. 5.4% edge at low odds, large stake for consistent return.", "llm": "Claude" }, { "match": "Southampton FC vs Bristol City", "prediction": "1", "stake": 75, "odd": 1.41, "reasoning": "Implied prob 70.9%. Southampton 4th, on 7 consecutive wins and unbeaten in 16 (W13 D3). Chasing automatic promotion. Fewest goals conceded at home in Championship. Bristol City inconsistent mid-table. Calc prob ~78%. 7% edge at reasonable odds.", "llm": "Claude" }, { "match": "FC Barcelona vs RC Celta de Vigo", "prediction": "Over 2.5", "stake": 50, "odd": 1.29, "reasoning": "Implied prob 77.5%. Barca's last 2 vs Celta: 4-3 and 4-2 (both 7+ goals). Barca avg 2.1+ goals at home. Celta often contribute in open games. Calc prob ~82%. 4.5% edge.", "llm": "Claude" }, { "match": "Real Madrid vs Deportivo Alaves", "prediction": "Over 2.5", "stake": 50, "odd": 1.40, "reasoning": "Implied prob 71.4%. Madrid at home should create many chances vs lower-table Alaves. Alaves last 4 games produced 22 goals combined. Calc prob ~76%. 4.6% edge.", "llm": "Claude" }, { "match": "Burnley FC vs Manchester City", "prediction": "Over 2.5", "stake": 55, "odd": 1.34, "reasoning": "Implied prob 74.6%. City scored 5-1 vs Burnley earlier this season. City's attack (Haaland 14 goals, top scorer) should dominate. Calc prob ~78%. 3.4% edge.", "llm": "Claude" }, { "match": "Paris Saint-Germain vs FC Nantes", "prediction": "1", "stake": 70, "odd": 1.20, "reasoning": "Implied prob 83.3%. PSG dominant at home, unbeaten in 8 vs Nantes. Nantes lost 3 of last 6 away. PSG 1st in Ligue 1. Calc prob ~87%. 3.7% edge on very safe bet.", "llm": "Claude" }, { "match": "Middlesbrough FC vs Sheffield Wednesday", "prediction": "1", "stake": 55, "odd": 1.17, "reasoning": "Implied prob 85.5%. Boro 5th, chasing playoffs. Wednesday bottom of table, won only 1 game all season, winless in 12 straight away, lost 70% of last 20 away games. Calc prob ~88%. 2.5% edge.", "llm": "Claude" }, { "match": "Coventry City vs Portsmouth FC", "prediction": "1", "stake": 40, "odd": 1.65, "reasoning": "Implied prob 60.6%. Coventry 1st in Championship, strong home form. Portsmouth lower in table. Calc prob ~65%. 4.4% edge at decent odds.", "llm": "Claude" }, { "match": "Athletic Bilbao vs Osasuna", "prediction": "1", "stake": 30, "odd": 1.85, "reasoning": "Implied prob 54.1%. Athletic solid at home in San Mames. No fresh injury concerns. Basque derby motivation. Calc prob ~57%. Small 3% edge, conservative stake.", "llm": "Claude" } ]
       , "results": {
   "Brighton & Hove Albion vs Chelsea FC": {
-    "score": ""
+    "score": "3-0"
   },
   "Burnley FC vs Manchester City": {
     "score": ""
   },
   "Real Madrid vs Deportivo Alaves": {
-    "score": ""
+    "score": "2-1"
   },
   "FC Barcelona vs RC Celta de Vigo": {
     "score": ""
   },
   "Southampton FC vs Bristol City": {
-    "score": ""
+    "score": "2-2"
   },
   "Paris Saint-Germain vs FC Nantes": {
     "score": ""
@@ -5656,10 +5656,10 @@
     "score": ""
   },
   "Coventry City vs Portsmouth FC": {
-    "score": ""
+    "score": "5-1"
   },
   "Athletic Bilbao vs Osasuna": {
-    "score": ""
+    "score": "1-0"
   }
 } }
 
