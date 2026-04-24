@@ -5662,6 +5662,62 @@
     "score": "1-0"
   }
 } }
+    ,
+    {
+      "round": 27,
+      "date": "2026-04-24",
+      "games":[ { "match": "SSC Napoli vs US Cremonese", "prediction": "1", "stake": 100, "odd": 1.40, "reasoning": "Implied prob 71.4%. Napoli (3rd, 66pts) at home vs Cremonese (17th, 28pts, relegation zone). Cremonese haven't beaten Napoli in Serie A for 32 years. My calc prob ~80%. Edge ~8.6% warrants solid stake.", "llm": "Claude" }, { "match": "Torino FC vs Inter Milano", "prediction": "2", "stake": 90, "odd": 1.43, "reasoning": "Implied prob 69.9%. Inter are runaway Serie A leaders (78pts, 25W, +49 GD). Torino mid-table (40pts). Inter's quality is overwhelming. My calc prob ~75%. Edge ~5%.", "llm": "Claude" }, { "match": "FSV Mainz vs Bayern Munich", "prediction": "2", "stake": 120, "odd": 1.66, "reasoning": "Implied prob 60.2%. Bayern are dominant leaders (79pts, 25W-4D-1L, 109 goals scored!). Mainz 10th with 34pts. Bayern's record is historic. My calc prob ~76%. Edge ~16% - best value on the board. High stake justified.", "llm": "Claude" }, { "match": "Borussia Dortmund vs SC Freiburg", "prediction": "1", "stake": 70, "odd": 1.38, "reasoning": "Implied prob 72.5%. BVB 2nd (64pts) at home vs Freiburg 7th (43pts). Dortmund form W-W-W-W recent. My calc prob ~76%. Edge ~3.5%, moderate stake.", "llm": "Claude" }, { "match": "Liverpool FC vs Crystal Palace", "prediction": "1", "stake": 80, "odd": 1.49, "reasoning": "Implied prob 67.1%. Liverpool (5th, 55pts) at Anfield vs Crystal Palace (13th, 43pts). Palace focused on Conference League semi-final per previews. Liverpool unbeaten in 17 home games. My calc prob ~74%. Edge ~7%.", "llm": "Claude" }, { "match": "Arsenal FC vs Newcastle United", "prediction": "1", "stake": 85, "odd": 1.45, "reasoning": "Implied prob 68.9%. Arsenal league leaders (70pts) at Emirates vs Newcastle (14th, 42pts). Arsenal dominant at home. Saka injury concern but squad depth strong. My calc prob ~76%. Edge ~7%.", "llm": "Claude" }, { "match": "Getafe CF vs FC Barcelona", "prediction": "2", "stake": 85, "odd": 1.64, "reasoning": "Implied prob 61%. Barcelona are dominant leaders (79pts, 26W-1D-4L, 84 goals). Getafe average 0.4 goals vs Barca in H2H. W-W-W-W-W form. My calc prob ~70%. Edge ~9%.", "llm": "Claude" }, { "match": "Angers SCO vs Paris Saint-Germain", "prediction": "2", "stake": 75, "odd": 1.27, "reasoning": "Implied prob 78.7%. PSG leaders (63pts) vs Angers 13th (34pts). PSG quality overwhelms. My calc prob ~85%. Edge ~6%. Lower odds but safe.", "llm": "Claude" }, { "match": "Stade Rennais FC vs FC Nantes", "prediction": "1", "stake": 80, "odd": 1.41, "reasoning": "Implied prob 70.9%. Rennes 5th (53pts) vs Nantes 17th (20pts, near relegation). Massive quality gap in Breton derby. My calc prob ~78%. Edge ~7%.", "llm": "Claude" }, { "match": "Stade Brest 29 vs Racing Club De Lens", "prediction": "2", "stake": 65, "odd": 1.55, "reasoning": "Implied prob 64.5%. Lens 2nd (62pts, title contenders, 20W) vs Brest 12th (37pts, winless in 4). Lens won 4 of last 5. My calc prob ~69%. Edge ~5%.", "llm": "Claude" }, { "match": "Olympique Marseille vs OGC Nice", "prediction": "1", "stake": 70, "odd": 1.49, "reasoning": "Implied prob 67.1%. Marseille 6th (52pts, strong at home with 1.83 ppg) vs Nice 15th (29pts, struggling badly). My calc prob ~73%. Edge ~6%.", "llm": "Claude" }, { "match": "VfB Stuttgart vs Werder Bremen", "prediction": "1", "stake": 65, "odd": 1.54, "reasoning": "Implied prob 64.9%. Stuttgart 4th (56pts) at home vs Bremen 15th (31pts). Stuttgart fighting for CL spots. My calc prob ~71%. Edge ~6%.", "llm": "Claude" }, { "match": "Real Betis Seville vs Real Madrid", "prediction": "Over 2.5", "stake": 50, "odd": 1.47, "reasoning": "Implied prob 68%. Both teams highly attacking. Real Madrid (67 goals in 32) and Betis (48 goals in 32, 5th place). Open game expected. My calc prob ~73%. Edge ~5%.", "llm": "Claude" }, { "match": "1. FC Cologne vs Bayer Leverkusen", "prediction": "2", "stake": 50, "odd": 1.87, "reasoning": "Implied prob 53.5%. Leverkusen 6th (52pts) vs Cologne 12th (31pts). Leverkusen stronger squad and higher table. My calc prob ~58%. Edge ~4.5%.", "llm": "Claude" }, { "match": "Bologna vs AS Roma", "prediction": "2", "stake": 45, "odd": 2.34, "reasoning": "Implied prob 42.7%. Roma 6th (58pts) chasing CL vs Bologna 8th (48pts) with poor home form (4 losses in recent run). Roma more motivated. My calc prob ~47%. Edge ~4%.", "llm": "Claude" }, { "match": "RB Leipzig vs Union Berlin", "prediction": "1", "stake": 60, "odd": 1.44, "reasoning": "Implied prob 69.4%. Leipzig 3rd (59pts) at home vs Union Berlin 11th (32pts). Leipzig have strong home form. My calc prob ~75%. Edge ~5.5%.", "llm": "Claude" } ],
+      "results": {
+  "SSC Napoli vs US Cremonese": {
+    "score": ""
+  },
+  "Torino FC vs Inter Milano": {
+    "score": ""
+  },
+  "FSV Mainz vs Bayern Munich": {
+    "score": ""
+  },
+  "Borussia Dortmund vs SC Freiburg": {
+    "score": ""
+  },
+  "Liverpool FC vs Crystal Palace": {
+    "score": ""
+  },
+  "Arsenal FC vs Newcastle United": {
+    "score": ""
+  },
+  "Getafe CF vs FC Barcelona": {
+    "score": ""
+  },
+  "Angers SCO vs Paris Saint-Germain": {
+    "score": ""
+  },
+  "Stade Rennais FC vs FC Nantes": {
+    "score": ""
+  },
+  "Stade Brest 29 vs Racing Club De Lens": {
+    "score": ""
+  },
+  "Olympique Marseille vs OGC Nice": {
+    "score": ""
+  },
+  "VfB Stuttgart vs Werder Bremen": {
+    "score": ""
+  },
+  "Real Betis Seville vs Real Madrid": {
+    "score": ""
+  },
+  "1. FC Cologne vs Bayer Leverkusen": {
+    "score": ""
+  },
+  "Bologna vs AS Roma": {
+    "score": ""
+  },
+  "RB Leipzig vs Union Berlin": {
+    "score": ""
+  }
+}}
+      
 
 
 
