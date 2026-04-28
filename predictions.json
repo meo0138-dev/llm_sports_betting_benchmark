@@ -5722,7 +5722,29 @@
       "round": 28,
       "date": "2026-04-27",
       "games":[ { "match": "Manchester United vs Brentford FC", "prediction": "1", "stake": 100, "odd": 1.91, "reasoning": "Implied prob 52.4%. My calc prob ~55%. Man Utd 3rd in PL, won 8 of 12 under Carrick, beat Chelsea 1-0 away last week. Maguire back from suspension. Brentford drawn 5 straight PL matches (stale form), never won at Old Trafford in PL. ~2.6% edge on moderate stake.", "llm": "Claude" }, { "match": "Atletico Madrid vs Arsenal FC", "prediction": "2", "stake": 60, "odd": 2.60, "reasoning": "Implied prob 38.5%. My calc prob ~41%. Arsenal topped CL league phase with 8/8 wins, best defense in competition. Atletico lost 7 of last 9 all comps, missing key midfielder Barrios, Lookman/Gimenez/Hancko all doubtful. Arsenal's Eze confirmed fit. Atletico's defensive fragility (conceded 2+ in 5 straight) vs Arsenal's elite structure. ~2.5% edge at good price.", "llm": "Claude" }, { "match": "SC Braga vs SC Freiburg", "prediction": "U2.5", "stake": 70, "odd": 1.68, "reasoning": "Implied prob 59.5%. My calc prob ~63%. Europa League semi-final first leg, both teams cautious. Braga avg 1.38 scored/0.63 conceded in EL league phase. Freiburg 1.25/0.50. Braga clean sheets in 53% of last 30 home EL matches. Forebet predicts 1-0. First-leg caution + defensive quality of both sides. ~3.5% edge.", "llm": "Claude" }, { "match": "Nottingham Forest vs Aston Villa", "prediction": "U2.5", "stake": 55, "odd": 1.82, "reasoning": "Implied prob 54.9%. My calc prob ~58%. All-English Europa League semi-final first leg. Both teams know each other intimately from PL, will be tactically cautious. First-leg dynamics favor caginess. Under 2.5 offers small edge at decent odds. ~3% edge.", "llm": "Claude" }, { "match": "Gil Vicente Barcelos vs Casa Pia Lisbon", "prediction": "1", "stake": 80, "odd": 1.62, "reasoning": "Implied prob 61.7%. My calc prob ~66%. Gil Vicente 6th with 46 pts at home vs Casa Pia 16th with 26 pts. Casa Pia winless in 7 straight away, scored only 0.6 goals/game on road with 1.90 conceded. Gil Vicente have clear quality advantage at home with 4 rounds left and still competing for European places. ~4.3% edge warrants good stake.", "llm": "Claude" }, { "match": "Sporting CP vs CD Tondela", "prediction": "1", "stake": 90, "odd": 1.14, "reasoning": "Implied prob 87.7%. My calc prob ~91%. Sporting are 2x defending Liga Portugal champions at home in Alvalade. Tondela are a lower-table side. Even at short odds, ~3.3% edge on a near-certainty is worth a moderate stake for bankroll grinding.", "llm": "Claude" }, { "match": "Rayo Vallecano vs Strasbourg Alsace", "prediction": "1", "stake": 45, "odd": 2.23, "reasoning": "Implied prob 44.8%. My calc prob ~48%. Rayo at Vallecas are formidable - strong home record. 20 goals in 10 UECL matches (2.0 avg). Conference League semi-final at home, Rayo will be fired up. Strasbourg are good but away from home in an unfamiliar competition stage. ~3.2% edge at decent price.", "llm": "Claude" } ],
-      "results":{}}
+      "results": {
+  "Manchester United vs Brentford FC": {
+    "score": "2-1"
+  },
+  "Atletico Madrid vs Arsenal FC": {
+    "score": ""
+  },
+  "SC Braga vs SC Freiburg": {
+    "score": ""
+  },
+  "Nottingham Forest vs Aston Villa": {
+    "score": ""
+  },
+  "Gil Vicente Barcelos vs Casa Pia Lisbon": {
+    "score": "2-1"
+  },
+  "Sporting CP vs CD Tondela": {
+    "score": ""
+  },
+  "Rayo Vallecano vs Strasbourg Alsace": {
+    "score": ""
+  }
+}}
     
       
 
