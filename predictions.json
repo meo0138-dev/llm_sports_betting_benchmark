@@ -5744,7 +5744,121 @@
   "Rayo Vallecano vs Strasbourg Alsace": {
     "score": "1-0"
   }
-}}
+}},
+    {
+      "round": 29,
+      "date": "2026-05-02",
+      "games":[
+  {
+    "match": "Juventus vs Verona",
+    "prediction": "1+NG",
+    "stake": 120,
+    "odd": 1.70,
+    "reasoning": "Implied prob 58.8%. My calc prob ~70%. Juventus unbeaten in 9, FOUR consecutive clean sheets under Spalletti. Verona 19th, scored just 1 goal in last 6 games, never won away at Juve in Serie A history (29 losses in 34). Verona could be mathematically relegated. 11% edge warrants strong stake.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Arsenal vs Fulham",
+    "prediction": "1",
+    "stake": 100,
+    "odd": 1.45,
+    "reasoning": "Implied prob 69%. My calc prob ~76%. Arsenal 1st (73pts), unbeaten in 32 home PL games vs Fulham ever. Only 11 goals conceded at home all season. Fulham scored in only 2 of last 7 games, have NEVER won away at the league leaders. Havertz out but squad depth excellent. 7% edge.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Everton vs Manchester City",
+    "prediction": "2",
+    "stake": 90,
+    "odd": 1.45,
+    "reasoning": "Implied prob 69%. My calc prob ~75%. Man City 2nd (70pts), chasing title with 3pt gap to Arsenal. Won last 3 games, beaten Everton 2-0 in both previous meetings this campaign. Everton mid-table, nothing to play for, lost 2-1 at West Ham last time. City's title motivation is enormous. 6% edge.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Inter vs Parma",
+    "prediction": "1",
+    "stake": 80,
+    "odd": 1.20,
+    "reasoning": "Implied prob 83.3%. My calc prob ~90%. Inter can clinch Serie A title with a win. 79pts, 12pts clear at top. Scored 3+ in 4 of last 5 home games. Parma 12th, 42pts, no motivation left. Title-clinching games bring extra intensity. 7% edge at safe odds.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Atalanta vs Genoa",
+    "prediction": "1",
+    "stake": 55,
+    "odd": 1.52,
+    "reasoning": "Implied prob 65.8%. My calc prob ~69%. Atalanta desperate for points in top-6 race (7pts gap, 4 rounds left). Won 6 straight H2H vs Genoa including 1-0 away earlier. Genoa mid-table, no motivation. Atalanta's need should galvanize them after recent wobble. 3% edge at decent odds.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Arsenal vs Fulham",
+    "prediction": "Under 2.5",
+    "stake": 50,
+    "odd": 1.85,
+    "reasoning": "Implied prob 54.1%. My calc prob ~58%. Arsenal just played Atletico midweek (CL semi), will manage energy. Only 11 goals conceded at home. Fulham scored in only 2 of last 7 games. Sportsmole predicts 1-0. Arsenal will be pragmatic with Atletico return leg in 3 days. 4% edge.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Wolverhampton vs Sunderland",
+    "prediction": "2",
+    "stake": 40,
+    "odd": 2.00,
+    "reasoning": "Implied prob 50%. My calc prob ~53%. Wolves bottom, already relegated, lost 3 straight scoring 0 goals. Sunderland 4W-5D-8L away but clearly better team with nothing to lose. Despite 5-0 loss to Forest, Sunderland 9th with 46pts vs Wolves who are done. Small edge at even odds.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Getafe vs Rayo Vallecano",
+    "prediction": "Under 2.5",
+    "stake": 45,
+    "odd": 1.48,
+    "reasoning": "Implied prob 67.6%. My calc prob ~73%. Getafe are the most defensive team in La Liga, consistently producing under games. Rayo also played Conference League semi-final midweek. Madrid derby with both sides compact. 5% edge.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Bayer Leverkusen vs Lipsia",
+    "prediction": "2",
+    "stake": 35,
+    "odd": 2.90,
+    "reasoning": "Implied prob 34.5%. My calc prob ~38%. Leipzig in superior form - dominant 3-1 vs Union Berlin. Leverkusen defensive weaknesses exposed even in 2-1 Koln win (Koln missed many chances). Leipzig's pressing will exploit Leverkusen's current vulnerabilities. 3.5% edge at attractive odds.",
+    "llm": "Claude"
+  },
+  {
+    "match": "Bayern Monaco vs Heidenheim",
+    "prediction": "Over 2.5",
+    "stake": 40,
+    "odd": 1.18,
+    "reasoning": "Implied prob 84.7%. My calc prob ~88%. Bayern scored 4+ in last 3 meetings with Heidenheim. Even with rotation, Bayern's depth (Olise, Musiala, Kane on bench) creates goals. Heidenheim fighting relegation will push forward too. Zivzivadze scored in 3 straight. 3.3% edge.",
+    "llm": "Claude"
+  }
+],
+      "results": {
+  "Juventus vs Verona": {
+    "score": ""
+  },
+  "Arsenal vs Fulham": {
+    "score": ""
+  },
+  "Everton vs Manchester City": {
+    "score": ""
+  },
+  "Inter vs Parma": {
+    "score": ""
+  },
+  "Atalanta vs Genoa": {
+    "score": ""
+  },
+  "Wolverhampton vs Sunderland": {
+    "score": ""
+  },
+  "Getafe vs Rayo Vallecano": {
+    "score": ""
+  },
+  "Bayer Leverkusen vs Lipsia": {
+    "score": ""
+  },
+  "Bayern Monaco vs Heidenheim": {
+    "score": ""
+  }
+} }
     
       
 
